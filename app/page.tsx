@@ -1,76 +1,66 @@
-import { ArrowDown, ArrowUpRight, AudioLines, Compass, Menu, MoonStar, Orbit, Sparkles } from "lucide-react";
+import Link from "next/link";
+import { links } from "@/lib/site-content";
 
-const links = {
-  navigator: "https://somatic-karma-navigator.vercel.app/",
-  transit: "https://somatic-karma-transit.vercel.app/",
-  tarot: "https://somatic-karma-tarot.vercel.app/",
-  audio: "https://somatic-karma-navigator.vercel.app/audio-bundle/",
-  code: "https://somatic-karma-navigator.vercel.app/somatic-karma-code/",
-  shop: "https://auralumia.shop.copecart.com/",
-};
-
-const appCards = [
-  { number: "01", kicker: "Dein Anfang", title: "Archetype Navigator", text: "Finde heraus, welcher Somatic Karma Archetyp deine innere Schutzarchitektur prägt – und welche Narbe darunter gesehen werden möchte.", link: links.navigator, cta: "Archetypen bestimmen", image: "/hero-somatic.jpg", imageAlt: "Feine Illustration einer meditierenden Frau im Sternenkreis", className: "app-card app-card--navigator" },
-  { number: "02", kicker: "Dein Jetzt", title: "Transit Orakel", text: "Lies die Berührungspunkte zwischen deinem Geburtsbild und dem gegenwärtigen Himmel – als Einladung zum Nachspüren, nicht als starre Vorhersage.", link: links.transit, cta: "Transite befragen", image: "/transit-orakel.webp", imageAlt: "Kosmische Mondsphären mit goldenen Umlaufbahnen", className: "app-card app-card--transit" },
-  { number: "03", kicker: "Dein Spiegel", title: "Somatic Karma Tarot", text: "78 archetypische Spiegel verbinden klassische Tarot-Weisheit mit Licht, Schatten und deiner Somatic-Karma-Narbenarchitektur.", link: links.tarot, cta: "Tarot entdecken", image: "/tarot.webp", imageAlt: "Aura Lumia Somatic Karma Tarot – das Archiv der 78 Spiegel", className: "app-card app-card--tarot" },
+const paths = [
+  { no: "01", title: "Muster erkennen", text: "Entdecke mit Somatic Karma, was unter deinen wiederkehrenden Erfahrungen wirkt.", href: "/somatic-karma" },
+  { no: "02", title: "Eine Frage klären", text: "Wähle einen astrologischen, intuitiven oder körperorientierten Impuls für dein aktuelles Thema.", href: "/angebote" },
+  { no: "03", title: "Eine Schwelle gehen", text: "Lass dich in einer intensiven Begleitung durch eine persönliche oder berufliche Wandlung führen.", href: "/mentoring" },
 ];
-
-function ExternalLink({ href, children, className = "" }: { href: string; children: React.ReactNode; className?: string }) {
-  return <a className={className} href={href} target="_blank" rel="noreferrer">{children}<ArrowUpRight aria-hidden="true" size={17} strokeWidth={1.6} /></a>;
-}
 
 export default function Home() {
   return (
-    <main id="top">
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Aura Lumia – zurück nach oben"><img src="/aura-lumia-logo.png" alt="" /><span>AURA<em>✦</em>LUMIA</span></a>
-        <nav className="desktop-nav" aria-label="Hauptnavigation"><a href="#methode">Methode</a><a href="#apps">Apps</a><a href="#angebote">Angebote</a><a href="#podcast">Podcast</a><a href="#jennifer">Jennifer</a></nav>
-        <ExternalLink href={links.navigator} className="header-cta">Navigator starten</ExternalLink>
-        <details className="mobile-nav"><summary aria-label="Menü öffnen"><Menu aria-hidden="true" size={22} /></summary><nav aria-label="Mobile Navigation"><a href="#methode">Methode</a><a href="#apps">Apps</a><a href="#angebote">Angebote</a><a href="#podcast">Podcast</a><a href="#jennifer">Jennifer</a><ExternalLink href={links.navigator}>Navigator starten</ExternalLink></nav></details>
-      </header>
-
-      <section className="hero section-shell" aria-labelledby="hero-title">
-        <div className="hero-copy">
-          <p className="eyebrow"><span /> SOMATIC KARMA · BY JENNIFER KINDEREIT</p>
-          <h1 id="hero-title">Dein Körper erinnert sich.<br /><em>Deine Sterne zeigen, warum.</em></h1>
-          <p className="hero-lede">AuraLumia verbindet vedische Astrologie, archetypische Körperweisheit und intuitive Symbolarbeit zu einer neuen Sprache für das, was in dir längst spürbar ist.</p>
-          <div className="hero-actions"><ExternalLink href={links.navigator} className="button button--primary">Meinen Archetypen finden</ExternalLink><a className="text-link" href="#apps">Das Universum entdecken <ArrowDown aria-hidden="true" size={16} /></a></div>
-          <p className="hero-note">Kostenlos · intuitiv · in wenigen Minuten</p>
+    <>
+      <section className="home-hero shell">
+        <div className="home-hero-copy">
+          <p className="eyebrow">AURALUMIA · BY JENNIFER KINDEREIT</p>
+          <h1>Was du längst spürst, darf endlich <em>lesbar</em> werden.</h1>
+          <p className="hero-lede">Ich verbinde vedische Astrologie, Körperwissen, Ahnenarbeit und Tarot zu einer präzisen Sprache für deine Muster, Übergänge und nächsten Entscheidungen.</p>
+          <div className="actions"><Link className="button button-dark" href="/angebote">Deinen Einstieg finden <span>↗</span></Link><Link className="text-link" href="/ueber-jennifer">Jennifer kennenlernen <span>↗</span></Link></div>
         </div>
-        <div className="hero-art" aria-label="Somatic Karma Illustration"><div className="orbit orbit--one" /><div className="orbit orbit--two" /><img src="/hero-somatic.jpg" alt="Meditierende Frau in einem feinen kosmischen Sternenkreis" /><div className="hero-seal"><Sparkles aria-hidden="true" size={18} /><span>Wissen, das<br />im Körper landet</span></div></div>
-      </section>
-
-      <div className="signal-strip" aria-label="AuraLumia Themen"><span>ASTROLOGIE</span><i>✦</i><span>ARCHETYPEN</span><i>✦</i><span>KÖRPERWISSEN</span><i>✦</i><span>INTUITION</span></div>
-
-      <section className="method section-shell" id="methode" aria-labelledby="method-title">
-        <div className="section-intro"><p className="eyebrow"><span /> DIE SOMATIC KARMA METHODE</p><h2 id="method-title">Nicht noch mehr über dich wissen.<br /><em>Dich tiefer verstehen.</em></h2></div>
-        <div className="method-grid">
-          <div className="method-statement"><p>Manche Muster beginnen nicht im Kopf. Sie zeigen sich in Beziehungen, Entscheidungen, im Körper – und in dem Gefühl, immer wieder an derselben unsichtbaren Schwelle zu stehen.</p><p>Somatic Karma macht diese Architektur lesbar. Präzise genug, um dich zu erkennen. Sanft genug, damit Erkenntnis nicht zur nächsten Forderung an dich wird.</p></div>
-          <div className="archetype-list" aria-label="Die vier Somatic Karma Archetypen"><div><span>01</span><p><b>Resonanztyp</b><small>Mutternarbe</small></p></div><div><span>02</span><p><b>Rebell-Typ</b><small>Vaternarbe</small></p></div><div><span>03</span><p><b>Einzelkämpfer-Typ</b><small>Schwesternarbe</small></p></div><div><span>04</span><p><b>Schuldtyp</b><small>Schuldnarbe</small></p></div></div>
+        <div className="home-hero-media">
+          <video autoPlay muted loop playsInline preload="metadata" poster="/jennifer.webp" aria-label="Jennifer Kindereit – Video-Porträt">
+            <source src={links.video} type="video/mp4" />
+          </video>
+          <p><span>Astrologie, die nicht über dir schwebt.</span><strong>Sondern in deinem Leben landet.</strong></p>
         </div>
       </section>
 
-      <section className="apps-section" id="apps" aria-labelledby="apps-title"><div className="section-shell">
-        <div className="section-intro section-intro--split"><div><p className="eyebrow"><span /> DEINE DIGITALEN RITUALRÄUME</p><h2 id="apps-title">Drei Zugänge.<br /><em>Eine innere Landkarte.</em></h2></div><p>Beginne dort, wo du gerade stehst. Jeder Raum ist eigenständig – und zugleich Teil eines Systems, das deine Geschichte aus mehreren Blickwinkeln sichtbar macht.</p></div>
-        <div className="apps-grid">{appCards.map((app) => <article className={app.className} key={app.title}><div className="app-image"><img src={app.image} alt={app.imageAlt} /></div><div className="app-copy"><div className="card-meta"><span>{app.number}</span><p>{app.kicker}</p></div><h3>{app.title}</h3><p>{app.text}</p><ExternalLink href={app.link} className="card-link">{app.cta}</ExternalLink></div></article>)}</div>
-      </div></section>
+      <div className="discipline-strip" aria-label="AuraLumia Disziplinen"><span>VEDISCHE ASTROLOGIE</span><i></i><span>SOMATIC KARMA</span><i></i><span>TAROT</span><i></i><span>AHNENARBEIT</span></div>
 
-      <section className="offers section-shell" id="angebote" aria-labelledby="offers-title">
-        <div className="section-intro section-intro--split"><div><p className="eyebrow"><span /> DEINE VERTIEFUNG</p><h2 id="offers-title">Erkenntnis darf<br /><em>Erfahrung werden.</em></h2></div><p>Wenn du deinen Archetypen kennst, beginnt die eigentliche Reise: hören, nachspüren, neu einordnen – in deinem Tempo und auf deiner Ebene.</p></div>
-        <div className="offers-grid">
-          <article className="offer-card"><div className="offer-image"><img src="/audio-bundle.webp" alt="Somatic Karma Audio Bundle mit Kopfhörern" /></div><div className="offer-content"><p className="offer-type"><AudioLines aria-hidden="true" size={18} /> DER SANFTE EINSTIEG</p><h3>Somatic Karma<br />Audio Bundle</h3><p>Drei aufeinander abgestimmte Audios – Meditation, Affirmation und Transformationsritual – passend zu deinem Hauptarchetypen.</p><div className="offer-bottom"><span>47 €</span><ExternalLink href={links.audio} className="button button--soft">Bundle ansehen</ExternalLink></div></div></article>
-          <article className="offer-card offer-card--signature"><div className="offer-image"><img src="/karma-code.webp" alt="Somatic Karma Code – persönliche astrologische Audioanalyse" /></div><div className="offer-content"><p className="offer-type"><Orbit aria-hidden="true" size={18} /> DEINE PERSÖNLICHE SIGNATUR</p><h3>Somatic Karma<br />Code</h3><p>Dein Geburtshoroskop und dein Archetyp werden zu einer individuellen Audioanalyse – als Essential Audio oder persönlich eingesprochene Signature Podcast Edition.</p><div className="price-pills"><span>Essential · 97 €</span><span>Signature · 333 €</span></div><ExternalLink href={links.code} className="button button--primary">Code entdecken</ExternalLink></div></article>
+      <section className="statement shell">
+        <p className="eyebrow">DEIN WEG DURCH AURALUMIA</p>
+        <h2>Nicht jedes Thema braucht dieselbe Tiefe. Aber jedes braucht den richtigen Raum.</h2>
+        <div className="path-grid">
+          {paths.map(path => <Link className="path-card" href={path.href} key={path.no}><span>{path.no}</span><h3>{path.title}</h3><p>{path.text}</p><b>Raum entdecken ↗</b></Link>)}
         </div>
-        <div className="shop-line"><span>Astrologische Analysen · Tarot · Meditationen · Begleitung</span><ExternalLink href={links.shop} className="text-link">Alle Angebote im Shop</ExternalLink></div>
       </section>
 
-      <section className="podcast" id="podcast" aria-labelledby="podcast-title"><div className="section-shell podcast-inner"><div className="podcast-art"><div className="podcast-glow" /><img src="/podcast-placeholder.webp" alt="Vorläufiges Podcast-Motiv auf einem Smartphone" /><span>Neues Cover folgt</span></div><div className="podcast-copy"><p className="eyebrow"><span /> DER PODCAST</p><h2 id="podcast-title">Karma mit<br /><em>Zimt &amp; Zucker</em></h2><p>Spirituelles Wissen, das nicht über dir schwebt, sondern mit dir am Küchentisch sitzt. Für die süßen Erkenntnisse, die würzigen Wahrheiten – und alles, was dazwischen im Körper nachklingt.</p><p className="coming-soon"><MoonStar aria-hidden="true" size={18} /> Neuer Auftritt in Vorbereitung</p></div></div></section>
+      <section className="feature feature-somatic">
+        <div className="shell feature-grid">
+          <div className="feature-image"><img src="/hero-somatic.jpg" alt="Somatic Karma – Körperwissen und Sternenarchitektur" /></div>
+          <div className="feature-copy"><p className="eyebrow">DIE SIGNATURE-METHODE</p><h2>Somatic Karma</h2><p>Vier Archetypen machen sichtbar, wie frühe Bindungs- und Beziehungserfahrungen in deinem heutigen Schutzsystem weiterwirken. Dein vedisches Chart gibt ihnen eine präzise Sprache.</p><Link className="button button-light" href="/somatic-karma">Die Methode entdecken <span>↗</span></Link></div>
+        </div>
+      </section>
 
-      <section className="about section-shell" id="jennifer" aria-labelledby="about-title"><div className="about-image"><img src="/jennifer.webp" alt="Jennifer Olivia Kindereit" /></div><div className="about-copy"><p className="eyebrow"><span /> DIE FRAU HINTER AURALUMIA</p><h2 id="about-title">Ich bin Jennifer.<br /><em>Ich übersetze zwischen den Welten.</em></h2><p>Zwischen Sternenwissen und Körpergedächtnis. Zwischen dem, was du längst ahnst, und dem, was endlich Worte bekommen darf.</p><p>In AuraLumia verbinde ich präzise astrologische Analyse, intuitive Bildsprache und körperorientierte Reflexion. Nicht, um dir zu sagen, wer du sein sollst – sondern damit du dich selbst klarer hören kannst.</p><ExternalLink href={links.navigator} className="button button--outline"><Compass aria-hidden="true" size={17} /> Meine Reise beginnen</ExternalLink></div></section>
+      <section className="selected-offers shell">
+        <div className="section-heading"><div><p className="eyebrow">AUSGEWÄHLTE RÄUME</p><h2>Beginne dort, wo es dich ruft.</h2></div><Link className="text-link" href="/angebote">Alle Angebote ansehen <span>↗</span></Link></div>
+        <div className="selected-grid">
+          <Link className="selected-card selected-card-wide" href="/somatic-karma"><img src="/audio-bundle.webp" alt="Somatic Karma Audio Bundle" /><div><span>AB 27 €</span><h3>Somatic Karma</h3><p>Navigator, Tarot, Audio Bundle und persönliche Analysen.</p></div></Link>
+          <Link className="selected-card" href="/angebote#kinderwunsch"><img src="https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1539289/file88997dd0d3807f35372244f0d4d5f921.png" alt="Kinderwunsch Sternenanalyse" /><div><span>AB 101,01 €</span><h3>Kinderwunsch & weibliche Linie</h3><p>Sternenwissen und Schoßraumarbeit für deinen persönlichen Weg.</p></div></Link>
+          <Link className="selected-card" href="/angebote#berufung"><img src="https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1539725/file3c941e3abddbd48d7f90621c404e27a4.png" alt="Berufungs-Sternenanalyse" /><div><span>AB 101,01 €</span><h3>Berufung</h3><p>Astrologische Klarheit für die Richtung, die wirklich deine ist.</p></div></Link>
+        </div>
+      </section>
 
-      <section className="closing section-shell"><Sparkles aria-hidden="true" size={26} strokeWidth={1.3} /><p>Du musst nicht erst jemand anderes werden,<br /><em>um bei dir anzukommen.</em></p><ExternalLink href={links.navigator} className="button button--primary">Archetype Navigator öffnen</ExternalLink></section>
+      <section className="mentoring-teaser">
+        <div className="shell mentoring-teaser-grid"><div><p className="eyebrow">AURA LUMINESS · MENTORING</p><h2>Manche Schwellen wollen nicht nur verstanden, sondern begleitet werden.</h2></div><div><p>Für Frauen, die bereit sind, ihr inneres Wissen in gelebte Veränderung zu übersetzen – in einer intensiven Gruppe oder exklusiv 1:1.</p><Link className="button button-gold" href="/mentoring">Mentoring entdecken <span>↗</span></Link></div></div>
+      </section>
 
-      <footer><div className="footer-main section-shell"><div className="footer-brand"><img src="/aura-lumia-logo.png" alt="Aura Lumia" /><p>Astrologie · Archetypen · Körperweisheit</p></div><div><p className="footer-label">Entdecken</p><a href="#methode">Methode</a><a href="#apps">Apps</a><a href="#angebote">Angebote</a><a href="#podcast">Podcast</a></div><div><p className="footer-label">Räume</p><a href={links.navigator} target="_blank" rel="noreferrer">Navigator</a><a href={links.transit} target="_blank" rel="noreferrer">Transit Orakel</a><a href={links.tarot} target="_blank" rel="noreferrer">Somatic Karma Tarot</a><a href={links.shop} target="_blank" rel="noreferrer">Shop</a></div><div><p className="footer-label">Rechtliches</p><a href="https://jenniferkindereit.wixsite.com/auralumia/impressum" target="_blank" rel="noreferrer">Impressum</a><a href="https://jenniferkindereit.wixsite.com/auralumia/datenschutzerkl%C3%A4rung" target="_blank" rel="noreferrer">Datenschutz</a><a href="https://jenniferkindereit.wixsite.com/auralumia/agbs" target="_blank" rel="noreferrer">AGB</a></div></div><div className="footer-bottom section-shell"><p>© 2026 AuraLumia · Jennifer Olivia Kindereit</p><p>Spirituelle Reflexion und Coaching ersetzen keine medizinische, psychologische oder therapeutische Diagnose oder Behandlung.</p></div></footer>
-    </main>
+      <section className="founder shell">
+        <div className="founder-copy"><p className="eyebrow">DIE FRAU HINTER AURALUMIA</p><h2>Ich bin Jennifer. Ich übersetze zwischen den Welten.</h2><p>Zwischen Sternenwissen und Körpergedächtnis. Zwischen dem, was du längst ahnst, und dem, was endlich Worte bekommen darf.</p><Link className="text-link" href="/ueber-jennifer">Meine Arbeit kennenlernen <span>↗</span></Link></div>
+        <div className="founder-image"><img src="/jennifer.webp" alt="Jennifer Olivia Kindereit" /><blockquote>„Heilung beginnt, wenn du dich erinnerst, wer du bist.“</blockquote></div>
+      </section>
+
+      <section className="closing-cta shell"><p className="eyebrow">DEIN ERSTER SCHRITT</p><h2>Du musst nicht erst jemand anderes werden, um bei dir anzukommen.</h2><div className="actions"><a className="button button-dark" href={links.navigator}>Archetype Navigator starten <span>↗</span></a><Link className="text-link" href="/angebote">Alle Wege ansehen <span>↗</span></Link></div></section>
+    </>
   );
 }
