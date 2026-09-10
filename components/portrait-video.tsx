@@ -40,7 +40,6 @@ export function PortraitVideo({ src }: { src: string }) {
         <source src={src} type="video/mp4" />
       </video>
       <div className="portrait-controls">
-        <p className="portrait-label">Jennifer Olivia · AuraLumia</p>
         <button type="button" className="portrait-play" onClick={togglePlayback} aria-label={playing ? "Video pausieren" : "Video abspielen"}>
           <span className={playing ? "pause-symbol" : "play-symbol"} aria-hidden="true" />
         </button>
@@ -60,6 +59,7 @@ export function PortraitVideo({ src }: { src: string }) {
           />
           <span>{formatTime(currentTime)} / {formatTime(duration)}</span>
         </div>
+        <p className="portrait-label">Jennifer Olivia · AuraLumia</p>
       </div>
     </div>
   );
