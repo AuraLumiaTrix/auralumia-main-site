@@ -188,6 +188,8 @@ p { margin:0; }
 .podcast-stage-grid > div:last-child h2 { margin-bottom:30px; }
 .podcast-stage-grid > div:last-child p:not(.eyebrow) { color:#fff; }
 .podcast-stage-grid > div:last-child p + p { margin-top:20px; }
+.podcast-editorial { margin-block:110px 0; }
+.podcast-editorial img { width:100%; aspect-ratio:16/9; object-fit:cover; }
 .episode-preview { padding-block:130px; }
 .episode-row { display:grid; grid-template-columns:70px 1fr auto; align-items:center; gap:30px; padding:36px 0; border-top:1px solid var(--line); }
 .episode-row:last-child { border-bottom:1px solid var(--line); }
@@ -318,6 +320,8 @@ p { margin:0; }
   .portrait-grid blockquote { font-size:3.4rem; }
   .principles-grid article { min-height:260px; }
   .podcast-stage-grid { gap:50px; padding-block:80px; }
+  .podcast-editorial { width:100%; margin-block:0; }
+  .podcast-editorial img { min-height:330px; object-position:center; }
   .artistry-grid,.music-stage-grid,.vita-grid,.music-origin-grid { gap:48px; padding-block:80px; }
   .artistry-grid > div { order:2; }
   .artistry-grid img { order:1; max-height:470px; }
