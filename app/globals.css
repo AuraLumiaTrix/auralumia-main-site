@@ -161,7 +161,16 @@ p { margin:0; }
 
 .jennifer-film { position:relative; padding-block:90px 130px; }
 .jennifer-film video { width:100%; max-height:860px; object-fit:contain; background:var(--stone); filter:sepia(.28) saturate(.82) contrast(.98); }
-.jennifer-film > p { position:absolute; bottom:90px; left:58px; padding:12px 18px; background:#fff; font-family:var(--serif); font-size:1.4rem; }
+.jennifer-film > p { position:absolute; top:110px; right:58px; padding:12px 18px; background:#fff; font-family:var(--serif); font-size:1.4rem; }
+.portrait-player { position:relative; overflow:hidden; background:var(--stone); }
+.portrait-player video { cursor:pointer; }
+.portrait-controls { position:absolute; bottom:24px; left:24px; display:flex; width:280px; align-items:flex-start; flex-direction:column; gap:10px; padding:12px; background:rgba(115,96,90,.82); color:#fff; backdrop-filter:blur(12px); }
+.portrait-play { display:flex; width:52px; height:52px; cursor:pointer; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,.8); border-radius:50%; background:#fff; color:var(--ink); }
+.play-symbol { display:block; width:0; height:0; margin-left:4px; border-top:8px solid transparent; border-bottom:8px solid transparent; border-left:13px solid var(--ink); }
+.pause-symbol { display:block; width:12px; height:16px; border-right:4px solid var(--ink); border-left:4px solid var(--ink); }
+.portrait-progress { display:flex; width:100%; flex-direction:column; gap:5px; }
+.portrait-progress input { width:100%; cursor:pointer; accent-color:#fff; }
+.portrait-progress span { font-size:.72rem; font-variant-numeric:tabular-nums; }
 .jennifer-story { display:grid; grid-template-columns:1fr 1fr; gap:10vw; padding-block:130px; }
 .jennifer-story > div:last-child { color:var(--soft); font-size:1.05rem; }
 .jennifer-story > div:last-child p + p { margin-top:28px; }
@@ -314,7 +323,10 @@ p { margin:0; }
   .fit-section { gap:45px; padding-block:90px; }
   .jennifer-film { padding-block:50px 90px; }
   .jennifer-film video { min-height:0; max-height:720px; object-fit:contain; }
-  .jennifer-film > p { bottom:70px; left:30px; }
+  .jennifer-film > p { top:70px; right:30px; }
+  .portrait-controls { right:12px; bottom:12px; left:12px; width:auto; }
+  .portrait-play { flex:0 0 48px; width:48px; height:48px; }
+  .portrait-progress { min-width:0; }
   .jennifer-story { gap:40px; padding-block:90px; }
   .portrait-grid { gap:50px; padding-block:80px; }
   .portrait-grid blockquote { font-size:3.4rem; }
