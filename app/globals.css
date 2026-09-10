@@ -350,4 +350,4 @@ p { margin:0; }
   .footer-bottom span:last-child { text-align:left; }
 }
 
-@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition-duration:.01ms!important; } .home-hero-media video { display:none; } .home-hero-media { background:url('/jennifer-olivia.jpg') center 18%/cover no-repeat; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition-duration:.01ms!important; } .home-hero-media video { display:none; } }
