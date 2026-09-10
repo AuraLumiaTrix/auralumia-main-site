@@ -8,7 +8,7 @@ export const links = {
   podcastYoutube: "https://www.youtube.com/@Karma_mit_Zimt_und_Zucker",
   music: "https://music.youtube.com/search?q=Naru%20Hikari%20Rising%20of%20the%20Womb",
   welcomeVideo: "/aura-lumia-welcome.mp4",
-  portraitVideo: "/jennifer-portrait-collage-sepia.mp4",
+  portraitVideo: "/jennifer-portrait-collage-sepia-v2.mp4",
 };
 
 export type Offer = {
