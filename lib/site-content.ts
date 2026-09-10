@@ -4,11 +4,11 @@ export const links = {
   tarot: "https://somatic-karma-navigator.vercel.app/somatic-karma-tarot/",
   audio: "https://somatic-karma-navigator.vercel.app/audio-bundle/",
   code: "https://somatic-karma-navigator.vercel.app/somatic-karma-code/",
-  podcast: "https://karma-mit-zimt-und-zucker.letscast.fm/",
+  podcast: "https://letscast.fm/sites/karma-mit-zimt-und-zucker-27a97918",
   podcastYoutube: "https://www.youtube.com/@Karma_mit_Zimt_und_Zucker",
   music: "https://music.youtube.com/search?q=Naru%20Hikari%20Rising%20of%20the%20Womb",
   welcomeVideo: "/aura-lumia-welcome.mp4",
-  portraitVideo: "/jennifer-portrait-collage.mp4",
+  portraitVideo: "/jennifer-portrait-collage-sepia.mp4",
 };
 
 export type Offer = {
