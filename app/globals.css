@@ -172,9 +172,13 @@ p { margin:0; }
 .portrait-play { display:flex; width:52px; height:52px; cursor:pointer; align-items:center; justify-content:center; border:1px solid var(--ink); border-radius:50%; background:#fff; color:var(--ink); box-shadow:0 8px 22px rgba(115,96,90,.14); }
 .play-symbol { display:block; width:0; height:0; margin-left:4px; border-top:8px solid transparent; border-bottom:8px solid transparent; border-left:13px solid var(--ink); }
 .pause-symbol { display:block; width:12px; height:16px; border-right:4px solid var(--ink); border-left:4px solid var(--ink); }
-.portrait-progress { display:flex; width:100%; flex-direction:column; gap:5px; padding:9px 14px 10px; background:#fff; box-shadow:0 8px 22px rgba(115,96,90,.14); }
-.portrait-progress input { width:100%; cursor:pointer; accent-color:var(--ink); }
-.portrait-progress span { font-size:.72rem; font-variant-numeric:tabular-nums; }
+.portrait-progress { display:flex; width:100%; align-items:center; padding:8px 0; background:transparent; }
+.portrait-progress input { width:100%; height:18px; margin:0; cursor:pointer; appearance:none; background:transparent; }
+.portrait-progress input::-webkit-slider-runnable-track { height:2px; background:#fff; }
+.portrait-progress input::-webkit-slider-thumb { width:12px; height:12px; margin-top:-5px; appearance:none; border:0; border-radius:50%; background:#fff; }
+.portrait-progress input::-moz-range-track { height:2px; background:#fff; }
+.portrait-progress input::-moz-range-progress { height:2px; background:#fff; }
+.portrait-progress input::-moz-range-thumb { width:12px; height:12px; border:0; border-radius:50%; background:#fff; }
 .jennifer-story { display:grid; grid-template-columns:1fr 1fr; gap:10vw; padding-block:130px; }
 .jennifer-story > div:last-child { color:var(--soft); font-size:1.05rem; }
 .jennifer-story > div:last-child p + p { margin-top:28px; }

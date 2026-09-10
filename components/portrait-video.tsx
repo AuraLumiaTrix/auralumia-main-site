@@ -2,13 +2,6 @@
 
 import { useRef, useState } from "react";
 
-function formatTime(value: number) {
-  if (!Number.isFinite(value)) return "0:00";
-  const minutes = Math.floor(value / 60);
-  const seconds = Math.floor(value % 60).toString().padStart(2, "0");
-  return `${minutes}:${seconds}`;
-}
-
 export function PortraitVideo({ src }: { src: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
@@ -57,7 +50,6 @@ export function PortraitVideo({ src }: { src: string }) {
               setCurrentTime(nextTime);
             }}
           />
-          <span>{formatTime(currentTime)} / {formatTime(duration)}</span>
         </div>
         <p className="portrait-label">Jennifer Olivia · AuraLumia</p>
       </div>
