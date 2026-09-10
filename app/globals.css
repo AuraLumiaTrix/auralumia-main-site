@@ -164,7 +164,7 @@ p { margin:0; }
 .portrait-player { position:relative; background:var(--stone); }
 .portrait-player video { cursor:pointer; }
 .portrait-controls { position:absolute; bottom:-34px; left:24px; display:flex; width:280px; align-items:flex-start; flex-direction:column; gap:10px; padding:12px; background:rgba(115,96,90,.88); color:#fff; box-shadow:0 16px 36px rgba(115,96,90,.2); backdrop-filter:blur(12px); }
-.portrait-label { position:absolute; top:-22px; right:12px; padding:8px 13px; background:#fff; color:var(--ink); font-family:var(--serif); font-size:1.15rem; line-height:1.2; box-shadow:0 8px 22px rgba(115,96,90,.16); }
+.portrait-label { position:absolute; top:-27px; right:12px; padding:12px 18px; background:#fff; color:var(--ink); font-family:var(--serif); font-size:1.4rem; line-height:1.2; box-shadow:0 8px 22px rgba(115,96,90,.16); }
 .portrait-play { display:flex; width:52px; height:52px; cursor:pointer; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,.8); border-radius:50%; background:#fff; color:var(--ink); }
 .play-symbol { display:block; width:0; height:0; margin-left:4px; border-top:8px solid transparent; border-bottom:8px solid transparent; border-left:13px solid var(--ink); }
 .pause-symbol { display:block; width:12px; height:16px; border-right:4px solid var(--ink); border-left:4px solid var(--ink); }
@@ -324,7 +324,7 @@ p { margin:0; }
   .jennifer-film { padding-block:50px 90px; }
   .jennifer-film video { min-height:0; max-height:720px; object-fit:contain; }
   .portrait-controls { right:12px; bottom:-28px; left:12px; width:auto; }
-  .portrait-label { top:-18px; right:10px; font-size:1rem; }
+  .portrait-label { top:-23px; right:10px; padding:10px 15px; font-size:1.2rem; }
   .portrait-play { flex:0 0 48px; width:48px; height:48px; }
   .portrait-progress { min-width:0; }
   .jennifer-story { gap:40px; padding-block:90px; }
