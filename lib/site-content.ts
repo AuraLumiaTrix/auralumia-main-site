@@ -1,11 +1,14 @@
 export const links = {
   navigator: "https://somatic-karma-navigator.vercel.app/",
   transit: "https://somatic-karma-transit.vercel.app/",
-  tarot: "https://somatic-karma-tarot.vercel.app/",
+  tarot: "https://somatic-karma-navigator.vercel.app/somatic-karma-tarot/",
   audio: "https://somatic-karma-navigator.vercel.app/audio-bundle/",
   code: "https://somatic-karma-navigator.vercel.app/somatic-karma-code/",
-  shop: "https://auralumia.shop.copecart.com/",
-  video: "https://video.wixstatic.com/video/2c2135_8d827b1685d342b88e38053a65187225/720p/mp4/file.mp4",
+  podcast: "https://karma-mit-zimt-und-zucker.letscast.fm/",
+  podcastAmazon: "https://music.amazon.com/podcasts/208bf7ad-d7e3-4d7a-b54e-32a4e3f8ef1a/karma-mit-zimt-und-zucker",
+  music: "https://music.amazon.com/tracks/B0G35N897X",
+  welcomeVideo: "/aura-lumia-welcome.mp4",
+  portraitVideo: "/jennifer-portrait-collage.mp4",
 };
 
 export type Offer = {
