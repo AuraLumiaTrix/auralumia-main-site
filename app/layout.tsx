@@ -3,7 +3,6 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { SmoothPageNavigation } from "@/components/smooth-page-navigation";
 
 const serif = Cormorant_Garamond({ subsets: ["latin"], variable: "--serif", weight: ["400", "500", "600"], display: "swap" });
 const sans = Manrope({ subsets: ["latin"], variable: "--sans", weight: ["400", "500", "600", "700"], display: "swap" });
@@ -14,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="de"><body className={`${serif.variable} ${sans.variable}`}><SmoothPageNavigation /><SiteHeader /><main>{children}</main><SiteFooter /></body></html>;
+  return <html lang="de"><body className={`${serif.variable} ${sans.variable}`}><SiteHeader /><main>{children}</main><SiteFooter /></body></html>;
 }

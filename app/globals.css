@@ -2,7 +2,7 @@
 
 :root { --ink:#73605a; --soft:#73605a; --paper:#ffffff; --stone:#f2f0ea; --line:#dcd8cf; --gold:#a29490; --deep:#a29490; --button-cream:#fffcd2; --button-lilac:#f3e5f8; --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",Arial,sans-serif; }
 * { box-sizing:border-box; }
-html { scroll-behavior:smooth; background:var(--paper); }
+html { background:var(--paper); }
 body { margin:0; overflow-x:clip; color:var(--ink); background:var(--paper); font-family:var(--sans); font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased; }
 a { color:inherit; text-decoration:none; }
 img,video { display:block; max-width:100%; }
