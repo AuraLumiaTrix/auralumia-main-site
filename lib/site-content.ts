@@ -5,8 +5,8 @@ export const links = {
   audio: "https://somatic-karma-navigator.vercel.app/audio-bundle/",
   code: "https://somatic-karma-navigator.vercel.app/somatic-karma-code/",
   podcast: "https://karma-mit-zimt-und-zucker.letscast.fm/",
-  podcastAmazon: "https://music.amazon.com/podcasts/208bf7ad-d7e3-4d7a-b54e-32a4e3f8ef1a/karma-mit-zimt-und-zucker",
-  music: "https://music.amazon.com/tracks/B0G35N897X",
+  podcastYoutube: "https://www.youtube.com/@Karma_mit_Zimt_und_Zucker",
+  music: "https://music.youtube.com/search?q=Naru%20Hikari%20Rising%20of%20the%20Womb",
   welcomeVideo: "/aura-lumia-welcome.mp4",
   portraitVideo: "/jennifer-portrait-collage.mp4",
 };
@@ -35,7 +35,7 @@ export const offerGroups: OfferGroup[] = [
       { name: "Somatic Karma Tarot – Zugang", price: "27 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1887138/filefe6e2cb62a385cebad349bc9c9b5f0ec.png", description: "78 archetypische Spiegel für Licht, Schatten und deine innere Narbenarchitektur.", href: links.tarot },
       { name: "Somatic Karma Audio Bundle", price: "47 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1880162/file0127e5f3ade13f745903a7c4942706a3.png", description: "Meditation, Affirmation und Transformationsritual für deinen Hauptarchetypen.", href: links.audio },
       { name: "Somatic Karma Code – Essential", price: "97 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1880154/file4fd969433ca71cd26623f8eb24af4c17.png", description: "Deine persönliche astrologische Audioanalyse in konzentrierter Form.", href: links.code },
-      { name: "Somatic Karma Code – Podcast Edition", price: "333 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1880159/filef6fe4f2a79bc4320b31c5879721d8fe3.png", description: "Von Jennifer persönlich eingesprochen – wie eine private Podcastfolge nur für dich.", href: links.code },
+      { name: "Somatic Karma Code – Podcast Edition", price: "333 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1880159/filef6fe4f2a79bc4320b31c5879721d8fe3.png", description: "Von Jennifer Olivia persönlich eingesprochen – wie eine private Podcastfolge nur für dich.", href: links.code },
     ],
   },
   {

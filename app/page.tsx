@@ -12,13 +12,13 @@ export default function Home() {
     <>
       <section className="home-hero shell">
         <div className="home-hero-copy">
-          <p className="eyebrow">AURALUMIA · BY JENNIFER KINDEREIT</p>
+          <p className="eyebrow">AURALUMIA · BY JENNIFER OLIVIA KINDEREIT</p>
           <h1>Was du längst spürst, darf endlich <em>lesbar</em> werden.</h1>
           <p className="hero-lede">Ich verbinde vedische Astrologie, Körperwissen, Ahnenarbeit und Tarot zu einer präzisen Sprache für deine Muster, Übergänge und nächsten Entscheidungen.</p>
-          <div className="actions"><Link className="button button-outline" href="/angebote">Deinen Einstieg finden</Link><Link className="text-link" href="/ueber-jennifer">Jennifer kennenlernen</Link></div>
+          <div className="actions"><Link className="button button-outline" href="/angebote">Deinen Einstieg finden</Link><Link className="text-link" href="/ueber-jennifer">Jennifer Olivia kennenlernen</Link></div>
         </div>
         <div className="home-hero-media">
-          <video autoPlay muted loop playsInline preload="metadata" poster="/jennifer.webp" aria-label="Jennifer Kindereit – Video-Porträt">
+          <video autoPlay muted loop playsInline preload="metadata" poster="/jennifer-olivia.jpg" aria-label="Jennifer Olivia Kindereit – Video-Porträt">
             <source src={links.welcomeVideo} type="video/mp4" />
           </video>
           <p><span>Astrologie, die nicht über dir schwebt.</span><strong>Sondern in deinem Leben landet.</strong></p>
@@ -56,11 +56,11 @@ export default function Home() {
       </section>
 
       <section className="founder shell">
-        <div className="founder-copy"><p className="eyebrow">DIE FRAU HINTER AURALUMIA</p><h2>Ich bin Jennifer. Ich übersetze zwischen den Welten.</h2><p>Zwischen Sternenwissen und Körpergedächtnis. Zwischen dem, was du längst ahnst, und dem, was endlich Worte bekommen darf.</p><Link className="text-link" href="/ueber-jennifer">Meine Arbeit kennenlernen</Link></div>
-        <div className="founder-image"><img src="/jennifer.webp" alt="Jennifer Olivia Kindereit" /><blockquote>„Heilung beginnt, wenn du dich erinnerst, wer du bist.“</blockquote></div>
+        <div className="founder-copy"><p className="eyebrow">DIE FRAU HINTER AURALUMIA</p><h2>Ich bin Jennifer Olivia. Ich übersetze zwischen den Welten.</h2><p>Zwischen Sternenwissen und Körpergedächtnis. Zwischen dem, was du längst ahnst, und dem, was endlich Worte bekommen darf.</p><Link className="text-link" href="/ueber-jennifer">Meine Arbeit kennenlernen</Link></div>
+        <div className="founder-image"><img src="/jennifer-olivia.jpg" alt="Jennifer Olivia Kindereit" /><blockquote>„Heilung beginnt, wenn du dich erinnerst, wer du bist.“</blockquote></div>
       </section>
 
-      <section className="artistry-teaser"><div className="shell artistry-grid"><div><p className="eyebrow">NARU HIKARI · MUSIC</p><h2>Manche Erinnerungen brauchen keine Erklärung. Sie brauchen Klang.</h2><p>Als Naru Hikari übersetzt Jennifer weibliche Ahnenlinie, Verkörperung und innere Freiheit in Musik.</p><Link className="button button-light" href="/musik">Musik entdecken</Link></div><img src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb Album-Mockup" /></div></section>
+      <section className="artistry-teaser"><div className="shell artistry-grid"><div><p className="eyebrow">NARU HIKARI · MUSIC</p><h2>Manche Erinnerungen brauchen keine Erklärung. Sie brauchen Klang.</h2><p>Als Naru Hikari übersetzt Jennifer Olivia weibliche Ahnenlinie, Verkörperung und innere Freiheit in Musik.</p><Link className="button button-light" href="/musik">Musik entdecken</Link></div><img src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb Album-Mockup" /></div></section>
 
       <section className="closing-cta shell"><p className="eyebrow">DEIN ERSTER SCHRITT</p><h2>Du musst nicht erst jemand anderes werden, um bei dir anzukommen.</h2><div className="actions"><a className="button button-outline" href={links.navigator}>Archetype Navigator starten</a><Link className="text-link" href="/angebote">Alle Wege ansehen</Link></div></section>
     </>

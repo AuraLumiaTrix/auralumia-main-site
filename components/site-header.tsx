@@ -9,7 +9,7 @@ const nav = [
   ["Somatic Karma", "/somatic-karma"],
   ["Angebote", "/angebote"],
   ["Mentoring", "/mentoring"],
-  ["Jennifer", "/ueber-jennifer"],
+  ["Über mich", "/ueber-jennifer"],
   ["Podcast", "/podcast"],
   ["Musik", "/musik"],
 ] as const;
