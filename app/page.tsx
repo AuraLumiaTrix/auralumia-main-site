@@ -18,7 +18,7 @@ export default function Home() {
           <div className="actions"><Link className="button button-outline" href="/angebote">Deinen Einstieg finden</Link><Link className="text-link" href="/ueber-jennifer">Jennifer Olivia kennenlernen</Link></div>
         </div>
         <div className="home-hero-media">
-          <video autoPlay muted loop playsInline preload="metadata" aria-label="AuraLumia Willkommensvideo">
+          <video autoPlay muted playsInline preload="metadata" aria-label="AuraLumia Willkommensvideo">
             <source src={links.welcomeVideo} type="video/mp4" />
           </video>
           <p><span>Astrologie, die nicht über dir schwebt.</span><strong>Sondern in deinem Leben landet.</strong></p>
