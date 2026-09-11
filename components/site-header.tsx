@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 const nav = [
   ["Startseite", "/"],
   ["Somatic Karma", "/somatic-karma"],
+  ["Tarot", "/tarot"],
   ["Angebote", "/angebote"],
   ["Mentoring", "/mentoring"],
   ["Über mich", "/ueber-jennifer"],
