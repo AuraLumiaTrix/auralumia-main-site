@@ -67,7 +67,7 @@ p { margin:0; }
 .section-heading > div { max-width:850px; }
 .section-heading > p { max-width:420px; color:var(--soft); }
 .selected-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; margin-top:75px; }
-.selected-card { position:relative; min-height:470px; overflow:hidden; background:var(--stone); }
+.selected-card { position:relative; min-height:470px; overflow:hidden; background:#fff; }
 .selected-card-wide { grid-row:span 2; min-height:964px; }
 .selected-card img { width:100%; height:100%; object-fit:cover; filter:saturate(.72) contrast(.96); transition:transform .5s ease; }
 .selected-card-product { background:#fff; }
@@ -114,14 +114,14 @@ p { margin:0; }
 .rooms { padding-block:130px; background:var(--stone); }
 .room-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:70px; }
 .room-card { display:flex; min-width:0; flex-direction:column; background:#fff; }
-.room-card > img { width:100%; aspect-ratio:1/.82; object-fit:cover; filter:saturate(.62); }
+.room-card > img { width:100%; aspect-ratio:1/.82; object-fit:cover; background:#fff; filter:saturate(.62); }
 .room-card > div { display:flex; min-height:330px; flex-direction:column; padding:32px; }
 .room-card h3 { margin-top:25px; font-size:2.7rem; }
 .room-card p { margin-top:15px; color:var(--soft); }
 .room-card b { margin-top:auto; padding-top:22px; font-size:.76rem; }
 .depth { display:grid; grid-template-columns:1fr 1fr; gap:24px; padding-block:130px; }
 .depth-card { overflow:hidden; border:1px solid var(--line); }
-.depth-card > img { width:100%; height:370px; object-fit:cover; filter:saturate(.7); }
+.depth-card > img { width:100%; height:370px; object-fit:cover; background:#fff; filter:saturate(.7); }
 .depth-card > div { padding:36px; }
 .depth-card h2 { font-size:4rem; }
 .depth-card p:not(.eyebrow) { margin-top:18px; color:var(--soft); }
@@ -134,7 +134,7 @@ p { margin:0; }
 .catalog-intro > p:last-child { color:var(--soft); }
 .catalog-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-top:70px; }
 .catalog-card { display:grid; grid-template-columns:.82fr 1.18fr; min-width:0; min-height:340px; border:1px solid var(--line); background:#fff; }
-.catalog-image { min-width:0; overflow:hidden; background:var(--stone); }
+.catalog-image { min-width:0; overflow:hidden; background:#fff; }
 .catalog-image img { width:100%; height:100%; object-fit:contain; filter:none; transition:transform .4s ease; }
 .catalog-card:hover img { transform:scale(1.03); }
 .catalog-copy { display:flex; min-width:0; flex-direction:column; padding:30px; }
