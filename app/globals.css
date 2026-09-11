@@ -39,8 +39,6 @@ p { margin:0; }
 .hero-lede { max-width:660px; margin-top:30px; color:var(--soft); font-size:1.06rem; line-height:1.85; }
 .home-hero-media { position:relative; align-self:center; min-height:0; overflow:hidden; background:#fff; }
 .home-hero-media video { width:100%; aspect-ratio:16/9; object-fit:contain; background:#fff; }
-.home-hero-media > p { display:flex; flex-direction:column; padding:24px 28px; background:var(--deep); color:#fff; font-family:var(--serif); font-size:1.4rem; line-height:1.2; }
-.home-hero-media strong { font-weight:500; }
 .discipline-strip { display:flex; align-items:center; justify-content:center; gap:36px; min-height:84px; padding:20px 28px; overflow:hidden; border-block:1px solid var(--line); white-space:nowrap; color:var(--ink); font-size:.72rem; font-weight:700; letter-spacing:.15em; }
 .discipline-strip i { width:4px; height:4px; border-radius:50%; background:var(--gold); }
 
@@ -360,7 +358,6 @@ p { margin:0; }
   .home-hero { grid-template-columns:1fr; gap:34px; padding-block:42px 70px; }
   .home-hero-copy { order:2; }
   .home-hero-media { order:1; width:100vw; min-height:0; margin-inline:calc(50% - 50vw); }
-  .home-hero-media > p { padding:20px 22px; font-size:1.2rem; }
   .hero-lede { font-size:1rem; }
   .discipline-strip { justify-content:flex-start; gap:24px; overflow-x:auto; padding-inline:18px; scrollbar-width:none; }
   .statement,.selected-offers,.founder,.archetypes,.catalog-section,.mentoring-formats,.principles { padding-block:90px; }
