@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import { tarotData, type TarotCard } from "@/lib/tarot-data";
 
 type Suit = "major" | "coins" | "wands" | "cups" | "swords";
-type SuitFilter = "all" | Suit;
 type CardItem = { card: TarotCard; suit: Suit; index: number };
 
 const collections: Array<{ key: Suit; label: string; note: string; scar: string }> = [
@@ -19,7 +18,7 @@ const cardImage = (suit: Suit, index: number) => `/tarot-cards/${suit}-${index +
 const cardNumber = (suit: Suit, index: number) => suit === "major" ? (index === 0 ? "0" : String(index)) : String(index + 1).padStart(2, "0");
 
 export function TarotLibrary() {
-  const [activeSuit, setActiveSuit] = useState<SuitFilter>("all");
+  const [activeSuit, setActiveSuit] = useState<Suit>("major");
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<CardItem | null>(null);
 
@@ -31,7 +30,7 @@ export function TarotLibrary() {
   const visibleCards = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase("de");
     return allCards.filter((item) => {
-      if (activeSuit !== "all" && item.suit !== activeSuit) return false;
+      if (item.suit !== activeSuit) return false;
       if (!normalized) return true;
       return [item.card.name, item.card.architecture, item.card.light, item.card.shadow]
         .join(" ")
@@ -60,7 +59,6 @@ export function TarotLibrary() {
         <label className="tarot-search">Karte suchen<input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="z. B. Herrscherin" /></label>
       </div>
       <div className="tarot-filters" aria-label="Tarot-Arkana filtern">
-        <button className={activeSuit === "all" ? "active" : ""} onClick={() => setActiveSuit("all")} type="button">Alle 78</button>
         {collections.map((collection) => <button className={activeSuit === collection.key ? "active" : ""} onClick={() => setActiveSuit(collection.key)} type="button" key={collection.key}>{collection.label}</button>)}
       </div>
       <div className="tarot-card-grid">

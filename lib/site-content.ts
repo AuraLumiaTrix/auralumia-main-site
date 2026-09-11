@@ -1,8 +1,8 @@
 export const links = {
   navigator: "https://somatic-karma-navigator.vercel.app/",
   transit: "https://somatic-karma-transit.vercel.app/",
-  tarot: "/tarot",
-  tarotCheckout: "https://copecart.com/products/1b5dd63c/checkout",
+  tarot: "https://somatic-karma-navigator.vercel.app/somatic-karma-tarot/",
+  tarotCheckout: "https://somatic-karma-navigator.vercel.app/somatic-karma-tarot/",
   audio: "https://somatic-karma-navigator.vercel.app/audio-bundle/",
   code: "https://somatic-karma-navigator.vercel.app/somatic-karma-code/",
   podcast: "https://letscast.fm/sites/karma-mit-zimt-und-zucker-27a97918",
