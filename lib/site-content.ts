@@ -42,8 +42,8 @@ export const offerGroups: OfferGroup[] = [
   },
   {
     kicker: "02 · KLARHEIT & RITUAL",
-    title: "Klarheit für deine nächste Entscheidung",
-    intro: "Persönliche Tarotimpulse, individuell eingesprochene Meditationen und energetische Rituale für konkrete Lebensfragen – etwa Kinderwunsch, Berufung, Schoßraum oder den Mutter-Kind-Weg.",
+    title: "Innere Anker & energetische Begleitung",
+    intro: "Für deinen Alltag und besondere Übergänge: eine individuell eingesprochene Anker-Meditation als tägliches Ritual, ein klärender Tarot-Impuls sowie persönliche Schutz-Grids und Card Blessings, die Jennifer Olivia energetisch für dich durchführt.",
     offers: [
       { name: "Anker Meditation", price: "99,99 €", image: "/products/anker-meditation.png", description: "Für Kinderwunsch, Berufung, Schoßraum oder den Mutter-Kind-Weg." },
       { name: "Tarot Impuls", price: "99,99 €", image: "/products/tarot-legung.png", description: "Ein fokussierter Blick auf die Frage, die gerade wirklich gesehen werden möchte." },
@@ -57,9 +57,8 @@ export const offerGroups: OfferGroup[] = [
     title: "Den eigenen Weg würdigen",
     intro: "Vedische Sternenanalysen und körperorientierte Energiearbeit für Frauen, die ihren Kinderwunsch oder Schoßraum tiefer verstehen möchten.",
     offers: [
-      { name: "Kinderwunsch Sternenanalyse Basic", price: "101,01 €", image: "/products/kinderwunsch-basic.png", description: "Ein erster präziser Blick auf die astrologischen Signaturen deines Weges." },
-      { name: "Kinderwunsch Sternenanalyse Plus", price: "202,02 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1539290/file1d7b78512dabd28ac3b22f69786dc6bb.png", description: "Mehr Tiefe, Zusammenhänge und persönliche Einordnung." },
-      { name: "Kinderwunsch Sternenanalyse Lumia", price: "303,03 €", image: "/products/kinderwunsch-lumia.png", description: "Die umfassende astrologische Betrachtung deiner Kinderwunschreise." },
+      { name: "Kinderwunsch Sternenanalyse Basic", price: "101,01 €", image: "/products/kinderwunsch-basic.png", description: "Deine von Jennifer Olivia kuratierte Sternenanalyse, als Audio mit einer KI-Stimme für dich aufbereitet." },
+      { name: "Kinderwunsch Sternenanalyse Lumia", price: "303,03 €", image: "/products/kinderwunsch-lumia.png", description: "Die persönliche Podcast-Edition: umfassend gedeutet und von Jennifer Olivia selbst für dich eingesprochen." },
       { name: "Cosmic Womb Clearing", price: "303,03 €", image: "/products/schossraum-clearing.png", description: "Energetische Schoßraum-Reinigung für Loslassen, Schutz und neue Ausrichtung." },
     ],
   },
@@ -68,9 +67,8 @@ export const offerGroups: OfferGroup[] = [
     title: "Die eigene Richtung erkennen",
     intro: "Für die Schwelle zwischen dem, was funktioniert, und dem, was deiner inneren Wahrheit entspricht.",
     offers: [
-      { name: "Berufungs-Sternenanalyse Basic", price: "101,01 €", image: "/products/berufung-basic.png", description: "Deine zentralen Begabungen und Berufungssignaturen im vedischen Chart." },
-      { name: "Berufungs-Sternenanalyse Plus", price: "202,02 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1539702/file2026d6c21da14ad058dc07053e8a6c34.png", description: "Vertiefende Analyse mit mehr Kontext für deine nächsten Entscheidungen." },
-      { name: "Berufungs-Sternenanalyse Lumia", price: "303,03 €", image: "/products/berufung-lumia.png", description: "Die umfassende Deutung für Positionierung, Richtung und Seelenweg." },
+      { name: "Berufungs-Sternenanalyse Basic", price: "101,01 €", image: "/products/berufung-basic.png", description: "Deine von Jennifer Olivia kuratierte Berufungsanalyse, als Audio mit einer KI-Stimme für dich aufbereitet." },
+      { name: "Berufungs-Sternenanalyse Lumia", price: "303,03 €", image: "/products/berufung-lumia.png", description: "Die persönliche Podcast-Edition: umfassend gedeutet und von Jennifer Olivia selbst für dich eingesprochen." },
     ],
   },
 ];
