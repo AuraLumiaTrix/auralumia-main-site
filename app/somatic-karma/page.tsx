@@ -20,6 +20,11 @@ const rooms = [
 
 export default function SomaticKarmaPage() {
   return <>
+    <section className="somatic-welcome" aria-label="Somatic Karma Einführung">
+      <video autoPlay muted loop playsInline preload="metadata">
+        <source src={links.somaticWelcomeVideo} type="video/mp4" />
+      </video>
+    </section>
     <PageHero eyebrow="AURALUMIA SIGNATURE-METHODE" title="Somatic Karma"><p>Dein Körper erinnert sich an das, was dein Verstand längst erklärt hat. Somatic Karma macht diese unsichtbare Architektur lesbar – präzise, sanft und ohne dich auf deine Geschichte zu reduzieren.</p><a className="button button-outline" href={links.navigator}>Archetypen kostenfrei bestimmen</a></PageHero>
     <section className="method-manifesto"><div className="shell manifesto-grid"><p>Astrologie zeigt die Anlage.</p><p>Der Körper zeigt, wie sie heute gelebt wird.</p><p>Der Archetyp zeigt, wo Veränderung beginnen kann.</p></div></section>
     <section className="archetypes shell"><div className="section-heading"><div><p className="eyebrow">DIE VIER ARCHETYPEN</p><h2>Vier Schutzsysteme. Vier Wege zurück zu dir.</h2></div><p>Kein Archetyp ist ein Etikett. Er ist eine Landkarte für das, was einmal klug war – und heute neu verhandelt werden darf.</p></div><div className="archetype-grid">{archetypes.map(([no,title,wound,text])=><article key={no}><span>{no}</span><h3>{title}</h3><b>{wound}</b><p>{text}</p></article>)}</div></section>

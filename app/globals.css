@@ -99,6 +99,8 @@ p { margin:0; }
 .page-hero-copy .button,.page-hero-copy .status-pill { margin-top:32px; }
 .status-pill { display:inline-flex; padding:9px 14px; border:1px solid var(--gold); color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
 .method-manifesto { background:var(--deep); color:#fff; }
+.somatic-welcome { overflow:hidden; border-bottom:1px solid var(--line); background:#fff; }
+.somatic-welcome video { width:100%; max-height:min(72vh,760px); object-fit:contain; background:#fff; }
 .manifesto-grid { display:grid; grid-template-columns:repeat(3,1fr); }
 .manifesto-grid p { display:flex; min-height:220px; align-items:center; padding:38px; border-right:1px solid rgba(255,255,255,.4); font-family:var(--serif); font-size:2rem; line-height:1.15; }
 .manifesto-grid p:last-child { border-right:0; }
@@ -219,6 +221,9 @@ p { margin:0; }
 .podcast-link { color:#fff; }
 
 .artistry-teaser,.music-stage { background:var(--deep); color:#fff; }
+.music-hero { position:relative; isolation:isolate; overflow:hidden; }
+.music-hero > .page-hero { position:relative; z-index:1; }
+.music-hero-portrait { position:absolute; z-index:0; top:-18%; right:-3%; width:min(58vw,880px); height:138%; object-fit:cover; object-position:center 28%; opacity:.2; filter:sepia(.18) saturate(.72); -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 23%,#000 58%,rgba(0,0,0,.76) 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 23%,#000 58%,rgba(0,0,0,.76) 100%); }
 .artistry-grid { display:grid; grid-template-columns:1fr .9fr; align-items:center; gap:8vw; padding-block:110px; }
 .artistry-grid .eyebrow,.music-stage .eyebrow { color:var(--button-cream); }
 .artistry-grid p:not(.eyebrow) { max-width:570px; margin:28px 0 34px; }
@@ -414,6 +419,8 @@ p { margin:0; }
   .podcast-showcase { padding-block:70px; }
   .podcast-copy { padding-block:80px; }
   .artistry-grid,.music-stage-grid,.vita-grid,.music-origin-grid { gap:48px; padding-block:80px; }
+  .somatic-welcome video { max-height:58vh; }
+  .music-hero-portrait { top:-6%; right:-38%; width:112%; height:112%; opacity:.14; object-position:center 20%; -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 30%,#000 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 30%,#000 100%); }
   .artistry-grid > div { order:2; }
   .artistry-grid img { order:1; max-height:470px; }
   .tracklist { gap:48px; padding-block:90px; }

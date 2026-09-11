@@ -8,7 +8,8 @@ export const links = {
   podcast: "https://letscast.fm/sites/karma-mit-zimt-und-zucker-27a97918",
   podcastYoutube: "https://www.youtube.com/@Karma_mit_Zimt_und_Zucker",
   music: "https://music.youtube.com/search?q=Naru%20Hikari%20Rising%20of%20the%20Womb",
-  welcomeVideo: "/aura-lumia-welcome.mp4",
+  welcomeVideo: "/aura-lumia-logo-intro-weiss.mp4",
+  somaticWelcomeVideo: "/somatic-karma-welcome.mp4",
   portraitVideo: "/jennifer-portrait-collage-sepia-v2.mp4",
 };
 
