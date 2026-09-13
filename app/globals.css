@@ -373,7 +373,7 @@ p { margin:0; }
   .path-card:nth-child(2) { border-left-color:var(--button-cream); }
   .path-card:nth-child(3) { border-left-color:var(--gold); }
   .feature-grid { grid-template-columns:1fr; }
-  .feature-image { height:420px; margin:0; }
+  .feature-image { width:100vw; height:420px; margin-left:calc(50% - 50vw); }
   .feature-copy { padding:75px 0; }
   .feature-copy h2 { font-size:4.6rem; }
   .section-heading { align-items:flex-start; flex-direction:column; gap:28px; }

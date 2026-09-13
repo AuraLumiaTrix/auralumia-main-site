@@ -23,7 +23,7 @@ export function SiteHeader() {
     <header className="site-header">
       <Link className="brand" href="/" aria-label="AuraLumia Startseite">
         <img src="/aura-lumia-logo.png" alt="" />
-        <span>AURA ✦ LUMIA</span>
+        <span>AURA ✱ LUMIA</span>
       </Link>
       <nav className="desktop-nav" aria-label="Hauptnavigation">
         {nav.filter(([, href]) => href !== "/").map(([label, href]) => (
