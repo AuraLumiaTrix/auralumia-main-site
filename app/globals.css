@@ -341,6 +341,16 @@ p { margin:0; }
 .legal-grid a { border-bottom:1px solid currentColor; }
 .legal-grid ul { margin:22px 0 0; padding:0; list-style:none; }
 .legal-grid li + li { margin-top:14px; }
+.legal-version { margin-top:28px; color:var(--soft); }
+.terms-content { max-width:980px; margin-top:70px; }
+.terms-content section { padding:52px 0; border-top:1px solid var(--line); }
+.terms-content section:last-child { border-bottom:1px solid var(--line); }
+.terms-content h2 { max-width:850px; margin-bottom:28px; font-size:clamp(2.4rem,4.2vw,4rem); line-height:1.02; overflow-wrap:anywhere; }
+.terms-content h3 { margin:34px 0 10px; font-family:var(--sans); font-size:1rem; font-weight:700; letter-spacing:0; }
+.terms-content p,.terms-content li { color:var(--soft); }
+.terms-content p + p { margin-top:18px; }
+.terms-content ul { margin:22px 0 0; padding-left:22px; }
+.terms-content li + li { margin-top:10px; }
 
 @media (max-width:1050px) {
   .desktop-nav,.header-cta { display:none; }
@@ -464,9 +474,13 @@ p { margin:0; }
   .footer-bottom span:last-child { text-align:left; }
   .legal-page { padding-block:85px 100px; }
   .legal-header { padding-bottom:45px; }
+  .legal-header h1 { font-size:3.1rem; overflow-wrap:anywhere; }
   .legal-grid { grid-template-columns:1fr; margin-top:45px; }
   .legal-grid .legal-wide { grid-column:auto; }
   .legal-grid section { padding:30px 24px; }
+  .terms-content { margin-top:45px; }
+  .terms-content section { padding:38px 0; }
+  .terms-content h2 { font-size:2.35rem; }
   .tarot-manifesto-grid { grid-template-columns:1fr; }
   .tarot-manifesto-grid > div { min-height:130px; align-items:center; padding:30px 0; border-right:0; border-bottom:1px solid rgba(255,255,255,.4); }
   .tarot-manifesto-grid > div:last-child { border-bottom:0; }

@@ -58,7 +58,7 @@ export default function ImpressumPage() {
         </section>
 
         <section className="legal-wide">
-          <h2>Verbraucherstreitbeilegung</h2>
+          <h2>Verbraucherstreit-<wbr />beilegung</h2>
           <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
         </section>
       </div>
