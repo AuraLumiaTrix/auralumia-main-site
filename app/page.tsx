@@ -43,7 +43,7 @@ export default function Home() {
       <section className="selected-offers shell">
         <div className="section-heading"><div><p className="eyebrow">AUSGEWÄHLTE RÄUME</p><h2>Beginne dort, wo es dich ruft.</h2></div><Link className="text-link" href="/angebote">Alle Angebote ansehen</Link></div>
         <div className="selected-grid">
-          <Link className="selected-card selected-card-wide" href="/somatic-karma"><img src="/audio-bundle.webp" alt="Somatic Karma Audio Bundle" /><div><span>AB 27 €</span><h3>Somatic Karma</h3><p>Navigator, Tarot, Audio Bundle und persönliche Analysen.</p></div></Link>
+          <Link className="selected-card selected-card-wide" href="/angebote#somatic-karma"><img src="/audio-bundle.webp" alt="Somatic Karma Audio Bundle" /><div><span>AB 27 €</span><h3>Somatic Karma</h3><p>Navigator, Tarot, Audio Bundle und persönliche Analysen.</p></div></Link>
           <Link className="selected-card selected-card-product" href="/angebote#kinderwunsch"><img src="/products/kinderwunsch-lumia.png" alt="Kinderwunsch Sternenanalyse" /><div><span>AB 101,01 €</span><h3>Kinderwunsch & weibliche Linie</h3><p>Sternenwissen und Schoßraumarbeit für deinen persönlichen Weg.</p></div></Link>
           <Link className="selected-card selected-card-product" href="/angebote#berufung"><img src="/products/berufung-lumia.png" alt="Berufungs-Sternenanalyse" /><div><span>AB 101,01 €</span><h3>Berufung</h3><p>Astrologische Klarheit für die Richtung, die wirklich deine ist.</p></div></Link>
         </div>

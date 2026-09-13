@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div className="footer-brand">
-          <img src="/aura-lumia-logo.png" alt="AuraLumia" />
+          <img src="/aura-lumia-logo-delicate.png" alt="AuraLumia" />
           <p>Vedische Astrologie, Körperwissen und intuitive Symbolarbeit – verbunden zu einer Sprache für das, was in dir längst spürbar ist.</p>
         </div>
         <div><p className="footer-label">ENTDECKEN</p><Link href="/somatic-karma">Somatic Karma</Link><Link href="/tarot">Tarot</Link><Link href="/angebote">Alle Angebote</Link><Link href="/mentoring">Mentoring</Link></div>
