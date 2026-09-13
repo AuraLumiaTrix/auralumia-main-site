@@ -35,7 +35,7 @@ export default function Home() {
 
       <section className="feature feature-somatic">
         <div className="shell feature-grid">
-          <div className="feature-image"><picture><source media="(max-width: 760px)" srcSet="/hero-somatic-dark-mobile.png" /><img src="/hero-somatic.jpg" alt="Somatic Karma – Körperwissen und Sternenarchitektur" /></picture></div>
+          <div className="feature-image"><picture><source media="(max-width: 760px)" srcSet="/hero-somatic-taupe-mobile.png" /><img src="/hero-somatic.jpg" alt="Somatic Karma – Körperwissen und Sternenarchitektur" /></picture></div>
           <div className="feature-copy"><p className="eyebrow">DIE SIGNATURE-METHODE</p><h2>Somatic Karma</h2><p>Vier Archetypen machen sichtbar, wie frühe Bindungs- und Beziehungserfahrungen in deinem heutigen Schutzsystem weiterwirken. Dein vedisches Chart gibt ihnen eine präzise Sprache.</p><Link className="button button-light" href="/somatic-karma">Die Methode entdecken</Link></div>
         </div>
       </section>
