@@ -34,10 +34,10 @@ export const offerGroups: OfferGroup[] = [
     title: "Deine Muster verstehen",
     intro: "Digitale Räume und persönliche Audios, die astrologische Erkenntnis in eine Erfahrung übersetzen, die im Körper ankommt.",
     offers: [
-      { name: "Somatic Karma Tarot – Zugang", price: "27 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1887138/filefe6e2cb62a385cebad349bc9c9b5f0ec.png", description: "78 archetypische Spiegel für Licht, Schatten und deine innere Narbenarchitektur.", href: links.tarot },
-      { name: "Somatic Karma Audio Bundle", price: "47 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1880162/file0127e5f3ade13f745903a7c4942706a3.png", description: "Meditation, Affirmation und Transformationsritual für deinen Hauptarchetypen.", href: links.audio },
-      { name: "Somatic Karma Code – Essential", price: "97 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1880154/file4fd969433ca71cd26623f8eb24af4c17.png", description: "Deine persönliche astrologische Audioanalyse in konzentrierter Form.", href: links.code },
-      { name: "Somatic Karma Code – Podcast Edition", price: "333 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1880159/filef6fe4f2a79bc4320b31c5879721d8fe3.png", description: "Von Jennifer Olivia persönlich eingesprochen – wie eine private Podcastfolge nur für dich.", href: links.code },
+      { name: "Somatic Karma Tarot – Zugang", price: "27 €", image: "/products/somatic-tarot-access.png", description: "78 archetypische Spiegel für Licht, Schatten und deine innere Narbenarchitektur.", href: links.tarot },
+      { name: "Somatic Karma Audio Bundle", price: "47 €", image: "/products/somatic-audio-bundle.png", description: "Meditation, Affirmation und Transformationsritual für deinen Hauptarchetypen.", href: links.audio },
+      { name: "Somatic Karma Code – Essential", price: "97 €", image: "/products/somatic-code-essential.png", description: "Deine persönliche astrologische Audioanalyse in konzentrierter Form.", href: links.code },
+      { name: "Somatic Karma Code – Podcast Edition", price: "333 €", image: "/products/somatic-code-podcast.png", description: "Von Jennifer Olivia persönlich eingesprochen – wie eine private Podcastfolge nur für dich.", href: links.code },
     ],
   },
   {

@@ -4,8 +4,8 @@ import { PageHero } from "@/components/page-hero";
 export const metadata: Metadata = { title: "Mentoring", description: "Aura Luminess Premium und exklusives 1:1 Mentoring mit Jennifer Olivia Kindereit." };
 
 const formats = [
-  { label: "GRUPPEN-BEGLEITUNG", title: "Aura Luminess Premium", price: "3.333,33 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1705489/fileb8977a966ebae42163436a5e8671d4d6.png", text: "Ein intensiver gemeinsamer Raum für Transformation, Verkörperung und neue Ausrichtung – getragen von Gruppe und Jennifer Olivias persönlicher Führung." },
-  { label: "EXKLUSIVE EINZEL-BEGLEITUNG", title: "Aura Luminess V.I.P.", price: "9.999,99 €", image: "https://s3.eu-central-1.amazonaws.com/public-prod-copecart.com/uploads/image/1705498/filefee6cf71105501fbca497fab2ba977ce.png", text: "Der persönlichste AuraLumia-Raum: fokussiert auf deine Geschichte, deine Schwelle und die Veränderung, die jetzt wirklich gelebt werden will." },
+  { label: "GRUPPEN-BEGLEITUNG", title: "Aura Luminess Premium", price: "3.333,33 €", image: "/products/aura-luminess-premium.png", text: "Ein intensiver gemeinsamer Raum für Transformation, Verkörperung und neue Ausrichtung – getragen von Gruppe und Jennifer Olivias persönlicher Führung." },
+  { label: "EXKLUSIVE EINZEL-BEGLEITUNG", title: "Aura Luminess V.I.P.", price: "9.999,99 €", image: "/products/aura-luminess-vip.png", text: "Der persönlichste AuraLumia-Raum: fokussiert auf deine Geschichte, deine Schwelle und die Veränderung, die jetzt wirklich gelebt werden will." },
 ];
 
 export default function MentoringPage() {
