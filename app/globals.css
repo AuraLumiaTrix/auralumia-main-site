@@ -327,6 +327,21 @@ p { margin:0; }
 .footer-bottom { display:flex; justify-content:space-between; gap:50px; padding-block:24px 38px; border-top:1px solid rgba(255,255,255,.4); color:#fff; font-size:.7rem; }
 .footer-bottom span:last-child { max-width:620px; text-align:right; }
 
+.legal-page { padding-block:120px 150px; }
+.legal-header { max-width:900px; padding-bottom:70px; border-bottom:1px solid var(--line); }
+.legal-header h1 { font-size:clamp(4.5rem,8vw,8rem); }
+.legal-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; margin-top:70px; border-top:1px solid var(--line); border-left:1px solid var(--line); }
+.legal-grid section { min-width:0; padding:42px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+.legal-grid .legal-wide { grid-column:1/-1; }
+.legal-grid h2 { margin-bottom:25px; font-size:2.5rem; }
+.legal-grid h3 { margin-top:30px; font-family:var(--sans); font-size:1rem; font-weight:700; letter-spacing:0; }
+.legal-grid p,.legal-grid address { margin:0; color:var(--soft); font-style:normal; }
+.legal-grid p + p { margin-top:14px; }
+.legal-grid h3 + p { margin-top:10px; }
+.legal-grid a { border-bottom:1px solid currentColor; }
+.legal-grid ul { margin:22px 0 0; padding:0; list-style:none; }
+.legal-grid li + li { margin-top:14px; }
+
 @media (max-width:1050px) {
   .desktop-nav,.header-cta { display:none; }
   .site-header { grid-template-columns:1fr auto; padding-inline:28px; }
@@ -447,6 +462,11 @@ p { margin:0; }
   .footer-grid > div:last-child { grid-column:1/-1; }
   .footer-bottom { flex-direction:column; gap:12px; }
   .footer-bottom span:last-child { text-align:left; }
+  .legal-page { padding-block:85px 100px; }
+  .legal-header { padding-bottom:45px; }
+  .legal-grid { grid-template-columns:1fr; margin-top:45px; }
+  .legal-grid .legal-wide { grid-column:auto; }
+  .legal-grid section { padding:30px 24px; }
   .tarot-manifesto-grid { grid-template-columns:1fr; }
   .tarot-manifesto-grid > div { min-height:130px; align-items:center; padding:30px 0; border-right:0; border-bottom:1px solid rgba(255,255,255,.4); }
   .tarot-manifesto-grid > div:last-child { border-bottom:0; }
