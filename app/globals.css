@@ -57,6 +57,7 @@ p { margin:0; }
 .feature { background:var(--deep); color:#fff; }
 .feature-grid { display:grid; grid-template-columns:1.08fr .92fr; min-height:750px; }
 .feature-image { overflow:hidden; margin-left:calc((100vw - min(1240px,calc(100vw - 64px)))/-2); }
+.feature-image picture { display:block; height:100%; }
 .feature-image img { width:100%; height:100%; object-fit:cover; }
 .feature-copy { display:flex; flex-direction:column; justify-content:center; padding:80px 0 80px 9vw; }
 .feature-copy h2 { font-size:clamp(4.5rem,8vw,8rem); }
