@@ -258,6 +258,10 @@ p { margin:0; }
 .music-hero { position:relative; isolation:isolate; overflow:hidden; }
 .music-hero > .page-hero { position:relative; z-index:1; }
 .music-hero-portrait { position:absolute; z-index:0; top:-18%; right:-3%; width:min(58vw,880px); height:138%; object-fit:cover; object-position:center 28%; opacity:.2; filter:sepia(.18) saturate(.72); -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 23%,#000 58%,rgba(0,0,0,.76) 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 23%,#000 58%,rgba(0,0,0,.76) 100%); }
+.mentoring-hero,.somatic-hero { position:relative; isolation:isolate; overflow:hidden; background:#fff; }
+.mentoring-hero > .page-hero,.somatic-hero > .page-hero { position:relative; z-index:1; }
+.mentoring-hero-portrait { position:absolute; z-index:0; top:-14%; right:-4%; width:min(70vw,1060px); height:132%; object-fit:cover; object-position:center 42%; opacity:.17; filter:saturate(.7) sepia(.08); -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.24) 22%,#000 58%,rgba(0,0,0,.78) 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.24) 22%,#000 58%,rgba(0,0,0,.78) 100%); }
+.somatic-hero-portrait { position:absolute; z-index:0; top:-22%; right:1%; width:min(49vw,740px); height:146%; object-fit:contain; object-position:center; opacity:.19; -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 20%,#000 62%,rgba(0,0,0,.76) 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 20%,#000 62%,rgba(0,0,0,.76) 100%); }
 .artistry-grid { display:grid; grid-template-columns:1fr .9fr; align-items:center; gap:8vw; padding-block:110px; }
 .artistry-grid .eyebrow,.music-stage .eyebrow { color:var(--button-cream); }
 .artistry-grid p:not(.eyebrow) { max-width:570px; margin:28px 0 34px; }
@@ -487,6 +491,8 @@ p { margin:0; }
   .artistry-grid,.music-stage-grid,.vita-grid,.music-origin-grid { gap:48px; padding-block:80px; }
   .somatic-welcome video { max-height:58vh; }
   .music-hero-portrait { top:-6%; right:-38%; width:112%; height:112%; opacity:.19; object-position:center 20%; -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.34) 26%,#000 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.34) 26%,#000 100%); }
+  .mentoring-hero-portrait { top:-2%; right:-50%; width:140%; height:106%; opacity:.15; object-position:center; -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 28%,#000 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 28%,#000 100%); }
+  .somatic-hero-portrait { top:-4%; right:-38%; width:112%; height:112%; opacity:.16; -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 24%,#000 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 24%,#000 100%); }
   .artistry-grid > div { order:2; }
   .artistry-grid img { order:1; max-height:470px; }
   .tracklist { gap:48px; padding-block:90px; }
