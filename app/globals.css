@@ -178,26 +178,26 @@ p { margin:0; }
 }
 
 @media (min-width:1280px) {
-  .shell { width:min(1800px,calc(100% - 80px)); }
+  .shell { width:min(1600px,calc(100% - 80px)); }
   .site-header {
     grid-template-columns:minmax(260px,1fr) auto minmax(180px,1fr);
-    min-height:96px;
-    padding-inline:max(40px,calc((100vw - 1800px)/2));
+    min-height:92px;
+    padding-inline:max(40px,calc((100vw - 1600px)/2));
   }
-  .brand { font-size:1.42rem; }
-  .brand img { width:58px; height:58px; }
-  .desktop-nav { gap:clamp(22px,1.7vw,36px); }
-  .desktop-nav a { font-size:.98rem; line-height:1.3; }
-  .header-cta { font-size:.96rem; }
-  .button { min-height:64px; padding:17px 30px; font-size:.94rem; }
-  .text-link { font-size:.94rem; }
-  .hero-lede { font-size:1.18rem; }
-  .category-nav { top:96px; gap:clamp(38px,3vw,58px); padding-block:22px; }
-  .category-nav a { font-size:.9rem; }
-  .catalog-section { scroll-margin-top:158px; }
-  .catalog-intro > p:last-child { max-width:560px; font-size:1.1rem; }
+  .brand { font-size:1.34rem; }
+  .brand img { width:54px; height:54px; }
+  .desktop-nav { gap:clamp(21px,1.6vw,34px); }
+  .desktop-nav a { font-size:.92rem; line-height:1.3; }
+  .header-cta { font-size:.9rem; }
+  .button { min-height:59px; padding:15px 27px; font-size:.87rem; }
+  .text-link { font-size:.88rem; }
+  .hero-lede { font-size:1.1rem; }
+  .category-nav { top:92px; gap:clamp(36px,3vw,54px); padding-block:21px; }
+  .category-nav a { font-size:.85rem; }
+  .catalog-section { scroll-margin-top:153px; }
+  .catalog-intro > p:last-child { max-width:540px; font-size:1.05rem; }
   .catalog-grid { gap:40px; }
-  .catalog-copy > p { font-size:1.06rem; }
+  .catalog-copy > p { font-size:1.02rem; }
 }
 
 .mentoring-manifesto { padding-block:120px; background:var(--stone); }
@@ -423,8 +423,8 @@ p { margin:0; }
     gap:clamp(44px,5vw,78px);
   }
   .home-hero h1 {
-    max-width:920px;
-    font-size:clamp(5.25rem,6vw,7.1rem);
+    max-width:840px;
+    font-size:clamp(4.9rem,5.7vw,6.45rem);
     line-height:.96;
     text-wrap:balance;
   }
