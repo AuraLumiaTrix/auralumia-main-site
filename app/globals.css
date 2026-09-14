@@ -150,6 +150,25 @@ p { margin:0; }
 .catalog-note { margin-top:auto; color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
 
 @media (min-width:1051px) {
+  .catalog-intro {
+    grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);
+    grid-template-areas:
+      "kicker kicker"
+      "title intro";
+    gap:24px 7vw;
+    align-items:end;
+  }
+  .catalog-intro .eyebrow { grid-area:kicker; }
+  .catalog-intro h2 {
+    grid-area:title;
+    max-width:760px;
+    font-size:clamp(3.5rem,4.8vw,5rem);
+  }
+  .catalog-intro > p:last-child {
+    grid-area:intro;
+    max-width:460px;
+    padding-bottom:.55rem;
+  }
   .catalog-grid { gap:32px; }
   .catalog-card { grid-template-columns:1fr; min-height:0; }
   .catalog-image {
