@@ -125,7 +125,7 @@ p { margin:0; }
 .room-card b { margin-top:auto; padding-top:22px; font-size:.76rem; }
 .depth { display:grid; grid-template-columns:1fr 1fr; gap:24px; padding-block:130px; }
 .depth-card { overflow:hidden; border:1px solid var(--line); }
-.depth-card > img { width:100%; height:370px; object-fit:cover; background:#fff; filter:saturate(.7); }
+.depth-card > img { width:100%; height:clamp(360px,34vw,470px); object-fit:contain; background:#fff; filter:none; }
 .depth-card > div { padding:36px; }
 .depth-card h2 { font-size:4rem; }
 .depth-card p:not(.eyebrow) { margin-top:18px; color:var(--soft); }
