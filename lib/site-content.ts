@@ -56,7 +56,7 @@ export const offerGroups: OfferGroup[] = [
     intro: "Fundierte Selbstlernprogramme für Frauen, die das Somatic-Karma-System und seine vier Narben in ihrem eigenen Tempo tiefer durchdringen möchten.",
     offers: [
       { name: "Somatic Karma Tarot lernen", price: "Selbstlernkurs", image: "/products/tarot-kurs.png", description: "Ein modularer Online-Kurs, in dem du das symbolische System des Decks, seine Ahnenarchitektur und das eigenständige Legen und Deuten Schritt für Schritt fundiert erlernst." },
-      { name: "Die vier Narben · Vertiefungskurse", price: "In Vorbereitung", image: "/hero-somatic-dark-mobile.png", description: "Vier eigenständige Online-Kurse zu Schuldnarbe, Schwesternarbe, Mutternarbe und Vaternarbe. Videos, Audios und Journaling-Prozesse begleiten dich durch die jeweilige Prägung und ihre Verkörperung im Alltag." },
+      { name: "Die vier Narben · Vertiefungskurse", price: "In Vorbereitung", image: "/products/produktbild-narben-transformationskurs.png", description: "Vier eigenständige Online-Kurse zu Schuldnarbe, Schwesternarbe, Mutternarbe und Vaternarbe. Videos, Audios und Journaling-Prozesse begleiten dich durch die jeweilige Prägung und ihre Verkörperung im Alltag." },
     ],
   },
   {
