@@ -149,6 +149,15 @@ p { margin:0; }
 .catalog-copy .text-link { margin-top:auto; }
 .catalog-note { margin-top:auto; color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
 
+@media (min-width:1051px) {
+  .catalog-grid { gap:32px; }
+  .catalog-card { grid-template-columns:1fr; min-height:0; }
+  .catalog-image { height:clamp(360px,34vw,470px); }
+  .catalog-copy { min-height:340px; padding:38px; }
+  .catalog-title { align-items:flex-start; flex-direction:column; gap:12px; }
+  .catalog-title h3 { max-width:100%; font-size:2.45rem; }
+}
+
 .mentoring-manifesto { padding-block:120px; background:var(--stone); }
 .mentoring-manifesto p { color:var(--gold); font-family:var(--serif); font-size:2rem; }
 .mentoring-manifesto h2 { max-width:980px; margin-top:35px; }
