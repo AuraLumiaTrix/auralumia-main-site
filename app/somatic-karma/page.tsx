@@ -13,7 +13,7 @@ const archetypes = [
 ];
 
 const rooms = [
-  { label: "DEIN ANFANG", title: "Archetype Navigator", text: "Finde in wenigen Minuten heraus, welche Schutzarchitektur dich am stärksten prägt.", image: "/hero-somatic.jpg", href: links.navigator },
+  { label: "DEIN ANFANG", title: "Archetype Navigator", text: "Finde in wenigen Minuten heraus, welche Schutzarchitektur dich am stärksten prägt.", image: "/products/produktbild-karma-navigator.png", href: links.navigator },
   { label: "DEIN JETZT", title: "Transit Orakel", text: "Lies die Berührungspunkte zwischen deinem Geburtsbild und dem gegenwärtigen Himmel.", image: "/transit-orakel.webp", href: links.transit },
   { label: "DEIN SPIEGEL", title: "Somatic Karma Tarot", text: "78 archetypische Spiegel verbinden klassische Tarot-Weisheit mit deiner Narbenarchitektur.", image: "/tarot.webp", href: links.tarot },
 ];

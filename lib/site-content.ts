@@ -36,7 +36,7 @@ export const offerGroups: OfferGroup[] = [
     title: "Erkennen, was gerade wirkt",
     intro: "Eine klare erste Standortbestimmung, bevor du dich für den Somatic-Karma-Raum entscheidest, der jetzt zu dir passt.",
     offers: [
-      { name: "Somatic Karma Navigator-Test", price: "Kostenfrei", image: "/hero-somatic-taupe-mobile.png", description: "Das interaktive Online-Tool macht sichtbar, welche der vier Somatic-Karma-Narben gegenwärtig am stärksten wirkt. Du erhältst eine erste Einordnung und einen passenden Themenpfad für deinen nächsten Schritt.", href: links.navigator },
+      { name: "Somatic Karma Navigator-Test", price: "Kostenfrei", image: "/products/produktbild-karma-navigator.png", description: "Das interaktive Online-Tool macht sichtbar, welche der vier Somatic-Karma-Narben gegenwärtig am stärksten wirkt. Du erhältst eine erste Einordnung und einen passenden Themenpfad für deinen nächsten Schritt.", href: links.navigator },
     ],
   },
   {
