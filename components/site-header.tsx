@@ -26,7 +26,7 @@ export function SiteHeader() {
         <span>AURA ✱ LUMIA</span>
       </Link>
       <nav className="desktop-nav" aria-label="Hauptnavigation">
-        {nav.filter(([, href]) => href !== "/").map(([label, href]) => (
+        {nav.map(([label, href]) => (
           <Link className={pathname === href ? "active" : ""} aria-current={pathname === href ? "page" : undefined} key={href} href={href}>{label}</Link>
         ))}
       </nav>

@@ -343,7 +343,8 @@ p { margin:0; }
 .youtube-consent .eyebrow { margin-bottom:14px; color:var(--button-cream); }
 .youtube-consent strong { font:500 clamp(1.8rem,3.5vw,3.4rem)/1.05 var(--serif); }
 .youtube-consent > span { max-width:610px; margin-top:16px; color:#fff; font-size:.84rem; }
-.youtube-consent .button { margin-top:26px; border-color:var(--button-cream); color:var(--button-cream); }
+.youtube-consent .button { margin-top:26px; border-color:var(--button-cream); background:transparent; color:var(--button-cream); }
+.youtube-consent .button:hover { border-color:var(--button-cream); background:rgba(255,252,210,.08); color:var(--button-cream); }
 .youtube-consent > a { margin-top:16px; border-bottom:1px solid currentColor; color:#fff; font-size:.72rem; }
 .media-choices { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:1px; border:1px solid var(--line); background:var(--line); }
 .media-choice { display:grid; grid-template-columns:auto 1fr; gap:5px 18px; min-width:0; padding:25px 27px; cursor:pointer; border:0; background:#fff; color:var(--ink); text-align:left; transition:background .2s ease,color .2s ease; }
