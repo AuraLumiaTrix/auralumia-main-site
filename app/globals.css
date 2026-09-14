@@ -178,23 +178,26 @@ p { margin:0; }
 }
 
 @media (min-width:1280px) {
-  .shell { width:min(1480px,calc(100% - 80px)); }
+  .shell { width:min(1800px,calc(100% - 80px)); }
   .site-header {
     grid-template-columns:minmax(260px,1fr) auto minmax(180px,1fr);
-    min-height:88px;
-    padding-inline:max(40px,calc((100vw - 1480px)/2));
+    min-height:96px;
+    padding-inline:max(40px,calc((100vw - 1800px)/2));
   }
-  .brand { font-size:1.3rem; }
-  .brand img { width:52px; height:52px; }
-  .desktop-nav { gap:clamp(20px,1.6vw,32px); }
-  .desktop-nav a { font-size:.88rem; line-height:1.3; }
-  .header-cta { font-size:.86rem; }
-  .category-nav { top:88px; gap:clamp(34px,3vw,52px); padding-block:20px; }
-  .category-nav a { font-size:.82rem; }
-  .catalog-section { scroll-margin-top:146px; }
-  .catalog-intro > p:last-child { max-width:520px; font-size:1.02rem; }
+  .brand { font-size:1.42rem; }
+  .brand img { width:58px; height:58px; }
+  .desktop-nav { gap:clamp(22px,1.7vw,36px); }
+  .desktop-nav a { font-size:.98rem; line-height:1.3; }
+  .header-cta { font-size:.96rem; }
+  .button { min-height:64px; padding:17px 30px; font-size:.94rem; }
+  .text-link { font-size:.94rem; }
+  .hero-lede { font-size:1.18rem; }
+  .category-nav { top:96px; gap:clamp(38px,3vw,58px); padding-block:22px; }
+  .category-nav a { font-size:.9rem; }
+  .catalog-section { scroll-margin-top:158px; }
+  .catalog-intro > p:last-child { max-width:560px; font-size:1.1rem; }
   .catalog-grid { gap:40px; }
-  .catalog-copy > p { font-size:1rem; }
+  .catalog-copy > p { font-size:1.06rem; }
 }
 
 .mentoring-manifesto { padding-block:120px; background:var(--stone); }
@@ -420,8 +423,8 @@ p { margin:0; }
     gap:clamp(44px,5vw,78px);
   }
   .home-hero h1 {
-    max-width:760px;
-    font-size:clamp(4.6rem,5.6vw,6rem);
+    max-width:920px;
+    font-size:clamp(5.25rem,6vw,7.1rem);
     line-height:.96;
     text-wrap:balance;
   }
