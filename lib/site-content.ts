@@ -33,7 +33,7 @@ export const offerGroups: OfferGroup[] = [
   {
     id: "kostenfreier-einstieg",
     kicker: "STUFE 0 · KOSTENFREIER EINSTIEG",
-    title: "Erkennen, was gerade wirkt",
+    title: "Erkenne, was gerade wirkt",
     intro: "Eine klare erste Standortbestimmung, bevor du dich für den Somatic-Karma-Raum entscheidest, der jetzt zu dir passt.",
     offers: [
       { name: "Somatic Karma Navigator-Test", price: "Kostenfrei", image: "/products/produktbild-karma-navigator.png", description: "Das interaktive Online-Tool macht sichtbar, welche der vier Somatic-Karma-Narben gegenwärtig am stärksten wirkt. Du erhältst eine erste Einordnung und einen passenden Themenpfad für deinen nächsten Schritt.", href: links.navigator },
@@ -42,7 +42,7 @@ export const offerGroups: OfferGroup[] = [
   {
     id: "selbstregulation",
     kicker: "STUFE 1 · SELBSTREGULATION",
-    title: "Deinen Archetyp im Alltag begleiten",
+    title: "Begleite deinen Archetyp im Alltag",
     intro: "Digitale Somatic-Karma-Räume, die dir jederzeit zur Verfügung stehen und Erkenntnis in eine wiederholbare persönliche Praxis übersetzen.",
     offers: [
       { name: "Somatic Karma Audio Bundle", price: "47 €", image: "/products/produktbild-audio-bundle.png", description: "Audio-Reisen, Affirmationen und ein Transformationsritual für deinen Somatic-Karma-Archetypen – als körperorientierte Begleitung für Regulation, Rückverbindung und deinen Alltag.", href: links.audio },
@@ -52,7 +52,7 @@ export const offerGroups: OfferGroup[] = [
   {
     id: "online-kurswelt",
     kicker: "STUFE 2 · ONLINE-KURSWELT",
-    title: "Verstehen, vertiefen und selbst anwenden",
+    title: "Verstehe deine Muster. Vertiefe dein Wissen. Wende es selbst an.",
     intro: "Fundierte Selbstlernprogramme für Frauen, die das Somatic-Karma-System und seine vier Narben in ihrem eigenen Tempo tiefer durchdringen möchten.",
     offers: [
       { name: "Somatic Karma Tarot lernen", price: "Selbstlernkurs", image: "/products/tarot-kurs.png", description: "Ein modularer Online-Kurs, in dem du das symbolische System des Decks, seine Ahnenarchitektur und das eigenständige Legen und Deuten Schritt für Schritt fundiert erlernst." },
@@ -62,7 +62,7 @@ export const offerGroups: OfferGroup[] = [
   {
     id: "individuelle-raeume",
     kicker: "STUFE 3 · INDIVIDUELLE RÄUME",
-    title: "Wenn dein persönliches Feld gesehen werden will",
+    title: "Gib deinem persönlichen Feld einen eigenen Raum",
     intro: "Individuell für dich geschaffene Somatic-Karma-Räume: energetische Schutzarbeit, fokussierte Kartenimpulse, vedische Sternenanalysen und persönliche Blessings.",
     offers: [
       { name: "Somatic Karma Archetypen-Schutzgrid", price: "101,01 €", image: "/products/schutzgrid.png", description: "Ein persönlicher Gegenstand wird energetisch in einen Schutzgrid eingebunden, der auf deine gegenwärtig aktivste Somatic-Karma-Narbe und ihre typische Grenze ausgerichtet ist." },

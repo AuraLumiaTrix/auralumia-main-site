@@ -3,9 +3,9 @@ import { HomeWelcomeVideo } from "@/components/home-welcome-video";
 import { links } from "@/lib/site-content";
 
 const paths = [
-  { no: "01", title: "Muster erkennen", text: "Entdecke mit Somatic Karma, was unter deinen wiederkehrenden Erfahrungen wirkt.", href: "/somatic-karma" },
-  { no: "02", title: "Eine Frage klären", text: "Wähle einen astrologischen, intuitiven oder körperorientierten Impuls für dein aktuelles Thema.", href: "/angebote" },
-  { no: "03", title: "Eine Schwelle gehen", text: "Lass dich in einer intensiven Begleitung durch eine persönliche oder berufliche Wandlung führen.", href: "/mentoring" },
+  { no: "01", title: "Erkenne deine Muster", text: "Entdecke mit Somatic Karma, was unter deinen wiederkehrenden Erfahrungen wirkt.", href: "/somatic-karma" },
+  { no: "02", title: "Kläre deine Frage", text: "Wähle einen astrologischen, intuitiven oder körperorientierten Impuls für dein aktuelles Thema.", href: "/angebote" },
+  { no: "03", title: "Gehe bewusst über deine Schwelle", text: "Lass dich in einer intensiven Begleitung durch eine persönliche oder berufliche Wandlung führen.", href: "/mentoring" },
 ];
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
 
       <section className="statement shell">
         <p className="eyebrow">DEIN WEG DURCH AURALUMIA</p>
-        <h2>Nicht jedes Thema braucht dieselbe Tiefe. Aber jedes braucht den richtigen Raum.</h2>
+        <h2>Gib jedem Thema den Raum, den es wirklich braucht.</h2>
         <div className="path-grid">
           {paths.map(path => <Link className="path-card" href={path.href} key={path.no}><span>{path.no}</span><h3>{path.title}</h3><p>{path.text}</p><b>Raum entdecken</b></Link>)}
         </div>
@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       <section className="mentoring-teaser">
-        <div className="shell mentoring-teaser-grid"><div><p className="eyebrow">AURA LUMINESS · MENTORING</p><h2>Manche Schwellen wollen nicht nur verstanden, sondern begleitet werden.</h2></div><div><p>Für Frauen, die bereit sind, ihr inneres Wissen in gelebte Veränderung zu übersetzen – in einer intensiven Gruppe oder exklusiv 1:1.</p><Link className="button button-light" href="/mentoring">Mentoring entdecken</Link></div></div>
+        <div className="shell mentoring-teaser-grid"><div><p className="eyebrow">AURA LUMINESS · MENTORING</p><h2>Lass dich an der Schwelle begleiten, die mehr als Verstehen braucht.</h2></div><div><p>Für Frauen, die bereit sind, ihr inneres Wissen in gelebte Veränderung zu übersetzen – in einer intensiven Gruppe oder exklusiv 1:1.</p><Link className="button button-light" href="/mentoring">Mentoring entdecken</Link></div></div>
       </section>
 
       <section className="founder shell">
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="founder-image"><img src="/jennifer-olivia.jpg" alt="Jennifer Olivia Kindereit" /><blockquote>„Heilung beginnt, wenn du dich erinnerst, wer du bist.“</blockquote></div>
       </section>
 
-      <section className="artistry-teaser"><div className="shell artistry-grid"><div><p className="eyebrow">NARU HIKARI · MUSIC</p><h2>Manche Erinnerungen brauchen keine Erklärung. Sie brauchen Klang.</h2><p>Als Naru Hikari übersetzt Jennifer Olivia weibliche Ahnenlinie, Verkörperung und innere Freiheit in Musik.</p><Link className="button button-light" href="/musik">Musik entdecken</Link></div><img src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb Album-Mockup" /></div></section>
+      <section className="artistry-teaser"><div className="shell artistry-grid"><div><p className="eyebrow">NARU HIKARI · MUSIC</p><h2>Lass Klang berühren, was keine Erklärung braucht.</h2><p>Als Naru Hikari übersetzt Jennifer Olivia weibliche Ahnenlinie, Verkörperung und innere Freiheit in Musik.</p><Link className="button button-light" href="/musik">Musik entdecken</Link></div><img src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb Album-Mockup" /></div></section>
 
       <section className="closing-cta shell"><p className="eyebrow">DEIN ERSTER SCHRITT</p><h2>Du musst nicht erst jemand anderes werden, um bei dir anzukommen.</h2><div className="actions"><a className="button button-outline" href={links.navigator}>Archetype Navigator starten</a><Link className="text-link" href="/angebote">Alle Wege ansehen</Link></div></section>
     </>
