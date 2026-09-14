@@ -45,7 +45,7 @@ export const offerGroups: OfferGroup[] = [
     title: "Deinen Archetyp im Alltag begleiten",
     intro: "Digitale Somatic-Karma-Räume, die dir jederzeit zur Verfügung stehen und Erkenntnis in eine wiederholbare persönliche Praxis übersetzen.",
     offers: [
-      { name: "Somatic Karma Audio Bundle", price: "47 €", image: "/products/somatic-audio-bundle.png", description: "Audio-Reisen, Affirmationen und ein Transformationsritual für deinen Somatic-Karma-Archetypen – als körperorientierte Begleitung für Regulation, Rückverbindung und deinen Alltag.", href: links.audio },
+      { name: "Somatic Karma Audio Bundle", price: "47 €", image: "/products/produktbild-audio-bundle.png", description: "Audio-Reisen, Affirmationen und ein Transformationsritual für deinen Somatic-Karma-Archetypen – als körperorientierte Begleitung für Regulation, Rückverbindung und deinen Alltag.", href: links.audio },
       { name: "Somatic Karma Tarot App", price: "27 €", image: "/products/somatic-tarot-access.png", description: "Dein digitaler Kartenraum für die vier Narben. Die 78 archetypischen Spiegel verbinden Tarot-Symbolik, Körperwahrnehmung und Ahnenarchitektur.", href: links.tarot },
     ],
   },
