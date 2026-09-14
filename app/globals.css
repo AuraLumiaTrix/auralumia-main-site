@@ -178,7 +178,7 @@ p { margin:0; }
 }
 
 @media (min-width:1280px) {
-  .shell { width:min(1440px,calc(100% - 80px)); }
+  .shell { width:min(1240px,calc(100% - 64px)); }
   .site-header {
     grid-template-columns:minmax(260px,1fr) auto minmax(180px,1fr);
     min-height:92px;
@@ -418,7 +418,7 @@ p { margin:0; }
 .terms-content li + li { margin-top:10px; }
 
 @media (min-width:1051px) {
-  .podcast-editorial { width:min(1440px,calc(100% - 80px)); }
+  .podcast-editorial { width:min(1240px,calc(100% - 64px)); }
   .home-hero {
     grid-template-columns:minmax(0,1.18fr) minmax(360px,.82fr);
     gap:clamp(44px,5vw,78px);
