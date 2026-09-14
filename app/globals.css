@@ -512,7 +512,31 @@ p { margin:0; }
   .room-card > div { min-height:300px; }
   .depth { gap:20px; padding-block:90px; }
   .depth-card > img { width:100vw; height:100vw; margin-left:calc(50% - 50vw); object-fit:contain; }
-  .category-nav { top:70px; justify-content:flex-start; width:100%; padding-inline:18px; }
+  .category-nav {
+    top:70px;
+    display:grid;
+    grid-template-columns:repeat(6,minmax(0,1fr));
+    gap:1px;
+    width:100%;
+    padding:10px 18px;
+    overflow:visible;
+    background:var(--line);
+  }
+  .category-nav a {
+    display:flex;
+    grid-column:span 2;
+    min-height:42px;
+    align-items:center;
+    justify-content:center;
+    padding:7px 5px;
+    background:#fff;
+    font-size:.64rem;
+    line-height:1.25;
+    text-align:center;
+    white-space:normal;
+  }
+  .category-nav a:nth-child(n+4) { grid-column:span 3; }
+  .catalog-section { scroll-margin-top:180px; }
   .catalog-intro { gap:28px; }
   .catalog-card { grid-template-columns:1fr; }
   .catalog-image { width:100vw; height:100vw; margin-left:calc(50% - 50vw); }
