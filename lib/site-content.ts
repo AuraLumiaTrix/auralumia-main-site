@@ -22,6 +22,7 @@ export type Offer = {
 };
 
 export type OfferGroup = {
+  id: string;
   kicker: string;
   title: string;
   intro: string;
@@ -30,45 +31,45 @@ export type OfferGroup = {
 
 export const offerGroups: OfferGroup[] = [
   {
-    kicker: "01 · SOMATIC KARMA",
-    title: "Deine Muster verstehen",
-    intro: "Digitale Räume und persönliche Audios, die astrologische Erkenntnis in eine Erfahrung übersetzen, die im Körper ankommt.",
+    id: "kostenfreier-einstieg",
+    kicker: "STUFE 0 · KOSTENFREIER EINSTIEG",
+    title: "Erkennen, was gerade wirkt",
+    intro: "Eine klare erste Standortbestimmung, bevor du dich für den Somatic-Karma-Raum entscheidest, der jetzt zu dir passt.",
     offers: [
-      { name: "Somatic Karma Tarot – Zugang", price: "27 €", image: "/products/somatic-tarot-access.png", description: "78 archetypische Spiegel für Licht, Schatten und deine innere Narbenarchitektur.", href: links.tarot },
-      { name: "Somatic Karma Audio Bundle", price: "47 €", image: "/products/somatic-audio-bundle.png", description: "Meditation, Affirmation und Transformationsritual für deinen Hauptarchetypen.", href: links.audio },
-      { name: "Somatic Karma Code – Essential", price: "97 €", image: "/products/somatic-code-essential.png", description: "Deine persönliche astrologische Audioanalyse in konzentrierter Form.", href: links.code },
-      { name: "Somatic Karma Code – Podcast Edition", price: "333 €", image: "/products/somatic-code-podcast.png", description: "Von Jennifer Olivia persönlich eingesprochen – wie eine private Podcastfolge nur für dich.", href: links.code },
+      { name: "Somatic Karma Navigator-Test", price: "Kostenfrei", image: "/hero-somatic-taupe-mobile.png", description: "Das interaktive Online-Tool macht sichtbar, welche der vier Somatic-Karma-Narben gegenwärtig am stärksten wirkt. Du erhältst eine erste Einordnung und einen passenden Themenpfad für deinen nächsten Schritt.", href: links.navigator },
     ],
   },
   {
-    kicker: "02 · KLARHEIT & RITUAL",
-    title: "Innere Anker & energetische Begleitung",
-    intro: "Für deinen Alltag und besondere Übergänge: eine individuell eingesprochene Anker-Meditation als tägliches Ritual, ein klärender Tarot-Impuls sowie persönliche Schutz-Grids und Card Blessings, die Jennifer Olivia energetisch für dich durchführt.",
+    id: "selbstregulation",
+    kicker: "STUFE 1 · SELBSTREGULATION",
+    title: "Deinen Archetyp im Alltag begleiten",
+    intro: "Digitale Somatic-Karma-Räume, die dir jederzeit zur Verfügung stehen und Erkenntnis in eine wiederholbare persönliche Praxis übersetzen.",
     offers: [
-      { name: "Anker Meditation", price: "99,99 €", image: "/products/anker-meditation.png", description: "Für Kinderwunsch, Berufung, Schoßraum oder den Mutter-Kind-Weg." },
-      { name: "Tarot Impuls", price: "99,99 €", image: "/products/tarot-legung.png", description: "Ein fokussierter Blick auf die Frage, die gerade wirklich gesehen werden möchte." },
-      { name: "Energetische Versiegelung & Schutz-Grids", price: "101,01 €", image: "/products/schutzgrid.png", description: "Ein geschützter energetischer Raum für Übergänge und sensible Phasen." },
-      { name: "Orakel Blessing – Card Deck Activation", price: "101,11 €", image: "/products/card-deck-blessing.png", description: "Eine persönliche Aktivierung für dein Karten- oder Orakeldeck." },
-      { name: "Tarot Online-Kurs", price: "Selbstlernkurs", image: "/products/tarot-kurs.png", description: "Neun Videos, begleitende Audios und Journaling für eine intuitive, fundierte Kartenpraxis." },
+      { name: "Somatic Karma Audio Bundle", price: "47 €", image: "/products/somatic-audio-bundle.png", description: "Audio-Reisen, Affirmationen und ein Transformationsritual für deinen Somatic-Karma-Archetypen – als körperorientierte Begleitung für Regulation, Rückverbindung und deinen Alltag.", href: links.audio },
+      { name: "Somatic Karma Tarot App", price: "27 €", image: "/products/somatic-tarot-access.png", description: "Dein digitaler Kartenraum für die vier Narben. Die 78 archetypischen Spiegel verbinden Tarot-Symbolik, Körperwahrnehmung und Ahnenarchitektur.", href: links.tarot },
     ],
   },
   {
-    kicker: "03 · KINDERWUNSCH & WEIBLICHE LINIE",
-    title: "Den eigenen Weg würdigen",
-    intro: "Vedische Sternenanalysen und körperorientierte Energiearbeit für Frauen, die ihren Kinderwunsch oder Schoßraum tiefer verstehen möchten.",
+    id: "online-kurswelt",
+    kicker: "STUFE 2 · ONLINE-KURSWELT",
+    title: "Verstehen, vertiefen und selbst anwenden",
+    intro: "Fundierte Selbstlernprogramme für Frauen, die das Somatic-Karma-System und seine vier Narben in ihrem eigenen Tempo tiefer durchdringen möchten.",
     offers: [
-      { name: "Kinderwunsch Sternenanalyse Basic", price: "101,01 €", image: "/products/kinderwunsch-basic.png", description: "Deine von Jennifer Olivia kuratierte Sternenanalyse, als Audio mit einer KI-Stimme für dich aufbereitet." },
-      { name: "Kinderwunsch Sternenanalyse Lumia", price: "303,03 €", image: "/products/kinderwunsch-lumia.png", description: "Die persönliche Podcast-Edition: umfassend gedeutet und von Jennifer Olivia selbst für dich eingesprochen." },
-      { name: "Cosmic Womb Clearing", price: "303,03 €", image: "/products/schossraum-clearing.png", description: "Energetische Schoßraum-Reinigung für Loslassen, Schutz und neue Ausrichtung." },
+      { name: "Somatic Karma Tarot lernen", price: "Selbstlernkurs", image: "/products/tarot-kurs.png", description: "Ein modularer Online-Kurs, in dem du das symbolische System des Decks, seine Ahnenarchitektur und das eigenständige Legen und Deuten Schritt für Schritt fundiert erlernst." },
+      { name: "Die vier Narben · Vertiefungskurse", price: "In Vorbereitung", image: "/hero-somatic-dark-mobile.png", description: "Vier eigenständige Online-Kurse zu Schuldnarbe, Schwesternarbe, Mutternarbe und Vaternarbe. Videos, Audios und Journaling-Prozesse begleiten dich durch die jeweilige Prägung und ihre Verkörperung im Alltag." },
     ],
   },
   {
-    kicker: "04 · BERUFUNG",
-    title: "Die eigene Richtung erkennen",
-    intro: "Für die Schwelle zwischen dem, was funktioniert, und dem, was deiner inneren Wahrheit entspricht.",
+    id: "individuelle-raeume",
+    kicker: "STUFE 3 · INDIVIDUELLE RÄUME",
+    title: "Wenn dein persönliches Feld gesehen werden will",
+    intro: "Individuell für dich geschaffene Somatic-Karma-Räume: energetische Schutzarbeit, fokussierte Kartenimpulse, vedische Sternenanalysen und persönliche Blessings.",
     offers: [
-      { name: "Berufungs-Sternenanalyse Basic", price: "101,01 €", image: "/products/berufung-basic.png", description: "Deine von Jennifer Olivia kuratierte Berufungsanalyse, als Audio mit einer KI-Stimme für dich aufbereitet." },
-      { name: "Berufungs-Sternenanalyse Lumia", price: "303,03 €", image: "/products/berufung-lumia.png", description: "Die persönliche Podcast-Edition: umfassend gedeutet und von Jennifer Olivia selbst für dich eingesprochen." },
+      { name: "Somatic Karma Archetypen-Schutzgrid", price: "101,01 €", image: "/products/schutzgrid.png", description: "Ein persönlicher Gegenstand wird energetisch in einen Schutzgrid eingebunden, der auf deine gegenwärtig aktivste Somatic-Karma-Narbe und ihre typische Grenze ausgerichtet ist." },
+      { name: "Somatic Karma Tarot-Impuls", price: "99,99 €", image: "/products/tarot-legung.png", description: "Ein fokussiertes persönliches Reading zu deiner konkreten Frage. Du erhältst einen klaren Kartenimpuls für das, was jetzt gesehen und bewusst bewegt werden möchte." },
+      { name: "Somatic Karma Sternenanalyse · Kinderwunsch & weibliche Linie", price: "101,01 € · 303,03 €", image: "/products/kinderwunsch-lumia.png", description: "Eine vedische Chart-Dekodierung zu Mutternarbe, Kinderwunsch, Schoßraum-Dynamik und weiblicher Ahnenlinie – als kuratierte Basic-Audiofassung oder als von Jennifer Olivia persönlich eingesprochene Lumia Podcast-Edition." },
+      { name: "Somatic Karma Sternenanalyse · Berufung & Dharma", price: "101,01 € · 303,03 €", image: "/products/berufung-lumia.png", description: "Eine vedische Chart-Dekodierung zu Vaternarbe, Autorität, Berufung und Seelenauftrag – als kuratierte Basic-Audiofassung oder als von Jennifer Olivia persönlich eingesprochene Lumia Podcast-Edition." },
+      { name: "Somatic Karma Card Deck Blessing", price: "101,11 €", image: "/products/card-deck-blessing.png", description: "Eine persönliche energetische Aktivierung für dein Karten- oder Orakeldeck, verbunden mit deinem Somatic-Karma-Archetypen und deiner intuitiven Praxis." },
     ],
   },
 ];
