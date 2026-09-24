@@ -233,6 +233,7 @@ p { margin:0; }
 .testimonial-attribution strong { color:var(--ink); font-size:.78rem; }
 .testimonial-attribution-with-avatar { align-items:center; flex-direction:row; gap:16px; }
 .testimonial-attribution-with-avatar > img { width:64px; height:64px; border-radius:50%; object-fit:cover; }
+.testimonial-attribution-with-avatar > img.testimonial-avatar-elena { object-position:center 24%; }
 .testimonial-attribution-with-avatar > span { display:flex; flex-direction:column; gap:3px; }
 .testimonial-attribution-with-avatar small { color:var(--gold); font-size:.68rem; }
 .testimonial-inline { display:grid; grid-template-columns:.8fr 1.2fr; gap:9vw; padding-block:120px; border-block:1px solid var(--line); }

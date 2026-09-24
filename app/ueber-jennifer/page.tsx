@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { PortraitVideo } from "@/components/portrait-video";
 import { links } from "@/lib/site-content";
@@ -12,6 +13,14 @@ export default function JenniferPage() {
     <section className="jennifer-portrait"><div className="shell portrait-grid"><img src="/jennifer-olivia.jpg" alt="Jennifer Olivia Kindereit" /><div><p className="eyebrow">AURALUMIA IST EINE EINLADUNG</p><blockquote>„Heilung beginnt, wenn du dich erinnerst, wer du bist.“</blockquote><p>Ich möchte dir nicht sagen, wer du werden sollst. Ich möchte einen Raum schaffen, in dem du dich selbst wieder klarer hören kannst.</p></div></div></section>
     <section className="principles shell"><p className="eyebrow">DAS FUNDAMENT MEINER ARBEIT</p><div className="principles-grid"><article><span>01</span><h3>Verstand</h3><p>Meine hochschulzertifizierte Ausbildung im Mentalcoaching gibt meiner Bewusstseinsarbeit, psychologischen Transformation und neuro-mentalen Verankerung eine klare, fundierte Struktur.</p></article><article><span>02</span><h3>Körper</h3><p>Meine Ausbildung zur Essence of Belly Dance-Trainerin verbindet fundiertes Beckenbodenwissen, weibliche Ur-Energie und gelebtes Embodiment.</p></article><article><span>03</span><h3>Stimme</h3><p>Meine fundierte Ausbildung im mystischen und rituellen Folkloregesang verbindet sich mit meiner Kundalini-Yoga-Einweihung als Chandra Sangeeta. So werden Stimme, Atem und Klang zu einem tragenden Teil meiner Arbeit mit Erinnerung und Öffnung.</p></article></div></section>
     <section className="vita-band"><div className="shell vita-grid"><div><p className="eyebrow">SCHÖPFUNGEN & WERKE</p><h2>Eine Arbeit, die viele Formen kennt.</h2></div><ul><li>Gründerin von AuraLumia und Entwicklerin der Somatic-Karma-Archetypen</li><li>Schöpferin eines eigenen Tarotdecks und Autorin des „Buchs der Ahnenstruktur“</li><li>Host von „Karma mit Zimt & Zucker“</li><li>Künstlerin hinter dem Musikprojekt Naru Hikari</li></ul></div></section>
+    <section className="testimonial-section shell" aria-labelledby="begleitungs-stimmen">
+      <div className="testimonial-heading"><p className="eyebrow">MIT MIR ARBEITEN</p><h2 id="begleitungs-stimmen">Was in persönlicher Begleitung entstehen darf.</h2></div>
+      <article className="testimonial-feature">
+        <Image src="/testimonial-elena-m.jpg" alt="Elena M." width={1338} height={1600} sizes="(max-width: 760px) 100vw, 38vw" />
+        <div><blockquote>„Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum für meine persönlichen Themen. Genau das habe ich gefunden. Ich wurde mit den richtigen Impulsen durch meinen Prozess geleitet.“</blockquote><p className="testimonial-attribution"><strong>Elena M.</strong><span>Persönliche Begleitung</span></p></div>
+      </article>
+      <article className="testimonial-card testimonial-card-wide"><blockquote>„Die Begleitung war auf der einen Seite klar und strukturiert und gleichzeitig weich, warm, weiblich, nährend und fließend. Die wertvollen Inspirationen und Impulse haben mir geholfen, alte Denkmuster zu durchbrechen.“</blockquote><p className="testimonial-attribution"><strong>Kundinnenstimme</strong><span>Anonymisiert · persönliche Begleitung</span></p></article>
+    </section>
     <section className="closing-cta shell"><p className="eyebrow">DEIN WEG MIT MIR</p><h2>Beginne mit dem Raum, der zu deiner jetzigen Tiefe passt.</h2><Link className="button button-outline" href="/angebote">Angebote entdecken</Link></section>
   </>;
 }
