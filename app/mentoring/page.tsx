@@ -17,6 +17,14 @@ export default function MentoringPage() {
     <section className="mentoring-manifesto"><div className="shell"><p>Keine schnelle Lösung.</p><p>Kein spirituelles Darüberhinweggehen.</p><h2>Eine präzise, intuitive und körpernahe Begleitung für das, was wirklich in Bewegung kommen will.</h2></div></section>
     <section className="mentoring-formats shell"><div className="section-heading"><div><p className="eyebrow">ZWEI FORMATE</p><h2>Wähle die Nähe, die deine Schwelle braucht.</h2></div></div>{formats.map((format)=><article className="mentoring-card" key={format.title}><div className="mentoring-image"><img src={format.image} alt={format.title} /></div><div className="mentoring-copy"><span>{format.label}</span><h2>{format.title}</h2><p>{format.text}</p><strong>{format.price}</strong></div></article>)}</section>
     <section className="fit-section shell"><div><p className="eyebrow">WARUM DIESER RAUM FÜR DICH DER RICHTIGE IST</p><h2>Verkörpere, was du längst erkannt hast.</h2></div><ul><li>Du erkennst deine Muster, aber sie bestimmen noch immer deine Entscheidungen.</li><li>Du stehst vor einer persönlichen oder beruflichen Neuorientierung.</li><li>Du wünschst dir Tiefe, Klarheit und eine Begleitung, die dich nicht klein macht.</li><li>Du bist bereit, Verantwortung für die Veränderung zu übernehmen, die du dir wünschst.</li></ul></section>
+    <section className="testimonial-section shell" aria-labelledby="mentoring-stimmen">
+      <div className="testimonial-heading"><p className="eyebrow">STIMMEN AUS DER BEGLEITUNG</p><h2 id="mentoring-stimmen">Wenn ein sicherer Raum Veränderung möglich macht.</h2></div>
+      <article className="testimonial-feature">
+        <img src="/testimonial-elena-m.jpg" alt="Elena M." loading="lazy" />
+        <div><blockquote>„Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum für meine persönlichen Themen. Genau das habe ich gefunden. Ich wurde mit den richtigen Impulsen durch meinen Prozess geleitet.“</blockquote><p className="testimonial-attribution"><strong>Elena M.</strong><span>Persönliche Begleitung</span></p></div>
+      </article>
+      <article className="testimonial-card testimonial-card-wide"><blockquote>„Die Begleitung war auf der einen Seite klar und strukturiert und gleichzeitig weich, warm, weiblich, nährend und fließend. Die wertvollen Inspirationen und Impulse haben mir geholfen, alte Denkmuster zu durchbrechen.“</blockquote><p className="testimonial-attribution"><strong>Kundinnenstimme</strong><span>Anonymisiert · persönliche Begleitung</span></p></article>
+    </section>
     <section className="closing-cta shell"><p className="eyebrow">DEIN NÄCHSTER SCHRITT</p><h2>Triff eine klare Entscheidung für deinen nächsten Raum.</h2><a className="button button-outline" href="/ueber-jennifer">Jennifer Olivia kennenlernen</a></section>
   </>;
 }
