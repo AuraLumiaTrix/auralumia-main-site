@@ -224,13 +224,11 @@ p { margin:0; }
 .mentoring-application-grid { display:grid; grid-template-columns:1fr .82fr; align-items:center; gap:9vw; padding-block:120px; }
 .mentoring-application-grid > div > .eyebrow { color:var(--button-cream); }
 .mentoring-application-grid > div > p:last-child { max-width:620px; margin-top:30px; color:#fff; font-size:1.02rem; }
-.application-form { display:flex; flex-direction:column; gap:24px; padding:44px; background:#fff; color:var(--ink); }
-.application-form label { display:flex; flex-direction:column; gap:8px; color:var(--gold); font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
-.application-form input { min-height:54px; padding:12px 0; border:0; border-bottom:1px solid var(--ink); border-radius:0; outline:0; background:#fff; color:var(--ink); font:500 1rem var(--sans); }
-.application-form input:focus { border-bottom-color:var(--gold); box-shadow:0 2px 0 var(--gold); }
-.application-form .button { margin-top:8px; }
-.application-form > p { color:var(--soft); font-size:.72rem; line-height:1.65; }
-.application-form > p a { border-bottom:1px solid currentColor; }
+.application-notice { padding:48px; border:1px solid rgba(255,255,255,.45); background:rgba(255,255,255,.08); }
+.application-notice span { color:var(--button-cream); font-size:.68rem; font-weight:700; letter-spacing:.17em; }
+.application-notice h3 { margin-top:24px; color:#fff; font:400 clamp(2.6rem,4vw,4.5rem)/.95 var(--serif); }
+.application-notice p { margin-top:22px; color:#fff; font-size:1rem; }
+.application-notice strong { display:block; margin-top:36px; padding-top:22px; border-top:1px solid rgba(255,255,255,.3); color:var(--button-cream); font-size:.76rem; letter-spacing:.11em; text-transform:uppercase; }
 
 .testimonial-section { padding-block:130px; }
 .testimonial-heading { max-width:930px; margin-bottom:70px; }
@@ -621,7 +619,7 @@ p { margin:0; }
   .fit-section { gap:45px; padding-block:90px; }
   .mentoring-application { scroll-margin-top:78px; }
   .mentoring-application-grid { gap:48px; padding-block:85px; }
-  .application-form { padding:34px 26px; }
+  .application-notice { padding:36px 28px; }
   .testimonial-section { padding-block:90px; }
   .testimonial-heading { margin-bottom:44px; }
   .testimonial-feature { min-height:0; }
