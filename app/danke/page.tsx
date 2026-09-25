@@ -39,9 +39,13 @@ export default function ThankYouPage() {
           <Image src="/aura-lumia-kupferlogo-footer.png" alt="" width={512} height={512} priority />
         </div>
       </div>
+      <a className="thank-scroll-cue" href="#naechste-schritte">
+        <span>Deine nächsten Schritte</span>
+        <span className="thank-scroll-arrow" aria-hidden="true">↓</span>
+      </a>
     </section>
 
-    <section className="thank-next shell" aria-labelledby="thank-next-heading">
+    <section className="thank-next shell" id="naechste-schritte" aria-labelledby="thank-next-heading">
       <div className="thank-intro">
         <p className="eyebrow">WIE ES NUN WEITERGEHT</p>
         <h2 id="thank-next-heading">Du liebe Schwester, deine Bestellung ist bei mir angekommen.</h2>
