@@ -1,6 +1,5 @@
 export const links = {
   navigator: "https://somatic-karma-navigator.vercel.app/",
-  transit: "https://somatic-karma-transit.vercel.app/",
   tarot: "https://somatic-karma-navigator.vercel.app/somatic-karma-tarot/",
   tarotCheckout: "https://somatic-karma-navigator.vercel.app/somatic-karma-tarot/",
   audio: "https://somatic-karma-navigator.vercel.app/audio-bundle/",
@@ -19,6 +18,7 @@ export type Offer = {
   image: string;
   description: string;
   href?: string;
+  status?: string;
 };
 
 export type OfferGroup = {
@@ -55,8 +55,8 @@ export const offerGroups: OfferGroup[] = [
     title: "Verstehe deine Muster. Vertiefe dein Wissen. Wende es selbst an.",
     intro: "Fundierte Selbstlernprogramme für Frauen, die das Somatic-Karma-System und seine vier Narben in ihrem eigenen Tempo tiefer durchdringen möchten.",
     offers: [
-      { name: "Somatic Karma Tarot lernen", price: "Selbstlernkurs", image: "/products/tarot-kurs.png", description: "Ein modularer Online-Kurs, in dem du das symbolische System des Decks, seine Ahnenarchitektur und das eigenständige Legen und Deuten Schritt für Schritt fundiert erlernst." },
-      { name: "Die vier Narben · Vertiefungskurse", price: "In Vorbereitung", image: "/products/produktbild-narben-transformationskurs.png", description: "Vier eigenständige Online-Kurse zu Schuldnarbe, Schwesternarbe, Mutternarbe und Vaternarbe. Videos, Audios und Journaling-Prozesse begleiten dich durch die jeweilige Prägung und ihre Verkörperung im Alltag." },
+      { name: "Somatic Karma Tarot lernen", price: "Selbstlernkurs", image: "/products/tarot-kurs.png", description: "Ein modularer Online-Kurs, in dem du das symbolische System des Decks, seine Ahnenarchitektur und das eigenständige Legen und Deuten Schritt für Schritt fundiert erlernst.", status: "Release Dezember 2026" },
+      { name: "Die vier Narben · Vertiefungskurse", price: "Coming soon", image: "/products/produktbild-narben-transformationskurs.png", description: "Vier eigenständige Online-Kurse zu Schuldnarbe, Schwesternarbe, Mutternarbe und Vaternarbe. Videos, Audios und Journaling-Prozesse begleiten dich durch die jeweilige Prägung und ihre Verkörperung im Alltag.", status: "Coming soon · Release-Termin folgt" },
     ],
   },
   {

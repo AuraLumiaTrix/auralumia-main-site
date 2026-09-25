@@ -7,7 +7,7 @@ export function OfferCard({ offer }: { offer: Offer }) {
       <div className="catalog-copy">
         <div className="catalog-title"><h3>{offer.name}</h3><span>{offer.price}</span></div>
         <p>{offer.description}</p>
-        {offer.href ? <a className="text-link" href={offer.href}>Details ansehen</a> : <span className="catalog-note">In der AuraLumia Angebotswelt</span>}
+        {offer.href ? <a className="text-link" href={offer.href}>Details ansehen</a> : <span className="catalog-note">{offer.status ?? "In der AuraLumia Angebotswelt"}</span>}
       </div>
     </article>
   );

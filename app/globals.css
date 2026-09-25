@@ -123,6 +123,9 @@ p { margin:0; }
 .room-card h3 { margin-top:25px; font-size:2.7rem; }
 .room-card p { margin-top:15px; color:var(--soft); }
 .room-card b { margin-top:auto; padding-top:22px; font-size:.76rem; }
+.room-card-coming { cursor:default; }
+.room-card-coming > img { filter:saturate(.35) opacity(.78); }
+.room-card-coming b { color:var(--gold); letter-spacing:.11em; text-transform:uppercase; }
 .depth { display:grid; grid-template-columns:1fr 1fr; gap:24px; padding-block:130px; }
 .depth-card { overflow:hidden; border:1px solid var(--line); }
 .depth-card > img { width:100%; height:clamp(360px,34vw,470px); object-fit:contain; background:#fff; filter:none; }
@@ -217,6 +220,17 @@ p { margin:0; }
 .fit-section ul { margin:0; padding:0; list-style:none; }
 .fit-section li { padding:22px 0; border-bottom:1px solid var(--line); color:var(--soft); }
 .fit-section li::before { margin-right:16px; color:var(--gold); content:"✦"; }
+.mentoring-application { scroll-margin-top:100px; background:var(--deep); color:#fff; }
+.mentoring-application-grid { display:grid; grid-template-columns:1fr .82fr; align-items:center; gap:9vw; padding-block:120px; }
+.mentoring-application-grid > div > .eyebrow { color:var(--button-cream); }
+.mentoring-application-grid > div > p:last-child { max-width:620px; margin-top:30px; color:#fff; font-size:1.02rem; }
+.application-form { display:flex; flex-direction:column; gap:24px; padding:44px; background:#fff; color:var(--ink); }
+.application-form label { display:flex; flex-direction:column; gap:8px; color:var(--gold); font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.application-form input { min-height:54px; padding:12px 0; border:0; border-bottom:1px solid var(--ink); border-radius:0; outline:0; background:#fff; color:var(--ink); font:500 1rem var(--sans); }
+.application-form input:focus { border-bottom-color:var(--gold); box-shadow:0 2px 0 var(--gold); }
+.application-form .button { margin-top:8px; }
+.application-form > p { color:var(--soft); font-size:.72rem; line-height:1.65; }
+.application-form > p a { border-bottom:1px solid currentColor; }
 
 .testimonial-section { padding-block:130px; }
 .testimonial-heading { max-width:930px; margin-bottom:70px; }
@@ -555,7 +569,7 @@ p { margin:0; }
   .page-hero-copy { font-size:1rem; }
   .manifesto-grid { grid-template-columns:1fr; }
   .manifesto-grid p { min-height:140px; padding:28px 0; border-right:0; border-bottom:1px solid rgba(255,255,255,.4); }
-  .archetype-grid,.room-grid,.depth,.catalog-grid,.catalog-intro,.mentoring-card,.fit-section,.jennifer-story,.portrait-grid,.principles-grid,.podcast-stage-grid,.vita-grid,.artistry-grid,.music-stage-grid,.tracklist,.music-origin-grid,.testimonial-feature,.testimonial-inline,.testimonial-grid { grid-template-columns:1fr; }
+  .archetype-grid,.room-grid,.depth,.catalog-grid,.catalog-intro,.mentoring-card,.fit-section,.jennifer-story,.portrait-grid,.principles-grid,.podcast-stage-grid,.vita-grid,.artistry-grid,.music-stage-grid,.tracklist,.music-origin-grid,.testimonial-feature,.testimonial-inline,.testimonial-grid,.mentoring-application-grid { grid-template-columns:1fr; }
   .archetype-grid article { min-height:330px; padding:32px; }
   .room-grid,.catalog-grid { margin-top:48px; }
   .room-card > div { min-height:300px; }
@@ -605,6 +619,9 @@ p { margin:0; }
   .mentoring-copy { padding:38px 28px; }
   .mentoring-copy h2 { font-size:3.6rem; }
   .fit-section { gap:45px; padding-block:90px; }
+  .mentoring-application { scroll-margin-top:78px; }
+  .mentoring-application-grid { gap:48px; padding-block:85px; }
+  .application-form { padding:34px 26px; }
   .testimonial-section { padding-block:90px; }
   .testimonial-heading { margin-bottom:44px; }
   .testimonial-feature { min-height:0; }
