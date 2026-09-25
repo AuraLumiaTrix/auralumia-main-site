@@ -230,6 +230,32 @@ p { margin:0; }
 .application-notice p { margin-top:22px; color:#fff; font-size:1rem; }
 .application-notice strong { display:block; margin-top:36px; padding-top:22px; border-top:1px solid rgba(255,255,255,.3); color:var(--button-cream); font-size:.76rem; letter-spacing:.11em; text-transform:uppercase; }
 
+.thank-hero { position:relative; overflow:hidden; background:var(--deep); color:#fff; }
+.thank-hero::before { position:absolute; inset:0; background:radial-gradient(circle at 77% 35%,rgba(255,252,210,.2),transparent 26%),linear-gradient(120deg,transparent 55%,rgba(243,229,248,.14)); content:""; }
+.thank-hero-grid { position:relative; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:8vw; min-height:650px; padding-block:100px; }
+.thank-hero-copy .eyebrow { color:var(--button-cream); }
+.thank-hero-copy h1 { max-width:780px; }
+.thank-hero-copy > p:last-child { max-width:620px; margin-top:32px; color:#fff; font-size:1.08rem; }
+.thank-seal { display:flex; aspect-ratio:1; align-items:center; justify-content:center; padding:12%; border:1px solid rgba(255,255,255,.35); border-radius:50%; background:rgba(255,255,255,.12); backdrop-filter:blur(12px); }
+.thank-seal img { width:100%; height:auto; }
+.thank-next { padding-block:135px; }
+.thank-intro { display:grid; grid-template-columns:1.15fr .85fr; grid-template-areas:"eyebrow eyebrow" "title text"; gap:24px 8vw; align-items:end; }
+.thank-intro .eyebrow { grid-area:eyebrow; }
+.thank-intro h2 { grid-area:title; font-size:clamp(3.4rem,5vw,5.2rem); }
+.thank-intro > p:last-child { grid-area:text; color:var(--soft); font-size:1.02rem; }
+.thank-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:80px; border:1px solid var(--line); background:var(--line); }
+.thank-steps article { min-height:360px; padding:40px; background:#fff; }
+.thank-steps article:nth-child(2) { background:var(--stone); }
+.thank-steps span { color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.16em; }
+.thank-steps h3 { margin-top:72px; font-size:2.7rem; }
+.thank-steps p { margin-top:22px; color:var(--soft); }
+.thank-note { margin-top:30px; color:var(--soft); font-size:.85rem; }
+.thank-mantra { background:var(--stone); text-align:center; }
+.thank-mantra-inner { padding-block:130px; }
+.thank-mantra blockquote { max-width:970px; margin-inline:auto; font-size:clamp(3.2rem,5.8vw,6rem); }
+.thank-mantra blockquote + p { margin-top:40px; color:var(--soft); }
+.thank-mantra .button { margin-top:42px; }
+
 .testimonial-section { padding-block:130px; }
 .testimonial-heading { max-width:930px; margin-bottom:70px; }
 .testimonial-heading h2 { font-size:clamp(3.6rem,5.4vw,5.6rem); }
@@ -567,7 +593,7 @@ p { margin:0; }
   .page-hero-copy { font-size:1rem; }
   .manifesto-grid { grid-template-columns:1fr; }
   .manifesto-grid p { min-height:140px; padding:28px 0; border-right:0; border-bottom:1px solid rgba(255,255,255,.4); }
-  .archetype-grid,.room-grid,.depth,.catalog-grid,.catalog-intro,.mentoring-card,.fit-section,.jennifer-story,.portrait-grid,.principles-grid,.podcast-stage-grid,.vita-grid,.artistry-grid,.music-stage-grid,.tracklist,.music-origin-grid,.testimonial-feature,.testimonial-inline,.testimonial-grid,.mentoring-application-grid { grid-template-columns:1fr; }
+  .archetype-grid,.room-grid,.depth,.catalog-grid,.catalog-intro,.mentoring-card,.fit-section,.jennifer-story,.portrait-grid,.principles-grid,.podcast-stage-grid,.vita-grid,.artistry-grid,.music-stage-grid,.tracklist,.music-origin-grid,.testimonial-feature,.testimonial-inline,.testimonial-grid,.mentoring-application-grid,.thank-hero-grid,.thank-intro,.thank-steps { grid-template-columns:1fr; }
   .archetype-grid article { min-height:330px; padding:32px; }
   .room-grid,.catalog-grid { margin-top:48px; }
   .room-card > div { min-height:300px; }
@@ -620,6 +646,17 @@ p { margin:0; }
   .mentoring-application { scroll-margin-top:78px; }
   .mentoring-application-grid { gap:48px; padding-block:85px; }
   .application-notice { padding:36px 28px; }
+  .thank-hero-grid { gap:45px; min-height:0; padding-block:80px; }
+  .thank-hero-copy { order:1; }
+  .thank-seal { order:0; width:min(68vw,320px); margin-inline:auto; }
+  .thank-next { padding-block:90px; }
+  .thank-intro { grid-template-areas:"eyebrow" "title" "text"; gap:25px; }
+  .thank-intro h2 { font-size:clamp(3rem,13vw,4.2rem); }
+  .thank-steps { margin-top:55px; }
+  .thank-steps article { min-height:0; padding:34px 28px 40px; }
+  .thank-steps h3 { margin-top:42px; font-size:2.45rem; }
+  .thank-mantra-inner { padding-block:90px; }
+  .thank-mantra blockquote { font-size:clamp(3rem,13vw,4.5rem); }
   .testimonial-section { padding-block:90px; }
   .testimonial-heading { margin-bottom:44px; }
   .testimonial-feature { min-height:0; }
