@@ -4,6 +4,7 @@ export const links = {
   tarotCheckout: "https://somatic-karma-navigator.vercel.app/somatic-karma-tarot/",
   audio: "https://somatic-karma-navigator.vercel.app/audio-bundle/",
   code: "https://somatic-karma-navigator.vercel.app/somatic-karma-code/",
+  cardDeckBlessing: "https://navigator.auralumia.de/card-deck-blessing/",
   podcast: "https://letscast.fm/sites/karma-mit-zimt-und-zucker-27a97918",
   podcastYoutube: "https://www.youtube.com/@Karma_mit_Zimt_und_Zucker",
   music: "https://music.youtube.com/search?q=Naru%20Hikari%20Rising%20of%20the%20Womb",
@@ -69,7 +70,7 @@ export const offerGroups: OfferGroup[] = [
       { name: "Somatic Karma Tarot-Impuls", price: "99,99 €", image: "/products/tarot-legung.png", description: "Ein fokussiertes persönliches Reading zu deiner konkreten Frage. Du erhältst einen klaren Kartenimpuls für das, was jetzt gesehen und bewusst bewegt werden möchte." },
       { name: "Somatic Karma Sternenanalyse Kinderwunsch & weibliche Linie", price: "101,01 € · 303,03 €", image: "/products/kinderwunsch-lumia.png", description: "Eine vedische Chart-Dekodierung zu Mutternarbe, Kinderwunsch, Schoßraum-Dynamik und weiblicher Ahnenlinie – als kuratierte Basic-Audiofassung oder als von Jennifer Olivia persönlich eingesprochene Lumia Podcast-Edition." },
       { name: "Somatic Karma Sternenanalyse Berufung & Dharma", price: "101,01 € · 303,03 €", image: "/products/berufung-lumia.png", description: "Eine vedische Chart-Dekodierung zu Vaternarbe, Autorität, Berufung und Seelenauftrag – als kuratierte Basic-Audiofassung oder als von Jennifer Olivia persönlich eingesprochene Lumia Podcast-Edition." },
-      { name: "Somatic Karma Card Deck Blessing", price: "101,11 €", image: "/products/card-deck-blessing.png", description: "Eine persönliche energetische Aktivierung für dein Karten- oder Orakeldeck, verbunden mit deinem Somatic-Karma-Archetypen und deiner intuitiven Praxis." },
+      { name: "Somatic Karma Card Deck Blessing", price: "101,11 €", image: "/products/card-deck-blessing.png", description: "Eine persönliche energetische Aktivierung für dein Karten- oder Orakeldeck, verbunden mit deinem Somatic-Karma-Archetypen und deiner intuitiven Praxis.", href: links.cardDeckBlessing },
     ],
   },
 ];
