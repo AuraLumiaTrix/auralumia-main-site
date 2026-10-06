@@ -386,6 +386,12 @@ p { margin:0; }
 .about-music .testimonial-attribution { margin:22px 0 34px; color:#fff; }
 .about-music .testimonial-attribution span,.about-music .testimonial-attribution small { color:#fff; }
 .about-music .testimonial-attribution img { width:58px; height:58px; max-height:none; object-fit:cover; }
+.about-music-voices { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; padding-bottom:110px; background:rgba(255,255,255,.28); }
+.about-music-voices article { display:flex; min-height:300px; flex-direction:column; padding:42px; background:var(--deep); border:1px solid rgba(255,255,255,.3); }
+.about-music-voices blockquote { color:#fff; font-size:clamp(2rem,3vw,3.1rem); line-height:1.08; }
+.about-music-voices article > p { display:flex; flex-direction:column; margin-top:auto; padding-top:30px; color:#fff; }
+.about-music-voices strong { font-size:.8rem; letter-spacing:.08em; }
+.about-music-voices span { color:#fff; font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; }
 .music-stage-grid { display:grid; grid-template-columns:1fr .9fr; align-items:center; gap:8vw; padding-block:110px; }
 .music-art { min-width:0; background:#fff; }
 .music-art img { width:100%; max-height:680px; object-fit:contain; }
@@ -628,7 +634,7 @@ p { margin:0; }
   .page-hero-copy { font-size:1rem; }
   .manifesto-grid { grid-template-columns:1fr; }
   .manifesto-grid p { min-height:140px; padding:28px 0; border-right:0; border-bottom:1px solid rgba(255,255,255,.4); }
-  .archetype-grid,.room-grid,.depth,.catalog-grid,.catalog-intro,.mentoring-card,.fit-section,.jennifer-story,.portrait-grid,.principles-grid,.podcast-stage-grid,.vita-grid,.artistry-grid,.music-stage-grid,.tracklist,.music-origin-grid,.testimonial-feature,.testimonial-inline,.testimonial-grid,.mentoring-application-grid,.thank-hero-grid,.thank-intro,.thank-steps { grid-template-columns:1fr; }
+  .archetype-grid,.room-grid,.depth,.catalog-grid,.catalog-intro,.mentoring-card,.fit-section,.jennifer-story,.portrait-grid,.principles-grid,.podcast-stage-grid,.vita-grid,.artistry-grid,.about-music-voices,.music-stage-grid,.tracklist,.music-origin-grid,.testimonial-feature,.testimonial-inline,.testimonial-grid,.mentoring-application-grid,.thank-hero-grid,.thank-intro,.thank-steps { grid-template-columns:1fr; }
   .archetype-grid article { min-height:330px; padding:32px; }
   .room-grid,.catalog-grid { margin-top:48px; }
   .room-card > div { min-height:300px; }
@@ -721,6 +727,8 @@ p { margin:0; }
   .podcast-showcase { padding-block:70px; }
   .podcast-copy { padding-block:80px; }
   .artistry-grid,.music-stage-grid,.vita-grid,.music-origin-grid { gap:48px; padding-block:80px; }
+  .about-music-voices { padding-bottom:80px; }
+  .about-music-voices article { min-height:260px; padding:32px 28px; }
   .somatic-welcome video { max-height:58vh; }
   .music-hero-portrait { top:-6%; right:-38%; width:112%; height:112%; opacity:.19; object-position:center 20%; -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.34) 26%,#000 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.34) 26%,#000 100%); }
   .mentoring-hero-portrait { top:-2%; right:-50%; width:140%; height:106%; opacity:.15; object-position:center; -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 28%,#000 100%); mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 28%,#000 100%); }
