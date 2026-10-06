@@ -3,16 +3,16 @@ import { PageHero } from "@/components/page-hero";
 import { OfferCard } from "@/components/offer-card";
 import { offerGroups } from "@/lib/site-content";
 
-export const metadata: Metadata = { title: "Angebote", description: "Die AuraLumia Angebotsstufen – vom kostenfreien Somatic Karma Navigator bis zu individuellen Räumen und Mentoring." };
+export const metadata: Metadata = { title: "Audiokurse & App", description: "Somatic Karma Starter-Kits, Frequenzräume und Tarot-Werkzeuge für deine selbstbestimmte Praxis." };
 
 export default function AngebotePage() {
   return <>
     <div className="offers-hero">
       <img className="offers-hero-portrait" src="/somatic-karma-line-art-white.png" alt="" aria-hidden="true" />
-      <PageHero eyebrow="DIE AURALUMIA ANGEBOTSWELT" title="Beginne dort, wo du stehst. Vertiefe, was dich wirklich ruft."><p>Vom kostenfreien Somatic Karma Navigator über digitale Selbstregulation und fundierte Online-Kurse bis zu individuell für dich geschaffenen Räumen.</p></PageHero>
+      <PageHero eyebrow="SELF-PRACTICE · AUDIOKURSE & APP" title="Wähle die Praxis, die dich jetzt wirklich weiterträgt."><p>Beginne mit deinem kostenfreien Archetypen-Check. Danach findest du hier genau die Audios, Frequenzräume und Tarot-Werkzeuge, die zu deinem nächsten Schritt passen.</p></PageHero>
     </div>
-    <nav className="category-nav shell" aria-label="Angebotsstufen"><a href="#kostenfreier-einstieg">Einstieg</a><a href="#selbstregulation">Selbstregulation</a><a href="#online-kurswelt">Online-Kurse</a><a href="#individuelle-raeume">Individuelle Räume</a><a href="/mentoring">Mentoring</a></nav>
+    <nav className="category-nav shell" aria-label="Angebotsbereiche"><a href="#orientierung">Orientierung</a><a href="#starter-kits">Starter-Kits</a><a href="#frequenzraeume">Frequenzräume</a><a href="#tarot-werkzeuge">Tarot-Werkzeuge</a><a href="/mentoring">Begleitung</a></nav>
     {offerGroups.map((group)=><section className="catalog-section shell" id={group.id} key={group.id}><div className="catalog-intro"><p className="eyebrow">{group.kicker}</p><h2>{group.title}</h2><p>{group.intro}</p></div><div className="catalog-grid">{group.offers.map(offer=><OfferCard offer={offer} key={offer.name} />)}</div></section>)}
-    <section className="premium-band" id="mentoring"><div className="shell premium-band-grid"><div><p className="eyebrow">05 · AURA LUMINESS</p><h2>Wähle Begleitung, wenn ein einzelner Impuls nicht mehr genügt.</h2></div><div><p>Intensive Begleitung für Frauen, die eine tiefe persönliche oder berufliche Schwelle nicht allein gehen möchten.</p><a className="button button-light" href="/mentoring">Zum Mentoring</a></div></div></section>
+    <section className="premium-band" id="mentoring"><div className="shell premium-band-grid"><div><p className="eyebrow">WENN SELBSTPRAXIS NICHT MEHR GENÜGT</p><h2>Wähle eine Maßanfertigung statt noch mehr einzelner Impulse.</h2></div><div><p>Der Bespoke Blueprint und die Somatic Karma Academy führen dich persönlich, verbindlich und mit einem klaren Fahrplan durch deine nächste Schwelle.</p><a className="button button-light" href="/mentoring">Begleitung & Ausbildung entdecken</a></div></div></section>
   </>;
 }
