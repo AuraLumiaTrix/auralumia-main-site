@@ -27,7 +27,7 @@ export function SiteHeader() {
           <Link className={pathname === href ? "active" : ""} aria-current={pathname === href ? "page" : undefined} key={href} href={href}>{label}</Link>
         ))}
       </nav>
-      <a className="header-cta" href="https://somatic-karma-navigator.vercel.app/">Navigator starten</a>
+      <a className="header-cta" href="https://somatic-karma-navigator.vercel.app/" target="_blank" rel="noopener noreferrer">Navigator starten</a>
       <div className={`mobile-nav${menuOpen ? " is-open" : ""}`} onKeyDown={(event) => { if (event.key === "Escape") setMenuOpen(false); }}>
         <button className="mobile-menu-button" type="button" aria-label={menuOpen ? "Menü schließen" : "Menü öffnen"} aria-expanded={menuOpen} aria-controls="mobile-menu" onClick={() => setMenuOpen(open => !open)}>
           <span></span><span></span><span></span>
@@ -36,7 +36,7 @@ export function SiteHeader() {
           {nav.map(([label, href]) => (
             <Link className={pathname === href ? "active" : ""} aria-current={pathname === href ? "page" : undefined} onClick={() => setMenuOpen(false)} key={href} href={href}>{label}</Link>
           ))}
-          <a onClick={() => setMenuOpen(false)} href="https://somatic-karma-navigator.vercel.app/">Navigator starten</a>
+          <a onClick={() => setMenuOpen(false)} href="https://somatic-karma-navigator.vercel.app/" target="_blank" rel="noopener noreferrer">Navigator starten</a>
         </nav>
       </div>
     </header>

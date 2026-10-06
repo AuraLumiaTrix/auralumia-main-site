@@ -22,7 +22,7 @@ export default function Home() {
           <p className="eyebrow">SOMATISCHE AHNENKLÄRUNG · AURALUMIA</p>
           <h1>Manche Muster beginnen nicht bei dir. Aber sie können bei dir enden.</h1>
           <p className="hero-lede">Spürst du Lasten, Zweifel oder Ängste, die sich nicht ganz nach deinen eigenen anfühlen? Erkenne die unsichtbaren Verstrickungen deiner Linie, verstehe deine tiefsten Grundbedürfnisse und schaffe Raum für dein eigenes Leben.</p>
-          <div className="actions"><a className="button button-outline" href={links.navigator}>Jetzt dein Muster erkennen</a><Link className="text-link" href="/somatic-karma">Die Methode verstehen</Link></div>
+          <div className="actions"><a className="button button-outline" href={links.navigator} target="_blank" rel="noopener noreferrer">Jetzt dein Muster erkennen</a><Link className="text-link" href="/somatic-karma">Die Methode verstehen</Link></div>
         </div>
         <div className="home-hero-media"><HomeWelcomeVideo src={links.welcomeVideo} /></div>
       </section>
@@ -38,7 +38,7 @@ export default function Home() {
         <p className="eyebrow">DEIN WEG DURCH AURALUMIA</p>
         <h2>Beginne klein. Gehe nur so tief, wie es für dich stimmig ist.</h2>
         <div className="path-grid">
-          {paths.map(path => path.external ? <a className="path-card" href={path.href} key={path.no}><span>{path.no}</span><h3>{path.title}</h3><p>{path.text}</p><b>{path.linkLabel}</b></a> : <Link className="path-card" href={path.href} key={path.no}><span>{path.no}</span><h3>{path.title}</h3><p>{path.text}</p><b>{path.linkLabel}</b></Link>)}
+          {paths.map(path => path.external ? <a className="path-card" href={path.href} target="_blank" rel="noopener noreferrer" key={path.no}><span>{path.no}</span><h3>{path.title}</h3><p>{path.text}</p><b>{path.linkLabel}</b></a> : <Link className="path-card" href={path.href} key={path.no}><span>{path.no}</span><h3>{path.title}</h3><p>{path.text}</p><b>{path.linkLabel}</b></Link>)}
         </div>
       </section>
 
@@ -57,7 +57,7 @@ export default function Home() {
       <section className="selected-offers shell">
         <div className="section-heading"><div><p className="eyebrow">DEINE NÄCHSTEN SCHRITTE</p><h2>Finde den Raum, der dich jetzt am besten trägt.</h2></div><Link className="text-link" href="/angebote">Alle Self-Practice-Räume</Link></div>
         <div className="selected-grid">
-          <a className="selected-card selected-card-wide selected-card-product" href={links.navigator}><img src="/products/produktbild-karma-navigator.png" alt="Somatic Karma Navigator" /><div><span>KOSTENFREI</span><h3>Navigator</h3><p>Erkenne deine primäre karmische Narbe und erhalte deinen persönlichen Themenpfad.</p></div></a>
+          <a className="selected-card selected-card-wide selected-card-product" href={links.navigator} target="_blank" rel="noopener noreferrer"><img src="/products/produktbild-karma-navigator.png" alt="Somatic Karma Navigator" /><div><span>KOSTENFREI</span><h3>Navigator</h3><p>Erkenne deine primäre karmische Narbe und erhalte deinen persönlichen Themenpfad.</p></div></a>
           <Link className="selected-card selected-card-product" href="/angebote#starter-kits"><img src="/products/produktbild-audio-bundle.png" alt="Somatic Karma Starter-Kits" /><div><span>COMING SOON · JE 47 €</span><h3>Starter-Kits</h3><p>Drei gezielte Audios für die Narbe, die jetzt nach Entlastung ruft.</p></div></Link>
           <Link className="selected-card selected-card-product" href="/mentoring"><img src="/products/aura-luminess-premium.png" alt="Somatic Karma Begleitung und Ausbildung" /><div><span>1:1 · ACADEMY</span><h3>Begleitung</h3><p>Maßgeschneiderte Transformation und fundierte Ausbildung über drei oder neun Monde.</p></div></Link>
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
 
       <section className="artistry-teaser"><div className="shell artistry-grid"><div><p className="eyebrow">KLANG & SEELE · NARU HIKARI</p><h2>Tauche ein in die Frequenz hinter der Arbeit.</h2><p>In Jennifer Olivias Musik berühren Stimme und Klang jene Schichten, für die Worte allein nicht ausreichen.</p><Link className="button button-light" href="/musik">Musik entdecken</Link></div><img src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb Album-Mockup" /></div></section>
 
-      <section className="closing-cta shell"><p className="eyebrow">DEIN ERSTER SCHRITT</p><h2>Finde heraus, welches Muster dich gerade leitet.</h2><div className="actions"><a className="button button-outline" href={links.navigator}>Kostenfreien Navigator starten</a><Link className="text-link" href="/somatic-karma">Somatic Karma verstehen</Link></div></section>
+      <section className="closing-cta shell"><p className="eyebrow">DEIN ERSTER SCHRITT</p><h2>Finde heraus, welches Muster dich gerade leitet.</h2><div className="actions"><a className="button button-outline" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenfreien Navigator starten</a><Link className="text-link" href="/somatic-karma">Somatic Karma verstehen</Link></div></section>
     </>
   );
 }
