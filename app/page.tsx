@@ -9,7 +9,7 @@ const paths = [
 ];
 
 const benefits = [
-  ["Grundbedürfnisse & vier Narben", "Punktgenauigkeit statt Rätselraten: Du erkennst, ob Sicherheit, Autonomie, Empfangen oder Gleichrangigkeit im Verborgenen nach Klärung ruft."],
+  ["Grundbedürfnisse & vier Narben", "Du erhältst eine präzise Orientierung und erkennst, ob Sicherheit, Autonomie, Empfangen oder Gleichrangigkeit im Verborgenen nach Klärung ruft."],
   ["Somatic Karma Navigator", "Dein persönlicher Kompass: Du erhältst eine klare Landkarte deiner aktuellen Resonanz und weißt, wo dein nächster Schritt beginnen darf."],
   ["Astrologie & Tarot als Spiegel", "Verborgene Dynamiken werden verständlich, ohne dich festzulegen. Du kannst Zusammenhänge sehen und neue Entscheidungen verkörpern."],
 ];
@@ -45,7 +45,7 @@ export default function Home() {
       <section className="feature feature-somatic">
         <div className="shell feature-grid">
           <div className="feature-image"><picture><source media="(max-width: 760px)" srcSet="/hero-somatic-taupe-mobile.png" /><img src="/hero-somatic.jpg" alt="Somatic Karma – Körperwissen und Sternenarchitektur" /></picture></div>
-          <div className="feature-copy"><p className="eyebrow">DIE SIGNATURE-METHODE</p><h2>Somatic Karma</h2><p>Vier karmische Narben verbinden dein heutiges Schutzsystem mit deinen Grundbedürfnissen und deiner Ahnenlinie. Körperwissen, vedische Astrologie und Tarot dienen dabei nicht als einzelne Angebote, sondern als ein gemeinsames Spiegelsystem.</p><Link className="button button-light" href="/somatic-karma">Die Methode entdecken</Link></div>
+          <div className="feature-copy"><p className="eyebrow">DIE SIGNATURE-METHODE</p><h2>Somatic Karma</h2><p>Vier karmische Narben verbinden dein heutiges Schutzsystem mit deinen Grundbedürfnissen und deiner Ahnenlinie. Körperwissen, vedische Astrologie und Tarot wirken dabei als ein gemeinsames Spiegelsystem, das dir Orientierung und neue Wahlmöglichkeiten schenkt.</p><Link className="button button-light" href="/somatic-karma">Die Methode entdecken</Link></div>
         </div>
       </section>
 
@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <section className="selected-offers shell">
-        <div className="section-heading"><div><p className="eyebrow">DEINE NÄCHSTEN SCHRITTE</p><h2>Wähle nicht mehr. Lass dich führen.</h2></div><Link className="text-link" href="/angebote">Alle Self-Practice-Räume</Link></div>
+        <div className="section-heading"><div><p className="eyebrow">DEINE NÄCHSTEN SCHRITTE</p><h2>Finde den Raum, der dich jetzt am besten trägt.</h2></div><Link className="text-link" href="/angebote">Alle Self-Practice-Räume</Link></div>
         <div className="selected-grid">
           <a className="selected-card selected-card-wide selected-card-product" href={links.navigator}><img src="/products/produktbild-karma-navigator.png" alt="Somatic Karma Navigator" /><div><span>KOSTENFREI</span><h3>Navigator</h3><p>Erkenne deine primäre karmische Narbe und erhalte deinen persönlichen Themenpfad.</p></div></a>
           <Link className="selected-card selected-card-product" href="/angebote#starter-kits"><img src="/products/produktbild-audio-bundle.png" alt="Somatic Karma Starter-Kits" /><div><span>COMING SOON · JE 47 €</span><h3>Starter-Kits</h3><p>Drei gezielte Audios für die Narbe, die jetzt nach Entlastung ruft.</p></div></Link>
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mentoring-teaser"><div className="shell mentoring-teaser-grid"><div><p className="eyebrow">BESPOKE BLUEPRINT · SOMATIC KARMA ACADEMY</p><h2>Wenn du nicht noch mehr Wissen, sondern einen klaren Weg brauchst.</h2></div><div><p>Dein persönlicher Drei-Monde-Plan oder die neunmonatige Ausbildung verbinden Diagnostik, Integration und echte Verkörperung zu einem verbindlichen nächsten Schritt.</p><Link className="button button-light" href="/mentoring">Begleitung & Ausbildung</Link></div></div></section>
+      <section className="mentoring-teaser"><div className="shell mentoring-teaser-grid"><div><p className="eyebrow">BESPOKE BLUEPRINT · SOMATIC KARMA ACADEMY</p><h2>Verwandle dein Wissen in einen klaren, persönlich getragenen Weg.</h2></div><div><p>Dein persönlicher Drei-Monde-Plan oder die neunmonatige Ausbildung verbinden Diagnostik, Integration und echte Verkörperung zu einem verbindlichen nächsten Schritt.</p><Link className="button button-light" href="/mentoring">Begleitung & Ausbildung</Link></div></div></section>
 
       <section className="founder shell">
         <div className="founder-copy"><p className="eyebrow">DIE GRÜNDERIN & DER RAUM</p><h2>Ich bin Jennifer Olivia. Ich übersetze zwischen Körper, Kosmos und Linie.</h2><p>Fundierte Struktur und intuitive Wahrnehmung gehören in meiner Arbeit zusammen. So entsteht ein Raum, in dem du dich verstanden fühlen und zugleich klar orientieren kannst.</p><Link className="text-link" href="/ueber-jennifer">Jennifer Olivia kennenlernen</Link></div>

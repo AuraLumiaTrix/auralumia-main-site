@@ -67,7 +67,7 @@ export const offerGroups: OfferGroup[] = [
   {
     id: "tarot-werkzeuge",
     kicker: "04 · DEIN DIGITALER SPIEGEL",
-    title: "Nutze Tarot als Reflexionsraum – nicht als schnelle Vorhersage.",
+    title: "Nutze Tarot als klaren, achtsamen Reflexionsraum.",
     intro: "Die Somatic Karma Tarot-Werkzeuge übersetzen Symbolik in Körperwahrnehmung, Ahnenarchitektur und selbstbestimmte nächste Schritte.",
     offers: [
       { name: "Somatic Karma Tarot App", price: "9–14 € / Monat · 99 € / Jahr", image: "/products/somatic-tarot-access.png", description: "Dein digitaler Kartenraum für die tägliche Selbstpraxis. Ziehe intuitiv Karten und begegne dir mit Klarheit, Mitgefühl und Bewusstsein.", href: links.tarot },
