@@ -5,7 +5,7 @@ import { links } from "@/lib/site-content";
 const paths = [
   { no: "01", title: "Erkenne, was wirkt", text: "Der kostenfreie Navigator zeigt dir, welches Grundbedürfnis und welche karmische Narbe gerade im Vordergrund stehen.", href: links.navigator, external: true, linkLabel: "Navigator starten" },
   { no: "02", title: "Begleite dich selbst", text: "Wähle Audios, Frequenzräume oder den digitalen Tarot-Spiegel für eine sichere Praxis in deinem eigenen Tempo.", href: "/angebote", linkLabel: "Self-Practice entdecken" },
-  { no: "03", title: "Lass dich persönlich führen", text: "Wenn du eine klare Maßanfertigung brauchst, führen dich der Bespoke Blueprint oder die Academy verbindlich weiter.", href: "/mentoring", linkLabel: "Begleitung entdecken" },
+  { no: "03", title: "Lass dich persönlich führen", text: "Wenn du eine persönliche High-Touch-Begleitung suchst, führen dich der High-Touch 3-Month Blueprint oder das Aura Luminess – Circle Programm verbindlich weiter.", href: "/mentoring", linkLabel: "Begleitung entdecken" },
 ];
 
 const benefits = [
@@ -59,11 +59,11 @@ export default function Home() {
         <div className="selected-grid">
           <a className="selected-card selected-card-wide selected-card-product" href={links.navigator} target="_blank" rel="noopener noreferrer"><img src="/products/produktbild-karma-navigator.png" alt="Somatic Karma Navigator" /><div><span>KOSTENFREI</span><h3>Navigator</h3><p>Erkenne deine primäre karmische Narbe und erhalte deinen persönlichen Themenpfad.</p></div></a>
           <Link className="selected-card selected-card-product" href="/angebote#starter-kits"><img src="/products/produktbild-audio-bundle.png" alt="Somatic Karma Starter-Kits" /><div><span>COMING SOON · JE 47 €</span><h3>Starter-Kits</h3><p>Drei gezielte Audios für die Narbe, die jetzt nach Entlastung ruft.</p></div></Link>
-          <Link className="selected-card selected-card-product" href="/mentoring"><img src="/products/aura-luminess-premium.png" alt="Somatic Karma Begleitung und Ausbildung" /><div><span>1:1 · ACADEMY</span><h3>Begleitung</h3><p>Maßgeschneiderte Transformation und fundierte Ausbildung über drei oder neun Monde.</p></div></Link>
+          <Link className="selected-card selected-card-product" href="/mentoring"><img src="/products/aura-luminess-premium.png" alt="Aura Luminess Begleitung und Ausbildung" /><div><span>HIGH TOUCH · CIRCLE PROGRAMM</span><h3>Begleitung</h3><p>Persönliche High-Touch-Begleitung und fundierte Ausbildung über drei oder neun Monde.</p></div></Link>
         </div>
       </section>
 
-      <section className="mentoring-teaser"><div className="shell mentoring-teaser-grid"><div><p className="eyebrow">BESPOKE BLUEPRINT · SOMATIC KARMA ACADEMY</p><h2>Verwandle dein Wissen in einen klaren, persönlich getragenen Weg.</h2></div><div><p>Dein persönlicher Drei-Monde-Plan oder die neunmonatige Ausbildung verbinden Diagnostik, Integration und echte Verkörperung zu einem verbindlichen nächsten Schritt.</p><Link className="button button-light" href="/mentoring">Begleitung & Ausbildung</Link></div></div></section>
+      <section className="mentoring-teaser"><div className="shell mentoring-teaser-grid"><div><p className="eyebrow">HIGH-TOUCH 3-MONTH BLUEPRINT · AURA LUMINESS – CIRCLE PROGRAMM</p><h2>Verwandle dein Wissen in einen klaren, persönlich getragenen Weg.</h2></div><div><p>Dein persönlicher Drei-Monde-Plan oder die neunmonatige Ausbildung verbinden Analyse, Integration und echte Verkörperung zu einem verbindlichen nächsten Schritt.</p><Link className="button button-light" href="/mentoring">Begleitung & Ausbildung</Link></div></div></section>
 
       <section className="founder shell">
         <div className="founder-copy"><p className="eyebrow">DIE GRÜNDERIN & DER RAUM</p><h2>Ich bin Jennifer Olivia. Ich übersetze zwischen Körper, Kosmos und Linie.</h2><p>Fundierte Struktur und intuitive Wahrnehmung gehören in meiner Arbeit zusammen. So entsteht ein Raum, in dem du dich verstanden fühlen und zugleich klar orientieren kannst.</p><Link className="text-link" href="/ueber-jennifer">Jennifer Olivia kennenlernen</Link></div>

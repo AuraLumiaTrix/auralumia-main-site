@@ -216,12 +216,15 @@ p { margin:0; }
 .mentoring-manifesto { padding-block:120px; background:var(--stone); }
 .mentoring-manifesto p { color:var(--gold); font-family:var(--serif); font-size:2rem; }
 .mentoring-manifesto h2 { max-width:980px; margin-top:35px; }
+.mentoring-hero-links { display:flex; align-items:center; gap:28px; margin-top:32px; }
+.mentoring-hero-links .button { margin-top:0; }
 .mentoring-formats { display:flex; flex-direction:column; gap:26px; }
 .mentoring-formats .section-heading { margin-bottom:45px; }
-.mentoring-card { display:grid; grid-template-columns:1fr 1fr; min-height:610px; border:1px solid var(--line); }
+.mentoring-card { display:grid; grid-template-columns:1fr 1fr; min-height:610px; scroll-margin-top:120px; border:1px solid var(--line); }
 .mentoring-card:nth-of-type(3) .mentoring-image { order:2; }
 .mentoring-image { overflow:hidden; }
 .mentoring-image img { width:100%; height:100%; object-fit:cover; filter:saturate(.55); }
+.mentoring-card#blueprint .mentoring-image img { filter:none; }
 .mentoring-copy { display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:60px; }
 .mentoring-copy h2 { margin-top:22px; font-size:4.5rem; }
 .mentoring-copy p { margin-top:28px; color:var(--soft); }
@@ -465,12 +468,15 @@ p { margin:0; }
 .youtube-frame { width:100%; overflow:hidden; aspect-ratio:16/9; background:#000; box-shadow:0 24px 60px rgba(115,96,90,.16); }
 .youtube-frame iframe { display:block; width:100%; height:100%; border:0; }
 .youtube-consent { display:flex; width:100%; height:100%; align-items:center; justify-content:center; flex-direction:column; padding:45px 24px; background:var(--deep); color:#fff; text-align:center; }
+.youtube-consent-with-cover { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); padding:0; text-align:left; }
+.youtube-consent-cover { width:100%; height:100%; object-fit:contain; background:#fff; }
+.youtube-consent-copy { display:flex; min-width:0; align-items:center; justify-content:center; flex-direction:column; padding:38px; text-align:center; }
 .youtube-consent .eyebrow { margin-bottom:14px; color:var(--button-cream); }
 .youtube-consent strong { font:500 clamp(1.8rem,3.5vw,3.4rem)/1.05 var(--serif); }
-.youtube-consent > span { max-width:610px; margin-top:16px; color:#fff; font-size:.84rem; }
+.youtube-consent-copy > span { max-width:610px; margin-top:16px; color:#fff; font-size:.84rem; }
 .youtube-consent .button { margin-top:26px; border-color:var(--button-cream); background:transparent; color:var(--button-cream); }
 .youtube-consent .button:hover { border-color:var(--button-cream); background:rgba(255,252,210,.08); color:var(--button-cream); }
-.youtube-consent > a { margin-top:16px; border-bottom:1px solid currentColor; color:#fff; font-size:.72rem; }
+.youtube-consent-copy > a { margin-top:16px; border-bottom:1px solid currentColor; color:#fff; font-size:.72rem; }
 .media-choices { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:1px; border:1px solid var(--line); background:var(--line); }
 .media-choice { display:grid; grid-template-columns:auto 1fr; gap:5px 18px; min-width:0; padding:25px 27px; cursor:pointer; border:0; background:#fff; color:var(--ink); text-align:left; transition:background .2s ease,color .2s ease; }
 .media-choice:hover { background:var(--stone); }
@@ -481,6 +487,12 @@ p { margin:0; }
 .media-choice small { font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
 .subscribe-row { display:flex; align-items:center; gap:26px; margin-top:34px; }
 .subscribe-row p { max-width:480px; color:var(--soft); font-size:.85rem; }
+.music-platform-actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:34px; }
+.platform-button { display:inline-flex; min-height:54px; align-items:center; gap:12px; padding:13px 22px; color:#fff; font-size:.82rem; font-weight:700; letter-spacing:.02em; transition:transform .2s ease,box-shadow .2s ease; }
+.platform-button:hover { color:#fff; transform:translateY(-2px); box-shadow:0 12px 28px rgba(70,52,48,.16); }
+.platform-button svg { width:25px; height:25px; flex:0 0 25px; }
+.platform-button-spotify { background:#1d9e4f; }
+.platform-button-youtube { background:#d92929; }
 
 .site-footer { background:var(--deep); color:#fff; }
 .footer-grid { display:grid; grid-template-columns:2fr repeat(3,1fr); gap:55px; padding-block:80px 65px; }
@@ -682,6 +694,8 @@ p { margin:0; }
   .mentoring-manifesto p { font-size:1.55rem; }
   .mentoring-card { min-height:0; }
   .mentoring-card:nth-of-type(3) .mentoring-image { order:0; }
+  .mentoring-hero-links { align-items:stretch; flex-direction:column; gap:20px; }
+  .mentoring-hero-links .text-link { align-self:center; }
   .mentoring-image { height:380px; }
   .mentoring-copy { padding:38px 28px; }
   .mentoring-copy h2 { font-size:3.6rem; }
@@ -741,9 +755,16 @@ p { margin:0; }
   .tracklist { gap:48px; padding-block:90px; }
   .embedded-media { scroll-margin-top:80px; padding-block:90px; }
   .embedded-media-heading { margin-bottom:36px; }
+  .youtube-frame-with-poster { min-height:610px; aspect-ratio:auto; }
+  .youtube-consent-with-cover { grid-template-columns:1fr; grid-template-rows:auto 1fr; }
+  .youtube-consent-cover { height:auto; max-height:355px; aspect-ratio:1/1; }
+  .youtube-consent-copy { padding:34px 24px 38px; }
+  .youtube-consent strong { font-size:clamp(1.8rem,9vw,2.6rem); }
   .media-choices { grid-template-columns:1fr; }
   .media-choice { padding:21px 22px; }
   .subscribe-row { align-items:flex-start; flex-direction:column; gap:16px; }
+  .music-platform-actions { flex-direction:column; }
+  .platform-button { width:100%; justify-content:center; }
   .tracklist li { grid-template-columns:36px 1fr; gap:15px; }
   .tracklist li > b { grid-column:2; }
   .tracklist h3 { font-size:1.85rem; }

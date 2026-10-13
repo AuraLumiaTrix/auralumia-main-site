@@ -14,12 +14,16 @@ export function YouTubeListener({
   initialItem,
   title,
   ariaLabel,
+  posterSrc,
+  posterAlt = "",
 }: {
   items: YouTubeItem[];
   initialId: string;
   initialItem?: YouTubeItem;
   title: string;
   ariaLabel: string;
+  posterSrc?: string;
+  posterAlt?: string;
 }) {
   const [selectedId, setSelectedId] = useState(initialId);
   const [youtubeEnabled, setYoutubeEnabled] = useState(false);
@@ -27,7 +31,7 @@ export function YouTubeListener({
 
   return (
     <>
-      <div className="youtube-frame">
+      <div className={`youtube-frame${posterSrc ? " youtube-frame-with-poster" : ""}`}>
         {youtubeEnabled ? (
           <iframe
             key={selected.id}
@@ -38,12 +42,15 @@ export function YouTubeListener({
             allowFullScreen
           />
         ) : (
-          <div className="youtube-consent">
-            <p className="eyebrow">EXTERNER INHALT</p>
-            <strong>YouTube erst nach deiner Zustimmung laden</strong>
-            <span>Beim Laden des Players werden Daten an YouTube übermittelt. Du kannst deine Auswahl danach direkt hier anhören.</span>
-            <button type="button" className="button button-outline" onClick={() => setYoutubeEnabled(true)}>YouTube-Inhalt laden</button>
-            <a href="/datenschutz#youtube">Datenschutzhinweise</a>
+          <div className={`youtube-consent${posterSrc ? " youtube-consent-with-cover" : ""}`}>
+            {posterSrc ? <img className="youtube-consent-cover" src={posterSrc} alt={posterAlt} /> : null}
+            <div className="youtube-consent-copy">
+              <p className="eyebrow">EXTERNER INHALT</p>
+              <strong>YouTube erst nach deiner Zustimmung laden</strong>
+              <span>Beim Laden des Players werden Daten an YouTube übermittelt. Du kannst deine Auswahl danach direkt hier anhören.</span>
+              <button type="button" className="button button-outline" onClick={() => setYoutubeEnabled(true)}>YouTube-Inhalt laden</button>
+              <a href="/datenschutz#youtube">Datenschutzhinweise</a>
+            </div>
           </div>
         )}
       </div>
