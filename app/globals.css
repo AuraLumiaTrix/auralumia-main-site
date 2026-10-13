@@ -492,6 +492,7 @@ p { margin:0; }
 .platform-button:hover { color:#fff; transform:translateY(-2px); box-shadow:0 12px 28px rgba(70,52,48,.16); }
 .platform-button svg { width:25px; height:25px; flex:0 0 25px; }
 .platform-button-spotify { background:#1d9e4f; }
+.platform-button-podcast { background:#8f6a8f; }
 .platform-button-youtube { background:#d92929; }
 
 .site-footer { background:var(--deep); color:#fff; }
