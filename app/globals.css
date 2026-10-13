@@ -256,6 +256,14 @@ p { margin:0; }
 .application-notice h3 { margin-top:24px; color:#fff; font:400 clamp(2.6rem,4vw,4.5rem)/.95 var(--serif); }
 .application-notice p { margin-top:22px; color:#fff; font-size:1rem; }
 .application-notice strong { display:block; margin-top:36px; padding-top:22px; border-top:1px solid rgba(255,255,255,.3); color:var(--button-cream); font-size:.76rem; letter-spacing:.11em; text-transform:uppercase; }
+.mentoring-application-blueprint { background:var(--stone); color:var(--ink); }
+.mentoring-application-blueprint .mentoring-application-grid > div > .eyebrow { color:var(--gold); }
+.mentoring-application-blueprint .mentoring-application-grid > div > p:last-child { color:var(--ink); }
+.mentoring-application-blueprint .application-notice { border-color:rgba(115,96,90,.3); background:rgba(255,255,255,.52); }
+.mentoring-application-blueprint .application-notice span { color:var(--soft); }
+.mentoring-application-blueprint .application-notice h3,
+.mentoring-application-blueprint .application-notice p { color:var(--ink); }
+.mentoring-application-blueprint .application-notice strong { border-top-color:rgba(115,96,90,.22); color:var(--gold); }
 
 .thank-hero { position:relative; overflow:hidden; background:var(--deep); color:#fff; }
 .thank-hero::before { position:absolute; inset:0; background:radial-gradient(circle at 77% 35%,rgba(255,252,210,.2),transparent 26%),linear-gradient(120deg,transparent 55%,rgba(243,229,248,.14)); content:""; }
