@@ -66,7 +66,7 @@ export default function Home() {
           <div className="landing-hero-visual" aria-hidden="true">
             <span className="landing-orbit landing-orbit-one"></span>
             <span className="landing-orbit landing-orbit-two"></span>
-            <Image src="/hero-somatic.jpg" alt="" width={611} height={850} priority sizes="(max-width: 760px) 92vw, 46vw" />
+            <Image src="/hero-womens-circle.jpg" alt="" width={1024} height={1536} priority sizes="(max-width: 760px) 92vw, 46vw" />
             <p>Deine Seele kennt<br />den Weg <span>♡</span></p>
           </div>
         </div>
