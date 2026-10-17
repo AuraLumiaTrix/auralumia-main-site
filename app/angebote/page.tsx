@@ -130,11 +130,9 @@ export default function AngebotePage() {
             <p className="offers-v2-kicker">DEIN WEG · UNSERE ANGEBOTE</p>
             <h1>Finde das Angebot,<br />das zu deinem Weg passt.</h1>
             <p className="offers-v2-hero-intro">Ob du AuraLumia erst kennenlernen, mit einer Meditation beginnen oder Tarot als täglichen Reflexionsraum nutzen möchtest: Hier findest du selbstständig nutzbare Angebote für deinen eigenen Rhythmus.</p>
-            <a className="offers-v2-button offers-v2-button-primary" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten <span aria-hidden="true">→</span></a>
           </div>
           <div className="offers-v2-hero-art">
             <Image src="/hero-womens-circle.jpg" alt="Frauen in einem ruhigen, modernen Kreis" fill priority sizes="(max-width: 760px) 100vw, 52vw" />
-            <p>Dein nächster Schritt<br />darf sich stimmig anfühlen.</p>
           </div>
         </div>
         <div className="offers-v2-promises shell" aria-label="Was die AuraLumia Angebote auszeichnet">
