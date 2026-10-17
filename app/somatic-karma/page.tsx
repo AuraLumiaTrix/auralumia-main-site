@@ -44,6 +44,7 @@ const planetGroups = [
     id: "gruppe-schuldnarbe",
     no: "01",
     title: "Schuldnarbe",
+    image: "/somatic-karma/triad-schuldnarbe.png",
     center: { symbol: "⚳", name: "Ceres" },
     orbit: [
       { symbol: "♆", name: "Neptun" },
@@ -55,6 +56,7 @@ const planetGroups = [
     id: "gruppe-geschwisternarbe",
     no: "02",
     title: "Geschwisternarbe",
+    image: "/somatic-karma/triad-geschwisternarbe.png",
     center: { symbol: "♂", name: "Mars" },
     orbit: [
       { symbol: "⚴", name: "Pallas Athene" },
@@ -66,6 +68,7 @@ const planetGroups = [
     id: "gruppe-mutternarbe",
     no: "03",
     title: "Mutternarbe",
+    image: "/somatic-karma/triad-mutternarbe.png",
     center: { symbol: "☾", name: "Mond" },
     orbit: [
       { symbol: "♀", name: "Venus" },
@@ -77,6 +80,7 @@ const planetGroups = [
     id: "gruppe-vaternarbe",
     no: "04",
     title: "Vaternarbe",
+    image: "/somatic-karma/triad-vaternarbe.png",
     center: { symbol: "♄", name: "Saturn" },
     orbit: [
       { symbol: "⚶", name: "Vesta" },
@@ -94,10 +98,10 @@ const tarotArcana = [
 ];
 
 const elements = [
-  { name: "Feuer", symbol: "△", text: "Feuer beschreibt Impuls, Lebenskraft und die Richtung, in die Energie drängt." },
-  { name: "Erde", symbol: "◇", text: "Erde macht Verkörperung, Grenzen und die konkrete Erfahrung im Alltag sichtbar." },
-  { name: "Luft", symbol: "≋", text: "Luft öffnet Sprache, Reflexion und das Erkennen von Zusammenhängen." },
-  { name: "Wasser", symbol: "◯", text: "Wasser berührt Gefühl, Bindung und die intuitive Wahrnehmung innerer Bewegungen." },
+  { name: "Feuer", image: "/somatic-karma/element-fire.png", text: "Feuer beschreibt Impuls, Lebenskraft und die Richtung, in die Energie drängt." },
+  { name: "Erde", image: "/somatic-karma/element-earth.png", text: "Erde macht Verkörperung, Grenzen und die konkrete Erfahrung im Alltag sichtbar." },
+  { name: "Luft", image: "/somatic-karma/element-air.png", text: "Luft öffnet Sprache, Reflexion und das Erkennen von Zusammenhängen." },
+  { name: "Wasser", image: "/somatic-karma/element-water.png", text: "Wasser berührt Gefühl, Bindung und die intuitive Wahrnehmung innerer Bewegungen." },
 ];
 
 function MoonMotif({ phase }: { phase: string }) {
@@ -114,16 +118,13 @@ function MoonMotif({ phase }: { phase: string }) {
 }
 
 function PlanetDiagram({ group }: { group: (typeof planetGroups)[number] }) {
+  const description = `${group.title}: ${group.center.name} im Zentrum; ${group.orbit.map((planet) => planet.name).join(", ")} als Triade`;
+
   return (
     <article className="sk-planet-card" id={group.id}>
       <div className="sk-planet-heading"><span>{group.no}</span><h3>{group.title}</h3></div>
-      <div className="sk-planet-map" aria-label={`${group.title}: ${group.center.name} im Zentrum; ${group.orbit.map((planet) => planet.name).join(", ")} als Triade`}>
-        <div className="sk-planet-center"><b aria-hidden="true">{group.center.symbol}</b><span>{group.center.name}</span></div>
-        {group.orbit.map((planet, index) => (
-          <div className={`sk-planet-node sk-planet-node-${index + 1}`} key={planet.name}>
-            <b aria-hidden="true">{planet.symbol}</b><span>{planet.name}</span>
-          </div>
-        ))}
+      <div className="sk-planet-art">
+        <Image src={group.image} alt={description} fill sizes="(max-width: 760px) 86vw, (max-width: 1100px) 44vw, 22vw" />
       </div>
     </article>
   );
@@ -150,7 +151,7 @@ export default function SomaticKarmaPage() {
           </div>
         </div>
         <div className="sk-hero-notes shell" aria-label="Grundlagen von Somatic Karma">
-          <span>✧ Körperwissen</span><span>☾ Vier Grundbedürfnisse</span><span>✦ Symbolische Deutung</span><span>⌁ Innere Orientierung</span>
+          <span><i aria-hidden="true">✧</i>Körperwissen</span><span><i aria-hidden="true">☾</i>Vier Grundbedürfnisse</span><span><i aria-hidden="true">✦</i>Symbolische Deutung</span><span><i aria-hidden="true">⌁</i>Innere Orientierung</span>
         </div>
       </section>
 
@@ -232,7 +233,7 @@ export default function SomaticKarmaPage() {
             <p>Die Elemente beschreiben unterschiedliche Qualitäten des Erlebens. Innerhalb der Methode helfen sie, Wahrnehmungen sprachlich zu differenzieren, ohne eine starre Zuordnung zu erzwingen.</p>
           </div>
           <div className="sk-element-grid">
-            {elements.map((element) => <article key={element.name}><span aria-hidden="true">{element.symbol}</span><h3>{element.name}</h3><p>{element.text}</p></article>)}
+            {elements.map((element) => <article key={element.name}><div className="sk-element-icon"><Image src={element.image} alt="" fill sizes="100px" /></div><h3>{element.name}</h3><p>{element.text}</p></article>)}
           </div>
         </div>
       </section>
