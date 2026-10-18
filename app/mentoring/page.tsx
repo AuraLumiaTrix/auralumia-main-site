@@ -1,32 +1,125 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { PageHero } from "@/components/page-hero";
 
-export const metadata: Metadata = { title: "Begleitung & Ausbildung", description: "High-Touch 3-Month Blueprint, Aura Luminess – Circle Programm und Deep-Dive-Module mit Jennifer Olivia Kindereit." };
+export const metadata: Metadata = {
+  title: "Begleitung & Ausbildung",
+  description: "Persönliche Begleitung, Somatic-Karma-Ausbildung und optionale Vertiefungen bei AuraLumia.",
+};
 
-const formats = [
-  { id: "blueprint", availabilityHref: "#blueprint-verfuegbarkeit", label: "DREI MONDE · 1:1 HIGH TOUCH", title: "High-Touch 3-Month Blueprint", price: "890 €", image: "/products/high-touch-3-month-blueprint.png", text: "Dein persönlicher 12-Wochen-Weg: Orientierungscall, individuelle Triaden- und Radix-Analyse, Somatic Karma Code Audio sowie ein klarer Integrationsplan für deine Selbstarbeit.", detail: "MotherLumia für Kinderwunsch, weibliche Linie und Cycle-Breaking · SisterLumia für Berufung, Sichtbarkeit und Schwestern-Dynamiken" },
-  { id: "circle-programm", availabilityHref: "#bewerbung", label: "NEUN MONDE · LIVE-AUSBILDUNG", title: "Aura Luminess – Circle Programm", price: "3.333 € · 9 Raten à 390 €", image: "/products/aura-luminess-premium.png", text: "Die fundierte Ausbildung zur Somatic Karma Mentorin mit neun Live-Modulen, neun Supervisionen und insgesamt 54 Live-Stunden in einer bewusst kleinen Gruppe.", detail: "Methode, Matrix, Astrologie und Tarot in der traumasensitiven Anwendung für Klientinnen" },
+const primaryOffers = [
+  {
+    id: "blueprint",
+    eyebrow: "PERSÖNLICHE BEGLEITUNG · DREI MONDE",
+    title: "Drei Monde Blueprint",
+    price: "890 €",
+    image: "/products/high-touch-3-month-blueprint.png",
+    description: "Ein persönlicher, klar strukturierter Raum, in dem dein aktuelles Thema aus verschiedenen Blickwinkeln betrachtet und in einen individuellen Weg für die kommenden drei Monate übersetzt wird.",
+    features: ["Persönlicher Call", "Karma-Code-Analyse", "Individueller Drei-Monats-Plan", "Meditationen und Journaling", "Astrologische Zeitqualität anhand des Jahreshoroskops"],
+    href: "#blueprint-verfuegbarkeit",
+    action: "Mehr erfahren",
+  },
+  {
+    id: "circle-programm",
+    eyebrow: "FUNDIERTE AUSBILDUNG · NEUN MONDE",
+    title: "Neun Monde Aura Luminess",
+    price: "3.333 €",
+    image: "/products/aura-luminess-premium.png",
+    description: "Eine live geführte Ausbildung, in der du Somatic Karma als zusammenhängende Methode kennenlernst und ihre symbolischen, astrologischen und körperorientierten Ebenen vertiefst.",
+    features: ["Live-Ausbildung in Somatic Karma", "Die vier karmischen Narben", "Tarot Arcana und archetypische Deutung", "Planetengruppen im Geburtshoroskop", "Eigene Astrologie-Software", "Eigenes physisches Tarotdeck mit Energiegrid"],
+    href: "#bewerbung",
+    action: "Ausbildung entdecken",
+  },
 ];
 
-const tracks = [
-  ["A", "Cosmic Karma", "Archetypische Astrologie & Transite"],
-  ["B", "The Living Mirror", "Intuitive Tarologie & Feldlesen"],
-  ["C", "Somatic Energy", "Energetische Ahnenarbeit & Sacred Grids"],
+const deepDives = [
+  { number: "01", title: "Intuitives Tarot", description: "Vertiefe deine intuitive Arbeit mit den Karten und ihre Anwendung innerhalb von Somatic Karma." },
+  { number: "02", title: "Astrologie und Transite", description: "Erweitere deinen Blick auf Zeitqualität, aktuelle Transite und ihre Einordnung in der Methode." },
+  { number: "03", title: "Energieanwendung im Rahmen von Somatic Karma", description: "Spezialisiere dich auf die energetische Ebene der Somatic-Karma-Arbeit." },
 ];
+
+const paths = [
+  { symbol: "☾", title: "Blueprint", text: "Persönliche Orientierung und Entwicklung für dein aktuelles Thema." },
+  { symbol: "✦", title: "Aura Luminess", text: "Die Methode kennenlernen und vertiefend erlernen." },
+  { symbol: "◇", title: "High Touch", text: "Umfassende persönliche Begleitung und Ausbildung in einem Gesamtprogramm." },
+  { symbol: "◌", title: "Vertiefende Monde", text: "Optionale Spezialisierung nach der Hauptausbildung." },
+];
+
+function FeatureList({ items }: { items: string[] }) {
+  return <ul className="mentoring-v2-feature-list">{items.map((item) => <li key={item}>{item}</li>)}</ul>;
+}
 
 export default function MentoringPage() {
-  return <>
-    <div className="mentoring-hero">
-      <img className="mentoring-hero-portrait" src="/aura-luminess-hero.png" alt="" aria-hidden="true" />
-      <PageHero eyebrow="HIGH-TOUCH · BEGLEITUNG & AUSBILDUNG" title="Wähle einen Weg, der deine Geschichte versteht und für dich gebaut ist."><p>Vom persönlichen High-Touch 3-Month Blueprint bis zum neunmonatigen Circle Programm: Hier wird deine Erkenntnis zu einem klaren, verbindlichen Transformationsweg.</p><div className="mentoring-hero-links"><a className="button button-outline" href="#blueprint">Zum Blueprint</a><a className="text-link" href="#circle-programm">Zum Circle Programm</a></div></PageHero>
-    </div>
-    <section className="mentoring-manifesto"><div className="shell"><p>Du wirst persönlich gesehen.</p><p>Du erhältst einen klaren nächsten Schritt.</p><h2>Eine sanfte, präzise Architektur für deine persönliche Entwicklung oder deine Arbeit mit anderen Frauen.</h2></div></section>
-    <section className="mentoring-formats shell"><div className="section-heading"><div><p className="eyebrow">ZWEI WEGE IN DIE TIEFE</p><h2>Wähle High Touch oder fundierte Ausbildung.</h2></div></div>{formats.map((format)=><article className="mentoring-card" id={format.id} key={format.title}><div className="mentoring-image"><img src={format.image} alt={format.title} /></div><div className="mentoring-copy"><span>{format.label}</span><h2>{format.title}</h2><p>{format.text}</p><small>{format.detail}</small><strong>{format.price}</strong><a className="text-link" href={format.availabilityHref}>Verfügbarkeit ansehen</a></div></article>)}</section>
-    <section className="testimonial-section shell" aria-labelledby="blueprint-stimme"><div className="testimonial-heading"><p className="eyebrow">STIMME ZUR PERSÖNLICHEN BEGLEITUNG</p><h2 id="blueprint-stimme">Was ein sicher gehaltener Weg verändern kann.</h2></div><article className="testimonial-feature"><Image src="/testimonial-elena-m.jpg" alt="Elena M." width={1338} height={1600} sizes="(max-width: 760px) 100vw, 38vw" /><div><blockquote>„Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum für meine persönlichen Themen. Genau das habe ich bei Jennifer Olivia gefunden. Sie hat mich mit genau den richtigen Impulsen durch meinen Prozess geleitet und einen Raum für echte Transformation geschaffen.“</blockquote><p className="testimonial-attribution"><strong>Elena M.</strong><span>Persönliche Begleitung</span></p></div></article></section>
-    <section className="fit-section shell"><div><p className="eyebrow">DER HIGH-TOUCH 3-MONTH BLUEPRINT</p><h2>Erhalte einen Fahrplan, der deine Geschichte nicht verallgemeinert.</h2></div><ol className="guided-steps"><li><b>01</b><span><strong>Orientierung</strong>Im persönlichen Call klären wir Ziel, Narbe und aktuellen Knotenpunkt.</span></li><li><b>02</b><span><strong>Analyse</strong>Jennifer Olivia verbindet Geburtsradix, Planeten-Triaden und Somatic-Karma-Matrix.</span></li><li><b>03</b><span><strong>Integration</strong>Du erhältst deinen Drei-Monde-Plan, eine persönliche Audioanalyse und konkrete Werkzeuge.</span></li></ol></section>
-    <section className="mentoring-application mentoring-application-blueprint" id="blueprint-verfuegbarkeit"><div className="shell mentoring-application-grid"><div><p className="eyebrow">PERSÖNLICHE VERFÜGBARKEIT</p><h2>Dein Blueprint beginnt mit einem bewusst gewählten Starttermin.</h2><p>Jeder High-Touch 3-Month Blueprint wird persönlich vorbereitet und auf deine aktuelle Lebensphase abgestimmt. Deshalb vergebe ich nur wenige 1:1 Plätze gleichzeitig und prüfe jeden möglichen Beginn individuell.</p></div><aside className="application-notice"><span>HIGH-TOUCH 3-MONTH BLUEPRINT</span><h3>Auf Anfrage</h3><p>Drei Monate · persönliche 1:1-Begleitung · individuell abgestimmter Start</p><strong>890 € · bewusst limitierte Plätze</strong></aside></div></section>
-    <section className="master-tracks shell"><div className="section-heading"><div><p className="eyebrow">NACH DEM CIRCLE PROGRAMM</p><h2>Drei Intensiv Mond – Deep Dive Module für deine Spezialisierung.</h2></div><p>Die Deep-Dive-Module öffnen exklusiv für Absolventinnen des Aura Luminess – Circle Programms. Preis je Intensiv Mond – Deep Dive Modul: 990 €.</p></div><div className="master-track-grid">{tracks.map(([no,title,text])=><article key={no}><span>INTENSIV MOND · MODUL {no}</span><h3>{title}</h3><p>{text}</p><b>Coming soon</b></article>)}</div></section>
-    <section className="mentoring-application" id="bewerbung"><div className="shell mentoring-application-grid"><div><p className="eyebrow">ZWEI CIRCLES IM JAHRESKREIS</p><h2>Neun Monde. Zwei Portale. Ein tiefgreifender Weg.</h2><p>Das Aura Luminess – Circle Programm öffnet zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Jeder Durchgang begleitet dich über neun Monde in einem bewusst kleinen, persönlich geführten Raum. Die nächste Bewerbungsphase öffnet im Oktober für den Samhain Circle.</p></div><aside className="application-notice"><span>NÄCHSTE BEWERBUNGSPHASE</span><h3>Oktober 2026</h3><p>Aura Luminess – Circle Programm · Samhain Circle · neun Monde</p><strong>Wenige, bewusst vergebene Plätze</strong></aside></div></section>
-  </>;
+  return <div className="mentoring-v2-page">
+    <section className="mentoring-v2-hero">
+      <Image src="/hero-womens-circle.jpg" alt="Frauen in einem warmen, modernen Kreis" fill priority sizes="100vw" />
+      <div className="mentoring-v2-hero-shade" aria-hidden="true" />
+      <div className="shell mentoring-v2-hero-copy">
+        <p className="mentoring-v2-kicker">BEGLEITUNG · AUSBILDUNG · VERTIEFUNG</p>
+        <h1>Dein Weg<br />in die Tiefe</h1>
+        <p>Persönliche Begleitung, spirituelle Selbsterkenntnis und Ausbildung – in deinem eigenen Tempo.</p>
+        <div className="mentoring-v2-hero-links"><a href="#blueprint">Persönliche Begleitung</a><a href="#circle-programm">Ausbildung entdecken</a></div>
+      </div>
+    </section>
+
+    <section className="mentoring-v2-intro shell" aria-labelledby="mentoring-intro-title">
+      <div><p className="mentoring-v2-kicker">ZWEI EINSTIEGE · EIN FUNDAMENT</p><h2 id="mentoring-intro-title">Wähle, was dich jetzt wirklich unterstützt.</h2></div>
+      <p>Du kannst dich persönlich begleiten lassen oder Somatic Karma als fundierte Methode erlernen. Beide Wege stehen für sich – und dürfen genau dort beginnen, wo du gerade bist.</p>
+    </section>
+
+    <section className="mentoring-v2-primary shell" aria-label="Persönliche Begleitung und Ausbildung">
+      {primaryOffers.map((offer) => <article className="mentoring-v2-offer-card" id={offer.id} key={offer.id}>
+        <div className="mentoring-v2-offer-image"><Image src={offer.image} alt={offer.title} fill sizes="(max-width: 760px) 100vw, 50vw" /></div>
+        <div className="mentoring-v2-offer-copy">
+          <p className="mentoring-v2-kicker">{offer.eyebrow}</p>
+          <h2>{offer.title}</h2>
+          <p className="mentoring-v2-offer-description">{offer.description}</p>
+          <FeatureList items={offer.features} />
+          <div className="mentoring-v2-offer-footer"><strong>{offer.price}</strong><a className="mentoring-v2-button mentoring-v2-button-primary" href={offer.href}>{offer.action}<span aria-hidden="true">→</span></a></div>
+        </div>
+      </article>)}
+    </section>
+
+    <section className="mentoring-v2-premium" id="high-touch" aria-labelledby="high-touch-title">
+      <div className="shell mentoring-v2-premium-grid">
+        <div className="mentoring-v2-premium-image"><Image src="/products/aura-luminess-vip.png" alt="Neun Monde High Touch 1:1" fill sizes="(max-width: 760px) 100vw, 46vw" /></div>
+        <div className="mentoring-v2-premium-copy">
+          <p className="mentoring-v2-kicker">ALL-INCLUSIVE · PERSÖNLICH BEGLEITET</p>
+          <h2 id="high-touch-title">Neun Monde<br />High Touch 1:1</h2>
+          <p>Ein umfassender Raum für Frauen, die persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem Gesamtprogramm verbinden möchten.</p>
+          <FeatureList items={["Drei Monde Blueprint", "Vollständige Neun-Monde-Ausbildung Aura Luminess", "Alle drei vertiefenden Monde", "Zugriff auf die gesamte AuraLumia-Kurswelt", "Intensive persönliche 1:1-Begleitung"]} />
+          <strong className="mentoring-v2-premium-price">9.999 €</strong>
+        </div>
+      </div>
+    </section>
+
+    <section className="mentoring-v2-testimonial shell" aria-labelledby="mentoring-voice-title">
+      <Image src="/testimonial-elena-m-avatar.jpg" alt="Elena M." width={320} height={320} />
+      <div><p className="mentoring-v2-kicker">STIMME ZUR PERSÖNLICHEN BEGLEITUNG</p><blockquote id="mentoring-voice-title">„Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum für meine persönlichen Themen. Genau das habe ich bei Jennifer Olivia gefunden.“</blockquote><p><strong>Elena M.</strong><span>Persönliche Begleitung</span></p></div>
+    </section>
+
+    <section className="mentoring-v2-deep-dives" aria-labelledby="deep-dives-title">
+      <div className="shell">
+        <header className="mentoring-v2-section-heading"><div><p className="mentoring-v2-kicker">OPTIONAL NACH DER HAUPTAUSBILDUNG</p><h2 id="deep-dives-title">Drei vertiefende Monde</h2></div><p>Jede Spezialisierung ist eine eigenständige, optionale Vertiefung. Sie ist kein verpflichtender Bestandteil der Aura-Luminess-Ausbildung.</p></header>
+        <div className="mentoring-v2-deep-grid">{deepDives.map((item) => <article key={item.number}><span>{item.number}</span><div aria-hidden="true">✦</div><h3>{item.title}</h3><p>{item.description}</p><strong>890 €</strong></article>)}</div>
+      </div>
+    </section>
+
+    <section className="mentoring-v2-paths shell" aria-labelledby="paths-title">
+      <header className="mentoring-v2-centered-heading"><p className="mentoring-v2-kicker">DEINE ORIENTIERUNG</p><h2 id="paths-title">Welcher Weg passt zu dir?</h2><p>Die Angebote sind Auswahlmöglichkeiten für unterschiedliche Bedürfnisse – keine verpflichtende Reihenfolge.</p></header>
+      <div className="mentoring-v2-path-grid">{paths.map((path) => <article key={path.title}><span aria-hidden="true">{path.symbol}</span><h3>{path.title}</h3><p>{path.text}</p></article>)}</div>
+    </section>
+
+    <section className="mentoring-v2-info" aria-label="Verfügbarkeit und Bewerbung">
+      <div className="shell mentoring-v2-info-grid">
+        <article id="blueprint-verfuegbarkeit"><p className="mentoring-v2-kicker">BLUEPRINT · PERSÖNLICHE VERFÜGBARKEIT</p><h2>Ein bewusst gewählter Start.</h2><p>Jeder Drei Monde Blueprint wird persönlich vorbereitet. Deshalb werden nur wenige Begleitungen gleichzeitig vergeben und jeder mögliche Beginn individuell geprüft.</p><div><span>Auf Anfrage</span><strong>890 € · bewusst limitierte Plätze</strong></div></article>
+        <article id="bewerbung"><p className="mentoring-v2-kicker">AURA LUMINESS · ZWEI CIRCLES IM JAHR</p><h2>Samhain &amp; Walpurgis</h2><p>Die Ausbildung beginnt zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase öffnet im Oktober 2026 für den Samhain Circle.</p><div><span>Bewerbung ab Oktober 2026</span><strong>Wenige, bewusst vergebene Plätze</strong></div></article>
+      </div>
+    </section>
+
+    <section className="mentoring-v2-closing">
+      <Image src="/hero-somatic-dark-mobile.png" alt="Atmosphärische Landschaft unter dem Mond" fill sizes="100vw" />
+      <div className="mentoring-v2-closing-shade" aria-hidden="true" />
+      <div className="shell mentoring-v2-closing-copy"><p className="mentoring-v2-kicker">DEIN ERSTER IMPULS</p><h2>Du möchtest zunächst herausfinden, was dich gerade ruft?</h2><p>Der kostenlose Somatic Karma Navigator schenkt dir Orientierung und hilft dir, dein aktuelles Thema bewusster einzuordnen.</p><a className="mentoring-v2-button mentoring-v2-button-light" href="https://somatic-karma-navigator.vercel.app/" target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten<span aria-hidden="true">→</span></a></div>
+    </section>
+  </div>;
 }
