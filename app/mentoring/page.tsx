@@ -81,7 +81,7 @@ export default function MentoringPage() {
 
     <section className="mentoring-v2-premium" id="high-touch" aria-labelledby="high-touch-title">
       <div className="shell mentoring-v2-premium-grid">
-        <div className="mentoring-v2-premium-image"><Image src="/products/aura-luminess-vip.png" alt="Neun Monde High Touch 1:1" fill sizes="(max-width: 760px) 100vw, 46vw" /></div>
+        <div className="mentoring-v2-premium-image"><Image src="/products/neun-monde-high-touch-1-1-premium.png" alt="Neun Monde High Touch 1:1" fill sizes="(max-width: 760px) 100vw, 46vw" /></div>
         <div className="mentoring-v2-premium-copy">
           <p className="mentoring-v2-kicker">ALL-INCLUSIVE · PERSÖNLICH BEGLEITET</p>
           <h2 id="high-touch-title">Neun Monde<br />High Touch 1:1</h2>
