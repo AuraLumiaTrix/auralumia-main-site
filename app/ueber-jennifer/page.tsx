@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Compass, Eye, Flower2, GraduationCap, HandHeart, Headphones, Mail, Moon, Music2, Podcast, Sparkles, Sprout } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { YouTubeListener } from "@/components/youtube-listener";
 import { links } from "@/lib/site-content";
 
 export const metadata: Metadata = {
@@ -11,11 +10,20 @@ export const metadata: Metadata = {
   description: "Lerne Jennifer Olivia Kindereit kennen – Gründerin von AuraLumia, Entwicklerin von Somatic Karma, Mentorin, Podcasterin und Ausbilderin.",
 };
 
-const podcastEpisodes = [
-  { id: "dgENyvmt4IU", label: "Die Schuldnarbe", meta: "Folge 9" },
-  { id: "T2QZH93ubLE", label: "Die Mutternarbe", meta: "Folge 11" },
-  { id: "39cDG-QaYfI", label: "Die Vaternarbe", meta: "Folge 12" },
+const podcastAudioEpisodes = [
+  { src: "/audio/podcast-mutternarbe.mp3", title: "Die Mutternarbe", meta: "Folge 11", duration: "25:45 Min." },
+  { src: "/audio/podcast-karrierebremse.mp3", title: "Karrierebremse lösen", meta: "Folge 15", duration: "20:18 Min." },
+  { src: "/audio/podcast-schuldnarbe.mp3", title: "Die Schuldnarbe", meta: "Folge 9", duration: "25:20 Min." },
 ];
+
+function YouTubeLogo() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor" />
+      <path d="m10 9 6 3-6 3z" fill="#fff" />
+    </svg>
+  );
+}
 
 const faqs = [
   { question: "Wie kann ich mit dir zusammenarbeiten?", answer: "Du kannst mit einem Selbstlernangebot beginnen, den Drei Monde Blueprint anfragen oder dich über die Aura-Luminess-Ausbildung informieren. Für Kooperationen und allgemeine Fragen erreichst du mich direkt per E-Mail." },
@@ -39,7 +47,7 @@ export default function JenniferPage() {
             <p className="about-v2-lead">Gründerin von AuraLumia, Entwicklerin von Somatic Karma, spirituelle Mentorin, Podcasterin und Ausbilderin.</p>
             <p>Ich verbinde intuitive Wahrnehmung mit klaren, erlernten Werkzeugen. So entstehen Räume, in denen du deine Muster besser verstehen, dich selbst wieder deutlicher hören und deinen eigenen Weg bewusster wählen kannst.</p>
             <div className="landing-actions">
-              <Link className="landing-button landing-button-primary" href="#meine-geschichte">Meine Geschichte entdecken <span aria-hidden="true">→</span></Link>
+              <Link className="landing-button landing-button-primary" href="#meine-geschichte">Meine Geschichte entdecken</Link>
               <Link className="landing-button landing-button-secondary" href="#podcast"><Headphones size={17} aria-hidden="true" /> Podcast anhören</Link>
             </div>
             <ul className="about-v2-hero-facts" aria-label="Jennifers Arbeit">
@@ -78,13 +86,27 @@ export default function JenniferPage() {
       <section className="about-v2-podcast" id="podcast">
         <div className="shell about-v2-podcast-intro">
           <div className="about-v2-podcast-art"><Image src="/podcast-auralumia.png" alt="Karma mit Zimt und Zucker – der AuraLumia Podcast" fill sizes="(max-width: 860px) 100vw, 44vw" /></div>
-          <div className="about-v2-podcast-copy"><p className="landing-kicker">PODCAST</p><h2>Karma mit Zimt und Zucker</h2><p className="about-v2-podcast-subtitle">Ehrliche Gespräche über Spiritualität, Selbstliebe und die süßen und herausfordernden Seiten des Lebens.</p><ul><li><Headphones aria-hidden="true" /> Inspiration für deinen Alltag</li><li><HandHeart aria-hidden="true" /> Persönliche, nahbare Impulse</li><li><Sparkles aria-hidden="true" /> Spiritualität zum Anfassen</li></ul><div className="landing-actions"><a className="landing-button landing-button-primary" href={links.podcast} target="_blank" rel="noreferrer">Alle Folgen hören <span aria-hidden="true">↗</span></a><a className="landing-button landing-button-secondary" href={links.podcastYoutube} target="_blank" rel="noreferrer">Auf YouTube <span aria-hidden="true">↗</span></a><Link className="landing-text-link" href="/podcast">Zur Podcast-Seite →</Link></div></div>
+          <div className="about-v2-podcast-copy"><p className="landing-kicker">PODCAST</p><h2>Karma mit Zimt und Zucker</h2><p className="about-v2-podcast-subtitle">Ehrliche Gespräche über Spiritualität, Selbstliebe und die süßen und herausfordernden Seiten des Lebens.</p><ul><li><Headphones aria-hidden="true" /> Inspiration für deinen Alltag</li><li><HandHeart aria-hidden="true" /> Persönliche, nahbare Impulse</li><li><Sparkles aria-hidden="true" /> Spiritualität zum Anfassen</li></ul><div className="about-v2-platform-actions"><a className="about-v2-platform-button about-v2-platform-youtube" href={links.podcastYoutube} target="_blank" rel="noreferrer"><YouTubeLogo /> Auf YouTube hören</a><Link className="landing-text-link" href="/podcast">Zur Podcast-Seite</Link></div></div>
         </div>
-        <div className="shell about-v2-podcast-player"><header className="landing-section-heading"><p className="landing-kicker">AUSGEWÄHLTE FOLGEN</p><h2>Direkt reinhören</h2></header><YouTubeListener items={podcastEpisodes} initialId={podcastEpisodes[0].id} title="Karma mit Zimt und Zucker" ariaLabel="Podcastfolge auswählen" posterSrc="/karma-mit-zimt-und-zucker.png" posterAlt="Cover des Podcasts Karma mit Zimt und Zucker" /></div>
+        <div className="shell about-v2-podcast-player">
+          <header className="landing-section-heading"><p className="landing-kicker">AUSGEWÄHLTE FOLGEN</p><h2>Direkt reinhören</h2></header>
+          <div className="about-v2-audio-grid">
+            {podcastAudioEpisodes.map((episode) => (
+              <article className="about-v2-audio-card" key={episode.src}>
+                <div><span>{episode.meta}</span><span>{episode.duration}</span></div>
+                <h3>{episode.title}</h3>
+                <audio controls preload="metadata" aria-label={`${episode.title}, ${episode.meta}`}>
+                  <source src={episode.src} type="audio/mpeg" />
+                  Dein Browser unterstützt die Audiowiedergabe leider nicht.
+                </audio>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="about-v2-music">
-        <div className="shell about-v2-music-grid"><div className="about-v2-music-art"><Image src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb" fill sizes="(max-width: 760px) 100vw, 38vw" /></div><div><p className="landing-kicker">NARU HIKARI · MUSIK</p><h2>Meine Stimme ist ein weiterer Weg nach innen.</h2><p>Unter meinem Künstlernamen Naru Hikari verbinde ich Stimme, Sinnlichkeit und weibliche Ahnenlinie zu einem eigenen Klangraum. Auch meine Einweihung im Kundalini Yoga als Chandra Sangeeta fließt in diese Arbeit ein.</p><Link className="landing-button landing-button-light" href="/musik">Meine Musik entdecken <span aria-hidden="true">→</span></Link></div></div>
+        <div className="shell about-v2-music-grid"><div className="about-v2-music-art"><Image src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb" fill sizes="(max-width: 760px) 100vw, 38vw" /></div><div><p className="landing-kicker">NARU HIKARI · MUSIK</p><h2>Meine Stimme ist ein weiterer Weg nach innen.</h2><p>Unter meinem Künstlernamen Naru Hikari verbinde ich Stimme, Sinnlichkeit und weibliche Ahnenlinie zu einem eigenen Klangraum. Auch meine Einweihung im Kundalini Yoga als Chandra Sangeeta fließt in diese Arbeit ein.</p><Link className="landing-button landing-button-light" href="/musik">Meine Musik entdecken</Link></div></div>
         <div className="shell about-v2-music-voices" aria-label="Stimmen zur Musik">
           <article><div className="about-v2-avatar about-v2-avatar-photo"><Image src="/testimonial-elena-m-avatar.jpg" alt="Elena M." fill sizes="58px" /></div><blockquote>„Deine Songs und deine Stimme wirken auf mich erdend, sinnlich und tief.“</blockquote><p><strong>Elena M.</strong><span>Hörerin</span></p></article>
           <article><div className="about-v2-avatar" aria-hidden="true">HL</div><blockquote>„Das Warten hat sich gelohnt. Und dann auch noch mein Lieblingssong ‚Loving Is Devotion‘ an erster Stelle.“</blockquote><p><strong>Heike L.</strong><span>Hörerin</span></p></article>
@@ -95,10 +117,10 @@ export default function JenniferPage() {
       <section className="about-v2-work"><div className="shell">
         <header className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">DEIN NÄCHSTER SCHRITT</p><h2>So kannst du mit mir arbeiten</h2><p>Ob du Somatic Karma lernen, deinen persönlichen Weg vertiefen oder mit mir zusammenarbeiten möchtest – hier findest du den passenden Einstieg.</p></header>
         <div className="about-v2-work-grid">
-          <article><GraduationCap aria-hidden="true" /><h3>Ausbildung</h3><p>Werde Teil der Aura-Luminess-Ausbildung und lerne Somatic Karma fundiert.</p><Link href="/neun-monde-aura-luminess">Mehr erfahren →</Link></article>
-          <article><Moon aria-hidden="true" /><h3>Blueprint-Fragen</h3><p>Erfahre mehr über deinen persönlichen Drei Monde Blueprint.</p><Link href="/drei-monde-blueprint">Blueprint ansehen →</Link></article>
-          <article><HandHeart aria-hidden="true" /><h3>Kooperationen</h3><p>Du möchtest mit mir zusammenarbeiten oder mich für dein Projekt anfragen?</p><a href="#kontakt">Kontakt aufnehmen →</a></article>
-          <article><Mail aria-hidden="true" /><h3>Allgemeine Anfrage</h3><p>Du hast eine andere Frage oder möchtest mir persönlich schreiben?</p><a href="#kontakt">Nachricht vorbereiten →</a></article>
+          <article><GraduationCap aria-hidden="true" /><h3>Ausbildung</h3><p>Werde Teil der Aura-Luminess-Ausbildung und lerne Somatic Karma fundiert.</p><Link href="/neun-monde-aura-luminess">Mehr erfahren</Link></article>
+          <article><Moon aria-hidden="true" /><h3>Blueprint-Fragen</h3><p>Erfahre mehr über deinen persönlichen Drei Monde Blueprint.</p><Link href="/drei-monde-blueprint">Blueprint ansehen</Link></article>
+          <article><HandHeart aria-hidden="true" /><h3>Kooperationen</h3><p>Du möchtest mit mir zusammenarbeiten oder mich für dein Projekt anfragen?</p><a href="#kontakt">Kontakt aufnehmen</a></article>
+          <article><Mail aria-hidden="true" /><h3>Allgemeine Anfrage</h3><p>Du hast eine andere Frage oder möchtest mir persönlich schreiben?</p><a href="#kontakt">Nachricht vorbereiten</a></article>
         </div>
         <article className="about-v2-guidance-voice"><Sparkles aria-hidden="true" /><blockquote>„Die Begleitung war klar und strukturiert und gleichzeitig weich, warm, weiblich, nährend und fließend. Die wertvollen Inspirationen und Impulse haben mir geholfen, alte Denkmuster zu durchbrechen.“</blockquote><p><strong>Kundinnenstimme</strong><span>Anonymisiert · persönliche Begleitung</span></p></article>
       </div></section>
@@ -110,7 +132,7 @@ export default function JenniferPage() {
 
       <section className="about-v2-faq"><div className="shell"><header className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">HÄUFIGE FRAGEN</p><h2>Deine Fragen, meine Antworten</h2></header><Accordion className="about-v2-accordion" type="single" collapsible>{faqs.map((faq, index) => <AccordionItem value={`faq-${index + 1}`} key={faq.question}><AccordionTrigger>{faq.question}</AccordionTrigger><AccordionContent>{faq.answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
 
-      <section className="about-v2-closing"><div className="shell"><p className="landing-kicker">BEREIT FÜR DEINEN NÄCHSTEN SCHRITT?</p><h2>Folge deiner Neugier – in deinem eigenen Tempo.</h2><p>Höre tiefer in die Themen von AuraLumia hinein oder beginne mit dem kostenfreien Somatic Karma Navigator.</p><div className="landing-actions"><Link className="landing-button landing-button-light" href="/podcast"><Headphones size={17} aria-hidden="true" /> Zum Podcast</Link><a className="landing-button landing-button-light" href={links.navigator} target="_blank" rel="noreferrer">Kostenlosen Navigator starten <span aria-hidden="true">↗</span></a></div></div></section>
+      <section className="about-v2-closing"><div className="shell"><p className="landing-kicker">BEREIT FÜR DEINEN NÄCHSTEN SCHRITT?</p><h2>Folge deiner Neugier – in deinem eigenen Tempo.</h2><p>Höre tiefer in die Themen von AuraLumia hinein oder beginne mit dem kostenfreien Somatic Karma Navigator.</p><div className="landing-actions"><Link className="landing-button landing-button-light" href="/podcast"><Headphones size={17} aria-hidden="true" /> Zum Podcast</Link><a className="landing-button landing-button-light" href={links.navigator} target="_blank" rel="noreferrer">Kostenlosen Navigator starten</a></div></div></section>
     </main>
   );
 }
