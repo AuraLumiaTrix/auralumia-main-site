@@ -98,10 +98,10 @@ const tarotArcana = [
 ];
 
 const elements = [
-  { name: "Feuer", image: "/somatic-karma/element-fire-gold.jpg", text: "Feuer beschreibt Impuls, Lebenskraft und die Richtung, in die Energie drängt." },
-  { name: "Erde", image: "/somatic-karma/element-earth-gold.jpg", text: "Erde macht Verkörperung, Grenzen und die konkrete Erfahrung im Alltag sichtbar." },
-  { name: "Luft", image: "/somatic-karma/element-air-gold.jpg", text: "Luft öffnet Sprache, Reflexion und das Erkennen von Zusammenhängen." },
-  { name: "Wasser", image: "/somatic-karma/element-water-gold.jpg", text: "Wasser berührt Gefühl, Bindung und die intuitive Wahrnehmung innerer Bewegungen." },
+  { name: "Feuer", image: "/somatic-karma/element-fire-gold-transparent.png", text: "Feuer beschreibt Impuls, Lebenskraft und die Richtung, in die Energie drängt." },
+  { name: "Erde", image: "/somatic-karma/element-earth-gold-transparent.png", text: "Erde macht Verkörperung, Grenzen und die konkrete Erfahrung im Alltag sichtbar." },
+  { name: "Luft", image: "/somatic-karma/element-air-gold-transparent.png", text: "Luft öffnet Sprache, Reflexion und das Erkennen von Zusammenhängen." },
+  { name: "Wasser", image: "/somatic-karma/element-water-gold-transparent.png", text: "Wasser berührt Gefühl, Bindung und die intuitive Wahrnehmung innerer Bewegungen." },
 ];
 
 function MoonMotif({ phase }: { phase: string }) {
@@ -133,28 +133,6 @@ function PlanetDiagram({ group }: { group: (typeof planetGroups)[number] }) {
 export default function SomaticKarmaPage() {
   return (
     <div className="sk-page">
-      <section className="sk-hero">
-        <div className="sk-hero-grid shell">
-          <div className="sk-hero-copy">
-            <p className="sk-kicker">SOMATIC KARMA · AURALUMIA SIGNATURE-METHODE</p>
-            <h1>Vier Bedürfnisse.<br />Vier karmische Narben.<br />Ein Weg zu tiefer Selbsterkenntnis.</h1>
-            <p className="sk-hero-intro">Ich habe Somatic Karma entwickelt, um die feinen Verbindungen zwischen Körpererfahrung, psychologischen Grundbedürfnissen und spirituellen Deutungssystemen sichtbar zu machen. So entsteht eine verständliche Landkarte für Muster, Bedürfnisse und selbstbestimmte nächste Schritte.</p>
-            <div className="sk-actions">
-              <a className="sk-button sk-button-primary" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten <span aria-hidden="true">→</span></a>
-              <a className="sk-button sk-button-secondary" href="#was-ist-somatic-karma">Mehr erfahren</a>
-            </div>
-          </div>
-          <div className="sk-hero-art" aria-hidden="true">
-            <span className="sk-hero-halo"></span>
-            <Image src="/hero-somatic.jpg" alt="" fill priority sizes="(max-width: 760px) 100vw, 48vw" />
-            <p>Erkennen.<br />Annehmen.<br />Neu wählen.</p>
-          </div>
-        </div>
-        <div className="sk-hero-notes shell" aria-label="Grundlagen von Somatic Karma">
-          <span><i aria-hidden="true">✧</i>Körperwissen</span><span><i aria-hidden="true">☾</i>Vier Grundbedürfnisse</span><span><i aria-hidden="true">✦</i>Symbolische Deutung</span><span><i aria-hidden="true">⌁</i>Innere Orientierung</span>
-        </div>
-      </section>
-
       <section className="sk-wounds" id="was-ist-somatic-karma" aria-labelledby="sk-wounds-title">
         <div className="shell">
           <div className="sk-heading sk-heading-centered">

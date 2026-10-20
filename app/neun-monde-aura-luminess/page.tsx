@@ -17,7 +17,7 @@ const learningAreas = [
   { title: "Karmische Narben", image: "/karma-code.webp", text: "Du vertiefst die vier karmischen Narben und ihre Bedeutung als spirituelle Reflexionsfelder." },
   { title: "Tarot & archetypische Deutung", image: "/tarot-cards/major-2.webp", text: "Du erschließt dir die Bildsprache des Tarot innerhalb der Somatic-Karma-Methode." },
   { title: "Planetengruppen", image: "/somatic-karma/triad-mutternarbe-gold.jpg", text: "Du lernst die vier Zentren und ihre jeweiligen planetarischen Triaden kennen." },
-  { title: "Elementelehre", image: "/somatic-karma/element-water-gold.jpg", text: "Du differenzierst die Qualitäten von Feuer, Erde, Luft und Wasser in der Deutung." },
+  { title: "Elementelehre", image: "/somatic-karma/element-water-gold-transparent.png", text: "Du differenzierst die Qualitäten von Feuer, Erde, Luft und Wasser in der Deutung." },
   { title: "Deutungsintegration", image: "/hero-somatic-taupe-mobile.png", text: "Du verbindest die einzelnen Ebenen zu einer klaren, zusammenhängenden Betrachtung." },
 ];
 
