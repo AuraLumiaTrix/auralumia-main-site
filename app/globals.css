@@ -1424,31 +1424,24 @@ p { margin:0; }
 .offers-v2-heading > p { max-width:570px; padding-bottom:5px; color:#796566; font-size:.82rem; line-height:1.65; }
 
 .offers-v2-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
-.offers-v2-card-grid-single { grid-template-columns:1fr; }
+.offers-v2-card-grid-single { grid-template-columns:minmax(280px,315px); justify-content:center; }
 .offers-v2-card-grid-two { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .offers-v2-card-grid-four { grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
-.offers-v2-card-grid-four .offers-v2-card-image { height:175px; }
-.offers-v2-card-grid-four .offers-v2-card-copy { min-height:300px; padding-inline:23px; }
+.offers-v2-card-grid-four .offers-v2-card-copy { padding-inline:23px; }
 .offers-v2-card-grid-four .offers-v2-card-copy h3 { font-size:1.84rem; }
-.offers-v2-card { min-width:0; overflow:hidden; border:1px solid rgba(112,83,87,.12); border-radius:19px; background:rgba(255,255,255,.88); box-shadow:0 16px 38px rgba(92,66,71,.075); transition:transform .25s ease,box-shadow .25s ease; }
-.offers-v2-card:hover { transform:translateY(-4px); box-shadow:0 22px 48px rgba(92,66,71,.12); }
-.offers-v2-card-image { position:relative; height:205px; overflow:hidden; background:#f5efed; }
-.offers-v2-card-image::after { position:absolute; inset:0; background:linear-gradient(180deg,transparent 65%,rgba(99,71,77,.12)); content:""; }
-.offers-v2-card-image img { object-fit:cover; object-position:center; transition:transform .45s ease; }
-.offers-v2-card:hover .offers-v2-card-image img { transform:scale(1.025); }
-.offers-v2-card-copy { display:flex; min-height:270px; flex-direction:column; padding:27px 28px 24px; }
-.offers-v2-card-copy h3 { font-size:2.18rem; line-height:1; }
-.offers-v2-card-copy > p { margin:15px 0 24px; color:#7d696a; font-size:.78rem; line-height:1.62; }
-.offers-v2-card-grid-single .offers-v2-card { display:grid; grid-template-columns:minmax(310px,.72fr) minmax(0,1.28fr); }
-.offers-v2-card-grid-single .offers-v2-card-image { height:auto; min-height:330px; }
-.offers-v2-card-grid-single .offers-v2-card-copy { min-height:330px; padding:45px; }
-.offers-v2-card-grid-single .offers-v2-card-copy h3 { font-size:clamp(2.6rem,3.8vw,4rem); }
-.offers-v2-card-grid-single .offers-v2-card-copy > p { max-width:600px; font-size:.86rem; }
-.offers-v2-card-footer { display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-top:auto; }
-.offers-v2-card-footer strong { color:#604a4c; font-size:1.08rem; white-space:nowrap; }
+.offers-v2-card { display:flex; min-width:0; min-height:455px; flex-direction:column; padding:20px 22px 26px; overflow:hidden; border:1px solid rgba(119,91,88,.13); border-radius:22px; background:rgba(255,253,250,.88); box-shadow:0 14px 42px rgba(97,77,77,.07); text-align:center; transition:transform .25s ease,box-shadow .25s ease; }
+.offers-v2-card:hover { transform:translateY(-5px); box-shadow:0 21px 50px rgba(97,77,77,.12); }
+.offers-v2-card-image { position:relative; width:100%; height:175px; margin-bottom:10px; overflow:hidden; border-radius:15px; background:#fff; }
+.offers-v2-card-image img { object-fit:contain; object-position:center; transition:transform .35s ease; }
+.offers-v2-card:hover .offers-v2-card-image img { transform:scale(1.03); }
+.offers-v2-card-copy { display:flex; min-height:230px; flex:1; align-items:center; flex-direction:column; padding:0; }
+.offers-v2-card-price { color:#a17e76; font-size:.62rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
+.offers-v2-card-copy h3 { margin-top:9px; font-size:1.9rem; line-height:1.04; }
+.offers-v2-card-copy > p { margin:10px 0 0; color:#7d696a; font-size:.73rem; line-height:1.62; }
+.offers-v2-card-footer { display:flex; align-items:center; justify-content:center; margin-top:auto; padding-top:16px; }
 .offers-v2-card-link { display:inline-flex; align-items:center; gap:8px; padding-bottom:2px; border-bottom:1px solid rgba(104,78,82,.4); font-size:.68rem; font-weight:700; letter-spacing:.025em; white-space:nowrap; }
 .offers-v2-card-link:hover { border-color:var(--offers-ink); }
-.offers-v2-status { color:#98766f; font-size:.63rem; font-weight:700; letter-spacing:.095em; text-align:right; text-transform:uppercase; }
+.offers-v2-status { color:#98766f; font-size:.63rem; font-weight:700; letter-spacing:.095em; text-align:center; text-transform:uppercase; }
 
 .offers-v2-mentoring-note { padding-block:76px; background:#f1e9eb; }
 .offers-v2-mentoring-note > div { display:grid; grid-template-columns:1.15fr .85fr; align-items:end; gap:9vw; }
@@ -1487,7 +1480,7 @@ p { margin:0; }
   .offers-v2-section { scroll-margin-top:143px; padding-block:72px 78px; }
   .offers-v2-heading { margin-bottom:30px; }
   .offers-v2-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  .offers-v2-card-grid-single { grid-template-columns:1fr; }
+  .offers-v2-card-grid-single { grid-template-columns:minmax(280px,315px); justify-content:center; }
   .offers-v2-card-grid-four { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .offers-v2-mentoring-note > div { grid-template-columns:1fr 1fr; gap:50px; }
 }
@@ -1511,19 +1504,14 @@ p { margin:0; }
   .offers-v2-heading { grid-template-columns:auto 1fr; gap:16px; margin-bottom:27px; }
   .offers-v2-heading-icon { width:54px; height:54px; font-size:1.8rem; }
   .offers-v2-heading h2 { font-size:clamp(3rem,14vw,4rem); }
-  .offers-v2-heading #offers-meditations-title { font-size:clamp(2.45rem,10.8vw,3.25rem); letter-spacing:-.045em; }
+  .offers-v2-heading #offers-meditations-title { font-size:clamp(2.15rem,9.2vw,2.75rem); letter-spacing:-.045em; overflow-wrap:normal; word-break:normal; }
   .offers-v2-heading > p { grid-column:1/-1; padding:0; font-size:.8rem; }
   .offers-v2-card-grid,.offers-v2-card-grid-two,.offers-v2-card-grid-four,.offers-v2-card-grid-single { grid-template-columns:1fr; }
-  .offers-v2-card-grid-single .offers-v2-card { display:block; }
-  .offers-v2-card-grid-single .offers-v2-card-image { height:220px; min-height:0; }
-  .offers-v2-card-grid-single .offers-v2-card-copy { min-height:255px; padding:25px 24px 23px; }
-  .offers-v2-card-grid-single .offers-v2-card-copy h3 { font-size:2.15rem; }
-  .offers-v2-card-grid-single .offers-v2-card-copy > p { font-size:.78rem; }
-  .offers-v2-card-image { height:220px; }
-  .offers-v2-card-copy { min-height:255px; padding:25px 24px 23px; }
+  .offers-v2-card { min-height:435px; }
+  .offers-v2-card-image { height:205px; }
+  .offers-v2-card-copy { min-height:200px; }
   .offers-v2-card-copy h3 { font-size:2.15rem; }
-  .offers-v2-card-grid-four .offers-v2-card-image { height:220px; }
-  .offers-v2-card-grid-four .offers-v2-card-copy { min-height:255px; padding-inline:24px; }
+  .offers-v2-card-grid-four .offers-v2-card-copy { padding-inline:0; }
   .offers-v2-card-grid-four .offers-v2-card-copy h3 { font-size:2.05rem; }
   .offers-v2-mentoring-note { padding-block:62px; }
   .offers-v2-mentoring-note > div { grid-template-columns:1fr; gap:30px; }
@@ -1531,11 +1519,6 @@ p { margin:0; }
   .offers-v2-final { min-height:490px; }
   .offers-v2-final-copy { padding-block:72px; }
   .offers-v2-final h2 { font-size:clamp(3.25rem,14vw,4.45rem); }
-}
-
-@media (max-width:390px) {
-  .offers-v2-card-footer { align-items:flex-start; flex-direction:column; }
-  .offers-v2-status { text-align:left; }
 }
 
 /* Mentoring overview redesign */

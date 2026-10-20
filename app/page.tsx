@@ -30,14 +30,6 @@ const journey = [
   { no: "04", label: "Ausbildung & High Touch", title: "Aura Luminess", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/aura-luminess-premium.png", action: "Wege vergleichen" },
 ];
 
-const popularOffers = [
-  { eyebrow: "Kostenfrei", title: "Karma Navigator", price: "0 €", image: "/products/produktbild-karma-navigator.png", href: links.navigator, external: true },
-  { eyebrow: "Coming soon", title: "Vier Narben Starter-Kits", price: "47 €", image: "/products/produktbild-audio-bundle.png", href: "/angebote#starter-kits" },
-  { eyebrow: "Digitaler Kartenraum", title: "Somatic Karma Tarot App", price: "9 € / Monat", image: "/products/somatic-tarot-access.png", href: links.tarot, external: true },
-  { eyebrow: "Persönliche Aktivierung", title: "Card Deck Blessing", price: "101,11 €", image: "/products/card-deck-blessing.png", href: links.cardDeckBlessing, external: true },
-  { eyebrow: "Drei Monde · High Touch", title: "3-Month Blueprint", price: "890 €", image: "/products/high-touch-3-month-blueprint.png", href: "/mentoring#blueprint" },
-];
-
 const testimonials = [
   { quote: "Ich bin so begeistert von der App. Sie ist intuitiv, wunderschön gestaltet und lässt sich ganz einfach in meinen Tagesablauf integrieren.", name: "Marie-Lena B.", context: "Somatic Karma Tarot App", image: "/testimonial-marie-lena-b.png" },
   { quote: "Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum. Genau das habe ich bei Jennifer Olivia gefunden.", name: "Elena M.", context: "Persönliche Begleitung", image: "/testimonial-elena-m-avatar.jpg" },
@@ -97,21 +89,6 @@ export default function Home() {
             {journey.map((item) => {
               const content = <><span className="journey-number">{item.no}</span><div className="journey-image"><Image src={item.image} alt="" fill sizes="(max-width: 760px) 88vw, 24vw" /></div><p className="journey-label">{item.label}</p><h3>{item.title}</h3><p className="journey-copy">{item.text}</p><b>{item.action} <span aria-hidden="true">→</span></b></>;
               return item.external ? <a className="journey-card" href={item.href} target="_blank" rel="noopener noreferrer" key={item.no}>{content}</a> : <Link className="journey-card" href={item.href} key={item.no}>{content}</Link>;
-            })}
-          </div>
-        </div>
-      </section>
-
-      <section className="popular-section" aria-labelledby="popular-title">
-        <div className="shell">
-          <div className="landing-section-heading landing-section-heading-split">
-            <div><p className="landing-kicker">AUSGEWÄHLTE RÄUME</p><h2 id="popular-title">Beliebte Angebote</h2><p>Vertiefe deine Praxis mit digitalen Werkzeugen, Audios und persönlicher Begleitung.</p></div>
-            <Link className="landing-text-link" href="/angebote">Alle Angebote ansehen <span aria-hidden="true">→</span></Link>
-          </div>
-          <div className="popular-grid">
-            {popularOffers.map((offer) => {
-              const content = <><div className="popular-image"><Image src={offer.image} alt={offer.title} fill sizes="(max-width: 760px) 84vw, 20vw" /></div><div className="popular-copy"><span>{offer.eyebrow}</span><h3>{offer.title}</h3><strong>{offer.price}</strong><i aria-hidden="true">↗</i></div></>;
-              return offer.external ? <a className="popular-card" href={offer.href} target="_blank" rel="noopener noreferrer" key={offer.title}>{content}</a> : <Link className="popular-card" href={offer.href} key={offer.title}>{content}</Link>;
             })}
           </div>
         </div>

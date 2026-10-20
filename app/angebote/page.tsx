@@ -113,9 +113,10 @@ function CompactOfferCard({ offer }: { offer: Offer }) {
         <Image src={offer.image} alt={offer.title} fill sizes="(max-width: 760px) 92vw, (max-width: 1100px) 45vw, 30vw" />
       </div>
       <div className="offers-v2-card-copy">
+        <span className="offers-v2-card-price">{offer.price}</span>
         <h3>{offer.title}</h3>
         <p>{offer.description}</p>
-        <div className="offers-v2-card-footer"><strong>{offer.price}</strong><OfferAction offer={offer} /></div>
+        <div className="offers-v2-card-footer"><OfferAction offer={offer} /></div>
       </div>
     </article>
   );
