@@ -37,7 +37,7 @@ export default function JenniferPage() {
     <main className="about-v2">
       <section className="about-v2-hero">
         <div className="about-v2-hero-media">
-          <Image src="/about/jennifer-heute.png" alt="Jennifer im Kreis mit vier Frauen" fill priority sizes="100vw" />
+          <Image src="/about/jennifer-frauenkreis-hero-portrait.jpg" alt="Jennifer in einem Frauenkreis mit Kerzen und Blumen" fill priority sizes="100vw" />
         </div>
         <div className="about-v2-hero-shade" aria-hidden="true" />
         <div className="shell about-v2-hero-grid">

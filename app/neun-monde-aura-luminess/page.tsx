@@ -16,16 +16,16 @@ const learningAreas = [
   { title: "Grundbedürfnisse", image: "/hero-somatic.jpg", text: "Du lernst die vier menschlichen Grundbedürfnisse als Ausgangspunkt der Methode kennen." },
   { title: "Karmische Narben", image: "/karma-code.webp", text: "Du vertiefst die vier karmischen Narben und ihre Bedeutung als spirituelle Reflexionsfelder." },
   { title: "Tarot & archetypische Deutung", image: "/tarot-cards/major-2.webp", text: "Du erschließt dir die Bildsprache des Tarot innerhalb der Somatic-Karma-Methode." },
-  { title: "Planetengruppen", image: "/somatic-karma/triad-mutternarbe.png", text: "Du lernst die vier Zentren und ihre jeweiligen planetarischen Triaden kennen." },
-  { title: "Elementelehre", image: "/somatic-karma/element-water.png", text: "Du differenzierst die Qualitäten von Feuer, Erde, Luft und Wasser in der Deutung." },
+  { title: "Planetengruppen", image: "/somatic-karma/triad-mutternarbe-gold.jpg", text: "Du lernst die vier Zentren und ihre jeweiligen planetarischen Triaden kennen." },
+  { title: "Elementelehre", image: "/somatic-karma/element-water-gold.jpg", text: "Du differenzierst die Qualitäten von Feuer, Erde, Luft und Wasser in der Deutung." },
   { title: "Deutungsintegration", image: "/hero-somatic-taupe-mobile.png", text: "Du verbindest die einzelnen Ebenen zu einer klaren, zusammenhängenden Betrachtung." },
 ];
 
 const planetGroups = [
-  { title: "Schuldnarbe", image: "/somatic-karma/triad-schuldnarbe.png", description: "Ceres im Zentrum; Neptun, Pluto und Pholus als Triade." },
-  { title: "Geschwisternarbe", image: "/somatic-karma/triad-geschwisternarbe.png", description: "Mars im Zentrum; Pallas Athene, Eris und Merkur als Triade." },
-  { title: "Mutternarbe", image: "/somatic-karma/triad-mutternarbe.png", description: "Mond im Zentrum; Venus, Juno und Lilith als Triade." },
-  { title: "Vaternarbe", image: "/somatic-karma/triad-vaternarbe.png", description: "Saturn im Zentrum; Vesta, Chiron und Sonne als Triade." },
+  { title: "Schuldnarbe", image: "/somatic-karma/triad-schuldnarbe-gold.jpg", description: "Ceres im Zentrum; Neptun, Pluto und Pholus als Triade." },
+  { title: "Geschwisternarbe", image: "/somatic-karma/triad-geschwisternarbe-gold.jpg", description: "Mars im Zentrum; Pallas Athene, Eris und Merkur als Triade." },
+  { title: "Mutternarbe", image: "/somatic-karma/triad-mutternarbe-gold.jpg", description: "Mond im Zentrum; Venus, Juno und Lilith als Triade." },
+  { title: "Vaternarbe", image: "/somatic-karma/triad-vaternarbe-gold.jpg", description: "Saturn im Zentrum; Vesta, Chiron und Sonne als Triade." },
 ];
 
 const tools = [

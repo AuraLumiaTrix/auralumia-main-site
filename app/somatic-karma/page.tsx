@@ -44,7 +44,7 @@ const planetGroups = [
     id: "gruppe-schuldnarbe",
     no: "01",
     title: "Schuldnarbe",
-    image: "/somatic-karma/triad-schuldnarbe.png",
+    image: "/somatic-karma/triad-schuldnarbe-gold.jpg",
     center: { symbol: "⚳", name: "Ceres" },
     orbit: [
       { symbol: "♆", name: "Neptun" },
@@ -56,7 +56,7 @@ const planetGroups = [
     id: "gruppe-geschwisternarbe",
     no: "02",
     title: "Geschwisternarbe",
-    image: "/somatic-karma/triad-geschwisternarbe.png",
+    image: "/somatic-karma/triad-geschwisternarbe-gold.jpg",
     center: { symbol: "♂", name: "Mars" },
     orbit: [
       { symbol: "⚴", name: "Pallas Athene" },
@@ -68,7 +68,7 @@ const planetGroups = [
     id: "gruppe-mutternarbe",
     no: "03",
     title: "Mutternarbe",
-    image: "/somatic-karma/triad-mutternarbe.png",
+    image: "/somatic-karma/triad-mutternarbe-gold.jpg",
     center: { symbol: "☾", name: "Mond" },
     orbit: [
       { symbol: "♀", name: "Venus" },
@@ -80,7 +80,7 @@ const planetGroups = [
     id: "gruppe-vaternarbe",
     no: "04",
     title: "Vaternarbe",
-    image: "/somatic-karma/triad-vaternarbe.png",
+    image: "/somatic-karma/triad-vaternarbe-gold.jpg",
     center: { symbol: "♄", name: "Saturn" },
     orbit: [
       { symbol: "⚶", name: "Vesta" },
@@ -98,10 +98,10 @@ const tarotArcana = [
 ];
 
 const elements = [
-  { name: "Feuer", image: "/somatic-karma/element-fire.png", text: "Feuer beschreibt Impuls, Lebenskraft und die Richtung, in die Energie drängt." },
-  { name: "Erde", image: "/somatic-karma/element-earth.png", text: "Erde macht Verkörperung, Grenzen und die konkrete Erfahrung im Alltag sichtbar." },
-  { name: "Luft", image: "/somatic-karma/element-air.png", text: "Luft öffnet Sprache, Reflexion und das Erkennen von Zusammenhängen." },
-  { name: "Wasser", image: "/somatic-karma/element-water.png", text: "Wasser berührt Gefühl, Bindung und die intuitive Wahrnehmung innerer Bewegungen." },
+  { name: "Feuer", image: "/somatic-karma/element-fire-gold.jpg", text: "Feuer beschreibt Impuls, Lebenskraft und die Richtung, in die Energie drängt." },
+  { name: "Erde", image: "/somatic-karma/element-earth-gold.jpg", text: "Erde macht Verkörperung, Grenzen und die konkrete Erfahrung im Alltag sichtbar." },
+  { name: "Luft", image: "/somatic-karma/element-air-gold.jpg", text: "Luft öffnet Sprache, Reflexion und das Erkennen von Zusammenhängen." },
+  { name: "Wasser", image: "/somatic-karma/element-water-gold.jpg", text: "Wasser berührt Gefühl, Bindung und die intuitive Wahrnehmung innerer Bewegungen." },
 ];
 
 function MoonMotif({ phase }: { phase: string }) {
