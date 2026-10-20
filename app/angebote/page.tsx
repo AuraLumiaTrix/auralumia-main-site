@@ -136,23 +136,13 @@ export default function AngebotePage() {
             <Image src="/hero-womens-circle.jpg" alt="Frauen in einem ruhigen, modernen Kreis" fill priority sizes="(max-width: 760px) 100vw, 52vw" />
           </div>
         </div>
-        <div className="offers-v2-promises shell" aria-label="Was die AuraLumia Angebote auszeichnet">
-          <span><i aria-hidden="true">♧</i>Tiefes Wissen &amp; Selbsterkenntnis</span>
-          <span><i aria-hidden="true">☾</i>Von Herz zu Herz</span>
-          <span><i aria-hidden="true">✦</i>Spirituell fundiert &amp; alltagstauglich</span>
-          <span><i aria-hidden="true">♡</i>In deinem eigenen Tempo</span>
+        <div className="offers-v2-promises shell" aria-label="Angebotsbereiche">
+          <a href="#navigator"><i aria-hidden="true">✦</i><span>Navigator</span></a>
+          <a href="#meditationspakete"><i aria-hidden="true">☾</i><span>Meditationspakete</span></a>
+          <a href="#tarot"><i aria-hidden="true">◇</i><span>Tarot</span></a>
+          <a href="#vertiefung"><i aria-hidden="true">♡</i><span>Vertiefung</span></a>
         </div>
       </section>
-
-      <nav className="offers-v2-filter" aria-label="Angebotsbereiche">
-        <div className="shell">
-          <a className="is-active" href="#alle-angebote">✧ <span>Alle Angebote</span></a>
-          <a href="#navigator">✦ <span>Navigator</span></a>
-          <a href="#meditationspakete">☾ <span>Meditationspakete</span></a>
-          <a href="#tarot">◇ <span>Tarot</span></a>
-          <a href="#vertiefung">♡ <span>Vertiefung</span></a>
-        </div>
-      </nav>
 
       <section className="offers-v2-section offers-v2-entry" id="navigator" aria-labelledby="offers-entry-title">
         <div className="shell">
