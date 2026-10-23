@@ -45,6 +45,8 @@ const planetGroups = [
     no: "01",
     title: "Schuldnarbe",
     image: "/somatic-karma/triad-schuldnarbe-gold.jpg",
+    mantraSymbol: "/somatic-karma/mantra-schuldnarbe.png",
+    mantra: "Ich gebe und empfange in vollkommener Harmonie und Liebe.",
     center: { symbol: "⚳", name: "Ceres" },
     orbit: [
       { symbol: "♆", name: "Neptun" },
@@ -57,6 +59,8 @@ const planetGroups = [
     no: "02",
     title: "Geschwisternarbe",
     image: "/somatic-karma/triad-geschwisternarbe-gold.jpg",
+    mantraSymbol: "/somatic-karma/mantra-geschwisternarbe.png",
+    mantra: "Ich hebe andere Frauen empor, indem ich selbst in meiner vollen Kraft strahle.",
     center: { symbol: "♂", name: "Mars" },
     orbit: [
       { symbol: "⚴", name: "Pallas Athene" },
@@ -69,6 +73,8 @@ const planetGroups = [
     no: "03",
     title: "Mutternarbe",
     image: "/somatic-karma/triad-mutternarbe-gold.jpg",
+    mantraSymbol: "/somatic-karma/mantra-mutternarbe.png",
+    mantra: "Ich bin ganz, ich bin heil. Ich bin endlich bei mir selbst angekommen.",
     center: { symbol: "☾", name: "Mond" },
     orbit: [
       { symbol: "♀", name: "Venus" },
@@ -81,6 +87,8 @@ const planetGroups = [
     no: "04",
     title: "Vaternarbe",
     image: "/somatic-karma/triad-vaternarbe-gold.jpg",
+    mantraSymbol: "/somatic-karma/mantra-vaternarbe.png",
+    mantra: "Ich wähle die Liebe, die wahrhaftig ist und mein Herz wirklich nährt.",
     center: { symbol: "♄", name: "Saturn" },
     orbit: [
       { symbol: "⚶", name: "Vesta" },
@@ -112,6 +120,10 @@ function PlanetDiagram({ group }: { group: (typeof planetGroups)[number] }) {
       <div className="sk-planet-heading"><span>{group.no}</span><h3>{group.title}</h3></div>
       <div className="sk-planet-art">
         <Image src={group.image} alt={description} fill sizes="(max-width: 760px) 86vw, (max-width: 1100px) 44vw, 22vw" />
+      </div>
+      <div className="sk-planet-mantra">
+        <Image src={group.mantraSymbol} alt="" width={1122} height={1402} sizes="150px" />
+        <p>„{group.mantra}“</p>
       </div>
     </article>
   );
