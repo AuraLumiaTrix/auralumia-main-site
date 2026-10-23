@@ -59,7 +59,7 @@ const planetGroups = [
     no: "02",
     title: "Geschwisternarbe",
     image: "/somatic-karma/triad-geschwisternarbe-gold.jpg",
-    mantraSymbol: "/somatic-karma/mantra-geschwisternarbe.png",
+    mantraSymbol: "/somatic-karma/mantra-vaternarbe.png",
     mantra: "Ich hebe andere Frauen empor, indem ich selbst in meiner vollen Kraft strahle.",
     center: { symbol: "♂", name: "Mars" },
     orbit: [
@@ -74,7 +74,7 @@ const planetGroups = [
     title: "Mutternarbe",
     image: "/somatic-karma/triad-mutternarbe-gold.jpg",
     mantraSymbol: "/somatic-karma/mantra-mutternarbe.png",
-    mantra: "Ich bin ganz, ich bin heil. Ich bin endlich bei mir selbst angekommen.",
+    mantra: "Ich wähle die Liebe, die wahrhaftig ist und mein Herz wirklich nährt.",
     center: { symbol: "☾", name: "Mond" },
     orbit: [
       { symbol: "♀", name: "Venus" },
@@ -87,8 +87,8 @@ const planetGroups = [
     no: "04",
     title: "Vaternarbe",
     image: "/somatic-karma/triad-vaternarbe-gold.jpg",
-    mantraSymbol: "/somatic-karma/mantra-vaternarbe.png",
-    mantra: "Ich wähle die Liebe, die wahrhaftig ist und mein Herz wirklich nährt.",
+    mantraSymbol: "/somatic-karma/mantra-geschwisternarbe.png",
+    mantra: "Ich bin ganz, ich bin heil. Ich bin endlich bei mir selbst angekommen.",
     center: { symbol: "♄", name: "Saturn" },
     orbit: [
       { symbol: "⚶", name: "Vesta" },
