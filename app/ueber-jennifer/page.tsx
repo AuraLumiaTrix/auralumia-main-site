@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Compass, Eye, Flower2, GraduationCap, HandHeart, Headphones, Mail, Moon, Music2, Podcast, Sparkles, Sprout } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { PodcastAudioPlayer } from "@/components/podcast-audio-player";
+import { PodcastPlatformLinks } from "@/components/podcast-platform-links";
 import { links } from "@/lib/site-content";
 
 export const metadata: Metadata = {
@@ -15,15 +17,6 @@ const podcastAudioEpisodes = [
   { src: "/audio/podcast-karrierebremse.mp3", title: "Karrierebremse lösen", meta: "Folge 15", duration: "20:18 Min." },
   { src: "/audio/podcast-schuldnarbe.mp3", title: "Die Schuldnarbe", meta: "Folge 9", duration: "25:20 Min." },
 ];
-
-function YouTubeLogo() {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor" />
-      <path d="m10 9 6 3-6 3z" fill="#fff" />
-    </svg>
-  );
-}
 
 const faqs = [
   { question: "Wie kann ich mit dir zusammenarbeiten?", answer: "Du kannst mit einem Selbstlernangebot beginnen, den Drei Monde Blueprint anfragen oder dich über die Aura-Luminess-Ausbildung informieren. Für Kooperationen und allgemeine Fragen erreichst du mich direkt per E-Mail." },
@@ -86,7 +79,7 @@ export default function JenniferPage() {
       <section className="about-v2-podcast" id="podcast">
         <div className="shell about-v2-podcast-intro">
           <div className="about-v2-podcast-art"><Image src="/podcast-auralumia.png" alt="Karma mit Zimt und Zucker – der AuraLumia Podcast" fill sizes="(max-width: 860px) 100vw, 44vw" /></div>
-          <div className="about-v2-podcast-copy"><p className="landing-kicker">PODCAST</p><h2>Karma mit Zimt und Zucker</h2><p className="about-v2-podcast-subtitle">Ehrliche Gespräche über Spiritualität, Selbstliebe und die süßen und herausfordernden Seiten des Lebens.</p><ul><li><Headphones aria-hidden="true" /> Inspiration für deinen Alltag</li><li><HandHeart aria-hidden="true" /> Persönliche, nahbare Impulse</li><li><Sparkles aria-hidden="true" /> Spiritualität zum Anfassen</li></ul><div className="about-v2-platform-actions"><a className="about-v2-platform-button about-v2-platform-youtube" href={links.podcastYoutube} target="_blank" rel="noreferrer"><YouTubeLogo /> Auf YouTube hören</a><Link className="landing-text-link" href="/podcast">Zur Podcast-Seite</Link></div></div>
+          <div className="about-v2-podcast-copy"><p className="landing-kicker">PODCAST</p><h2>Karma mit Zimt und Zucker</h2><p className="about-v2-podcast-subtitle">Ehrliche Gespräche über Spiritualität, Selbstliebe und die süßen und herausfordernden Seiten des Lebens.</p><ul><li><Headphones aria-hidden="true" /> Inspiration für deinen Alltag</li><li><HandHeart aria-hidden="true" /> Persönliche, nahbare Impulse</li><li><Sparkles aria-hidden="true" /> Spiritualität zum Anfassen</li></ul><div className="about-v2-platform-actions"><PodcastPlatformLinks /><Link className="landing-text-link" href="/podcast">Zur Podcast-Seite</Link></div></div>
         </div>
         <div className="shell about-v2-podcast-player">
           <header className="landing-section-heading"><p className="landing-kicker">AUSGEWÄHLTE FOLGEN</p><h2>Direkt reinhören</h2></header>
@@ -95,10 +88,7 @@ export default function JenniferPage() {
               <article className="about-v2-audio-card" key={episode.src}>
                 <div><span>{episode.meta}</span><span>{episode.duration}</span></div>
                 <h3>{episode.title}</h3>
-                <audio controls preload="metadata" aria-label={`${episode.title}, ${episode.meta}`}>
-                  <source src={episode.src} type="audio/mpeg" />
-                  Dein Browser unterstützt die Audiowiedergabe leider nicht.
-                </audio>
+                <PodcastAudioPlayer src={episode.src} title={`${episode.title}, ${episode.meta}`} durationLabel={episode.duration.replace(" Min.", "")} />
               </article>
             ))}
           </div>
