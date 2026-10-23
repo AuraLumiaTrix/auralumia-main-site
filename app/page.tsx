@@ -94,7 +94,7 @@ export default function Home() {
 
       <section className="about-home" aria-labelledby="about-home-title">
         <div className="about-home-inner shell">
-          <div className="about-home-portrait"><Image src="/jennifer-olivia.jpg" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill sizes="(max-width: 760px) 100vw, 42vw" /></div>
+          <div className="about-home-portrait"><Image src="/about/jennifer-olivia-portrait-home.jpg" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill sizes="(max-width: 760px) 100vw, 42vw" /></div>
           <div className="about-home-copy"><p className="landing-kicker">ÜBER MICH</p><h2 id="about-home-title">Hallo, ich bin Jennifer.</h2><p>Ich habe AuraLumia gegründet, um Frauen auf ihrem Weg zu mehr Selbstkenntnis und authentischer Selbstentfaltung zu begleiten. Somatic Karma ist aus meiner eigenen Erfahrung und aus der tiefen Verbindung von Körperwissen, Ahnenlinie und spiritueller Symbolarbeit entstanden.</p><ul><li>Entwicklerin von Somatic Karma</li><li>Mentorin für Körperwissen & Ahnenarbeit</li><li>Tarot- und Astrologie-Expertin</li><li>Host von „Karma mit Zimt und Zucker“</li></ul><Link className="landing-button landing-button-primary" href="/ueber-jennifer">Mehr über mich <span aria-hidden="true">→</span></Link></div>
         </div>
       </section>
