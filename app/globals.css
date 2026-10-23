@@ -1056,9 +1056,7 @@ p { margin:0; }
 .wounds-section::before { position:absolute; top:24px; left:-70px; width:170px; height:170px; border:1px solid rgba(177,143,126,.18); border-radius:50%; content:""; box-shadow:0 0 0 22px rgba(177,143,126,.035),0 0 0 46px rgba(177,143,126,.025); }
 .wounds-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:52px; }
 .wounds-grid article { display:flex; min-height:315px; align-items:center; flex-direction:column; padding:25px 23px 30px; border:1px solid rgba(165,135,130,.14); border-radius:22px; background:linear-gradient(155deg,rgba(248,239,239,.92),rgba(242,232,243,.65)); box-shadow:0 14px 45px rgba(101,78,78,.07); text-align:center; }
-.wound-symbol { width:108px; height:108px; margin-bottom:10px; color:#b39182; fill:none; stroke:currentColor; stroke-width:1.35; }
-.wound-symbol-orbit { stroke-dasharray:2.2 4.6; }
-.wound-symbol-fill { fill:rgba(207,174,158,.25); }
+.wound-symbol-image { width:128px; height:150px; margin-bottom:4px; object-fit:contain; }
 .wounds-grid h3 { font-size:2rem; letter-spacing:-.025em; }
 .wounds-grid article > p { margin-top:11px; color:var(--landing-muted); font-size:.76rem; line-height:1.65; }
 .wounds-section .landing-text-link { margin:34px auto 0; }
@@ -1237,17 +1235,7 @@ p { margin:0; }
 .sk-wound-card:nth-child(2) { background:linear-gradient(180deg,rgba(238,232,244,.95),rgba(255,252,248,.96)); }
 .sk-wound-card:nth-child(3) { background:linear-gradient(180deg,rgba(248,229,228,.98),rgba(255,252,248,.96)); }
 .sk-wound-card:nth-child(4) { background:linear-gradient(180deg,rgba(233,229,235,.96),rgba(255,252,248,.96)); }
-.sk-moon { width:128px; height:128px; margin-bottom:20px; overflow:visible; }
-.sk-moon * { vector-effect:non-scaling-stroke; }
-.sk-moon-orbit { fill:none; stroke:rgba(133,101,99,.2); stroke-dasharray:2 5; }
-.sk-moon-disc { fill:#ead9d5; stroke:#af908b; stroke-width:1; }
-.sk-moon-triple .sk-moon-disc { fill:#e9e0ef; }
-.sk-moon-rose .sk-moon-disc { fill:#edcbc7; }
-.sk-moon-dark .sk-moon-disc { fill:#d7cfd7; }
-.sk-moon path:not(.sk-moon-spark) { fill:none; stroke:#967a7b; }
-.sk-moon-core { fill:#f7e8df; stroke:#aa8d88; }
-.sk-moon-shadow { fill:#897783 !important; stroke:none !important; opacity:.72; }
-.sk-moon-spark { fill:none; stroke:#bd9e94; stroke-width:1; }
+.sk-wound-symbol { width:150px; height:187px; margin-bottom:10px; object-fit:contain; }
 .sk-wound-card h3 { font-size:2.15rem; line-height:1; }
 .sk-wound-card strong { margin-top:12px; color:#8a706e; font-size:.66rem; line-height:1.45; letter-spacing:.04em; text-transform:uppercase; }
 .sk-wound-card p { margin-top:19px; font-size:.78rem; line-height:1.7; }

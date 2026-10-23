@@ -2,25 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { links } from "@/lib/site-content";
 
-type WoundIconProps = { type: "guilt" | "sister" | "mother" | "father" };
-
-function WoundIcon({ type }: WoundIconProps) {
-  return (
-    <svg className={`wound-symbol wound-symbol-${type}`} viewBox="0 0 120 120" aria-hidden="true">
-      <circle className="wound-symbol-orbit" cx="60" cy="60" r="44" />
-      {type === "guilt" && <><circle cx="60" cy="60" r="29" /><path d="M60 22v10M60 88v10M22 60h10M88 60h10M33 33l7 7M80 80l7 7M87 33l-7 7M40 80l-7 7" /><circle className="wound-symbol-fill" cx="60" cy="60" r="18" /></>}
-      {type === "sister" && <><path d="M32 43a21 21 0 1 0 0 34 26 26 0 0 1 0-34Z" /><path d="M58 35a29 29 0 1 0 0 50 35 35 0 0 1 0-50Z" /><path d="M82 31a34 34 0 1 0 0 58 41 41 0 0 1 0-58Z" /></>}
-      {type === "mother" && <><circle cx="60" cy="60" r="24" /><circle className="wound-symbol-fill" cx="60" cy="60" r="10" /><path d="M60 19v13M60 88v13M19 60h13M88 60h13M31 31l9 9M80 80l9 9M89 31l-9 9M40 80l-9 9" /></>}
-      {type === "father" && <><path d="M75 31a32 32 0 1 0 14 51A35 35 0 0 1 75 31Z" /><path d="M34 27v10M29 32h10M92 59v9M87.5 63.5h9M39 91v7M35.5 94.5h7" /></>}
-    </svg>
-  );
-}
-
 const wounds = [
-  { type: "guilt" as const, title: "Schuldnarbe", text: "Wenn du dich schuldig fühlst, sobald du empfängst oder es dir leicht machst." },
-  { type: "sister" as const, title: "Geschwisternarbe", text: "Wenn Vergleich und Konkurrenz dich davon abhalten, deinen Platz einzunehmen." },
-  { type: "mother" as const, title: "Mutternarbe", text: "Wenn du emotional viel trägst und deine eigenen Bedürfnisse aus dem Blick geraten." },
-  { type: "father" as const, title: "Vaternarbe", text: "Wenn Anerkennung im Außen wichtiger wird als deine eigene innere Führung." },
+  { symbol: "/somatic-karma/symbol-schuldnarbe.png", title: "Schuldnarbe", text: "Wenn du dich schuldig fühlst, sobald du empfängst oder es dir leicht machst." },
+  { symbol: "/somatic-karma/symbol-geschwisternarbe.png", title: "Geschwisternarbe", text: "Wenn Vergleich und Konkurrenz dich davon abhalten, deinen Platz einzunehmen." },
+  { symbol: "/somatic-karma/symbol-mutternarbe.png", title: "Mutternarbe", text: "Wenn du emotional viel trägst und deine eigenen Bedürfnisse aus dem Blick geraten." },
+  { symbol: "/somatic-karma/symbol-vaternarbe.png", title: "Vaternarbe", text: "Wenn Anerkennung im Außen wichtiger wird als deine eigene innere Führung." },
 ];
 
 const journey = [
@@ -72,7 +58,7 @@ export default function Home() {
             <p>Vier karmische Narben prägen unbewusst, wie wir Sicherheit, Zugehörigkeit, Empfangen und Selbstbestimmung erleben. Wenn du sie erkennst, kannst du deinen Bedürfnissen mit neuer Klarheit begegnen.</p>
           </div>
           <div className="wounds-grid">
-            {wounds.map((wound) => <article key={wound.title}><WoundIcon type={wound.type} /><h3>{wound.title}</h3><p>{wound.text}</p></article>)}
+            {wounds.map((wound) => <article key={wound.title}><Image className="wound-symbol-image" src={wound.symbol} alt="" width={1122} height={1402} sizes="130px" /><h3>{wound.title}</h3><p>{wound.text}</p></article>)}
           </div>
           <Link className="landing-text-link" href="/somatic-karma">Die Methode kennenlernen <span aria-hidden="true">→</span></Link>
         </div>

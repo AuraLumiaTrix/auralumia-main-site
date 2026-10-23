@@ -14,28 +14,28 @@ const wounds = [
     title: "Schuldnarbe",
     need: "Lustgewinn / Unlustvermeidung",
     text: "Sie berührt die Frage, ob Genuss, Entlastung und Empfangen innerlich erlaubt sind oder unbewusst mit Schuld verbunden werden.",
-    phase: "full",
+    symbol: "/somatic-karma/symbol-schuldnarbe.png",
   },
   {
     id: "geschwisternarbe",
     title: "Geschwisternarbe",
     need: "Selbstwerterhöhung / Selbstwertschutz",
     text: "Sie macht sichtbar, wie Vergleich, Gleichrangigkeit und das Einnehmen des eigenen Platzes erlebt werden.",
-    phase: "triple",
+    symbol: "/somatic-karma/symbol-geschwisternarbe.png",
   },
   {
     id: "mutternarbe",
     title: "Mutternarbe",
     need: "Bindung",
     text: "Sie richtet den Blick auf emotionale Nähe, Zugehörigkeit und die Balance zwischen Verbundenheit und eigenem Rhythmus.",
-    phase: "rose",
+    symbol: "/somatic-karma/symbol-mutternarbe.png",
   },
   {
     id: "vaternarbe",
     title: "Vaternarbe",
     need: "Orientierung / Kontrolle",
     text: "Sie beleuchtet den Umgang mit Richtung, Verlässlichkeit und der Frage, worauf die eigene innere Führung vertraut.",
-    phase: "dark",
+    symbol: "/somatic-karma/symbol-vaternarbe.png",
   },
 ];
 
@@ -104,19 +104,6 @@ const elements = [
   { name: "Wasser", image: "/somatic-karma/element-water-gold-transparent.png", text: "Wasser berührt Gefühl, Bindung und die intuitive Wahrnehmung innerer Bewegungen." },
 ];
 
-function MoonMotif({ phase }: { phase: string }) {
-  return (
-    <svg className={`sk-moon sk-moon-${phase}`} viewBox="0 0 120 120" aria-hidden="true">
-      <circle className="sk-moon-orbit" cx="60" cy="60" r="48" />
-      <circle className="sk-moon-disc" cx="60" cy="60" r="31" />
-      {phase === "triple" && <><path d="M48 35a30 30 0 0 0 0 50" /><path d="M72 35a30 30 0 0 1 0 50" /></>}
-      {phase === "rose" && <circle className="sk-moon-core" cx="60" cy="60" r="16" />}
-      {phase === "dark" && <path className="sk-moon-shadow" d="M70 29a33 33 0 1 0 19 56A38 38 0 0 1 70 29Z" />}
-      <path className="sk-moon-spark" d="M60 5v9M55.5 9.5h9M101 43v7M97.5 46.5h7M17 78v7M13.5 81.5h7" />
-    </svg>
-  );
-}
-
 function PlanetDiagram({ group }: { group: (typeof planetGroups)[number] }) {
   const description = `${group.title}: ${group.center.name} im Zentrum; ${group.orbit.map((planet) => planet.name).join(", ")} als Triade`;
 
@@ -143,7 +130,7 @@ export default function SomaticKarmaPage() {
           <div className="sk-wound-grid">
             {wounds.map((wound) => (
               <article className="sk-wound-card" id={wound.id} key={wound.id}>
-                <MoonMotif phase={wound.phase} />
+                <Image className="sk-wound-symbol" src={wound.symbol} alt="" width={1122} height={1402} sizes="150px" />
                 <h3>{wound.title}</h3>
                 <strong>{wound.need}</strong>
                 <p>{wound.text}</p>
