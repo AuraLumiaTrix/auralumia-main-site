@@ -18,6 +18,21 @@ type Offer = {
   status?: string;
 };
 
+const offerSymbols = {
+  navigator: "/offers/symbol-navigator.png",
+  meditations: "/offers/symbol-meditationspakete.png",
+  tarot: "/offers/symbol-tarot.png",
+  depth: "/offers/symbol-vertiefung.png",
+} as const;
+
+function OfferSymbol({ src, context }: { src: string; context: "navigation" | "heading" }) {
+  return (
+    <span className={context === "navigation" ? "offers-v2-promise-icon" : "offers-v2-heading-icon"} aria-hidden="true">
+      <Image src={src} alt="" fill sizes={context === "navigation" ? "64px" : "76px"} />
+    </span>
+  );
+}
+
 const navigatorOffers: Offer[] = [
   {
     title: "Kostenloser Navigator",
@@ -137,17 +152,17 @@ export default function AngebotePage() {
           </div>
         </div>
         <div className="offers-v2-promises shell" aria-label="Angebotsbereiche">
-          <a href="#navigator"><i aria-hidden="true">✦</i><span>Navigator</span></a>
-          <a href="#meditationspakete"><i aria-hidden="true">☾</i><span>Meditationspakete</span></a>
-          <a href="#tarot"><i aria-hidden="true">◇</i><span>Tarot</span></a>
-          <a href="#vertiefung"><i aria-hidden="true">♡</i><span>Vertiefung</span></a>
+          <a href="#navigator"><OfferSymbol src={offerSymbols.navigator} context="navigation" /><span>Navigator</span></a>
+          <a href="#meditationspakete"><OfferSymbol src={offerSymbols.meditations} context="navigation" /><span>Meditationspakete</span></a>
+          <a href="#tarot"><OfferSymbol src={offerSymbols.tarot} context="navigation" /><span>Tarot</span></a>
+          <a href="#vertiefung"><OfferSymbol src={offerSymbols.depth} context="navigation" /><span>Vertiefung</span></a>
         </div>
       </section>
 
       <section className="offers-v2-section offers-v2-entry" id="navigator" aria-labelledby="offers-entry-title">
         <div className="shell">
           <header className="offers-v2-heading">
-            <span className="offers-v2-heading-icon" aria-hidden="true">☾</span>
+            <OfferSymbol src={offerSymbols.navigator} context="heading" />
             <div><p className="offers-v2-kicker">SANFT BEGINNEN</p><h2 id="offers-entry-title">Kostenloser Navigator</h2></div>
             <p>Für deine erste Orientierung: Erkenne, welches Thema sich gerade besonders deutlich zeigt, und wähle danach frei deinen nächsten Schritt.</p>
           </header>
@@ -158,7 +173,7 @@ export default function AngebotePage() {
       <section className="offers-v2-section offers-v2-meditations" id="meditationspakete" aria-labelledby="offers-meditations-title">
         <div className="shell">
           <header className="offers-v2-heading">
-            <span className="offers-v2-heading-icon" aria-hidden="true">☾</span>
+            <OfferSymbol src={offerSymbols.meditations} context="heading" />
             <div><p className="offers-v2-kicker">VIER NARBEN · VIER WEGE</p><h2 id="offers-meditations-title">Meditationspakete</h2></div>
             <p>Wähle das Paket, das zu deinem aktuellen Thema passt. Jede Meditation begleitet dich in einer ruhigen Praxis, die du selbstständig nutzen kannst.</p>
           </header>
@@ -169,7 +184,7 @@ export default function AngebotePage() {
       <section className="offers-v2-section offers-v2-tarot" id="tarot" aria-labelledby="offers-tarot-title">
         <div className="shell">
           <header className="offers-v2-heading">
-            <span className="offers-v2-heading-icon" aria-hidden="true">◇</span>
+            <OfferSymbol src={offerSymbols.tarot} context="heading" />
             <div><p className="offers-v2-kicker">SYMBOLISCHE SELBSTREFLEXION</p><h2 id="offers-tarot-title">Tarot</h2></div>
             <p>Nutze die App als täglichen Begleiter oder lerne die Somatic-Karma-Tarotkarten im Onlinekurs fundiert kennen.</p>
           </header>
@@ -180,7 +195,7 @@ export default function AngebotePage() {
       <section className="offers-v2-section offers-v2-depth" id="vertiefung" aria-labelledby="offers-depth-title">
         <div className="shell">
           <header className="offers-v2-heading">
-            <span className="offers-v2-heading-icon" aria-hidden="true">♡</span>
+            <OfferSymbol src={offerSymbols.depth} context="heading" />
             <div><p className="offers-v2-kicker">BEWUSST VERTIEFEN</p><h2 id="offers-depth-title">Vertiefung</h2></div>
             <p>Für alle, die Selbstliebe oder Sinnlichkeit in ihrem eigenen Tempo mit neuen Impulsen und Ritualen erkunden möchten.</p>
           </header>
