@@ -137,8 +137,8 @@ export default function SomaticKarmaPage() {
             <article className="sk-process-step"><span>03</span><i aria-hidden="true">◇</i><h3>Karmabedürfnistyp</h3><p>Die individuelle Ausprägung beschreibt den persönlichen Umgang damit.</p></article>
             <div className="sk-process-branches" aria-label="Zwei gleichwertige Deutungswege">
               <p className="sk-branch-label">Zwei gleichwertige Wege</p>
-              <Link href="#tarot-arcana"><span>4A</span><i aria-hidden="true">✦</i><h3>Tarot Arcana</h3><p>Symbolische Deutung über die vier Tarot-Farben.</p><b>Weg ansehen →</b></Link>
-              <Link href="#planetengruppen"><span>4B</span><i aria-hidden="true">◎</i><h3>Geburtschart / Planetengruppen</h3><p>Astrologische Deutung über Zentrum und Triade.</p><b>Weg ansehen →</b></Link>
+              <Link href="#tarot-arcana"><span>4A</span><i aria-hidden="true">✦</i><h3>Tarot Arcana</h3><p>Symbolische Deutung über die vier Tarot-Farben.</p><b>Weg ansehen</b></Link>
+              <Link href="#planetengruppen"><span>4B</span><i aria-hidden="true">◎</i><h3>Geburtschart / Planetengruppen</h3><p>Astrologische Deutung über Zentrum und Triade.</p><b>Weg ansehen</b></Link>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function SomaticKarmaPage() {
               </article>
             ))}
           </div>
-          <Link className="sk-section-link" href="/tarot">Das Tarot-Archiv entdecken <span aria-hidden="true">→</span></Link>
+          <Link className="sk-section-link" href="/tarot">Das Tarot-Archiv entdecken</Link>
         </div>
       </section>
 
@@ -182,7 +182,7 @@ export default function SomaticKarmaPage() {
           <h2>Bereit, deine karmischen Narben zu entdecken?</h2>
           <p>Der kostenlose Navigator schenkt dir eine erste Orientierung und zeigt dir, welche der vier Narben gerade besonders deutlich wirkt.</p>
           <div className="sk-actions">
-            <a className="sk-button sk-button-light" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten <span aria-hidden="true">→</span></a>
+            <a className="sk-button sk-button-light" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a>
             <Link className="sk-button sk-button-ghost" href="/mentoring#circle-programm">Zur Ausbildung</Link>
           </div>
         </div>

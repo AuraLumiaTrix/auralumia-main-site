@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type MouseEvent, type TouchEvent } from "react";
+import { links } from "@/lib/site-content";
 
 type WoundExplorerProps = {
   variant: "home" | "method";
@@ -14,6 +15,8 @@ const wounds = [
     need: "Lustgewinn / Unlustvermeidung",
     subtitle: "Vom verbotenen Genuss zur wahren Fülle",
     symbol: "/somatic-karma/symbol-schuldnarbe.png",
+    triad: "/somatic-karma/triad-schuldnarbe-gold.jpg",
+    ace: "/tarot-cards/coins-1.webp",
     cardText: "Wenn du dich schuldig fühlst, sobald du empfängst oder es dir leicht machst.",
     methodText: "Sie berührt die Frage, ob Genuss, Entlastung und Empfangen innerlich erlaubt sind oder unbewusst mit Schuld verbunden werden.",
     intro: "Die Schuldnarbe kann spürbar werden, wenn Genuss, Empfangen oder Entlastung sofort ein schlechtes Gewissen auslösen. Dahinter steht das Bedürfnis nach Lustgewinn und dem Vermeiden von Unlust.",
@@ -32,6 +35,8 @@ const wounds = [
     need: "Selbstwerterhöhung / Selbstwertschutz",
     subtitle: "Vom Konkurrenzdruck zur eigenen Strahlkraft",
     symbol: "/somatic-karma/symbol-geschwisternarbe.png",
+    triad: "/somatic-karma/triad-geschwisternarbe-gold.jpg",
+    ace: "/tarot-cards/wands-1.webp",
     cardText: "Wenn Vergleich und Konkurrenz dich davon abhalten, deinen Platz einzunehmen.",
     methodText: "Sie macht sichtbar, wie Vergleich, Gleichrangigkeit und das Einnehmen des eigenen Platzes erlebt werden.",
     intro: "Die Geschwisternarbe zeigt sich häufig im Vergleichen oder im Zurückhalten des eigenen Lichts, um dazuzugehören. Im Zentrum steht das Bedürfnis nach Selbstwertschutz und stimmiger Zugehörigkeit.",
@@ -50,6 +55,8 @@ const wounds = [
     need: "Bindung",
     subtitle: "Von der Bindungsangst zur nährenden Selbstliebe",
     symbol: "/somatic-karma/symbol-mutternarbe.png",
+    triad: "/somatic-karma/triad-mutternarbe-gold.jpg",
+    ace: "/tarot-cards/cups-1.webp",
     cardText: "Wenn du emotional viel trägst und deine eigenen Bedürfnisse aus dem Blick geraten.",
     methodText: "Sie richtet den Blick auf emotionale Nähe, Zugehörigkeit und die Balance zwischen Verbundenheit und eigenem Rhythmus.",
     intro: "Die Mutternarbe berührt die Sehnsucht nach Nähe und zugleich die Unruhe, die in enger Bindung entstehen kann. Im Mittelpunkt steht das Bedürfnis nach emotionaler Sicherheit und nährendem Vertrauen.",
@@ -68,6 +75,8 @@ const wounds = [
     need: "Orientierung / Kontrolle",
     subtitle: "Vom inneren Rebell zur gelebten Selbstbestimmung",
     symbol: "/somatic-karma/symbol-vaternarbe.png",
+    triad: "/somatic-karma/triad-vaternarbe-gold.jpg",
+    ace: "/tarot-cards/swords-1.webp",
     cardText: "Wenn Anerkennung im Außen wichtiger wird als deine eigene innere Führung.",
     methodText: "Sie beleuchtet den Umgang mit Richtung, Verlässlichkeit und der Frage, worauf die eigene innere Führung vertraut.",
     intro: "Die Vaternarbe kann sich im Widerstand gegen Regeln und Autoritäten oder im starken Wunsch nach äußerer Orientierung zeigen. Dahinter steht das Bedürfnis nach Struktur, Schutz und gesunder Autonomie.",
@@ -86,6 +95,7 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const dialogRef = useRef<HTMLElement>(null);
+  const copyRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const returnFocusRef = useRef<HTMLButtonElement | null>(null);
   const touchStartX = useRef<number | null>(null);
@@ -177,6 +187,10 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
     };
   }, [closeModal, isOpen]);
 
+  useEffect(() => {
+    if (activeIndex !== null && copyRef.current) copyRef.current.scrollTop = 0;
+  }, [activeIndex]);
+
   const activeWound = activeIndex === null ? null : wounds[activeIndex];
 
   return (
@@ -185,11 +199,11 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
         <div className="wounds-grid">
           {wounds.map((wound, index) => (
             <article key={wound.id}>
-              <button className="wound-home-trigger" type="button" onClick={(event) => openModal(index, event)} aria-haspopup="dialog">
+              <button className="wound-home-trigger" type="button" onClick={(event) => openModal(index, event)} aria-haspopup="dialog" aria-label={`${wound.title} öffnen`}>
                 <Image className="wound-symbol-image" src={wound.symbol} alt="" width={1122} height={1402} sizes="130px" />
                 <h3>{wound.title}</h3>
                 <p>{wound.cardText}</p>
-                <span>Diese Narbe ansehen <i aria-hidden="true">→</i></span>
+                <span className="wound-home-play" aria-hidden="true">▶</span>
               </button>
             </article>
           ))}
@@ -203,7 +217,7 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
               <strong>{wound.need}</strong>
               <p>{wound.methodText}</p>
               <button className="sk-wound-more" type="button" onClick={(event) => openModal(index, event)} aria-haspopup="dialog">
-                Mehr erfahren <span aria-hidden="true">→</span>
+                Mehr erfahren
               </button>
             </article>
           ))}
@@ -231,10 +245,21 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
               <span className="wound-dialog-orbit wound-dialog-orbit-one" />
               <span className="wound-dialog-orbit wound-dialog-orbit-two" />
               <p>{String(activeIndex + 1).padStart(2, "0")} / {String(wounds.length).padStart(2, "0")}</p>
-              <Image src={activeWound.symbol} alt="" width={1122} height={1402} sizes="(max-width: 760px) 180px, 260px" />
+              <div className="wound-dialog-symbol-map" key={activeWound.id}>
+                <Image className="wound-dialog-triad" src={activeWound.triad} alt="" width={1280} height={1157} sizes="(max-width: 760px) 105px, 160px" />
+                <Image className="wound-dialog-wound-symbol" src={activeWound.symbol} alt="" width={1122} height={1402} sizes="(max-width: 760px) 95px, 150px" />
+                <div className="wound-dialog-tarot-scene">
+                  <div className="wound-dialog-tarot-card">
+                    <div className="wound-dialog-tarot-back"><span>✦</span></div>
+                    <div className="wound-dialog-tarot-front">
+                      <Image src={activeWound.ace} alt="" fill sizes="(max-width: 760px) 70px, 108px" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="wound-dialog-copy" aria-live="polite">
+            <div ref={copyRef} className="wound-dialog-copy" aria-live="polite">
               <p className="wound-dialog-kicker">GRUNDBEDÜRFNIS · {activeWound.need}</p>
               <h2 id="wound-dialog-title">Die {activeWound.title}</h2>
               <p className="wound-dialog-subtitle">{activeWound.subtitle}</p>
@@ -254,8 +279,16 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
               <p className="wound-dialog-mirror"><span>SYMBOLISCHE SPIEGEL</span>{activeWound.mirror}</p>
               <blockquote>{activeWound.potential}</blockquote>
 
+              <aside className="wound-dialog-navigator">
+                <div>
+                  <span>DEINE EIGENE RESONANZ</span>
+                  <p>Möchtest du behutsam entdecken, welche Narbe dich gerade besonders berührt? Der kostenfreie Somatic Karma Navigator schenkt dir eine erste persönliche Orientierung.</p>
+                </div>
+                <a href={links.navigator} target="_blank" rel="noopener noreferrer">Meine Narbenresonanz entdecken</a>
+              </aside>
+
               <nav className="wound-dialog-navigation" aria-label="Zwischen den Narben wechseln">
-                <button type="button" onClick={() => changeWound(-1)} aria-label="Vorherige Narbe"><span aria-hidden="true">←</span> Zurück</button>
+                <button type="button" onClick={() => changeWound(-1)} aria-label="Vorherige Narbe">Zurück</button>
                 <div className="wound-dialog-dots" aria-label={`${activeWound.title}, ${activeIndex + 1} von ${wounds.length}`}>
                   {wounds.map((wound, index) => (
                     <button
@@ -268,7 +301,7 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
                     />
                   ))}
                 </div>
-                <button type="button" onClick={() => changeWound(1)} aria-label="Nächste Narbe">Weiter <span aria-hidden="true">→</span></button>
+                <button type="button" onClick={() => changeWound(1)} aria-label="Nächste Narbe">Weiter</button>
               </nav>
               <p className="wound-dialog-swipe-hint">Auf dem Smartphone kannst du nach links oder rechts wischen.</p>
             </div>
