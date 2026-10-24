@@ -17,7 +17,10 @@ const wounds = [
     symbol: "/somatic-karma/symbol-schuldnarbe.png",
     triad: "/somatic-karma/triad-schuldnarbe-popup-transparent.png",
     element: "/somatic-karma/element-earth-gold-transparent.png",
+    elementLabel: "Erde",
     ace: "/tarot-cards/coins-1.webp",
+    arcanaLabel: "Münzen",
+    triadLabel: "Ceres · Neptun · Pluto · Pholus",
     cardText: "Wenn du dich schuldig fühlst, sobald du empfängst oder es dir leicht machst.",
     methodText: "Sie berührt die Frage, ob Genuss, Entlastung und Empfangen innerlich erlaubt sind oder unbewusst mit Schuld verbunden werden.",
     intro: "Die Schuldnarbe kann spürbar werden, wenn Genuss, Empfangen oder Entlastung sofort ein schlechtes Gewissen auslösen. Dahinter steht das Bedürfnis nach Lustgewinn und dem Vermeiden von Unlust.",
@@ -27,7 +30,6 @@ const wounds = [
       "Ruhe und Freude werden schnell von Pflichten oder einem inneren Zensor unterbrochen.",
       "Der eigene Wert soll durch Leistung, Verzicht oder Aufopferung bewiesen werden.",
     ],
-    mirror: "Erde · Münzen · Ceres mit Neptun, Pluto und Pholus",
     potential: "Ihr Potenzial liegt darin, Fülle anzunehmen und das Leben mit allen Sinnen zu genießen, ohne den eigenen Wert erst beweisen zu müssen.",
   },
   {
@@ -38,7 +40,10 @@ const wounds = [
     symbol: "/somatic-karma/symbol-geschwisternarbe.png",
     triad: "/somatic-karma/triad-geschwisternarbe-popup-transparent.png",
     element: "/somatic-karma/element-fire-gold-transparent.png",
+    elementLabel: "Feuer",
     ace: "/tarot-cards/wands-1.webp",
+    arcanaLabel: "Stäbe",
+    triadLabel: "Mars · Pallas Athene · Eris · Merkur",
     cardText: "Wenn Vergleich und Konkurrenz dich davon abhalten, deinen Platz einzunehmen.",
     methodText: "Sie macht sichtbar, wie Vergleich, Gleichrangigkeit und das Einnehmen des eigenen Platzes erlebt werden.",
     intro: "Die Geschwisternarbe zeigt sich häufig im Vergleichen oder im Zurückhalten des eigenen Lichts, um dazuzugehören. Im Zentrum steht das Bedürfnis nach Selbstwertschutz und stimmiger Zugehörigkeit.",
@@ -48,7 +53,6 @@ const wounds = [
       "Gemeinschaft wird ersehnt und zugleich von Misstrauen oder Konkurrenz begleitet.",
       "Der Blick nach links und rechts lässt den eigenen Wert schwanken.",
     ],
-    mirror: "Feuer · Stäbe · Mars mit Pallas Athene, Eris und Merkur",
     potential: "Ihr Potenzial führt vom Gegeneinander in ein echtes Miteinander – mit dem Mut, die eigene Strahlkraft sichtbar werden zu lassen.",
   },
   {
@@ -59,7 +63,10 @@ const wounds = [
     symbol: "/somatic-karma/symbol-mutternarbe.png",
     triad: "/somatic-karma/triad-mutternarbe-popup-transparent.png",
     element: "/somatic-karma/element-water-gold-transparent.png",
+    elementLabel: "Wasser",
     ace: "/tarot-cards/cups-1.webp",
+    arcanaLabel: "Kelche",
+    triadLabel: "Mond · Venus · Juno · Lilith",
     cardText: "Wenn du emotional viel trägst und deine eigenen Bedürfnisse aus dem Blick geraten.",
     methodText: "Sie richtet den Blick auf emotionale Nähe, Zugehörigkeit und die Balance zwischen Verbundenheit und eigenem Rhythmus.",
     intro: "Die Mutternarbe berührt die Sehnsucht nach Nähe und zugleich die Unruhe, die in enger Bindung entstehen kann. Im Mittelpunkt steht das Bedürfnis nach emotionaler Sicherheit und nährendem Vertrauen.",
@@ -69,7 +76,6 @@ const wounds = [
       "Nähe wird ersehnt, kann aber Fluchtimpulse oder Angst vor Abhängigkeit auslösen.",
       "Stimmungen anderer werden stark aufgenommen und eigene Grenzen schwerer spürbar.",
     ],
-    mirror: "Wasser · Kelche · Mond mit Venus, Juno und Lilith",
     potential: "Ihr Potenzial liegt in einer Nähe, die nicht einengt: in warmer Selbstliebe, klaren Grenzen und verlässlicher Verbundenheit.",
   },
   {
@@ -80,7 +86,10 @@ const wounds = [
     symbol: "/somatic-karma/symbol-vaternarbe.png",
     triad: "/somatic-karma/triad-vaternarbe-popup-transparent.png",
     element: "/somatic-karma/element-air-gold-transparent.png",
+    elementLabel: "Luft",
     ace: "/tarot-cards/swords-1.webp",
+    arcanaLabel: "Schwerter",
+    triadLabel: "Saturn · Vesta · Chiron · Sonne",
     cardText: "Wenn Anerkennung im Außen wichtiger wird als deine eigene innere Führung.",
     methodText: "Sie beleuchtet den Umgang mit Richtung, Verlässlichkeit und der Frage, worauf die eigene innere Führung vertraut.",
     intro: "Die Vaternarbe kann sich im Widerstand gegen Regeln und Autoritäten oder im starken Wunsch nach äußerer Orientierung zeigen. Dahinter steht das Bedürfnis nach Struktur, Schutz und gesunder Autonomie.",
@@ -90,7 +99,6 @@ const wounds = [
       "Äußere Anerkennung wird gesucht, obwohl dabei eigene Überzeugungen zurücktreten.",
       "Eigene Werte entstehen zunächst als Gegenbewegung statt aus innerer Klarheit.",
     ],
-    mirror: "Luft · Schwerter · Saturn mit Vesta, Chiron und Sonne",
     potential: "Ihr Potenzial ist eine innere Struktur, die Halt gibt: Widerstand wird zu Souveränität und Orientierung wächst aus den eigenen Werten.",
   },
 ] as const;
@@ -250,19 +258,7 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
               <span className="wound-dialog-orbit wound-dialog-orbit-two" />
               <p>{String(activeIndex + 1).padStart(2, "0")} / {String(wounds.length).padStart(2, "0")}</p>
               <div className="wound-dialog-symbol-map" key={activeWound.id}>
-                <Image className="wound-dialog-triad" src={activeWound.triad} alt="" width={1280} height={1157} sizes="(max-width: 760px) 105px, 160px" />
                 <Image className="wound-dialog-wound-symbol" src={activeWound.symbol} alt="" width={1122} height={1402} sizes="(max-width: 760px) 95px, 150px" />
-                <Image className="wound-dialog-element-symbol" src={activeWound.element} alt="" width={1536} height={1536} sizes="(max-width: 760px) 46px, 72px" />
-                <div className="wound-dialog-tarot-scene">
-                  <div className="wound-dialog-tarot-card">
-                    <div className="wound-dialog-tarot-back">
-                      <Image src="/tarot-cards/card-back-light.png" alt="" fill sizes="(max-width: 760px) 70px, 112px" />
-                    </div>
-                    <div className="wound-dialog-tarot-front">
-                      <Image src={activeWound.ace} alt="" fill sizes="(max-width: 760px) 70px, 108px" />
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -283,7 +279,39 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
                 </article>
               </div>
 
-              <p className="wound-dialog-mirror"><span>SYMBOLISCHE SPIEGEL</span>{activeWound.mirror}</p>
+              <section className="wound-dialog-symbolic" aria-label="Symbolische Spiegel" key={`mirrors-${activeWound.id}`}>
+                <p className="wound-dialog-symbolic-title">SYMBOLISCHE SPIEGEL</p>
+                <div className="wound-dialog-symbolic-grid">
+                  <article>
+                    <div className="wound-dialog-symbolic-image wound-dialog-symbolic-element">
+                      <Image src={activeWound.element} alt="" fill sizes="(max-width: 760px) 64px, 90px" />
+                    </div>
+                    <span>ELEMENT</span>
+                    <strong>{activeWound.elementLabel}</strong>
+                  </article>
+                  <article>
+                    <div className="wound-dialog-tarot-scene" aria-hidden="true">
+                      <div className="wound-dialog-tarot-card">
+                        <div className="wound-dialog-tarot-back">
+                          <Image src="/tarot-cards/card-back-light.png" alt="" fill sizes="(max-width: 760px) 58px, 78px" />
+                        </div>
+                        <div className="wound-dialog-tarot-front">
+                          <Image src={activeWound.ace} alt="" fill sizes="(max-width: 760px) 58px, 78px" />
+                        </div>
+                      </div>
+                    </div>
+                    <span>ARKANA</span>
+                    <strong>{activeWound.arcanaLabel}</strong>
+                  </article>
+                  <article className="wound-dialog-symbolic-triad-card">
+                    <div className="wound-dialog-symbolic-image wound-dialog-symbolic-triad">
+                      <Image src={activeWound.triad} alt="" fill sizes="(max-width: 760px) 150px, 180px" />
+                    </div>
+                    <span>TRIADE</span>
+                    <strong>{activeWound.triadLabel}</strong>
+                  </article>
+                </div>
+              </section>
               <blockquote>{activeWound.potential}</blockquote>
 
               <aside className="wound-dialog-navigator">

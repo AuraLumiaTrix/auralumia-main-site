@@ -1277,11 +1277,9 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .wound-dialog-visual { position:relative; display:flex; min-height:580px; align-items:center; justify-content:center; overflow:hidden; padding:70px 28px 48px; background:radial-gradient(circle at 52% 42%,rgba(255,255,255,.96) 0 22%,rgba(245,227,235,.82) 48%,rgba(229,218,239,.86) 100%); }
 .wound-dialog-visual::after { position:absolute; right:-30%; bottom:-15%; width:90%; aspect-ratio:1; border:1px solid rgba(125,94,105,.15); border-radius:50%; content:""; box-shadow:0 0 0 28px rgba(125,94,105,.04),0 0 0 58px rgba(125,94,105,.025); }
 .wound-dialog-visual > p { position:absolute; z-index:2; top:28px; left:31px; margin:0; color:#997b82; font-size:.62rem; font-weight:800; letter-spacing:.15em; }
-.wound-dialog-symbol-map { position:relative; z-index:2; width:min(390px,100%); height:450px; }
-.wound-dialog-wound-symbol { position:absolute; z-index:3; top:0; left:50%; width:150px; height:190px; object-fit:contain; filter:drop-shadow(0 16px 22px rgba(114,77,62,.16)); transform:translateX(-50%); }
-.wound-dialog-element-symbol { position:absolute; z-index:4; top:34px; right:22px; width:72px; height:72px; object-fit:contain; filter:drop-shadow(0 10px 14px rgba(114,77,62,.18)); }
-.wound-dialog-triad { position:absolute; z-index:2; bottom:18px; left:-8px; width:190px; height:176px; object-fit:contain; filter:drop-shadow(0 16px 24px rgba(91,69,85,.14)); }
-.wound-dialog-tarot-scene { position:absolute; z-index:3; right:12px; bottom:20px; width:112px; aspect-ratio:874 / 1459; perspective:1100px; filter:drop-shadow(0 18px 24px rgba(64,44,58,.2)); }
+.wound-dialog-symbol-map { position:relative; z-index:2; width:min(300px,100%); height:330px; }
+.wound-dialog-wound-symbol { position:absolute; z-index:3; top:50%; left:50%; width:210px; height:270px; object-fit:contain; filter:drop-shadow(0 18px 26px rgba(114,77,62,.18)); transform:translate(-50%,-50%); }
+.wound-dialog-tarot-scene { position:relative; width:78px; aspect-ratio:874 / 1459; perspective:1100px; filter:drop-shadow(0 12px 18px rgba(64,44,58,.18)); }
 .wound-dialog-tarot-card { position:absolute; inset:0; transform-style:preserve-3d; animation:wound-card-reveal 1.35s cubic-bezier(.2,.75,.18,1) .36s both; }
 .wound-dialog-tarot-front,.wound-dialog-tarot-back { position:absolute; inset:0; overflow:hidden; border:1px solid rgba(255,246,209,.82); border-radius:11px; backface-visibility:hidden; }
 .wound-dialog-tarot-front { background:#f8eee6; transform:rotateY(180deg); }
@@ -1298,12 +1296,20 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .wound-dialog-intro { max-width:700px; margin-top:22px; color:#776460 !important; font-size:.88rem; line-height:1.75; }
 .wound-dialog-details { display:grid; grid-template-columns:.88fr 1.12fr; gap:12px; margin-top:26px; }
 .wound-dialog-details article { padding:20px 21px; border:1px solid rgba(125,94,100,.12); border-radius:18px; background:linear-gradient(145deg,rgba(250,241,237,.82),rgba(245,238,248,.68)); }
-.wound-dialog-details span,.wound-dialog-mirror span { display:block; margin-bottom:9px; color:#a07e84; font-size:.57rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+.wound-dialog-details span { display:block; margin-bottom:9px; color:#a07e84; font-size:.57rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
 .wound-dialog-details p,.wound-dialog-details li { color:#776460 !important; font-size:.72rem; line-height:1.62; }
 .wound-dialog-details ul { display:grid; gap:7px; padding-left:16px; }
 .wound-dialog-details li::marker { color:#ad8992; }
-.wound-dialog-mirror { margin-top:13px; padding:15px 18px; border-left:2px solid #b58f96; border-radius:0 14px 14px 0; background:rgba(248,241,245,.68); color:#745d64 !important; font:500 .78rem/1.5 var(--sans); }
-.wound-dialog-mirror span { margin-bottom:4px; }
+.wound-dialog-symbolic { margin-top:24px; }
+.wound-dialog-symbolic-title { margin:0 0 10px; color:#ae8c82 !important; font-size:.54rem; font-weight:800; letter-spacing:.14em; }
+.wound-dialog-symbolic-grid { display:grid; grid-template-columns:.82fr .82fr 1.36fr; gap:10px; }
+.wound-dialog-symbolic-grid article { display:flex; min-width:0; min-height:186px; flex-direction:column; align-items:center; justify-content:flex-end; padding:14px 12px 13px; border:1px solid rgba(132,101,115,.13); border-radius:20px; background:linear-gradient(155deg,rgba(255,255,255,.9),rgba(248,239,242,.76)); text-align:center; box-shadow:0 12px 28px rgba(100,72,82,.07); }
+.wound-dialog-symbolic-image { position:relative; margin:auto 0 8px; }
+.wound-dialog-symbolic-image img { object-fit:contain; }
+.wound-dialog-symbolic-element { width:90px; height:90px; filter:drop-shadow(0 10px 14px rgba(114,77,62,.13)); }
+.wound-dialog-symbolic-triad { width:180px; max-width:100%; height:112px; filter:drop-shadow(0 9px 14px rgba(91,69,85,.1)); }
+.wound-dialog-symbolic-grid article > span { color:#ae8c82; font-size:.5rem; font-weight:800; letter-spacing:.13em; }
+.wound-dialog-symbolic-grid article > strong { margin-top:4px; color:#755f65; font:600 .8rem/1.35 var(--serif); }
 .wound-dialog-copy blockquote { margin:18px 0 0; padding:0 6px; color:#74585f; font:italic 500 1.23rem/1.35 var(--serif); }
 .wound-dialog-navigator { display:grid; grid-template-columns:1fr auto; align-items:center; gap:20px; margin-top:22px; padding:18px 19px; border:1px solid rgba(125,94,100,.13); border-radius:18px; background:linear-gradient(145deg,rgba(247,237,241,.88),rgba(247,241,231,.76)); }
 .wound-dialog-navigator span { display:block; margin-bottom:6px; color:#9d7a83; font-size:.56rem; font-weight:800; letter-spacing:.14em; }
@@ -1388,11 +1394,10 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 
 @media (max-width:1100px) {
   .wound-dialog { grid-template-columns:minmax(310px,.72fr) minmax(0,1.28fr); }
-  .wound-dialog-symbol-map { width:300px; height:410px; }
-  .wound-dialog-wound-symbol { width:132px; height:168px; }
-  .wound-dialog-element-symbol { top:30px; right:12px; width:62px; height:62px; }
-  .wound-dialog-triad { width:158px; height:146px; }
-  .wound-dialog-tarot-scene { right:4px; width:96px; }
+  .wound-dialog-symbol-map { width:260px; height:300px; }
+  .wound-dialog-wound-symbol { width:188px; height:242px; }
+  .wound-dialog-symbolic-grid { grid-template-columns:1fr 1fr; }
+  .wound-dialog-symbolic-triad-card { grid-column:1/-1; }
   .wound-dialog-copy { padding:48px 40px 30px; }
   .wound-dialog-details { grid-template-columns:1fr; }
   .sk-hero-grid { min-height:570px; grid-template-columns:1fr .8fr; }
@@ -1412,11 +1417,9 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .wound-dialog-close { top:12px; right:12px; width:39px; height:39px; }
   .wound-dialog-visual { min-height:0; padding:20px; }
   .wound-dialog-visual > p { top:17px; left:20px; }
-  .wound-dialog-symbol-map { width:285px; height:170px; }
-  .wound-dialog-wound-symbol { top:-8px; width:83px; height:105px; }
-  .wound-dialog-element-symbol { top:3px; right:42px; width:46px; height:46px; }
-  .wound-dialog-triad { bottom:0; left:4px; width:112px; height:102px; }
-  .wound-dialog-tarot-scene { right:16px; bottom:0; width:62px; }
+  .wound-dialog-symbol-map { width:190px; height:170px; }
+  .wound-dialog-wound-symbol { width:112px; height:142px; }
+  .wound-dialog-tarot-scene { width:58px; }
   .wound-dialog-tarot-front,.wound-dialog-tarot-back { border-radius:7px; }
   .wound-dialog-orbit-one { width:175px; }
   .wound-dialog-orbit-two { width:235px; }
@@ -1426,6 +1429,12 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .wound-dialog-subtitle { font-size:1.3rem; }
   .wound-dialog-intro { margin-top:18px; font-size:.8rem; line-height:1.65; }
   .wound-dialog-details { margin-top:20px; }
+  .wound-dialog-symbolic-grid { grid-template-columns:1fr 1fr; gap:8px; }
+  .wound-dialog-symbolic-grid article { min-height:156px; padding:11px 8px; border-radius:17px; }
+  .wound-dialog-symbolic-triad-card { grid-column:1/-1; min-height:166px !important; }
+  .wound-dialog-symbolic-element { width:64px; height:64px; }
+  .wound-dialog-symbolic-triad { width:156px; height:100px; }
+  .wound-dialog-symbolic-grid article > strong { font-size:.72rem; }
   .wound-dialog-details article { padding:17px; }
   .wound-dialog-copy blockquote { font-size:1.12rem; }
   .wound-dialog-navigator { grid-template-columns:1fr; gap:13px; padding:16px; }
