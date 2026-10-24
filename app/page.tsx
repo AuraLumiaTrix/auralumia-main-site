@@ -1,13 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { WoundExplorer } from "@/components/wound-explorer";
 import { links } from "@/lib/site-content";
-
-const wounds = [
-  { symbol: "/somatic-karma/symbol-schuldnarbe.png", title: "Schuldnarbe", text: "Wenn du dich schuldig fühlst, sobald du empfängst oder es dir leicht machst." },
-  { symbol: "/somatic-karma/symbol-geschwisternarbe.png", title: "Geschwisternarbe", text: "Wenn Vergleich und Konkurrenz dich davon abhalten, deinen Platz einzunehmen." },
-  { symbol: "/somatic-karma/symbol-mutternarbe.png", title: "Mutternarbe", text: "Wenn du emotional viel trägst und deine eigenen Bedürfnisse aus dem Blick geraten." },
-  { symbol: "/somatic-karma/symbol-vaternarbe.png", title: "Vaternarbe", text: "Wenn Anerkennung im Außen wichtiger wird als deine eigene innere Führung." },
-];
 
 const journey = [
   { no: "01", label: "Kostenfrei", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/produktbild-karma-navigator.png", action: "Navigator starten" },
@@ -57,9 +51,7 @@ export default function Home() {
             <h2 id="somatic-karma-title">Was ist Somatic Karma?</h2>
             <p>Vier karmische Narben prägen unbewusst, wie wir Sicherheit, Zugehörigkeit, Empfangen und Selbstbestimmung erleben. Wenn du sie erkennst, kannst du deinen Bedürfnissen mit neuer Klarheit begegnen.</p>
           </div>
-          <div className="wounds-grid">
-            {wounds.map((wound) => <article key={wound.title}><Image className="wound-symbol-image" src={wound.symbol} alt="" width={1122} height={1402} sizes="130px" /><h3>{wound.title}</h3><p>{wound.text}</p></article>)}
-          </div>
+          <WoundExplorer variant="home" />
           <Link className="landing-text-link" href="/somatic-karma">Die Methode kennenlernen <span aria-hidden="true">→</span></Link>
         </div>
       </section>

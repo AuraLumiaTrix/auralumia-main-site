@@ -1,43 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { WoundExplorer } from "@/components/wound-explorer";
 import { links } from "@/lib/site-content";
 
 export const metadata: Metadata = {
   title: "Somatic Karma",
   description: "Somatic Karma verbindet Körperwissen, psychologische Grundbedürfnisse und spirituelle Deutung zu einer klaren Landkarte für Selbsterkenntnis.",
 };
-
-const wounds = [
-  {
-    id: "schuldnarbe",
-    title: "Schuldnarbe",
-    need: "Lustgewinn / Unlustvermeidung",
-    text: "Sie berührt die Frage, ob Genuss, Entlastung und Empfangen innerlich erlaubt sind oder unbewusst mit Schuld verbunden werden.",
-    symbol: "/somatic-karma/symbol-schuldnarbe.png",
-  },
-  {
-    id: "geschwisternarbe",
-    title: "Geschwisternarbe",
-    need: "Selbstwerterhöhung / Selbstwertschutz",
-    text: "Sie macht sichtbar, wie Vergleich, Gleichrangigkeit und das Einnehmen des eigenen Platzes erlebt werden.",
-    symbol: "/somatic-karma/symbol-geschwisternarbe.png",
-  },
-  {
-    id: "mutternarbe",
-    title: "Mutternarbe",
-    need: "Bindung",
-    text: "Sie richtet den Blick auf emotionale Nähe, Zugehörigkeit und die Balance zwischen Verbundenheit und eigenem Rhythmus.",
-    symbol: "/somatic-karma/symbol-mutternarbe.png",
-  },
-  {
-    id: "vaternarbe",
-    title: "Vaternarbe",
-    need: "Orientierung / Kontrolle",
-    text: "Sie beleuchtet den Umgang mit Richtung, Verlässlichkeit und der Frage, worauf die eigene innere Führung vertraut.",
-    symbol: "/somatic-karma/symbol-vaternarbe.png",
-  },
-];
 
 const planetGroups = [
   {
@@ -139,17 +109,7 @@ export default function SomaticKarmaPage() {
             <h2 id="sk-wounds-title">Was ist Somatic Karma?</h2>
             <p>Die vier psychologischen Grundbedürfnisse bilden den Ausgangspunkt. Die karmischen Narben sind spirituelle Reflexionsfelder, keine medizinischen oder psychologischen Diagnosen. Sie laden dazu ein, wiederkehrende Erfahrungen bewusster wahrzunehmen und einzuordnen.</p>
           </div>
-          <div className="sk-wound-grid">
-            {wounds.map((wound) => (
-              <article className="sk-wound-card" id={wound.id} key={wound.id}>
-                <Image className="sk-wound-symbol" src={wound.symbol} alt="" width={1122} height={1402} sizes="150px" />
-                <h3>{wound.title}</h3>
-                <strong>{wound.need}</strong>
-                <p>{wound.text}</p>
-                <a href={`#gruppe-${wound.id}`}>Mehr erfahren <span aria-hidden="true">→</span></a>
-              </article>
-            ))}
-          </div>
+          <WoundExplorer variant="method" />
         </div>
       </section>
 
