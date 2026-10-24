@@ -15,7 +15,8 @@ const wounds = [
     need: "Lustgewinn / Unlustvermeidung",
     subtitle: "Vom verbotenen Genuss zur wahren Fülle",
     symbol: "/somatic-karma/symbol-schuldnarbe.png",
-    triad: "/somatic-karma/triad-schuldnarbe-gold.jpg",
+    triad: "/somatic-karma/triad-schuldnarbe-popup-transparent.png",
+    element: "/somatic-karma/element-earth-gold-transparent.png",
     ace: "/tarot-cards/coins-1.webp",
     cardText: "Wenn du dich schuldig fühlst, sobald du empfängst oder es dir leicht machst.",
     methodText: "Sie berührt die Frage, ob Genuss, Entlastung und Empfangen innerlich erlaubt sind oder unbewusst mit Schuld verbunden werden.",
@@ -35,7 +36,8 @@ const wounds = [
     need: "Selbstwerterhöhung / Selbstwertschutz",
     subtitle: "Vom Konkurrenzdruck zur eigenen Strahlkraft",
     symbol: "/somatic-karma/symbol-geschwisternarbe.png",
-    triad: "/somatic-karma/triad-geschwisternarbe-gold.jpg",
+    triad: "/somatic-karma/triad-geschwisternarbe-popup-transparent.png",
+    element: "/somatic-karma/element-fire-gold-transparent.png",
     ace: "/tarot-cards/wands-1.webp",
     cardText: "Wenn Vergleich und Konkurrenz dich davon abhalten, deinen Platz einzunehmen.",
     methodText: "Sie macht sichtbar, wie Vergleich, Gleichrangigkeit und das Einnehmen des eigenen Platzes erlebt werden.",
@@ -55,7 +57,8 @@ const wounds = [
     need: "Bindung",
     subtitle: "Von der Bindungsangst zur nährenden Selbstliebe",
     symbol: "/somatic-karma/symbol-mutternarbe.png",
-    triad: "/somatic-karma/triad-mutternarbe-gold.jpg",
+    triad: "/somatic-karma/triad-mutternarbe-popup-transparent.png",
+    element: "/somatic-karma/element-water-gold-transparent.png",
     ace: "/tarot-cards/cups-1.webp",
     cardText: "Wenn du emotional viel trägst und deine eigenen Bedürfnisse aus dem Blick geraten.",
     methodText: "Sie richtet den Blick auf emotionale Nähe, Zugehörigkeit und die Balance zwischen Verbundenheit und eigenem Rhythmus.",
@@ -75,7 +78,8 @@ const wounds = [
     need: "Orientierung / Kontrolle",
     subtitle: "Vom inneren Rebell zur gelebten Selbstbestimmung",
     symbol: "/somatic-karma/symbol-vaternarbe.png",
-    triad: "/somatic-karma/triad-vaternarbe-gold.jpg",
+    triad: "/somatic-karma/triad-vaternarbe-popup-transparent.png",
+    element: "/somatic-karma/element-air-gold-transparent.png",
     ace: "/tarot-cards/swords-1.webp",
     cardText: "Wenn Anerkennung im Außen wichtiger wird als deine eigene innere Führung.",
     methodText: "Sie beleuchtet den Umgang mit Richtung, Verlässlichkeit und der Frage, worauf die eigene innere Führung vertraut.",
@@ -248,9 +252,12 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
               <div className="wound-dialog-symbol-map" key={activeWound.id}>
                 <Image className="wound-dialog-triad" src={activeWound.triad} alt="" width={1280} height={1157} sizes="(max-width: 760px) 105px, 160px" />
                 <Image className="wound-dialog-wound-symbol" src={activeWound.symbol} alt="" width={1122} height={1402} sizes="(max-width: 760px) 95px, 150px" />
+                <Image className="wound-dialog-element-symbol" src={activeWound.element} alt="" width={1536} height={1536} sizes="(max-width: 760px) 46px, 72px" />
                 <div className="wound-dialog-tarot-scene">
                   <div className="wound-dialog-tarot-card">
-                    <div className="wound-dialog-tarot-back"><span>✦</span></div>
+                    <div className="wound-dialog-tarot-back">
+                      <Image src="/tarot-cards/card-back-light.png" alt="" fill sizes="(max-width: 760px) 70px, 112px" />
+                    </div>
                     <div className="wound-dialog-tarot-front">
                       <Image src={activeWound.ace} alt="" fill sizes="(max-width: 760px) 70px, 108px" />
                     </div>

@@ -1279,14 +1279,14 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .wound-dialog-visual > p { position:absolute; z-index:2; top:28px; left:31px; margin:0; color:#997b82; font-size:.62rem; font-weight:800; letter-spacing:.15em; }
 .wound-dialog-symbol-map { position:relative; z-index:2; width:min(390px,100%); height:450px; }
 .wound-dialog-wound-symbol { position:absolute; z-index:3; top:0; left:50%; width:150px; height:190px; object-fit:contain; filter:drop-shadow(0 16px 22px rgba(114,77,62,.16)); transform:translateX(-50%); }
-.wound-dialog-triad { position:absolute; z-index:2; bottom:26px; left:0; width:174px; height:157px; border:1px solid rgba(123,93,111,.14); border-radius:24px; object-fit:cover; box-shadow:0 16px 38px rgba(91,69,85,.14); }
-.wound-dialog-tarot-scene { position:absolute; z-index:3; right:12px; bottom:20px; width:112px; aspect-ratio:768 / 1365; perspective:1100px; filter:drop-shadow(0 18px 24px rgba(64,44,58,.2)); }
+.wound-dialog-element-symbol { position:absolute; z-index:4; top:34px; right:22px; width:72px; height:72px; object-fit:contain; filter:drop-shadow(0 10px 14px rgba(114,77,62,.18)); }
+.wound-dialog-triad { position:absolute; z-index:2; bottom:18px; left:-8px; width:190px; height:176px; object-fit:contain; filter:drop-shadow(0 16px 24px rgba(91,69,85,.14)); }
+.wound-dialog-tarot-scene { position:absolute; z-index:3; right:12px; bottom:20px; width:112px; aspect-ratio:874 / 1459; perspective:1100px; filter:drop-shadow(0 18px 24px rgba(64,44,58,.2)); }
 .wound-dialog-tarot-card { position:absolute; inset:0; transform-style:preserve-3d; animation:wound-card-reveal 1.35s cubic-bezier(.2,.75,.18,1) .36s both; }
 .wound-dialog-tarot-front,.wound-dialog-tarot-back { position:absolute; inset:0; overflow:hidden; border:1px solid rgba(255,246,209,.82); border-radius:11px; backface-visibility:hidden; }
 .wound-dialog-tarot-front { background:#f8eee6; transform:rotateY(180deg); }
-.wound-dialog-tarot-front img { object-fit:cover; }
-.wound-dialog-tarot-back { display:grid; place-items:center; background:radial-gradient(circle at 50% 43%,rgba(250,218,132,.95) 0 7%,transparent 7.5%),repeating-radial-gradient(circle at 50% 50%,transparent 0 13px,rgba(229,194,108,.2) 14px 15px),linear-gradient(145deg,#80607f,#3d2a52 58%,#20152f); box-shadow:inset 0 0 0 5px rgba(250,225,166,.72),inset 0 0 0 7px rgba(85,55,78,.75); }
-.wound-dialog-tarot-back span { display:grid; width:48%; aspect-ratio:1; place-items:center; border:1px solid rgba(255,229,158,.72); border-radius:50%; background:rgba(255,249,226,.08); color:#f5d57e; font-size:1.55rem; text-shadow:0 0 18px rgba(255,223,130,.8); }
+.wound-dialog-tarot-front img,.wound-dialog-tarot-back img { object-fit:contain; }
+.wound-dialog-tarot-back { background:#fffbd9; }
 .wound-dialog-tarot-scene::after { position:absolute; z-index:4; inset:-12% -50%; background:linear-gradient(105deg,transparent 37%,rgba(255,255,255,.15) 43%,rgba(255,245,190,.94) 50%,rgba(255,255,255,.18) 57%,transparent 63%); content:""; opacity:0; pointer-events:none; transform:translateX(-90%) skewX(-9deg); animation:wound-card-shine 1.05s ease .88s both; }
 .wound-dialog-orbit { position:absolute; border:1px solid rgba(134,103,116,.2); border-radius:50%; }
 .wound-dialog-orbit-one { width:310px; aspect-ratio:1; }
@@ -1390,7 +1390,8 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .wound-dialog { grid-template-columns:minmax(310px,.72fr) minmax(0,1.28fr); }
   .wound-dialog-symbol-map { width:300px; height:410px; }
   .wound-dialog-wound-symbol { width:132px; height:168px; }
-  .wound-dialog-triad { width:145px; height:131px; }
+  .wound-dialog-element-symbol { top:30px; right:12px; width:62px; height:62px; }
+  .wound-dialog-triad { width:158px; height:146px; }
   .wound-dialog-tarot-scene { right:4px; width:96px; }
   .wound-dialog-copy { padding:48px 40px 30px; }
   .wound-dialog-details { grid-template-columns:1fr; }
@@ -1413,10 +1414,10 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .wound-dialog-visual > p { top:17px; left:20px; }
   .wound-dialog-symbol-map { width:285px; height:170px; }
   .wound-dialog-wound-symbol { top:-8px; width:83px; height:105px; }
-  .wound-dialog-triad { bottom:3px; left:8px; width:104px; height:94px; border-radius:16px; }
+  .wound-dialog-element-symbol { top:3px; right:42px; width:46px; height:46px; }
+  .wound-dialog-triad { bottom:0; left:4px; width:112px; height:102px; }
   .wound-dialog-tarot-scene { right:16px; bottom:0; width:62px; }
   .wound-dialog-tarot-front,.wound-dialog-tarot-back { border-radius:7px; }
-  .wound-dialog-tarot-back span { font-size:.9rem; }
   .wound-dialog-orbit-one { width:175px; }
   .wound-dialog-orbit-two { width:235px; }
   .wound-dialog-copy { padding:28px 20px 23px; }
