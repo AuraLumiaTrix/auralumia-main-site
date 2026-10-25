@@ -1122,7 +1122,7 @@ p { margin:0; }
 .about-home-copy { position:relative; z-index:2; min-width:0; padding-block:74px; }
 .about-home-copy h1 { font-size:clamp(3.45rem,5vw,5.4rem); }
 .about-home-name { display:block; width:max-content; max-width:100%; margin-top:.08em; font-family:"Have Heart One","Brush Script MT","Segoe Script",cursive; font-size:.83em; font-style:italic; font-weight:400; letter-spacing:.01em; line-height:1.05; transform:rotate(-3.5deg); transform-origin:left center; }
-.about-home-text-card { max-width:680px; margin-top:30px; padding:34px 36px 28px; border:1px solid rgba(145,115,110,.14); border-radius:24px; background:rgba(255,255,255,.9); box-shadow:0 24px 58px rgba(92,66,69,.12); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); }
+.about-home-text-card { max-width:680px; margin-top:30px; padding:34px 36px 28px; border:1px solid rgba(145,115,110,.14); border-radius:24px; background:rgba(255,255,255,.9); box-shadow:0 24px 58px rgba(92,66,69,.12); text-align:center; -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); }
 .about-home-text-card > p { color:var(--landing-muted); font-size:.88rem; line-height:1.75; }
 .about-home-text-card > p + p { margin-top:17px; }
 .about-home-text-card > .about-home-belief { color:var(--landing-ink); font-family:var(--serif); font-size:clamp(1.42rem,2vw,1.95rem); line-height:1.22; }
