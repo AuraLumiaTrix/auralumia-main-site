@@ -22,7 +22,15 @@ export default function Home() {
       <section className="about-home about-home-hero" aria-labelledby="about-home-title">
         <div className="about-home-inner shell">
           <div className="about-home-portrait"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill priority sizes="(max-width: 760px) 100vw, 42vw" /></div>
-          <div className="about-home-copy"><h1 id="about-home-title">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h1><p>Ich habe AuraLumia gegründet, um Frauen auf ihrem Weg zu mehr Selbstkenntnis und authentischer Selbstentfaltung zu begleiten. Somatic Karma ist aus meiner eigenen Erfahrung und aus der tiefen Verbindung von Körperwissen, Ahnenlinie und spiritueller Symbolarbeit entstanden.</p><ul><li>Entwicklerin von Somatic Karma</li><li>Mentorin für Körperwissen & Ahnenarbeit</li><li>Tarot- und Astrologie-Expertin</li><li>Host von „Karma mit Zimt und Zucker“</li></ul></div>
+          <div className="about-home-copy">
+            <h1 id="about-home-title">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h1>
+            <div className="about-home-text-card">
+              <p className="about-home-belief">Ich glaube zutiefst daran, dass jeder Mensch sein Schicksal selbst in die Hand nehmen kann.</p>
+              <p>Willkommen im geschützten Raum von AuraLumia, einem Ort für dich, für deine Seele, dein Wachstum, deine Transformation. Dein Ort um dich selbst zu finden. Mit AuraLumia möchte ich dir liebevoll meine Hand reichen, damit du deinen Weg nicht allein gehen musst.</p>
+              <p>Ich habe AuraLumia gegründet, um Frauen auf ihrem Weg zu mehr Selbstkenntnis und authentischer Selbstentfaltung zu begleiten. Somatic Karma ist aus meiner eigenen Erfahrung und aus der tiefen Verbindung von Körperwissen, Ahnenlinie und spiritueller Symbolarbeit entstanden.</p>
+              <ul><li>Entwicklerin von Somatic Karma</li><li>Mentorin für Körperwissen & Ahnenarbeit</li><li>Tarot- und Astrologie-Expertin</li><li>Host von „Karma mit Zimt und Zucker“</li></ul>
+            </div>
+          </div>
         </div>
       </section>
 
