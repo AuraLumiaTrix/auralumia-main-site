@@ -19,27 +19,25 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="landing-home">
-      <section className="landing-hero">
-        <div className="landing-hero-inner shell">
-          <div className="landing-hero-copy">
-            <p className="landing-kicker">SOMATIC KARMA · ASTROLOGIE · TAROT · KÖRPERWISSEN</p>
-            <h1>Erkenne deine Muster.<br />Entdecke deine Bedürfnisse.<br />Gehe deinen Weg.</h1>
-            <p className="landing-lede">Somatic Karma verbindet Körperwissen, Ahnenarbeit, vedische Astrologie und Tarot zu einer sanften Methode für mehr Selbstkenntnis, Klarheit und innere Freiheit.</p>
-            <div className="landing-actions">
-              <a className="landing-button landing-button-primary" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a>
-              <Link className="landing-button landing-button-secondary" href="/mentoring#circle-programm">Zur Ausbildung</Link>
-            </div>
-            <div className="landing-promises" aria-label="Was dich bei AuraLumia erwartet">
-              <span><i aria-hidden="true">✧</i>Tiefere Selbsterkenntnis</span>
-              <span><i aria-hidden="true">☾</i>Bewusste neue Entscheidungen</span>
-              <span><i aria-hidden="true">✦</i>Ein Weg in Authentizität</span>
-            </div>
+      <section className="about-home about-home-hero" aria-labelledby="about-home-title">
+        <div className="about-home-inner shell">
+          <div className="about-home-portrait"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill priority sizes="(max-width: 760px) 100vw, 42vw" /></div>
+          <div className="about-home-copy"><h1 id="about-home-title">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h1><p>Ich habe AuraLumia gegründet, um Frauen auf ihrem Weg zu mehr Selbstkenntnis und authentischer Selbstentfaltung zu begleiten. Somatic Karma ist aus meiner eigenen Erfahrung und aus der tiefen Verbindung von Körperwissen, Ahnenlinie und spiritueller Symbolarbeit entstanden.</p><ul><li>Entwicklerin von Somatic Karma</li><li>Mentorin für Körperwissen & Ahnenarbeit</li><li>Tarot- und Astrologie-Expertin</li><li>Host von „Karma mit Zimt und Zucker“</li></ul></div>
+        </div>
+      </section>
+
+      <section className="journey-section" aria-labelledby="journey-title">
+        <div className="shell">
+          <div className="landing-section-heading landing-section-heading-centered">
+            <p className="landing-kicker">DEINE MÖGLICHKEITEN</p>
+            <h2 id="journey-title">Folge mir in die Welt von AuraLumia</h2>
+            <p>Du musst keinem festen Ablauf folgen. Wähle den Raum, der zu deinem heutigen Bedürfnis und deiner gewünschten Tiefe passt.</p>
           </div>
-          <div className="landing-hero-visual" aria-hidden="true">
-            <span className="landing-orbit landing-orbit-one"></span>
-            <span className="landing-orbit landing-orbit-two"></span>
-            <Image src="/hero-womens-circle.jpg" alt="" width={1024} height={1536} priority sizes="(max-width: 760px) 92vw, 46vw" />
-            <p>Deine Seele kennt<br />den Weg <span>♡</span></p>
+          <div className="journey-grid">
+            {journey.map((item) => {
+              const content = <><span className="journey-number">{item.no}</span><div className="journey-image"><Image src={item.image} alt="" fill sizes="(max-width: 760px) 88vw, 24vw" /></div><p className="journey-label">{item.label}</p><h3>{item.title}</h3><p className="journey-copy">{item.text}</p><b>{item.action}</b></>;
+              return item.external ? <a className="journey-card" href={item.href} target="_blank" rel="noopener noreferrer" key={item.no}>{content}</a> : <Link className="journey-card" href={item.href} key={item.no}>{content}</Link>;
+            })}
           </div>
         </div>
       </section>
@@ -56,22 +54,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="journey-section" aria-labelledby="journey-title">
-        <div className="shell">
-          <div className="landing-section-heading landing-section-heading-centered">
-            <p className="landing-kicker">DEINE MÖGLICHKEITEN</p>
-            <h2 id="journey-title">Dein Weg mit AuraLumia</h2>
-            <p>Du musst keinem festen Ablauf folgen. Wähle den Raum, der zu deinem heutigen Bedürfnis und deiner gewünschten Tiefe passt.</p>
-          </div>
-          <div className="journey-grid">
-            {journey.map((item) => {
-              const content = <><span className="journey-number">{item.no}</span><div className="journey-image"><Image src={item.image} alt="" fill sizes="(max-width: 760px) 88vw, 24vw" /></div><p className="journey-label">{item.label}</p><h3>{item.title}</h3><p className="journey-copy">{item.text}</p><b>{item.action}</b></>;
-              return item.external ? <a className="journey-card" href={item.href} target="_blank" rel="noopener noreferrer" key={item.no}>{content}</a> : <Link className="journey-card" href={item.href} key={item.no}>{content}</Link>;
-            })}
-          </div>
-        </div>
-      </section>
-
       <section className="podcast-home" aria-labelledby="podcast-home-title">
         <div className="podcast-home-inner shell">
           <div className="podcast-home-copy">
@@ -84,10 +66,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about-home" aria-labelledby="about-home-title">
-        <div className="about-home-inner shell">
-          <div className="about-home-portrait"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill sizes="(max-width: 760px) 90vw, 42vw" /></div>
-          <div className="about-home-copy"><p className="landing-kicker">ÜBER MICH</p><h2 id="about-home-title">Hallo, ich bin Jennifer.</h2><p>Ich habe AuraLumia gegründet, um Frauen auf ihrem Weg zu mehr Selbstkenntnis und authentischer Selbstentfaltung zu begleiten. Somatic Karma ist aus meiner eigenen Erfahrung und aus der tiefen Verbindung von Körperwissen, Ahnenlinie und spiritueller Symbolarbeit entstanden.</p><ul><li>Entwicklerin von Somatic Karma</li><li>Mentorin für Körperwissen & Ahnenarbeit</li><li>Tarot- und Astrologie-Expertin</li><li>Host von „Karma mit Zimt und Zucker“</li></ul><Link className="landing-button landing-button-primary" href="/ueber-jennifer">Mehr über mich</Link></div>
+      <section className="landing-hero landing-hero-relocated" aria-labelledby="home-intro-title">
+        <div className="landing-hero-inner shell">
+          <div className="landing-hero-copy">
+            <p className="landing-kicker">SOMATIC KARMA · ASTROLOGIE · TAROT · KÖRPERWISSEN</p>
+            <h2 id="home-intro-title" className="landing-hero-title">Erkenne deine Muster.<br />Entdecke deine Bedürfnisse.<br />Gehe deinen Weg.</h2>
+            <p className="landing-lede">Somatic Karma verbindet Körperwissen, Ahnenarbeit, vedische Astrologie und Tarot zu einer sanften Methode für mehr Selbstkenntnis, Klarheit und innere Freiheit.</p>
+            <div className="landing-actions">
+              <a className="landing-button landing-button-primary" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a>
+              <Link className="landing-button landing-button-secondary" href="/mentoring#circle-programm">Zur Ausbildung</Link>
+            </div>
+            <div className="landing-promises" aria-label="Was dich bei AuraLumia erwartet">
+              <span><i aria-hidden="true">✧</i>Tiefere Selbsterkenntnis</span>
+              <span><i aria-hidden="true">☾</i>Bewusste neue Entscheidungen</span>
+              <span><i aria-hidden="true">✦</i>Ein Weg in Authentizität</span>
+            </div>
+          </div>
+          <div className="landing-hero-visual" aria-hidden="true">
+            <span className="landing-orbit landing-orbit-one"></span>
+            <span className="landing-orbit landing-orbit-two"></span>
+            <Image src="/hero-womens-circle.jpg" alt="" width={1024} height={1536} sizes="(max-width: 760px) 92vw, 46vw" />
+            <p>Deine Seele kennt<br />den Weg <span>♡</span></p>
+          </div>
         </div>
       </section>
 
