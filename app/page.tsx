@@ -6,8 +6,8 @@ import { links } from "@/lib/site-content";
 const journey = [
   { no: "01", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/produktbild-karma-navigator.png", action: "Navigator starten" },
   { no: "02", title: "Selbstlernangebote", text: "Wähle Audios, App oder Vertiefungen passend zu deinem eigenen Rhythmus.", href: "/angebote", image: "/products/produktbild-audio-bundle.png", action: "Angebote ansehen" },
-  { no: "03", title: "Drei Monde Blueprint", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/high-touch-3-month-blueprint.png", action: "Blueprint entdecken" },
-  { no: "04", title: "Aura Luminess", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/aura-luminess-premium.png", action: "Wege vergleichen" },
+  { no: "03", title: "Drei Monde Blueprint", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/drei-monde-blueprint-transparent.png", action: "Blueprint entdecken" },
+  { no: "04", title: "Aura Luminess", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/neun-monde-aura-luminess-transparent.png", action: "Wege vergleichen" },
 ];
 
 const testimonials = [

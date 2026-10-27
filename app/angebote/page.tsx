@@ -88,7 +88,7 @@ const tarotOffers: Offer[] = [
     title: "Karma Tarot Onlinekurs",
     description: "Lerne die Karten als fundiertes System für Selbsterkenntnis, Symbolarbeit und eine eigenständige Deutungspraxis kennen.",
     price: "249 €",
-    image: "/products/tarot-kurs.png",
+    image: "/products/tarot-onlinekurs-transparent.png",
     status: "Release Dezember 2026",
   },
 ];
