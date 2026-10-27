@@ -60,8 +60,8 @@ export const offerGroups: OfferGroup[] = [
     title: "Betritt eine weibliche Frequenzwelt, wenn dein Thema tiefer ruft.",
     intro: "Zwei kuratierte Erlebnisräume aus Audios, Workbook und Ritualen. Nicht als schnelle Lösung, sondern als bewusste Vertiefung in deinem eigenen Tempo.",
     offers: [
-      { name: "Venus Raum · Ur-Empfangen", price: "149 €", image: "/products/kinderwunsch-lumia.png", description: "Ein Raum für bedingungslose Selbstliebe, Herzöffnung und die Erinnerung daran, dass Empfangen kein Verdienst sein muss.", status: "Coming soon" },
-      { name: "Lilith Raum · Urkraft", price: "149 €", image: "/products/schossraum-clearing.png", description: "Ein Raum für Sinnlichkeit, Erotik, Leidenschaft und das sanfte Ablegen übernommener Scham.", status: "Coming soon" },
+      { name: "Venus Raum · Ur-Empfangen", price: "149 €", image: "/products/product-venus-selbstliebe.jpg", description: "Ein Raum für bedingungslose Selbstliebe, Herzöffnung und die Erinnerung daran, dass Empfangen kein Verdienst sein muss.", status: "Coming soon" },
+      { name: "Lilith Raum · Urkraft", price: "149 €", image: "/products/product-lilith-sinnlichkeit.jpg", description: "Ein Raum für Sinnlichkeit, Erotik, Leidenschaft und das sanfte Ablegen übernommener Scham.", status: "Coming soon" },
       { name: "Venus & Lilith · Duo", price: "249 €", image: "/products/aura-luminess-premium.png", description: "Beide Frequenzwelten als zusammenhängender Weg zwischen weichem Empfangen und ungefilterter weiblicher Kraft.", status: "Coming soon" },
     ],
   },
@@ -71,8 +71,8 @@ export const offerGroups: OfferGroup[] = [
     title: "Nutze Tarot als klaren, achtsamen Reflexionsraum.",
     intro: "Die Somatic Karma Tarot-Werkzeuge übersetzen Symbolik in Körperwahrnehmung, Ahnenarchitektur und selbstbestimmte nächste Schritte.",
     offers: [
-      { name: "Somatic Karma Tarot App", price: "9 € / Monat · 99 € / Jahr", image: "/products/somatic-tarot-access.png", description: "Dein digitaler Kartenraum für die tägliche Selbstpraxis. Ziehe intuitiv Karten und begegne dir mit Klarheit, Mitgefühl und Bewusstsein.", href: links.tarot },
-      { name: "Somatic Karma Tarot Onlinekurs", price: "149 €", image: "/products/tarot-onlinekurs-transparent.png", description: "Lerne das Deck, seine Ahnenarchitektur und die eigenständige Deutung Schritt für Schritt als fundiertes Spiegelsystem kennen.", status: "Release Dezember 2026" },
+      { name: "Somatic Karma Tarot App", price: "9 € / Monat · 99 € / Jahr", image: "/products/product-tarot-app.jpg", description: "Dein digitaler Kartenraum für die tägliche Selbstpraxis. Ziehe intuitiv Karten und begegne dir mit Klarheit, Mitgefühl und Bewusstsein.", href: links.tarot },
+      { name: "Somatic Karma Tarot Onlinekurs", price: "149 €", image: "/products/product-tarot-onlinekurs.jpg", description: "Lerne das Deck, seine Ahnenarchitektur und die eigenständige Deutung Schritt für Schritt als fundiertes Spiegelsystem kennen.", status: "Release Dezember 2026" },
       { name: "Somatic Karma Card Deck Blessing", price: "101,11 €", image: "/products/card-deck-blessing.png", description: "Eine persönliche energetische Aktivierung für dein Karten- oder Orakeldeck, verbunden mit deinem Archetypen und deiner intuitiven Praxis.", href: links.cardDeckBlessing },
     ],
   },
