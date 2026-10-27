@@ -186,7 +186,7 @@ export default function DreiMondeBlueprintPage() {
         </header>
         <div className="blueprint-next-grid">
           <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-aura-luminess.jpg" alt="Aura Luminess" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">AUSBILDUNG · NEUN MONDE</p><h3>Aura Luminess</h3><p>Die fundierte Ausbildung, wenn du Somatic Karma als zusammenhängende Methode kennenlernen und vertiefen möchtest.</p><Link href="/mentoring#circle-programm">Mehr erfahren <span aria-hidden="true">→</span></Link></div></article>
-          <article><div className="blueprint-next-image"><Image src="/products/product-high-touch-1-1.jpg" alt="High Touch 1:1" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">ALL-INCLUSIVE · NEUN MONDE</p><h3>High Touch 1:1</h3><p>Persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem umfassenden Gesamtprogramm.</p><Link href="/mentoring#high-touch">Mehr erfahren <span aria-hidden="true">→</span></Link></div></article>
+          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-high-touch-1-1.jpg" alt="High Touch 1:1" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">ALL-INCLUSIVE · NEUN MONDE</p><h3>High Touch 1:1</h3><p>Persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem umfassenden Gesamtprogramm.</p><Link href="/mentoring#high-touch">Mehr erfahren <span aria-hidden="true">→</span></Link></div></article>
         </div>
       </div>
     </section>

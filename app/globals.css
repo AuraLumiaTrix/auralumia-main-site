@@ -1688,8 +1688,8 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 
 .mentoring-v2-premium { padding-block:112px; background:linear-gradient(125deg,#6f5968 0%,#857080 52%,#a58e91 100%); color:#fff; }
 .mentoring-v2-premium-grid { display:grid; grid-template-columns:minmax(380px,.86fr) minmax(0,1.14fr); align-items:stretch; gap:clamp(55px,8vw,112px); }
-.mentoring-v2-premium-image { position:relative; min-height:680px; overflow:hidden; border-radius:24px; box-shadow:0 28px 70px rgba(55,37,47,.22); }
-.mentoring-v2-premium-image img { object-fit:cover; object-position:center 42%; }
+.mentoring-v2-premium-image { position:relative; align-self:center; width:100%; min-height:0; aspect-ratio:4/3; overflow:hidden; border-radius:24px; background:#f8f3ef; box-shadow:0 28px 70px rgba(55,37,47,.22); }
+.mentoring-v2-premium-image img { object-fit:contain; object-position:center; }
 .mentoring-v2-premium-copy { display:flex; justify-content:center; flex-direction:column; padding-block:34px; }
 .mentoring-v2-premium .mentoring-v2-kicker { color:#f1dbd3; }
 .mentoring-v2-premium h2 { color:#fff; font-size:clamp(4.4rem,6.7vw,7.2rem); line-height:.84; }
@@ -1751,7 +1751,7 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .mentoring-v2-primary { gap:18px; }
   .mentoring-v2-offer-copy { min-height:660px; padding-inline:32px; }
   .mentoring-v2-premium-grid { grid-template-columns:minmax(320px,.8fr) minmax(0,1.2fr); gap:50px; }
-  .mentoring-v2-premium-image { min-height:640px; }
+  .mentoring-v2-premium-image { min-height:0; }
   .mentoring-v2-deep-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .mentoring-v2-deep-grid article:last-child { grid-column:1/-1; min-height:330px; }
   .mentoring-v2-path-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:45px 30px; }
@@ -1781,7 +1781,7 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .mentoring-v2-button { width:100%; }
   .mentoring-v2-premium { padding-block:78px; }
   .mentoring-v2-premium-grid { grid-template-columns:1fr; gap:45px; }
-  .mentoring-v2-premium-image { width:calc(100% + 34px); min-height:420px; margin-left:-17px; border-radius:0; }
+  .mentoring-v2-premium-image { width:calc(100% + 34px); min-height:0; margin-left:-17px; border-radius:0; }
   .mentoring-v2-premium h2 { font-size:clamp(4rem,18vw,5.65rem); }
   .mentoring-v2-testimonial { grid-template-columns:1fr; gap:30px; padding-block:76px; text-align:center; }
   .mentoring-v2-testimonial > img { width:112px; height:112px; margin-inline:auto; }
