@@ -4,10 +4,10 @@ import { WoundExplorer } from "@/components/wound-explorer";
 import { links } from "@/lib/site-content";
 
 const journey = [
-  { no: "01", label: "Kostenfrei", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/produktbild-karma-navigator.png", action: "Navigator starten" },
-  { no: "02", label: "Ab 49 €", title: "Selbstlernangebote", text: "Wähle Audios, App oder Vertiefungen passend zu deinem eigenen Rhythmus.", href: "/angebote", image: "/products/produktbild-audio-bundle.png", action: "Angebote ansehen" },
-  { no: "03", label: "890 €", title: "Drei Monde Blueprint", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/high-touch-3-month-blueprint.png", action: "Blueprint entdecken" },
-  { no: "04", label: "Ausbildung & High Touch", title: "Aura Luminess", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/aura-luminess-premium.png", action: "Wege vergleichen" },
+  { no: "01", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/produktbild-karma-navigator.png", action: "Navigator starten" },
+  { no: "02", title: "Selbstlernangebote", text: "Wähle Audios, App oder Vertiefungen passend zu deinem eigenen Rhythmus.", href: "/angebote", image: "/products/produktbild-audio-bundle.png", action: "Angebote ansehen" },
+  { no: "03", title: "Drei Monde Blueprint", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/high-touch-3-month-blueprint.png", action: "Blueprint entdecken" },
+  { no: "04", title: "Aura Luminess", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/aura-luminess-premium.png", action: "Wege vergleichen" },
 ];
 
 const testimonials = [
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           <div className="journey-grid">
             {journey.map((item) => {
-              const content = <><span className="journey-number">{item.no}</span><div className="journey-image"><Image src={item.image} alt="" fill sizes="(max-width: 760px) 88vw, 24vw" /></div><p className="journey-label">{item.label}</p><h3>{item.title}</h3><p className="journey-copy">{item.text}</p><b>{item.action}</b></>;
+              const content = <><span className="journey-number">{item.no}</span><div className="journey-image"><Image src={item.image} alt="" fill sizes="(max-width: 760px) 88vw, 24vw" /></div><h3>{item.title}</h3><p className="journey-copy">{item.text}</p><b>{item.action}</b></>;
               return item.external ? <a className="journey-card" href={item.href} target="_blank" rel="noopener noreferrer" key={item.no}>{content}</a> : <Link className="journey-card" href={item.href} key={item.no}>{content}</Link>;
             })}
           </div>
@@ -68,7 +68,7 @@ export default function Home() {
             <p className="landing-kicker">PODCAST</p>
             <h2 id="podcast-home-title">Karma mit Zimt und Zucker</h2>
             <p>Persönliche Gespräche über Spiritualität, Selbstliebe und die süßen wie herausfordernden Seiten des Lebens.</p>
-            <div className="landing-actions"><a className="landing-button landing-button-primary" href={links.podcast} target="_blank" rel="noopener noreferrer">Jetzt reinhören <span aria-hidden="true">▶</span></a><Link className="landing-text-link" href="/podcast">Zur Podcast-Seite</Link></div>
+            <div className="landing-actions"><Link className="landing-button landing-button-primary" href="/podcast">Jetzt lauschen</Link></div>
           </div>
           <Link className="podcast-home-art" href="/podcast" aria-label="Podcast-Seite öffnen"><Image src="/podcast-auralumia.png" alt="Karma mit Zimt und Zucker – Podcast von AuraLumia" fill sizes="(max-width: 760px) 100vw, 47vw" /></Link>
         </div>
@@ -89,12 +89,6 @@ export default function Home() {
               <span><i aria-hidden="true">☾</i>Bewusste neue Entscheidungen</span>
               <span><i aria-hidden="true">✦</i>Ein Weg in Authentizität</span>
             </div>
-          </div>
-          <div className="landing-hero-visual" aria-hidden="true">
-            <span className="landing-orbit landing-orbit-one"></span>
-            <span className="landing-orbit landing-orbit-two"></span>
-            <Image src="/hero-womens-circle.jpg" alt="" width={1024} height={1536} sizes="(max-width: 760px) 92vw, 46vw" />
-            <p>Deine Seele kennt<br />den Weg <span>♡</span></p>
           </div>
         </div>
       </section>

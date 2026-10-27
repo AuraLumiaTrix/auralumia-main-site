@@ -5,10 +5,10 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const nav = [
-  ["Methode", "/somatic-karma"],
-  ["Audiokurse & App", "/angebote"],
+  ["Angebote", "/angebote"],
   ["Begleitung & Ausbildung", "/mentoring"],
   ["Über mich", "/ueber-jennifer"],
+  ["Methode", "/somatic-karma"],
   ["Podcast", "/podcast"],
 ] as const;
 
