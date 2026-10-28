@@ -78,7 +78,7 @@ export default function JenniferPage() {
 
       <section className="about-v2-podcast" id="podcast">
         <div className="shell about-v2-podcast-intro">
-          <div className="about-v2-podcast-art"><Image src="/podcast-auralumia.png" alt="Karma mit Zimt und Zucker – der AuraLumia Podcast" fill sizes="(max-width: 860px) 100vw, 44vw" /></div>
+          <div className="about-v2-podcast-art"><Image src="/podcast-smartphone-transparent.png" alt="Karma mit Zimt und Zucker auf dem Smartphone" fill sizes="(max-width: 860px) 100vw, 44vw" /></div>
           <div className="about-v2-podcast-copy"><p className="landing-kicker">PODCAST</p><h2>Karma mit Zimt und Zucker</h2><p className="about-v2-podcast-subtitle">Ehrliche Gespräche über Spiritualität, Selbstliebe und die süßen und herausfordernden Seiten des Lebens.</p><ul><li><Headphones aria-hidden="true" /> Inspiration für deinen Alltag</li><li><HandHeart aria-hidden="true" /> Persönliche, nahbare Impulse</li><li><Sparkles aria-hidden="true" /> Spiritualität zum Anfassen</li></ul><div className="about-v2-platform-actions"><PodcastPlatformLinks /><Link className="landing-text-link" href="/podcast">Zur Podcast-Seite</Link></div></div>
         </div>
         <div className="shell about-v2-podcast-player">

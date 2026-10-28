@@ -70,7 +70,7 @@ export default function Home() {
             <p>Persönliche Gespräche über Spiritualität, Selbstliebe und die süßen wie herausfordernden Seiten des Lebens.</p>
             <div className="landing-actions"><Link className="landing-button landing-button-primary" href="/podcast">Jetzt lauschen</Link></div>
           </div>
-          <Link className="podcast-home-art" href="/podcast" aria-label="Podcast-Seite öffnen"><Image src="/podcast-auralumia.png" alt="Karma mit Zimt und Zucker – Podcast von AuraLumia" fill sizes="(max-width: 760px) 100vw, 47vw" /></Link>
+          <Link className="podcast-home-art" href="/podcast" aria-label="Podcast-Seite öffnen"><Image src="/podcast-smartphone-transparent.png" alt="Karma mit Zimt und Zucker auf dem Smartphone" fill sizes="(max-width: 760px) 100vw, 47vw" /></Link>
         </div>
       </section>
 
