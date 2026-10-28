@@ -38,7 +38,7 @@ const navigatorOffers: Offer[] = [
     title: "Kostenloser Navigator",
     description: "Erkenne, welche der vier karmischen Narben gerade besonders deutlich wirkt, und finde einen stimmigen nächsten Schritt.",
     price: "Kostenlos",
-    image: "/products/produktbild-karma-navigator.png",
+    image: "/products/somatic-karma-navigator-premium-flatlay.png",
     href: links.navigator,
     external: true,
   },

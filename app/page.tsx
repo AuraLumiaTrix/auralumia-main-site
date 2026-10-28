@@ -4,8 +4,8 @@ import { WoundExplorer } from "@/components/wound-explorer";
 import { links } from "@/lib/site-content";
 
 const journey = [
-  { no: "01", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/produktbild-karma-navigator.png", action: "Navigator starten" },
-  { no: "02", title: "Selbstlernangebote", text: "Wähle Audios, App oder Vertiefungen passend zu deinem eigenen Rhythmus.", href: "/angebote", image: "/products/produktbild-audio-bundle.png", action: "Angebote ansehen" },
+  { no: "01", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/somatic-karma-navigator-premium-flatlay.png", action: "Navigator starten" },
+  { no: "02", title: "Erfüllungspakete", text: "Wähle Audios, App oder Vertiefungen passend zu deinem eigenen Rhythmus.", href: "/angebote", image: "/products/product-lilith-sinnlichkeit.jpg", action: "Angebote ansehen" },
   { no: "03", title: "Drei Monde Blueprint", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/product-drei-monde-blueprint.jpg", action: "Blueprint entdecken" },
   { no: "04", title: "Aura Luminess", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/product-aura-luminess.jpg", action: "Wege vergleichen" },
 ];
@@ -64,13 +64,13 @@ export default function Home() {
 
       <section className="podcast-home" aria-labelledby="podcast-home-title">
         <div className="podcast-home-inner shell">
+          <Link className="podcast-home-art" href="/podcast" aria-label="Podcast-Seite öffnen"><Image src="/podcast-smartphone-transparent.png" alt="Karma mit Zimt und Zucker auf dem Smartphone" fill sizes="(max-width: 760px) 92vw, 520px" /></Link>
           <div className="podcast-home-copy">
             <p className="landing-kicker">PODCAST</p>
             <h2 id="podcast-home-title">Karma mit Zimt und Zucker</h2>
             <p>Persönliche Gespräche über Spiritualität, Selbstliebe und die süßen wie herausfordernden Seiten des Lebens.</p>
             <div className="landing-actions"><Link className="landing-button landing-button-primary" href="/podcast">Jetzt lauschen</Link></div>
           </div>
-          <Link className="podcast-home-art" href="/podcast" aria-label="Podcast-Seite öffnen"><Image src="/podcast-smartphone-transparent.png" alt="Karma mit Zimt und Zucker auf dem Smartphone" fill sizes="(max-width: 760px) 100vw, 47vw" /></Link>
         </div>
       </section>
 
