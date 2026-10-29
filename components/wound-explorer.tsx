@@ -215,7 +215,7 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
                 <Image className="wound-symbol-image" src={wound.symbol} alt="" width={1122} height={1402} sizes="130px" />
                 <h3>{wound.title}</h3>
                 <p>{wound.cardText}</p>
-                <span className="wound-home-play" aria-hidden="true">▶</span>
+                <span className="wound-home-play" aria-hidden="true">Narbe ansehen</span>
               </button>
             </article>
           ))}

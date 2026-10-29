@@ -6,8 +6,8 @@ import { links } from "@/lib/site-content";
 const journey = [
   { no: "01", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/somatic-karma-navigator-premium-flatlay.png", action: "Navigator starten" },
   { no: "02", title: "Erfüllungspakete", text: "Wähle Audios, App oder Vertiefungen passend zu deinem eigenen Rhythmus.", href: "/angebote", image: "/products/product-lilith-sinnlichkeit.jpg", action: "Angebote ansehen" },
-  { no: "03", title: "Drei Monde Blueprint", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/product-drei-monde-blueprint.jpg", action: "Blueprint entdecken" },
-  { no: "04", title: "Aura Luminess", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/product-aura-luminess.jpg", action: "Wege vergleichen" },
+  { no: "03", title: "Dein Weg in die Tiefe", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/product-drei-monde-blueprint.jpg", action: "Blueprint entdecken" },
+  { no: "04", title: "Ausbildung & Mentoring", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/product-aura-luminess.jpg", action: "Wege vergleichen" },
 ];
 
 const testimonials = [
@@ -25,7 +25,7 @@ export default function Home() {
           <div className="about-home-copy">
             <h1 id="about-home-title">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h1>
             <div className="about-home-text-card">
-              <p className="about-home-belief">Ich glaube zutiefst daran, dass jeder Mensch sein Schicksal selbst in die Hand nehmen kann.</p>
+              <p className="about-home-belief">Ich glaube zutiefst daran, dass jeder Mensch heil und ganz wird, wenn er sich selbst findet.</p>
               <p>Willkommen im geschützten Raum von AuraLumia, einem Ort für dich, für deine Seele, dein Wachstum, deine Transformation. Dein Ort um dich selbst zu finden. Mit AuraLumia möchte ich dir liebevoll meine Hand reichen, damit du deinen Weg nicht allein gehen musst.</p>
               <p>Ich habe AuraLumia gegründet, um Frauen auf ihrem Weg zu mehr Selbstkenntnis und authentischer Selbstentfaltung zu begleiten. Somatic Karma ist aus meiner eigenen Erfahrung und aus der tiefen Verbindung von Körperwissen, Ahnenlinie und spiritueller Symbolarbeit entstanden.</p>
               <ul><li>Entwicklerin von Somatic Karma</li><li>Mentorin für Körperwissen & Ahnenarbeit</li><li>Tarot- und Astrologie-Expertin</li><li>Host von „Karma mit Zimt und Zucker“</li></ul>
@@ -37,7 +37,7 @@ export default function Home() {
       <section className="journey-section" aria-labelledby="journey-title">
         <div className="shell">
           <div className="landing-section-heading landing-section-heading-centered">
-            <p className="landing-kicker">DEINE MÖGLICHKEITEN</p>
+            <p className="landing-kicker">MEINE ANGEBOTE</p>
             <h2 id="journey-title">Folge mir in die Welt von AuraLumia</h2>
             <p>Du musst keinem festen Ablauf folgen. Wähle den Raum, der zu deinem heutigen Bedürfnis und deiner gewünschten Tiefe passt.</p>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
       <section className="wounds-section" aria-labelledby="somatic-karma-title">
         <div className="shell">
           <div className="landing-section-heading landing-section-heading-centered">
-            <p className="landing-kicker">SOMATIC KARMA</p>
+            <p className="landing-kicker">MEINE METHODE</p>
             <h2 id="somatic-karma-title">Was ist Somatic Karma?</h2>
             <p>Vier karmische Narben prägen unbewusst, wie wir Sicherheit, Zugehörigkeit, Empfangen und Selbstbestimmung erleben. Wenn du sie erkennst, kannst du deinen Bedürfnissen mit neuer Klarheit begegnen.</p>
           </div>
@@ -70,25 +70,6 @@ export default function Home() {
             <h2 id="podcast-home-title">Karma mit Zimt und Zucker</h2>
             <p>Persönliche Gespräche über Spiritualität, Selbstliebe und die süßen wie herausfordernden Seiten des Lebens.</p>
             <div className="landing-actions"><Link className="landing-button landing-button-primary" href="/podcast">Jetzt lauschen</Link></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="landing-hero landing-hero-relocated" aria-labelledby="home-intro-title">
-        <div className="landing-hero-inner shell">
-          <div className="landing-hero-copy">
-            <p className="landing-kicker">SOMATIC KARMA · ASTROLOGIE · TAROT · KÖRPERWISSEN</p>
-            <h2 id="home-intro-title" className="landing-hero-title">Erkenne deine Muster.<br />Entdecke deine Bedürfnisse.<br />Gehe deinen Weg.</h2>
-            <p className="landing-lede">Somatic Karma verbindet Körperwissen, Ahnenarbeit, vedische Astrologie und Tarot zu einer sanften Methode für mehr Selbstkenntnis, Klarheit und innere Freiheit.</p>
-            <div className="landing-actions">
-              <a className="landing-button landing-button-primary" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a>
-              <Link className="landing-button landing-button-secondary" href="/mentoring#circle-programm">Zur Ausbildung</Link>
-            </div>
-            <div className="landing-promises" aria-label="Was dich bei AuraLumia erwartet">
-              <span><i aria-hidden="true">✧</i>Tiefere Selbsterkenntnis</span>
-              <span><i aria-hidden="true">☾</i>Bewusste neue Entscheidungen</span>
-              <span><i aria-hidden="true">✦</i>Ein Weg in Authentizität</span>
-            </div>
           </div>
         </div>
       </section>
