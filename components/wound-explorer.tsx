@@ -209,14 +209,13 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
     <>
       {variant === "home" ? (
         <div className="wounds-grid">
-          {wounds.map((wound, index) => (
+          {wounds.map((wound) => (
             <article key={wound.id}>
-              <button className="wound-home-trigger" type="button" onClick={(event) => openModal(index, event)} aria-haspopup="dialog" aria-label={`${wound.title} öffnen`}>
+              <div className="wound-home-trigger">
                 <Image className="wound-symbol-image" src={wound.symbol} alt="" width={1122} height={1402} sizes="130px" />
                 <h3>{wound.title}</h3>
                 <p>{wound.cardText}</p>
-                <span className="wound-home-play" aria-hidden="true">Narbe ansehen</span>
-              </button>
+              </div>
             </article>
           ))}
         </div>

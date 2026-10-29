@@ -38,10 +38,10 @@ const deepDives = [
 ];
 
 const paths = [
-  { symbol: "☾", title: "Blueprint", text: "Persönliche Orientierung und Entwicklung für dein aktuelles Thema." },
-  { symbol: "✦", title: "Aura Luminess", text: "Die Methode kennenlernen und vertiefend erlernen." },
-  { symbol: "◇", title: "High Touch", text: "Umfassende persönliche Begleitung und Ausbildung in einem Gesamtprogramm." },
-  { symbol: "◌", title: "Vertiefende Monde", text: "Optionale Spezialisierung nach der Hauptausbildung." },
+  { symbol: "/symbols/gold-blueprint.png", title: "Blueprint", text: "Persönliche Orientierung und Entwicklung für dein aktuelles Thema." },
+  { symbol: "/symbols/gold-nine-moons.png", title: "Aura Luminess", text: "Die Methode kennenlernen und vertiefend erlernen." },
+  { symbol: "/symbols/gold-nine-moons.png", title: "High Touch", text: "Umfassende persönliche Begleitung und Ausbildung in einem Gesamtprogramm." },
+  { symbol: "/symbols/gold-deepening-moons.png", title: "Vertiefende Monde", text: "Optionale Spezialisierung nach der Hauptausbildung." },
 ];
 
 function FeatureList({ items }: { items: string[] }) {
@@ -62,7 +62,7 @@ export default function MentoringPage() {
     </section>
 
     <section className="mentoring-v2-intro shell" aria-labelledby="mentoring-intro-title">
-      <div><p className="mentoring-v2-kicker">ZWEI EINSTIEGE · EIN FUNDAMENT</p><h2 id="mentoring-intro-title">Wähle, was dich jetzt wirklich unterstützt.</h2></div>
+      <div><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-blueprint" src="/symbols/gold-blueprint.png" alt="" width={1124} height={1399} sizes="110px" /><p className="mentoring-v2-kicker">ZWEI EINSTIEGE · EIN FUNDAMENT</p><h2 id="mentoring-intro-title">Wähle, was dich jetzt wirklich unterstützt.</h2></div>
       <p>Du kannst dich persönlich begleiten lassen oder Somatic Karma als fundierte Methode erlernen. Beide Wege stehen für sich – und dürfen genau dort beginnen, wo du gerade bist.</p>
     </section>
 
@@ -83,6 +83,7 @@ export default function MentoringPage() {
       <div className="shell mentoring-v2-premium-grid">
         <div className="mentoring-v2-premium-image"><Image src="/products/product-high-touch-1-1.jpg" alt="Neun Monde High Touch 1:1" fill sizes="(max-width: 760px) 100vw, 46vw" /></div>
         <div className="mentoring-v2-premium-copy">
+          <Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-nine-moons" src="/symbols/gold-nine-moons.png" alt="" width={1080} height={1350} sizes="120px" />
           <p className="mentoring-v2-kicker">ALL-INCLUSIVE · PERSÖNLICH BEGLEITET</p>
           <h2 id="high-touch-title">Neun Monde<br />High Touch 1:1</h2>
           <p>Ein umfassender Raum für Frauen, die persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem Gesamtprogramm verbinden möchten.</p>
@@ -99,20 +100,20 @@ export default function MentoringPage() {
 
     <section className="mentoring-v2-deep-dives" aria-labelledby="deep-dives-title">
       <div className="shell">
-        <header className="mentoring-v2-section-heading"><div><p className="mentoring-v2-kicker">OPTIONAL NACH DER HAUPTAUSBILDUNG</p><h2 id="deep-dives-title">Drei vertiefende Monde</h2></div><p>Jede Spezialisierung ist eine eigenständige, optionale Vertiefung. Sie ist kein verpflichtender Bestandteil der Aura-Luminess-Ausbildung.</p></header>
-        <div className="mentoring-v2-deep-grid">{deepDives.map((item) => <article key={item.number}><span>{item.number}</span><div aria-hidden="true">✦</div><h3>{item.title}</h3><p>{item.description}</p><strong>890 €</strong></article>)}</div>
+        <header className="mentoring-v2-section-heading"><div><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-deepening" src="/symbols/gold-deepening-moons.png" alt="" width={1080} height={1350} sizes="110px" /><p className="mentoring-v2-kicker">OPTIONAL NACH DER HAUPTAUSBILDUNG</p><h2 id="deep-dives-title">Drei vertiefende Monde</h2></div><p>Jede Spezialisierung ist eine eigenständige, optionale Vertiefung. Sie ist kein verpflichtender Bestandteil der Aura-Luminess-Ausbildung.</p></header>
+        <div className="mentoring-v2-deep-grid">{deepDives.map((item) => <article key={item.number}><span>{item.number}</span><Image className="mentoring-v2-deep-symbol" src="/symbols/gold-deepening-moons.png" alt="" width={1080} height={1350} sizes="84px" /><h3>{item.title}</h3><p>{item.description}</p><strong>890 €</strong></article>)}</div>
       </div>
     </section>
 
     <section className="mentoring-v2-paths shell" aria-labelledby="paths-title">
       <header className="mentoring-v2-centered-heading"><p className="mentoring-v2-kicker">DEINE ORIENTIERUNG</p><h2 id="paths-title">Welcher Weg passt zu dir?</h2><p>Die Angebote sind Auswahlmöglichkeiten für unterschiedliche Bedürfnisse – keine verpflichtende Reihenfolge.</p></header>
-      <div className="mentoring-v2-path-grid">{paths.map((path) => <article key={path.title}><span aria-hidden="true">{path.symbol}</span><h3>{path.title}</h3><p>{path.text}</p></article>)}</div>
+      <div className="mentoring-v2-path-grid">{paths.map((path) => <article key={path.title}><Image className="mentoring-v2-path-symbol" src={path.symbol} alt="" width={1122} height={1402} sizes="100px" /><h3>{path.title}</h3><p>{path.text}</p></article>)}</div>
     </section>
 
     <section className="mentoring-v2-info" aria-label="Verfügbarkeit und Bewerbung">
       <div className="shell mentoring-v2-info-grid">
-        <article id="blueprint-verfuegbarkeit"><p className="mentoring-v2-kicker">BLUEPRINT · PERSÖNLICHE VERFÜGBARKEIT</p><h2>Ein bewusst gewählter Start.</h2><p>Jeder Drei Monde Blueprint wird persönlich vorbereitet. Deshalb werden nur wenige Begleitungen gleichzeitig vergeben und jeder mögliche Beginn individuell geprüft.</p><div><span>Auf Anfrage</span><strong>890 € · bewusst limitierte Plätze</strong></div></article>
-        <article id="bewerbung"><p className="mentoring-v2-kicker">AURA LUMINESS · ZWEI CIRCLES IM JAHR</p><h2>Samhain &amp; Walpurgis</h2><p>Die Ausbildung beginnt zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase öffnet im Oktober 2026 für den Samhain Circle.</p><div><span>Bewerbung ab Oktober 2026</span><strong>Wenige, bewusst vergebene Plätze</strong></div></article>
+        <article id="blueprint-verfuegbarkeit"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-blueprint.png" alt="" width={1124} height={1399} sizes="100px" /><p className="mentoring-v2-kicker">BLUEPRINT · PERSÖNLICHE VERFÜGBARKEIT</p><h2>Ein bewusst gewählter Start.</h2><p>Jeder Drei Monde Blueprint wird persönlich vorbereitet. Deshalb werden nur wenige Begleitungen gleichzeitig vergeben und jeder mögliche Beginn individuell geprüft.</p><div><span>Auf Anfrage</span><strong>890 € · bewusst limitierte Plätze</strong></div></article>
+        <article id="bewerbung"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-nine-moons.png" alt="" width={1080} height={1350} sizes="100px" /><p className="mentoring-v2-kicker">AURA LUMINESS · ZWEI CIRCLES IM JAHR</p><h2>Samhain &amp; Walpurgis</h2><p>Die Ausbildung beginnt zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase öffnet im Oktober 2026 für den Samhain Circle.</p><div><span>Bewerbung ab Oktober 2026</span><strong>Wenige, bewusst vergebene Plätze</strong></div></article>
       </div>
     </section>
 

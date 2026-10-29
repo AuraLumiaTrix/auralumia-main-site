@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Compass, Eye, Flower2, GraduationCap, HandHeart, Headphones, Mail, Moon, Music2, Podcast, Sparkles, Sprout } from "lucide-react";
+import { GraduationCap, HandHeart, Headphones, Mail, Moon, Music2, Podcast, Sparkles } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { PodcastAudioPlayer } from "@/components/podcast-audio-player";
 import { PodcastPlatformLinks } from "@/components/podcast-platform-links";
@@ -68,11 +68,11 @@ export default function JenniferPage() {
       <section className="about-v2-values"><div className="shell">
         <header className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">MEIN FUNDAMENT</p><h2>Meine Werte</h2><p>Diese Haltung trägt meine Arbeit, meine Angebote und die Community von AuraLumia.</p></header>
         <div className="about-v2-values-grid">
-          <article><Moon aria-hidden="true" /><h3>Tiefe</h3><p>Ich gehe unter die Oberfläche und gebe Erkenntnissen den Raum, den sie brauchen.</p></article>
-          <article><Sprout aria-hidden="true" /><h3>Eigenverantwortung</h3><p>Du behältst deine innere Autorität und bestimmst Tempo und Richtung.</p></article>
-          <article><Eye aria-hidden="true" /><h3>Intuition</h3><p>Feine Wahrnehmung und klare Reflexion dürfen einander ergänzen.</p></article>
-          <article><Compass aria-hidden="true" /><h3>Struktur</h3><p>Spirituelle Praxis wird durch verständliche Schritte und fundierte Werkzeuge greifbar.</p></article>
-          <article><Flower2 aria-hidden="true" /><h3>Sanfte Transformation</h3><p>Veränderung darf klar, mitfühlend und in deinem eigenen Rhythmus geschehen.</p></article>
+          <article><Image className="about-v2-value-symbol" src="/symbols/gold-depth.png" alt="" width={1131} height={1391} sizes="96px" /><h3>Tiefe</h3><p>Ich gehe unter die Oberfläche und gebe Erkenntnissen den Raum, den sie brauchen.</p></article>
+          <article><Image className="about-v2-value-symbol" src="/symbols/gold-responsibility.png" alt="" width={1312} height={1199} sizes="96px" /><h3>Eigenverantwortung</h3><p>Du behältst deine innere Autorität und bestimmst Tempo und Richtung.</p></article>
+          <article><Image className="about-v2-value-symbol" src="/symbols/gold-intuition.png" alt="" width={1536} height={1024} sizes="96px" /><h3>Intuition</h3><p>Feine Wahrnehmung und klare Reflexion dürfen einander ergänzen.</p></article>
+          <article><Image className="about-v2-value-symbol" src="/symbols/gold-structure.png" alt="" width={1536} height={1024} sizes="96px" /><h3>Struktur</h3><p>Spirituelle Praxis wird durch verständliche Schritte und fundierte Werkzeuge greifbar.</p></article>
+          <article><Image className="about-v2-value-symbol" src="/symbols/gold-transformation.png" alt="" width={1154} height={1363} sizes="96px" /><h3>Sanfte Transformation</h3><p>Veränderung darf klar, mitfühlend und in deinem eigenen Rhythmus geschehen.</p></article>
         </div>
       </div></section>
 
