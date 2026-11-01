@@ -14,7 +14,7 @@ h1 { font-size:clamp(4.4rem,7.2vw,7.25rem); }
 h2 { font-size:clamp(3.25rem,5.5vw,5.7rem); }
 h3 { font-size:2.15rem; }
 p { margin:0; }
-.button { display:inline-flex; align-items:center; justify-content:center; gap:14px; min-height:54px; padding:14px 24px; border:1px solid transparent; font-size:.8rem; font-weight:700; letter-spacing:.04em; transition:transform .2s ease,background .2s ease,color .2s ease; }
+.button { display:inline-flex; align-items:center; justify-content:center; gap:14px; min-height:54px; padding:14px 24px; border:1px solid transparent; border-radius:999px; font-size:.8rem; font-weight:700; letter-spacing:.04em; transition:transform .2s ease,background .2s ease,color .2s ease; }
 .button:hover { transform:translateY(-2px); }
 .button-dark { background:var(--ink); color:var(--button-cream); }
 .button-light { border-color:var(--button-cream); background:transparent; color:var(--button-cream); }
@@ -593,6 +593,16 @@ p { margin:0; }
 .music-art img { width:100%; max-height:680px; object-fit:contain; }
 .music-stage-grid h2 { font-size:clamp(3.4rem,5.2vw,5.4rem); }
 .music-stage-grid p:not(.eyebrow) { margin:30px 0 36px; }
+.music-player-section { padding-block:120px; }
+.music-track-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.music-track-card { min-width:0; padding:30px; border:1px solid var(--line); border-radius:24px; background:linear-gradient(145deg,#fff,#f9f1f4); box-shadow:0 18px 46px rgba(92,68,78,.07); }
+.music-track-card > div { display:flex; align-items:center; justify-content:space-between; gap:16px; color:var(--gold); font-size:.63rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+.music-track-card h3 { min-height:2.05em; margin:18px 0 25px; font-size:clamp(2rem,3.2vw,3.15rem); line-height:1.02; }
+.music-track-card:last-child { grid-column:1/-1; }
+.music-platform-links { display:flex; flex-wrap:wrap; gap:20px 34px; margin-top:38px; }
+.music-platform-links a { display:inline-flex; align-items:center; gap:12px; color:var(--ink); font-size:.79rem; font-weight:800; text-decoration:underline; text-decoration-color:rgba(102,79,88,.55); text-underline-offset:5px; }
+.music-platform-links a:hover { color:var(--gold); }
+.music-platform-links img { width:52px; height:52px; object-fit:contain; filter:drop-shadow(0 8px 14px rgba(111,76,30,.16)); }
 .tracklist { display:grid; grid-template-columns:.72fr 1.28fr; gap:9vw; padding-block:130px; }
 .tracklist ol { margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
 .tracklist li { display:grid; grid-template-columns:54px 1fr auto; align-items:center; gap:24px; padding:28px 0; border-bottom:1px solid var(--line); }
@@ -616,11 +626,11 @@ p { margin:0; }
 .tarot-search input { width:100%; padding:13px 0; border:0; border-bottom:1px solid var(--ink); outline:0; background:#fff; color:var(--ink); font:500 .9rem var(--sans); }
 .tarot-search input::placeholder { color:rgba(115,96,90,.55); }
 .tarot-filters { display:flex; gap:8px; margin-top:55px; overflow-x:auto; padding-bottom:8px; scrollbar-width:none; }
-.tarot-filters button { flex:0 0 auto; cursor:pointer; padding:11px 17px; border:1px solid var(--line); border-radius:0; background:#fff; color:var(--ink); font-size:.7rem; font-weight:700; letter-spacing:.06em; }
+.tarot-filters button { flex:0 0 auto; cursor:pointer; padding:11px 17px; border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--ink); font-size:.7rem; font-weight:700; letter-spacing:.06em; }
 .tarot-filters button:hover { background:var(--stone); }
 .tarot-filters button.active { border-color:var(--deep); background:var(--deep); color:#fff; }
 .tarot-card-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:20px; margin-top:34px; }
-.tarot-card-tile { min-width:0; cursor:pointer; padding:0 0 22px; overflow:hidden; border:1px solid var(--line); border-radius:0; background:#fff; color:var(--ink); text-align:left; transition:transform .25s ease,box-shadow .25s ease; }
+.tarot-card-tile { min-width:0; cursor:pointer; padding:0 0 22px; overflow:hidden; border:1px solid var(--line); border-radius:22px; background:#fff; color:var(--ink); text-align:left; transition:transform .25s ease,box-shadow .25s ease; }
 .tarot-card-tile:hover { transform:translateY(-4px); box-shadow:0 18px 40px rgba(115,96,90,.12); }
 .tarot-card-tile img { width:100%; aspect-ratio:874/1459; object-fit:contain; background:var(--stone); }
 .tarot-card-tile span,.tarot-card-tile strong,.tarot-card-tile small { display:block; margin-inline:18px; }
@@ -987,6 +997,12 @@ p { margin:0; }
   .media-choice { padding:21px 22px; }
   .subscribe-row { align-items:flex-start; flex-direction:column; gap:16px; }
   .music-platform-actions { flex-direction:column; }
+  .music-player-section { padding-block:88px; }
+  .music-track-grid { grid-template-columns:1fr; }
+  .music-track-card { padding:25px 22px; }
+  .music-track-card:last-child { grid-column:auto; }
+  .music-track-card h3 { min-height:0; }
+  .music-platform-links { align-items:flex-start; flex-direction:column; }
   .podcast-platform-links { flex-direction:column; align-items:flex-start; }
   .platform-button { width:100%; justify-content:center; }
   .tracklist li { grid-template-columns:36px 1fr; gap:15px; }
@@ -1017,10 +1033,12 @@ p { margin:0; }
   .tarot-library-heading { align-items:flex-start; flex-direction:column; gap:35px; }
   .tarot-search { width:100%; }
   .tarot-filters { margin-top:38px; }
-  .tarot-card-grid { grid-template-columns:repeat(2,1fr); gap:12px; }
-  .tarot-card-tile { padding-bottom:17px; }
+  .tarot-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:1fr; align-items:stretch; gap:12px; }
+  .tarot-card-tile { display:grid; height:100%; grid-template-rows:auto 2.3rem 3.2rem minmax(4.7rem,1fr); align-content:start; padding-bottom:19px; border-radius:18px; }
   .tarot-card-tile span,.tarot-card-tile strong,.tarot-card-tile small { margin-inline:12px; }
-  .tarot-card-tile strong { font-size:1.25rem; }
+  .tarot-card-tile span { align-self:start; margin-top:17px; line-height:1.25; }
+  .tarot-card-tile strong { align-self:start; margin-top:7px; font-size:1.25rem; }
+  .tarot-card-tile small { align-self:start; margin-top:8px; }
   .tarot-modal-backdrop { align-items:start; padding:12px; }
   .tarot-modal { grid-template-columns:1fr; max-height:none; }
   .tarot-modal-art { padding:40px 55px 30px; }
@@ -1142,6 +1160,7 @@ p { margin:0; }
 .about-home-text-card { max-width:680px; margin-top:30px; padding:34px 36px 28px; border:1px solid rgba(145,115,110,.14); border-radius:24px; background:rgba(255,255,255,.9); box-shadow:0 24px 58px rgba(92,66,69,.12); text-align:center; -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); }
 .about-home-text-card > p { color:var(--landing-muted); font-size:.88rem; line-height:1.75; }
 .about-home-text-card > p + p { margin-top:17px; }
+.about-home-text-card > .about-home-mantra { color:#765d69; font-family:var(--serif); font-size:clamp(1.22rem,1.65vw,1.62rem); font-weight:600; letter-spacing:.045em; line-height:1.3; }
 .about-home-text-card > .about-home-belief { color:var(--landing-ink); font-family:var(--serif); font-size:clamp(1.42rem,2vw,1.95rem); line-height:1.22; }
 .about-home-copy ul { display:grid; grid-template-columns:1fr 1fr; gap:0 25px; margin:24px 0 0; padding:0; list-style:none; }
 .about-home-copy li { padding:12px 0; border-bottom:1px solid rgba(103,81,79,.14); color:var(--landing-muted); font-size:.72rem; }

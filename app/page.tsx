@@ -25,6 +25,7 @@ export default function Home() {
           <div className="about-home-copy">
             <h1 id="about-home-title">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h1>
             <div className="about-home-text-card">
+              <p className="about-home-mantra">„ICH BIN GANZ, ICH BIN HEIL. ICH BIN ENDLICH BEI MIR SELBST ANGEKOMMEN.“</p>
               <p className="about-home-belief">Ich glaube zutiefst daran, dass jeder Mensch heil und ganz wird, wenn er sich selbst findet.</p>
               <p>Willkommen im geschützten Raum von AuraLumia, einem Ort für dich, für deine Seele, dein Wachstum, deine Transformation. Dein Ort um dich selbst zu finden. Mit AuraLumia möchte ich dir liebevoll meine Hand reichen, damit du deinen Weg nicht allein gehen musst.</p>
               <p>Ich habe AuraLumia gegründet, um Frauen auf ihrem Weg zu mehr Selbstkenntnis und authentischer Selbstentfaltung zu begleiten. Somatic Karma ist aus meiner eigenen Erfahrung und aus der tiefen Verbindung von Körperwissen, Ahnenlinie und spiritueller Symbolarbeit entstanden.</p>
