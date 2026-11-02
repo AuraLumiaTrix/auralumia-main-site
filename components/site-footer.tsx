@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div className="footer-brand">
-          <img src="/aura-lumia-kupferlogo-footer.png" alt="AuraLumia" />
+          <img src="/aura-lumia-logo.png" alt="AuraLumia" />
           <p>Somatische Ahnenklärung, Körperwissen und symbolische Spiegel – verbunden zu einem präzisen Weg aus übernommenen Mustern.</p>
         </div>
         <div><p className="footer-label">DEIN WEG</p><Link href="/somatic-karma">Die Methode</Link><Link href="/angebote">Audiokurse & App</Link><Link href="/mentoring">Begleitung & Ausbildung</Link><a href="https://somatic-karma-navigator.vercel.app/" target="_blank" rel="noopener noreferrer">Navigator starten</a></div>
