@@ -1253,7 +1253,7 @@ p { margin:0; }
   .about-home-inner { min-height:0; gap:0; }
   .about-home-portrait { width:calc(100% + 36px); min-height:0; height:125vw; max-height:none; margin-left:-18px; justify-self:start; -webkit-mask-image:none; mask-image:none; }
   .about-home-portrait img { object-position:center 18%; border-radius:0; box-shadow:none; }
-  .about-home-portrait::after { display:block; bottom:-170px; height:70%; background:linear-gradient(to bottom,transparent 0%,rgba(48,31,38,.35) 34%,rgba(43,28,35,.88) 62%,rgba(43,28,35,.8) 100%); }
+  .about-home-portrait::after { display:block; bottom:-170px; height:70%; background:linear-gradient(to bottom,transparent 0%,rgba(85,58,66,.35) 34%,rgba(85,58,66,.88) 62%,rgba(85,58,66,.8) 100%); }
   .about-home-copy { margin-top:-118px; padding:0 0 72px; }
   .landing-home .about-home-welcome-heading { align-items:center; margin-top:0; color:#fff; text-align:center; text-shadow:0 2px 3px rgba(67,43,43,.9),0 8px 24px rgba(55,35,38,.7); transform:translateY(-22px); -webkit-text-stroke:.35px rgba(72,46,46,.42); }
   .about-home-welcome { width:100%; max-width:100%; font-size:clamp(3.2rem,14vw,4.5rem); text-align:center; transform:rotate(-2.5deg); transform-origin:center; }
