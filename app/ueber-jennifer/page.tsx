@@ -44,7 +44,7 @@ export default function JenniferPage() {
               <Link className="landing-button landing-button-secondary" href="#podcast"><Headphones size={17} aria-hidden="true" /> Podcast anhören</Link>
             </div>
             <ul className="about-v2-hero-facts" aria-label="Jennifers Arbeit">
-              <li><Sparkles aria-hidden="true" /><span>Somatic Karma<br />entwickelt</span></li>
+              <li><Sparkles aria-hidden="true" /><span>Entwicklerin von<br />Somatic Karma</span></li>
               <li><Podcast aria-hidden="true" /><span>Podcast Host<br />Karma mit Zimt &amp; Zucker</span></li>
               <li><GraduationCap aria-hidden="true" /><span>Ausbilderin für<br />spirituelle Praxis</span></li>
               <li><Music2 aria-hidden="true" /><span>Musik als<br />Naru Hikari</span></li>
@@ -58,7 +58,7 @@ export default function JenniferPage() {
         <div className="shell">
           <header className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">MEIN WEG</p><h2>Meine Geschichte</h2><p>Mein Weg verbindet Herkunft, intuitive Wahrnehmung und fundierte Werkzeuge – genau daraus sind AuraLumia und Somatic Karma gewachsen.</p></header>
           <div className="about-v2-story-grid">
-            <article><div className="about-v2-story-media about-v2-story-media-depth"><Image src="/about/ruf-in-die-tiefe.png" alt="Mond über einer tiefen Berglandschaft" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>01</span><h3>Der Ruf in die Tiefe</h3><p>Geboren im Harz und verwurzelt in einer Familie mit feiner Wahrnehmung, begleitet mich das Wissen um unsichtbare Zusammenhänge seit meiner Kindheit.</p></div></article>
+            <article><div className="about-v2-story-media about-v2-story-media-depth"><Image src="/about/ruf-in-die-tiefe.png" alt="Mond über einer tiefen Berglandschaft" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>01</span><h3>Der Ruf in die Tiefe</h3><p>Geboren im Harz und verwurzelt in einer Familie mit feiner Wahrnehmung, begleitet mich das Wissen um unsichtbare Zusammenhänge seit meiner Kindheit. In Mythen, alten Traditionen, Tiefen der Traumwelt und des Unterbewusstseins zu wandeln ist mir seit jeher gut bekannt.</p></div></article>
             <article><div className="about-v2-story-media about-v2-story-media-birth"><Image src="/about/geburt-auralumia.png" alt="Frauen legen ihre Hände gemeinsam in einen Kreis" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>02</span><h3>Die Geburt von AuraLumia</h3><p>Aus intuitiver Gabe und erlernten Werkzeugen entstand AuraLumia: ein Raum, in dem vedische Astrologie, Körperwissen, Ahnenarbeit, Tarot und Stimme zusammenfinden.</p></div></article>
             <article><div className="about-v2-story-media about-v2-story-media-today"><Image src="/about/jennifer-heute.png" alt="Jennifer im Kreis mit vier Frauen" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>03</span><h3>Heute</h3><p>Heute entwickle ich Somatic Karma weiter, begleite Frauen, bilde aus und öffne mit Podcast und Musik zusätzliche Wege zu bewusster Selbsterkenntnis.</p></div></article>
           </div>
