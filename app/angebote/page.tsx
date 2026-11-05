@@ -5,7 +5,7 @@ import { links } from "@/lib/site-content";
 
 export const metadata: Metadata = {
   title: "Audiokurse, App & Selbstlernangebote",
-  description: "Entdecke die AuraLumia Selbstlernangebote – vom kostenlosen Somatic Karma Navigator über Meditationspakete bis zur Tarot App und vertiefenden Kursen.",
+  description: "Entdecke die AuraLumia Selbstlernangebote – vom kostenlosen Somatic Karma Navigator über Erfüllungspakete bis zur Tarot App und vertiefenden Kursen.",
 };
 
 type Offer = {
@@ -46,7 +46,7 @@ const navigatorOffers: Offer[] = [
 
 const meditationOffers: Offer[] = [
   {
-    title: "Schuldnarbe · Meditationspaket",
+    title: "Schuldnarbe · Erfüllungspaket",
     description: "Geführte Audios rund um Empfangen, Genuss und einen bewussten Umgang mit inneren Schuldgefühlen.",
     price: "49 €",
     image: "/products/meditationspaket-schuldnarbe.jpg",
@@ -54,7 +54,7 @@ const meditationOffers: Offer[] = [
     external: true,
   },
   {
-    title: "Geschwisternarbe · Meditationspaket",
+    title: "Geschwisternarbe · Erfüllungspaket",
     description: "Geführte Audios für Selbstwert, Gleichrangigkeit und den Mut, deinen eigenen Platz einzunehmen.",
     price: "49 €",
     image: "/products/meditationspaket-geschwisternarbe.jpg",
@@ -62,7 +62,7 @@ const meditationOffers: Offer[] = [
     external: true,
   },
   {
-    title: "Mutternarbe · Meditationspaket",
+    title: "Mutternarbe · Erfüllungspaket",
     description: "Geführte Audios für Bindung, emotionale Sicherheit und die Rückkehr in deinen eigenen inneren Rhythmus.",
     price: "49 €",
     image: "/products/meditationspaket-mutternarbe.jpg",
@@ -70,7 +70,7 @@ const meditationOffers: Offer[] = [
     external: true,
   },
   {
-    title: "Vaternarbe · Meditationspaket",
+    title: "Vaternarbe · Erfüllungspaket",
     description: "Geführte Audios für Orientierung, Selbstbestimmung und eine klarere Verbindung zu deiner inneren Führung.",
     price: "49 €",
     image: "/products/meditationspaket-vaternarbe.jpg",
@@ -84,7 +84,7 @@ const tarotOffers: Offer[] = [
     title: "Karma Tarot App",
     description: "Dein digitaler Begleiter für Tarot, tägliche Impulse und achtsame Reflexion – auf Smartphone, Tablet oder Desktop.",
     price: "7,49 € / Monat",
-    image: "/products/product-tarot-app.jpg",
+    image: "/products/product-tarot-app-mockup.png",
     href: links.tarot,
     external: true,
   },
@@ -119,10 +119,10 @@ function OfferAction({ offer }: { offer: Offer }) {
 
   const label = offer.title === "Kostenloser Navigator" ? "Jetzt starten" : "Mehr erfahren";
   if (offer.external) {
-    return <a className="offers-v2-card-link" href={offer.href} target="_blank" rel="noopener noreferrer">{label} <span aria-hidden="true">→</span></a>;
+    return <a className="offers-v2-card-link" href={offer.href} target="_blank" rel="noopener noreferrer">{label}</a>;
   }
 
-  return <Link className="offers-v2-card-link" href={offer.href}>{label} <span aria-hidden="true">→</span></Link>;
+  return <Link className="offers-v2-card-link" href={offer.href}>{label}</Link>;
 }
 
 function CompactOfferCard({ offer }: { offer: Offer }) {
@@ -156,7 +156,7 @@ export default function AngebotePage() {
         </div>
         <div className="offers-v2-promises shell" aria-label="Angebotsbereiche">
           <a href="#navigator"><OfferSymbol src={offerSymbols.navigator} context="navigation" /><span>Navigator</span></a>
-          <a href="#meditationspakete"><OfferSymbol src={offerSymbols.meditations} context="navigation" /><span>Meditationspakete</span></a>
+          <a href="#meditationspakete"><OfferSymbol src={offerSymbols.meditations} context="navigation" /><span>Erfüllungspakete</span></a>
           <a href="#tarot"><OfferSymbol src={offerSymbols.tarot} context="navigation" /><span>Tarot</span></a>
           <a href="#vertiefung"><OfferSymbol src={offerSymbols.depth} context="navigation" /><span>Vertiefung</span></a>
         </div>
@@ -177,7 +177,7 @@ export default function AngebotePage() {
         <div className="shell">
           <header className="offers-v2-heading">
             <OfferSymbol src={offerSymbols.meditations} context="heading" />
-            <div><p className="offers-v2-kicker">VIER NARBEN · VIER WEGE</p><h2 id="offers-meditations-title">Meditationspakete</h2></div>
+            <div><p className="offers-v2-kicker">VIER NARBEN · VIER WEGE</p><h2 id="offers-meditations-title">Erfüllungspakete</h2></div>
             <p>Wähle das Paket, das zu deinem aktuellen Thema passt. Jede Meditation begleitet dich in einer ruhigen Praxis, die du selbstständig nutzen kannst.</p>
           </header>
           <div className="offers-v2-card-grid offers-v2-card-grid-four">{meditationOffers.map((offer) => <CompactOfferCard offer={offer} key={offer.title} />)}</div>
@@ -209,7 +209,7 @@ export default function AngebotePage() {
       <section className="offers-v2-mentoring-note" aria-labelledby="offers-mentoring-title">
         <div className="shell">
           <div><p className="offers-v2-kicker">DU WÜNSCHST DIR PERSÖNLICHE BEGLEITUNG?</p><h2 id="offers-mentoring-title">Begleitung &amp; Ausbildung findest du in einem eigenen Raum.</h2></div>
-          <div><p>Entdecke den Drei Monde Blueprint, High Touch 1:1, Neun Monde Aura Luminess und die vertiefenden Monde auf der bestehenden Seite für Begleitung und Ausbildung.</p><Link className="offers-v2-button offers-v2-button-primary" href="/mentoring">Zu Begleitung &amp; Ausbildung <span aria-hidden="true">→</span></Link></div>
+          <div><p>Entdecke den Drei Monde Blueprint, High Touch 1:1, Neun Monde Aura Luminess und die vertiefenden Monde auf der bestehenden Seite für Begleitung und Ausbildung.</p><Link className="offers-v2-button offers-v2-button-primary" href="/mentoring">Zu Begleitung &amp; Ausbildung</Link></div>
         </div>
       </section>
 
@@ -219,7 +219,7 @@ export default function AngebotePage() {
           <p className="offers-v2-kicker">DEINE ORIENTIERUNG</p>
           <h2>Nicht sicher, was zu dir passt?</h2>
           <p>Der kostenlose Navigator hilft dir, deine aktuelle Situation zu reflektieren und einen stimmigen nächsten Schritt zu finden.</p>
-          <a className="offers-v2-button offers-v2-button-light" href={links.navigator} target="_blank" rel="noopener noreferrer">Zum kostenlosen Navigator <span aria-hidden="true">→</span></a>
+          <a className="offers-v2-button offers-v2-button-light" href={links.navigator} target="_blank" rel="noopener noreferrer">Zum kostenlosen Navigator</a>
         </div>
       </section>
     </div>
