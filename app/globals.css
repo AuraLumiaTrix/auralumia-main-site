@@ -108,6 +108,10 @@ p { margin:0; }
 .page-hero h1 { font-size:clamp(4rem,6.4vw,6.6rem); }
 .page-hero-copy { align-self:end; color:var(--soft); font-size:1.08rem; }
 .page-hero-copy .button,.page-hero-copy .status-pill { margin-top:32px; }
+.tarot-page > .page-hero { grid-template-columns:minmax(0,1fr) minmax(300px,.72fr); column-gap:6vw; row-gap:30px; align-items:center; }
+.tarot-page > .page-hero > :first-child,.tarot-page > .page-hero-copy { grid-column:1; }
+.tarot-page > .page-hero-aside { grid-column:2; grid-row:1 / span 2; align-self:center; }
+.tarot-page > .page-hero-aside img { display:block; width:100%; max-height:570px; object-fit:contain; filter:drop-shadow(0 28px 40px rgba(77,48,66,.18)); }
 .status-pill { display:inline-flex; padding:9px 14px; border:1px solid var(--gold); color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
 .method-manifesto { background:var(--deep); color:#fff; }
 .somatic-welcome { overflow:hidden; border-bottom:1px solid var(--line); background:#fff; }
@@ -871,6 +875,10 @@ p { margin:0; }
   .page-hero { grid-template-columns:1fr; gap:38px; padding-block:80px 70px; }
   .page-hero h1 { font-size:clamp(3.5rem,15vw,5rem); }
   .page-hero-copy { font-size:1rem; }
+  .tarot-page > .page-hero { grid-template-columns:1fr; gap:38px; }
+  .tarot-page > .page-hero > :first-child,.tarot-page > .page-hero-copy,.tarot-page > .page-hero-aside { grid-column:1; }
+  .tarot-page > .page-hero-aside { grid-row:auto; }
+  .tarot-page > .page-hero-aside img { max-height:420px; }
   .manifesto-grid { grid-template-columns:1fr; }
   .manifesto-grid p { min-height:140px; padding:28px 0; border-right:0; border-bottom:1px solid rgba(255,255,255,.4); }
   .archetype-grid,.room-grid,.depth,.catalog-grid,.catalog-intro,.mentoring-card,.fit-section,.jennifer-story,.portrait-grid,.principles-grid,.podcast-stage-grid,.vita-grid,.artistry-grid,.about-music-voices,.music-stage-grid,.tracklist,.music-origin-grid,.testimonial-feature,.testimonial-inline,.testimonial-grid,.mentoring-application-grid,.thank-hero-grid,.thank-intro,.thank-steps { grid-template-columns:1fr; }
