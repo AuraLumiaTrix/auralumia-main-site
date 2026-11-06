@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { HighTouchInfoDialog } from "@/components/high-touch-info-dialog";
 
 export const metadata: Metadata = {
   title: "Begleitung & Ausbildung",
@@ -86,7 +87,7 @@ export default function MentoringPage() {
           <div className="mentoring-v2-heading-row mentoring-v2-heading-row-premium"><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-nine-moons" src="/symbols/gold-nine-moons.png" alt="" width={1080} height={1350} sizes="96px" /><p className="mentoring-v2-kicker">ALL-INCLUSIVE · PERSÖNLICH BEGLEITET</p></div><h2 id="high-touch-title">Neun Monde<br />High Touch 1:1</h2>
           <p>Ein umfassender Raum für Frauen, die persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem Gesamtprogramm verbinden möchten.</p>
           <FeatureList items={["Drei Monde Blueprint", "Vollständige Neun-Monde-Ausbildung Aura Luminess", "Alle drei vertiefenden Monde", "Zugriff auf die gesamte AuraLumia-Kurswelt", "Intensive persönliche 1:1-Begleitung"]} />
-          <strong className="mentoring-v2-premium-price">9.999 €</strong>
+          <div className="mentoring-v2-premium-actions"><strong className="mentoring-v2-premium-price">9.999 €</strong><HighTouchInfoDialog /></div>
         </div>
       </div>
     </section>
