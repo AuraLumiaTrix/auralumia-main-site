@@ -126,10 +126,8 @@ export default function DreiMondeBlueprintPage() {
           <p className="blueprint-lede">Deine persönliche Roadmap für die nächsten drei Monate – mit persönlichem Call, Karma Code Analyse, 3-Monats-Plan, Meditationen, Journaling und der astrologischen Betrachtung eines passenden Zeitpunkts.</p>
           <Link className="blueprint-button blueprint-button-primary" href={requestHref}>Blueprint anfragen <span aria-hidden="true">→</span></Link>
         </div>
-        <div className="blueprint-hero-art" aria-hidden="true">
-          <div className="blueprint-orbit blueprint-orbit-one" />
-          <div className="blueprint-orbit blueprint-orbit-two" />
-          <Image src="/hero-somatic-taupe-mobile.png" alt="" fill priority sizes="(max-width: 760px) 100vw, 48vw" />
+        <div className="blueprint-hero-art">
+          <Image src="/products/product-drei-monde-blueprint.jpg" alt="Drei Monde Blueprint mit persönlicher Roadmap, Audio-Transmission und Monatsimpulsen" fill priority sizes="(max-width: 760px) 100vw, 48vw" />
         </div>
       </div>
       <div className="shell blueprint-values" aria-label="Die Ausrichtung des Drei Monde Blueprints">

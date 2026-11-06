@@ -217,9 +217,9 @@ p { margin:0; }
 .luminess-lede { max-width:610px; margin-top:23px !important; color:#6f5d64; font-size:.9rem; line-height:1.78; }
 .luminess-hero-offer { display:flex; align-items:center; gap:28px; margin-top:31px; }
 .luminess-hero-offer strong { font-family:var(--serif); font-size:2.35rem; font-weight:600; }
-.luminess-hero-image { position:relative; min-height:570px; overflow:hidden; border-radius:46% 46% 24px 24px; box-shadow:0 28px 80px rgba(104,78,94,.18); }
-.luminess-hero-image::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 58%,rgba(81,59,74,.22)); }
-.luminess-hero-image img { object-fit:cover; object-position:center 44%; }
+.luminess-hero-image { position:relative; min-height:0; aspect-ratio:4/3; overflow:hidden; border-radius:24px; background:#fff; box-shadow:0 28px 80px rgba(104,78,94,.18); }
+.luminess-hero-image::after { content:none; }
+.luminess-hero-image img { object-fit:cover; object-position:center; }
 .luminess-hero-moon { position:absolute; z-index:2; top:34px; right:38px; display:grid; width:72px; height:72px; place-items:center; border:1px solid rgba(255,255,255,.68); border-radius:50%; background:rgba(255,249,245,.72); color:#8d6c83; font-size:2rem; backdrop-filter:blur(8px); }
 .luminess-hero-values { display:grid; grid-template-columns:repeat(3,1fr); padding-bottom:38px; }
 .luminess-hero-values span { display:flex; align-items:center; justify-content:center; gap:13px; min-height:64px; border-right:1px solid var(--luminess-line); color:#705d66; font-size:.78rem; }
@@ -250,6 +250,8 @@ p { margin:0; }
 .luminess-tools-grid article:nth-child(even) .luminess-tool-image { order:2; }
 .luminess-tool-image { position:relative; min-height:310px; background:#eee4e7; }
 .luminess-tool-image img { object-fit:cover; }
+.luminess-tool-image-contain { background:#fff; }
+.luminess-tool-image-contain img { object-fit:contain; }
 .luminess-tools-grid article > div:last-child { display:flex; flex-direction:column; justify-content:center; padding:45px 50px; }
 .luminess-tools-grid h3 { margin-top:13px; font-size:clamp(2.6rem,4vw,4.5rem); line-height:.98; }
 .luminess-tools-grid article > div:last-child > p:last-child { max-width:650px; margin-top:19px; color:var(--luminess-muted); font-size:.83rem; line-height:1.72; }
@@ -333,7 +335,7 @@ p { margin:0; }
   .luminess-subtitle { font-size:1.85rem; }
   .luminess-lede { margin-inline:auto; }
   .luminess-hero-offer { justify-content:center; }
-  .luminess-hero-image { min-height:510px; border-radius:46% 46% 20px 20px; }
+  .luminess-hero-image { min-height:0; border-radius:20px; }
   .luminess-hero-values { grid-template-columns:1fr; padding-bottom:26px; }
   .luminess-hero-values span { border-right:0; border-bottom:1px solid var(--luminess-line); }
   .luminess-hero-values span:last-child { border-bottom:0; }
@@ -364,7 +366,7 @@ p { margin:0; }
 @media (max-width:420px) {
   .luminess-hero-offer { flex-direction:column; gap:17px; }
   .luminess-button { width:100%; }
-  .luminess-hero-image { min-height:430px; }
+  .luminess-hero-image { min-height:0; }
   .luminess-moons { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 
@@ -1919,8 +1921,8 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .blueprint-hero-copy h1 { font-size:clamp(5rem,7.7vw,8rem); line-height:.82; }
 .blueprint-price { display:block; margin-top:20px; color:var(--blueprint-plum); font-family:var(--serif); font-size:2.9rem; font-weight:500; line-height:1; }
 .blueprint-lede { max-width:670px; margin:25px 0 31px; color:#765f63; font-size:.94rem; line-height:1.75; }
-.blueprint-hero-art { position:relative; justify-self:end; width:min(100%,550px); aspect-ratio:.83; overflow:hidden; border:1px solid rgba(108,86,92,.11); border-radius:48% 48% 22px 22px; background:#ae9d9d; box-shadow:0 28px 75px rgba(86,62,77,.14); }
-.blueprint-hero-art img { z-index:1; object-fit:cover; object-position:center 44%; filter:saturate(.72) contrast(.94); }
+.blueprint-hero-art { position:relative; justify-self:end; width:min(100%,620px); aspect-ratio:4/3; overflow:hidden; border:1px solid rgba(108,86,92,.11); border-radius:22px; background:#fff; box-shadow:0 28px 75px rgba(86,62,77,.14); }
+.blueprint-hero-art img { z-index:1; object-fit:cover; object-position:center; filter:none; }
 .blueprint-orbit { position:absolute; z-index:2; border:1px solid rgba(255,249,231,.55); border-radius:50%; pointer-events:none; }
 .blueprint-orbit::before,.blueprint-orbit::after { position:absolute; width:8px; height:8px; border-radius:50%; background:#fff7df; box-shadow:0 0 18px rgba(255,247,223,.9); content:""; }
 .blueprint-orbit-one { inset:12%; }

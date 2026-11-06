@@ -36,7 +36,8 @@ const tools = [
   },
   {
     title: "Physisches Tarotkartendeck mit Energiegrid",
-    image: "/tarot.webp",
+    image: "/products/product-tarot-app-mockup.png",
+    contain: true,
     text: "Mein eigenes Tarotdeck verbindet symbolische Gestaltung und Energiegrid mit der Bildsprache der Somatic-Karma-Methode.",
   },
 ];
@@ -91,8 +92,7 @@ export default function NeunMondeAuraLuminessPage() {
           <div className="luminess-hero-offer"><a className="luminess-button luminess-button-primary" href={applicationHref}>Zur Bewerbung <span aria-hidden="true">→</span></a><strong>3.333 €</strong></div>
         </div>
         <div className="luminess-hero-image">
-          <Image src="/hero-womens-circle.jpg" alt="Frauen in einem warmen, modernen Kreis" fill priority sizes="(max-width: 760px) 100vw, 50vw" />
-          <span className="luminess-hero-moon" aria-hidden="true">☾</span>
+          <Image src="/products/product-aura-luminess.jpg" alt="Neun Monde Aura Luminess Ausbildung mit Kompendium, Tarotdeck, Supervision und Ausbildungsunterlagen" fill priority sizes="(max-width: 760px) 100vw, 50vw" />
         </div>
       </div>
       <div className="shell luminess-hero-values" aria-label="Ausrichtung der Ausbildung">
@@ -123,7 +123,7 @@ export default function NeunMondeAuraLuminessPage() {
     <section className="luminess-tools shell" aria-labelledby="luminess-tools-title">
       <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">BEGLEITER DEINER AUSBILDUNG</p><h2 id="luminess-tools-title">Deine Werkzeuge</h2><p>Zwei eigens für die Methode entwickelte Werkzeuge unterstützen die anschauliche Arbeit mit den Deutungsebenen.</p></header>
       <div className="luminess-tools-grid">{tools.map((tool) => <article key={tool.title}>
-        <div className="luminess-tool-image"><Image src={tool.image} alt={tool.title} fill sizes="(max-width: 760px) 100vw, 48vw" /></div>
+        <div className={`luminess-tool-image${tool.contain ? " luminess-tool-image-contain" : ""}`}><Image src={tool.image} alt={tool.title} fill sizes="(max-width: 760px) 100vw, 48vw" /></div>
         <div><p className="luminess-kicker">AURALUMIA ORIGINAL</p><h3>{tool.title}</h3><p>{tool.text}</p></div>
       </article>)}</div>
     </section>
