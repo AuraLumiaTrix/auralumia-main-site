@@ -59,8 +59,74 @@ export default function JenniferPage() {
           <header className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">MEIN WEG</p><h2>Meine Geschichte</h2><p>Mein Weg verbindet Herkunft, intuitive Wahrnehmung und fundierte Werkzeuge – genau daraus sind AuraLumia und Somatic Karma gewachsen.</p></header>
           <div className="about-v2-story-grid">
             <article><div className="about-v2-story-media about-v2-story-media-depth"><Image src="/about/ruf-in-die-tiefe.png" alt="Mond über einer tiefen Berglandschaft" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>01</span><h3>Der Ruf in die Tiefe</h3><p>Geboren im Harz und verwurzelt in einer Familie mit feiner Wahrnehmung, begleitet mich das Wissen um unsichtbare Zusammenhänge seit meiner Kindheit. In Mythen, alten Traditionen, Tiefen der Traumwelt und des Unterbewusstseins zu wandeln ist mir seit jeher gut bekannt.</p></div></article>
+            <aside className="about-v2-story-detail about-v2-story-detail-foundation" aria-labelledby="about-foundation-title">
+              <div className="about-v2-story-detail-heading">
+                <p className="landing-kicker">WAS MICH TRÄGT</p>
+                <h3 id="about-foundation-title">Zwischen Intuition, Wissen und gelebter Erfahrung</h3>
+                <p>Meine Arbeit ist aus vielen Jahren persönlicher Praxis, fundierter Weiterbildung und einem Leben gewachsen, in dem Spiritualität und Alltag untrennbar miteinander verbunden sind.</p>
+              </div>
+              <div className="about-v2-personal-note">
+                <Sparkles aria-hidden="true" />
+                <div><h4>Mein Zuhause, meine Wurzeln</h4><p>Mein Stellium im Krebs spiegelt meine tiefe Verbundenheit mit Familie, Intuition und einem schützenden Zuhause. Ich bin Mutter von vier Kindern und lebe mit meinem Mann, unseren Kindern und vier Katzen glücklich in einem Holzhaus zwischen Eichen und Haselnuss.</p></div>
+              </div>
+              <div className="about-v2-expertise-grid">
+                <section>
+                  <Sparkles aria-hidden="true" />
+                  <h4>Spirituelles Wissen</h4>
+                  <ul>
+                    <li>Einweihung in Munay-Ki, das schamanische Wissen der Hochanden</li>
+                    <li>Ausbildung in rituellem Folkloregesang</li>
+                    <li>Einweihung im Kundalini Yoga als Chandra Sangeeta Kaur – „Mondgesang“</li>
+                    <li>Mehrere Jahrzehnte Erfahrung als Seherin</li>
+                    <li>Über 25 Jahre Meditationspraxis; ein prägender Impuls war eine persönliche Begegnung mit Shaolin-Mönchen</li>
+                  </ul>
+                </section>
+                <section>
+                  <GraduationCap aria-hidden="true" />
+                  <h4>Wissenschaft &amp; Coaching</h4>
+                  <ul>
+                    <li>Studien in Biologie und Chemie an der Georg-August-Universität Göttingen und der Gottfried Wilhelm Leibniz Universität Hannover</li>
+                    <li>Hochschulzertifizierung im Mentalcoaching an der AHAB-Akademie</li>
+                    <li>Basisausbildung in Hypnose nach TherMedius®</li>
+                  </ul>
+                </section>
+                <section>
+                  <Music2 aria-hidden="true" />
+                  <h4>Körper &amp; Stimme</h4>
+                  <ul>
+                    <li>Ausgebildete Sängerin und langjährige Erfahrung als Natural-Weiblichkeits-Vocal-Coach</li>
+                    <li>Trainerzertifizierung in Essence of Bellydance™</li>
+                    <li>Trainerzertifizierung in KAHA®</li>
+                  </ul>
+                </section>
+              </div>
+            </aside>
             <article><div className="about-v2-story-media about-v2-story-media-birth"><Image src="/about/geburt-auralumia.png" alt="Frauen legen ihre Hände gemeinsam in einen Kreis" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>02</span><h3>Die Geburt von AuraLumia</h3><p>Aus intuitiver Gabe und erlernten Werkzeugen entstand AuraLumia: ein Raum, in dem vedische Astrologie, Körperwissen, Ahnenarbeit, Tarot und Stimme zusammenfinden.</p></div></article>
+            <aside className="about-v2-story-detail about-v2-story-detail-milestones" aria-labelledby="about-milestones-title">
+              <div className="about-v2-story-detail-heading">
+                <p className="landing-kicker">AUS EINER VISION WIRD EIN RAUM</p>
+                <h3 id="about-milestones-title">Was aus AuraLumia gewachsen ist</h3>
+                <p>2025 wurden aus meiner inneren Arbeit sichtbare Räume, Werke und Werkzeuge.</p>
+              </div>
+              <div className="about-v2-milestone-grid">
+                <article><span>2025</span><h4>Gründung von AuraLumia</h4><p>Ein geschützter Raum für Somatic Karma, spirituelle Praxis und bewusste Selbsterkenntnis entsteht.</p></article>
+                <article><span>2025</span><h4>Somatic Karma Tarot</h4><p>Das physische Kartendeck verbindet archetypische Bildsprache mit der Methode von Somatic Karma.</p></article>
+                <article><span>2025</span><h4>„Rising of the Womb“</h4><p>Unter meinem Künstlernamen Naru Hikari veröffentliche ich mein New-Age-Musikalbum.</p></article>
+              </div>
+            </aside>
             <article><div className="about-v2-story-media about-v2-story-media-today"><Image src="/about/jennifer-heute.png" alt="Jennifer im Kreis mit vier Frauen" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>03</span><h3>Heute</h3><p>Heute entwickle ich Somatic Karma weiter, begleite Frauen, bilde aus und öffne mit Podcast und Musik zusätzliche Wege zu bewusster Selbsterkenntnis.</p></div></article>
+            <aside className="about-v2-story-detail about-v2-story-detail-today" aria-labelledby="about-today-title">
+              <div className="about-v2-story-detail-heading">
+                <p className="landing-kicker">HEUTE &amp; IM WERDEN</p>
+                <h3 id="about-today-title">Somatic Karma wächst weiter</h3>
+                <p>Seit 2026 wird die Methode durch neue Medien und digitale Werkzeuge noch unmittelbarer erfahrbar.</p>
+              </div>
+              <div className="about-v2-milestone-grid">
+                <article><span>SEIT 2026</span><h4>Karma mit Zimt &amp; Zucker</h4><p>Als Host meines Podcasts teile ich persönliche Impulse über Spiritualität, Selbstliebe und Transformation.</p></article>
+                <article><span>2026</span><h4>Somatic Karma</h4><p>Ich entwickle Somatic Karma als eigene, verbundene Methode kontinuierlich weiter.</p></article>
+                <article><span>2026</span><h4>Digitale Werkzeuge</h4><p>Die Somatic Karma Tarot App und das astrologische Online-Tool öffnen neue Zugänge zur Methode.</p></article>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
