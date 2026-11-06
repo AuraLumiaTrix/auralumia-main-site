@@ -16,7 +16,7 @@ const primaryOffers = [
     image: "/products/product-drei-monde-blueprint.jpg",
     description: "Ein persönlicher, klar strukturierter Raum, in dem dein aktuelles Thema aus verschiedenen Blickwinkeln betrachtet und in einen individuellen Weg für die kommenden drei Monate übersetzt wird.",
     features: ["Persönlicher Call", "Karma-Code-Analyse", "Individueller Drei-Monats-Plan", "Meditationen und Journaling", "Astrologische Zeitqualität anhand des Jahreshoroskops"],
-    href: "#blueprint-verfuegbarkeit",
+    href: "/drei-monde-blueprint",
     action: "Mehr erfahren",
   },
   {
@@ -27,7 +27,7 @@ const primaryOffers = [
     image: "/products/product-aura-luminess.jpg",
     description: "Eine live geführte Ausbildung, in der du Somatic Karma als zusammenhängende Methode kennenlernst und ihre symbolischen, astrologischen und körperorientierten Ebenen vertiefst.",
     features: ["Live-Ausbildung in Somatic Karma", "Die vier karmischen Narben", "Tarot Arcana und archetypische Deutung", "Planetengruppen im Geburtshoroskop", "Eigene Astrologie-Software", "Eigenes physisches Tarotdeck mit Energiegrid"],
-    href: "#bewerbung",
+    href: "/neun-monde-aura-luminess",
     action: "Ausbildung entdecken",
   },
 ];
