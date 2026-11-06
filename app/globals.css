@@ -1253,11 +1253,11 @@ p { margin:0; }
   .about-home-inner { min-height:0; gap:0; }
   .about-home-portrait { width:calc(100% + 36px); min-height:0; height:125vw; max-height:none; margin-left:-18px; justify-self:start; -webkit-mask-image:none; mask-image:none; }
   .about-home-portrait img { object-position:center 18%; border-radius:0; box-shadow:none; }
-  .about-home-portrait::after { display:block; bottom:-170px; height:70%; background:linear-gradient(to bottom,transparent 0%,rgba(247,239,243,.3) 34%,rgba(247,239,243,.92) 62%,rgba(247,239,243,.98) 100%); }
+  .about-home-portrait::after { display:block; bottom:-190px; height:82%; background:linear-gradient(to bottom,transparent 0%,rgba(247,239,243,.2) 20%,rgba(247,239,243,.72) 43%,rgba(247,239,243,.97) 62%,#f7eff3 78%,#f7eff3 100%); }
   .about-home-copy { margin-top:-118px; padding:0 0 72px; }
   .landing-home .about-home-welcome-heading { align-items:center; margin-top:0; color:var(--landing-ink); text-align:center; text-shadow:0 2px 14px rgba(255,255,255,.72); transform:translateY(-22px); }
-  .about-home-welcome { width:100%; max-width:100%; font-size:clamp(3.2rem,14vw,4.5rem); text-align:center; transform:rotate(-2.5deg); transform-origin:center; }
-  .about-home-era { width:100%; max-width:100%; margin-top:18px; font-size:clamp(1.55rem,7vw,2rem); letter-spacing:.075em; }
+  .landing-home .about-home-welcome { width:100%; max-width:100%; color:#fff; font-size:clamp(3.2rem,14vw,4.5rem); text-align:center; text-shadow:0 2px 4px rgba(64,45,54,.58),0 8px 24px rgba(64,45,54,.34); transform:rotate(-2.5deg); transform-origin:center; }
+  .landing-home .about-home-era { width:100%; max-width:100%; margin-top:18px; color:var(--landing-ink); font-size:clamp(1.55rem,7vw,2rem); letter-spacing:.075em; text-shadow:0 2px 14px rgba(255,255,255,.92); }
   .about-home-introduction { font-size:clamp(3.2rem,14vw,4.5rem); }
   .about-home-name { width:max-content; max-width:none; margin:.13em auto 0; color:var(--landing-ink); font-family:"Have Heart One","Brush Script MT","Segoe Script",cursive; font-size:.68em; letter-spacing:-.01em; transform:rotate(-2.5deg); transform-origin:center; white-space:nowrap; }
   .about-home-text-card { margin-top:2px; padding:27px 23px 23px; border-radius:20px; background:rgba(255,255,255,.94); box-shadow:0 18px 44px rgba(92,66,69,.13); }
@@ -2144,9 +2144,9 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .about-v2-guidance-voice p span { color:var(--about-muted); }
 
 .about-v2-contact { scroll-margin-top:95px; padding-block:110px; background:linear-gradient(135deg,#f4eaec,#eee6f2); }
-.about-v2-contact-grid { display:grid; grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr); align-items:center; gap:clamp(45px,8vw,120px); }
+.about-v2-contact-grid { display:grid; grid-template-columns:minmax(0,760px); justify-content:center; }
 .about-v2-contact-copy h2 { font-size:clamp(3.7rem,5.3vw,5.7rem); }
-.about-v2-contact-copy > p:not(.landing-kicker) { max-width:490px; margin:24px 0 29px; color:var(--about-muted); font-size:.86rem; line-height:1.8; }
+.about-v2-contact-copy > p:not(.landing-kicker) { max-width:650px; margin:24px 0 29px; color:var(--about-muted); font-size:.86rem; line-height:1.8; }
 .about-v2-contact-copy small { display:block; max-width:390px; margin-top:13px; color:var(--about-muted); font-size:.65rem; line-height:1.55; }
 .about-v2-contact-panel { padding:32px; border:1px solid rgba(255,255,255,.78); border-radius:22px; background:rgba(255,255,255,.78); box-shadow:0 20px 58px rgba(103,81,79,.08); }
 .about-v2-form-status { display:flex; gap:15px; margin-bottom:24px; padding:18px; border-radius:14px; background:#f8eeee; }
