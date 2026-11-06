@@ -23,7 +23,7 @@ export default function Home() {
         <div className="about-home-inner shell">
           <div className="about-home-portrait"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill priority sizes="(max-width: 760px) 100vw, 42vw" /></div>
           <div className="about-home-copy">
-            <h1 id="about-home-title" className="about-home-welcome-heading"><span className="about-home-welcome">Willkommen</span><span className="about-home-era">IN EINER WEIBLICH SENSITIVEN ÄRA VON SPIRITUALITÄT</span></h1>
+            <h1 id="about-home-title" className="about-home-welcome-heading"><span className="about-home-era">IN EINER WEIBLICH SENSITIVEN ÄRA VON SPIRITUALITÄT</span></h1>
             <div className="about-home-text-card">
               <h2 className="about-home-introduction">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h2>
               <p className="about-home-belief">Ich glaube zutiefst daran, dass jeder Mensch heil und ganz wird, wenn er sich selbst findet.</p>
