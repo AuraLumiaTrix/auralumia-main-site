@@ -1167,7 +1167,7 @@ p { margin:0; }
 .about-home-portrait::after { display:none; position:absolute; z-index:1; right:0; left:0; content:""; pointer-events:none; }
 .about-home-copy { position:relative; z-index:2; min-width:0; padding-block:74px; }
 .about-home-hero-lead { position:relative; z-index:0; display:flex; max-width:680px; flex-direction:column; align-items:center; margin-bottom:24px; padding:24px 32px 32px; isolation:isolate; }
-.about-home-hero-lead::before { position:absolute; z-index:-1; inset:-10px -48px -24px; border-radius:0; background:linear-gradient(90deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.78) 34%,rgba(255,255,255,.42) 64%,rgba(255,255,255,0) 100%) top/100% 82px no-repeat,linear-gradient(180deg,rgba(255,255,255,.6) 0%,rgba(250,242,244,.42) 54%,rgba(250,242,244,.18) 79%,rgba(250,242,244,0) 100%); content:""; filter:blur(2px); pointer-events:none; }
+.about-home-hero-lead::before { position:absolute; z-index:-1; inset:-18px -48px -30px; border-radius:0; background:linear-gradient(180deg,rgba(255,255,255,.48) 0%,rgba(255,255,255,.38) 28%,rgba(250,242,244,.24) 56%,rgba(250,242,244,.1) 80%,rgba(250,242,244,0) 100%); content:""; filter:blur(12px); pointer-events:none; }
 .about-home-welcome-heading { display:flex; width:100%; flex-direction:column; align-items:center; margin:0; text-align:center; }
 .about-home-welcome { align-self:flex-start; display:block; width:max-content; max-width:90%; color:var(--landing-ink); font-family:"Have Heart One","Brush Script MT","Segoe Script",cursive; font-size:clamp(2.15rem,3vw,3.2rem); font-style:italic; font-weight:400; letter-spacing:.01em; line-height:.92; text-align:left; transform:translate(-46px,-10px) rotate(-3deg); transform-origin:left center; }
 .about-home-era { display:block; max-width:650px; font-family:var(--serif); font-size:clamp(1.8rem,2.8vw,2.8rem); font-weight:500; letter-spacing:.09em; line-height:1.16; }
@@ -1261,7 +1261,7 @@ p { margin:0; }
   .about-home-portrait::after { display:block; bottom:-190px; height:82%; background:linear-gradient(to bottom,transparent 0%,rgba(247,239,243,.2) 20%,rgba(247,239,243,.72) 43%,rgba(247,239,243,.97) 62%,#f7eff3 78%,#f7eff3 100%); }
   .about-home-copy { margin-top:-118px; padding:0 0 72px; }
   .about-home-hero-lead { width:100%; margin-bottom:20px; padding:20px 12px 26px; }
-  .about-home-hero-lead::before { inset:-8px -18px -18px; border-radius:0; background:linear-gradient(90deg,rgba(255,255,255,.92) 0%,rgba(255,255,255,.8) 38%,rgba(255,255,255,.4) 70%,rgba(255,255,255,0) 100%) top/100% 72px no-repeat,linear-gradient(180deg,rgba(247,239,243,.58) 0%,rgba(247,239,243,.38) 55%,rgba(247,239,243,.14) 80%,rgba(247,239,243,0) 100%); filter:blur(2px); }
+  .about-home-hero-lead::before { inset:-16px -18px -26px; border-radius:0; background:linear-gradient(180deg,rgba(255,255,255,.5) 0%,rgba(247,239,243,.4) 30%,rgba(247,239,243,.24) 58%,rgba(247,239,243,.09) 82%,rgba(247,239,243,0) 100%); filter:blur(12px); }
   .landing-home .about-home-welcome-heading { align-items:center; margin-top:0; color:var(--landing-ink); text-align:center; text-shadow:none; transform:none; }
   .landing-home .about-home-welcome { align-self:flex-start; width:max-content; max-width:90%; color:var(--landing-ink); font-size:clamp(1.95rem,8.5vw,2.65rem); text-align:left; text-shadow:none; transform:translate(-16px,-10px) rotate(-2deg); transform-origin:left center; }
   .landing-home .about-home-era { width:100%; max-width:100%; margin-top:0; color:var(--landing-ink); font-size:clamp(1.55rem,7vw,2rem); letter-spacing:.075em; text-shadow:none; }
