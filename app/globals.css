@@ -1255,7 +1255,7 @@ p { margin:0; }
   .about-home-portrait { width:100vw; flex:none; align-self:center; margin-inline:0; }
   .about-home-portrait img { object-position:center top; border-radius:0; box-shadow:none; }
   .about-home-copy { margin-top:clamp(-320px,-42vw,-134px); padding:0; }
-  .about-home-journey-button { width:min(100%,320px); margin:-10px auto 28px; }
+  .about-home-journey-button { display:flex; width:min(100%,320px); margin:-10px auto 28px; }
   .about-home-introduction { font-size:clamp(3.2rem,14vw,4.5rem); }
   .about-home-name { width:max-content; max-width:none; margin:.13em auto 0; color:var(--landing-ink); font-family:"Have Heart One","Brush Script MT","Segoe Script",cursive; font-size:.68em; letter-spacing:-.01em; transform:rotate(-2.5deg); transform-origin:center; white-space:nowrap; }
   .about-home-text-card { margin-top:2px; padding:27px 23px 23px; border-radius:20px; background:rgba(255,255,255,.94); box-shadow:0 18px 44px rgba(92,66,69,.13); }
