@@ -21,17 +21,15 @@ export default function Home() {
     <div className="landing-home">
       <section className="about-home about-home-hero" aria-labelledby="about-home-title">
         <div className="about-home-inner shell">
-          <div className="about-home-portrait"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill priority sizes="(max-width: 760px) 100vw, 42vw" /></div>
+          <h1 id="about-home-title" className="about-home-accessible-title">Willkommen in einer weiblich sensitiven Ära von Spiritualität</h1>
+          <div className="about-home-portrait"><Image src="/about/home-hero-auralumia.png" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill priority sizes="(max-width: 760px) 100vw, 760px" /></div>
           <div className="about-home-copy">
-            <div className="about-home-hero-lead">
-              <h1 id="about-home-title" className="about-home-welcome-heading"><span className="about-home-welcome">Willkommen</span><span className="about-home-era">IN EINER WEIBLICH SENSITIVEN ÄRA VON SPIRITUALITÄT</span></h1>
-              <Link className="landing-button landing-button-primary about-home-journey-button" href="/angebote">Jetzt Reise beginnen</Link>
-            </div>
             <div className="about-home-text-card">
               <h2 className="about-home-introduction">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h2>
               <p className="about-home-belief">Ich glaube zutiefst daran, dass jeder Mensch heil und ganz wird, wenn er sich selbst findet.</p>
               <p className="about-home-mantra">„ICH BIN GANZ. ICH BIN HEIL. ICH BIN ENDLICH BEI MIR SELBST ANGEKOMMEN.“</p>
               <p className="about-home-hand">Mit AuraLumia möchte ich dir liebevoll meine Hand reichen, damit du deinen Weg nicht allein gehen musst.</p>
+              <Link className="landing-button landing-button-primary about-home-journey-button" href="/angebote">Jetzt Reise beginnen</Link>
             </div>
           </div>
         </div>
