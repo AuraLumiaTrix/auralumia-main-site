@@ -55,6 +55,107 @@ const audience = [
   { symbol: "◌", title: "Beruflicher Kontext", text: "Du möchtest Somatic Karma gegebenenfalls ergänzend in deine bestehende Tätigkeit einfließen lassen." },
 ];
 
+const moonModules = [
+  {
+    number: "01",
+    title: "Mond der Leere",
+    subtitle: "Der Ursprung im stillen Raum",
+    topics: [
+      "Einführung in die buddhistische Philosophie der Leere und das Prinzip des leeren Raumes",
+      "Somatische Zentrierungs- und Atemtechniken vor Klientensitzungen",
+      "Techniken zur bewussten Leerung des Geistes und Verankerung im neutralen Beobachterzustand",
+      "Freimachen von eigenen Urteilen, Projektionen und Erwartungen als Raumhalterin",
+    ],
+  },
+  {
+    number: "02",
+    title: "Mond der Ahnen",
+    subtitle: "Erbe, Herkunft und Ahnenlinien",
+    topics: [
+      "Grundlagen der systemischen und energetischen Ahnenarbeit",
+      "Erkennen und Bergen des „Ahnengolds“ – ureigene Gaben, Ressourcen und Stärken der Linie",
+      "Aufdecken über Generationen weitergegebener Lasten, Verstrickungen und energetischer Verträge",
+      "Symbolische Rückgaberituale im geschützten Raum und Etablierung stabiler energetischer Schutzräume",
+    ],
+  },
+  {
+    number: "03",
+    title: "Mond der Narben",
+    subtitle: "Ahnenarchitektur, Typisierung und die Sprache der Narben",
+    topics: [
+      "Das System der Somatic Karma Archetypes® und Typologie der Ahnenwunden",
+      "Selbstdurchlauf des diagnostischen Tests und Verstehen der didaktischen Hintergründe der Fragestellungen",
+      "Entschlüsselung körperlicher Schutzhaltungen und somatischer Manifestationen emotionaler Prägungen",
+      "Auswertung und Erstellung des individuellen Klienten-Charts / Archetypen-Prints",
+    ],
+  },
+  {
+    number: "04",
+    title: "Mond der Tarologie",
+    subtitle: "Die fünf Kartenwelten als Spiegel der Narbenarchitektur",
+    topics: [
+      "Tarot als tiefenpsychologischer und energetischer Spiegel der Seele",
+      "Spezifische Legemuster für Ahnen- und Karmathemen",
+      "Symbolik, Bildsprache und archetypische Bedeutungen der 78 Tore",
+      "Energetische Raumhygiene: Rituelle Raumöffnung und Raumschließung beim Kartenlegen",
+    ],
+  },
+  {
+    number: "05",
+    title: "Mond der Astrologie",
+    subtitle: "Astrologie verstehen und die vier Narben in Triaden lesen",
+    topics: [
+      "Astrologie leicht erklärt: Himmelskarte, Planeten, Zeichen, Häuser und Aspekte als symbolische Sprache",
+      "Mutternarbe, Vaternarbe, Geschwisternarbe und Schuldnarbe: Welche planetaren Funktionen sichtbar werden und warum genau diese Zuordnung gewählt ist",
+      "Das Aura-Lumia-Triadensystem: ein Zentrumsplanet und drei Satellitenplaneten bilden für jede Narbe ein Vier-Elemente-Lösungssystem",
+      "Urelement und tatsächliches Geburtselement unterscheiden, Abweichungen deuten sowie Mondknoten, D9-/D12-Chart und Synthese einbeziehen",
+    ],
+  },
+  {
+    number: "06",
+    title: "Mond der Transformation",
+    subtitle: "Wandlung, Integration und Neuverkörperung",
+    topics: [
+      "Die Synthese: Verknüpfung der vier Diagnosesäulen (Ahnen, Narben, Tarologie, Astrologie) zu einem ganzheitlichen Gesamtbild",
+      "Entwicklung maßgeschneiderter Klienten-Prozesse, körperorientierter Anker und ritueller Wandlungsschritte",
+      "Somatische Alchemie zur Transformation identifizierter Wunden, Glaubenssätze und Blockaden in Lebenskraft",
+    ],
+  },
+  {
+    number: "07",
+    title: "Mond des Raumhaltens",
+    subtitle: "Präsenz, Co-Regulation und sichere Räume",
+    topics: [
+      "Professionelle Gesprächsführung und Sitzungsleitung in 1:1-Formaten – Struktur einer 60- bis 90-minütigen Sitzung",
+      "Grenzen und Ethik der spirituellen Lebensberatung sowie strikte Abgrenzung zur heilkundlichen Psychotherapie",
+      "Gezielte Fragetechniken, Empathie und emotionale Erste Hilfe / Deeskalation bei Kliententriggern",
+      "Energetische Hygiene und Raumreinigung vor, während und nach Klientenkontakten",
+    ],
+  },
+  {
+    number: "08",
+    title: "Mond des Wirkens",
+    subtitle: "Verkörperung, Sichtbarkeit und Wirksamkeit",
+    topics: [
+      "Formaler Einstieg in die Selbstständigkeit: Gewerbeanmeldung, steuerliche Erfassung (ELSTER), Kleinunternehmerregelung vs. Regelbesteuerung",
+      "Preisfindung, Kalkulation und Strukturierung von lukrativen Beratungspaketen",
+      "Rechtssichere Außendarstellung: Impressumspflicht, Pflichtangaben auf Rechnungen und Vorgaben des Heilmittelwerbegesetzes (HWG)",
+      "Markennutzungsrechte: Richtlinien zur Führung der offiziellen Titel und Bezeichnungen für das eigene Marketing",
+    ],
+  },
+  {
+    number: "09",
+    title: "Mond der Weihung",
+    subtitle: "Abschluss, Initiation und innere Weihe",
+    topics: [
+      "Feierlicher Abschluss des 9-monatigen Zyklus im synchronen Live-Kreis",
+      "Feierliche Einweihung und Initiation in den Stand der Aura Luminess Ahnenhüterin",
+      "Geführte energetische Meditation und rituelle Raumöffnung",
+      "Würdigung des gemeinsamen Transformationswegs und Verankerung im energetischen Kreis",
+    ],
+  },
+];
+
 const faqs = [
   {
     question: "Welche Voraussetzungen brauche ich?",
@@ -62,7 +163,7 @@ const faqs = [
   },
   {
     question: "Wie läuft die Ausbildung ab?",
-    answer: "Aura Luminess ist als live geführte Ausbildung über neun Monde angelegt. Die konkrete Zuordnung der Inhalte zu den einzelnen Monden sowie die genauen Termine werden vor dem jeweiligen Ausbildungsbeginn verbindlich mitgeteilt.",
+    answer: "Aura Luminess ist als live geführte Ausbildung über neun Monde angelegt. Die Themen der einzelnen Monde findest du in der Modulübersicht auf dieser Seite; die genauen Termine werden vor dem jeweiligen Ausbildungsbeginn verbindlich mitgeteilt.",
   },
   {
     question: "Welche Werkzeuge gehören zur Ausbildung?",
@@ -130,9 +231,30 @@ export default function NeunMondeAuraLuminessPage() {
 
     <section className="luminess-timeline" aria-labelledby="luminess-timeline-title">
       <div className="shell">
-        <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">NEUN GEMEINSAME MONDE</p><h2 id="luminess-timeline-title">So ist die Ausbildung aufgebaut</h2><p>Neun Monde geben der Ausbildung ihren zeitlichen Rahmen. Die genaue inhaltliche Zuordnung wird vor dem Ausbildungsstart bekanntgegeben.</p></header>
+        <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">NEUN GEMEINSAME MONDE</p><h2 id="luminess-timeline-title">So ist die Ausbildung aufgebaut</h2><p>Neun Monde geben der Ausbildung ihren zeitlichen Rahmen. Jeder Mond trägt ein eigenes Thema und führt dich Schritt für Schritt tiefer in die Methode.</p></header>
         <ol className="luminess-moons" aria-label="Zeitlicher Rahmen über neun Monde">{Array.from({ length: 9 }, (_, index) => <li key={index}><span aria-hidden="true"></span><strong>Mond {String(index + 1).padStart(2, "0")}</strong></li>)}</ol>
       </div>
+    </section>
+
+    <section className="luminess-modules shell" aria-labelledby="luminess-modules-title">
+      <header className="luminess-heading luminess-heading-centered">
+        <p className="luminess-kicker">DEIN WEG DURCH DIE AUSBILDUNG</p>
+        <h2 id="luminess-modules-title">Die neun Monde im Detail</h2>
+        <p>Öffne jeden Mond, um seine Schwerpunkte und Inhalte in Ruhe kennenzulernen.</p>
+      </header>
+      <Accordion className="luminess-module-accordion" type="single" collapsible>
+        {moonModules.map((module) => <AccordionItem value={`moon-${module.number}`} key={module.number}>
+          <AccordionTrigger>
+            <span className="luminess-module-trigger">
+              <span className="luminess-module-number">{module.number}</span>
+              <span><small>Mond {Number(module.number)}</small><strong>{module.title}</strong><em>{module.subtitle}</em></span>
+            </span>
+          </AccordionTrigger>
+          <AccordionContent>
+            <ul className="luminess-module-topics">{module.topics.map((topic) => <li key={topic}>{topic}</li>)}</ul>
+          </AccordionContent>
+        </AccordionItem>)}
+      </Accordion>
     </section>
 
     <section className="luminess-deep-dives shell" aria-labelledby="luminess-deep-dives-title">

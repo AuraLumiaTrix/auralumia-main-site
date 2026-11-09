@@ -70,19 +70,19 @@ const months = [
     number: "1",
     title: "Monat 1 – Erkennen",
     text: "Wir schaffen einen Überblick, betrachten deine Karma Code Analyse und geben deinem persönlichen Thema eine klare Orientierung.",
-    symbol: "✦",
+    image: "/symbols/blueprint-month-recognize-gold.png",
   },
   {
     number: "2",
     title: "Monat 2 – Integrieren",
     text: "Meditationen und Journaling begleiten dich dabei, Erkenntnisse in deinem Alltag zu beobachten und bewusst zu verankern.",
-    symbol: "☾",
+    image: "/symbols/blueprint-month-integrate-gold.png",
   },
   {
     number: "3",
     title: "Monat 3 – Manifestieren",
     text: "Du richtest deinen Blick auf die Umsetzung, die aktuelle Zeitqualität und deinen stimmigen nächsten Schritt.",
-    symbol: "◌",
+    image: "/symbols/blueprint-month-manifest-gold.png",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function DreiMondeBlueprintPage() {
           <h1>Drei Monde<br />Blueprint</h1>
           <strong className="blueprint-price">890 €</strong>
           <p className="blueprint-lede">Deine persönliche Roadmap für die nächsten drei Monate – mit persönlichem Call, Karma Code Analyse, 3-Monats-Plan, Meditationen, Journaling und der astrologischen Betrachtung eines passenden Zeitpunkts.</p>
-          <Link className="blueprint-button blueprint-button-primary" href={requestHref}>Blueprint anfragen <span aria-hidden="true">→</span></Link>
+          <Link className="blueprint-button blueprint-button-primary" href={requestHref}>Blueprint anfragen</Link>
         </div>
         <div className="blueprint-hero-art">
           <Image src="/products/product-drei-monde-blueprint.jpg" alt="Drei Monde Blueprint mit persönlicher Roadmap, Audio-Transmission und Monatsimpulsen" fill priority sizes="(max-width: 760px) 100vw, 48vw" />
@@ -171,10 +171,9 @@ export default function DreiMondeBlueprintPage() {
         <h2 id="blueprint-months-title">Drei Monate – Drei Schritte</h2>
         <p>Jeder Monat hat einen eigenen Fokus und bleibt zugleich Teil deiner persönlichen Roadmap.</p>
       </header>
-      <div className="blueprint-month-grid">{months.map((month, index) => <article key={month.number}>
-        <div className="blueprint-month-visual"><span>{month.symbol}</span><b>{month.number}</b></div>
+      <div className="blueprint-month-grid">{months.map((month) => <article key={month.number}>
+        <div className="blueprint-month-visual"><Image className="blueprint-month-symbol" src={month.image} alt="" width={154} height={154} sizes="154px" /><b>{month.number}</b></div>
         <div className="blueprint-month-copy"><h3>{month.title}</h3><p>{month.text}</p></div>
-        {index < months.length - 1 && <span className="blueprint-month-arrow" aria-hidden="true">→</span>}
       </article>)}</div>
     </section>
 
@@ -186,8 +185,8 @@ export default function DreiMondeBlueprintPage() {
           <p>Wenn du nach deinem Blueprint tiefer in Somatic Karma eintauchen möchtest, stehen dir zwei weiterführende Möglichkeiten offen.</p>
         </header>
         <div className="blueprint-next-grid">
-          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-aura-luminess.jpg" alt="Aura Luminess" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">AUSBILDUNG · NEUN MONDE</p><h3>Aura Luminess</h3><p>Die fundierte Ausbildung, wenn du Somatic Karma als zusammenhängende Methode kennenlernen und vertiefen möchtest.</p><Link href="/mentoring#circle-programm">Mehr erfahren <span aria-hidden="true">→</span></Link></div></article>
-          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-high-touch-1-1.jpg" alt="High Touch 1:1" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">ALL-INCLUSIVE · NEUN MONDE</p><h3>High Touch 1:1</h3><p>Persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem umfassenden Gesamtprogramm.</p><Link href="/mentoring#high-touch">Mehr erfahren <span aria-hidden="true">→</span></Link></div></article>
+          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-aura-luminess.jpg" alt="Aura Luminess" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">AUSBILDUNG · NEUN MONDE</p><h3>Aura Luminess</h3><p>Die fundierte Ausbildung, wenn du Somatic Karma als zusammenhängende Methode kennenlernen und vertiefen möchtest.</p><Link href="/mentoring#circle-programm">Mehr erfahren</Link></div></article>
+          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-high-touch-1-1.jpg" alt="High Touch 1:1" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">ALL-INCLUSIVE · NEUN MONDE</p><h3>High Touch 1:1</h3><p>Persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem umfassenden Gesamtprogramm.</p><Link href="/mentoring#high-touch">Mehr erfahren</Link></div></article>
         </div>
       </div>
     </section>
@@ -208,7 +207,7 @@ export default function DreiMondeBlueprintPage() {
     <section className="blueprint-closing">
       <Image src="/hero-somatic-dark-mobile.png" alt="Atmosphärische Illustration unter Sternen und Mond" fill sizes="100vw" />
       <div className="blueprint-closing-shade" aria-hidden="true" />
-      <div className="shell blueprint-closing-copy"><p className="blueprint-kicker">DEIN NÄCHSTES KAPITEL</p><h2>Bereit für deinen Drei Monde Blueprint?</h2><p>Gemeinsam richten wir den Blick auf deine kommenden drei Monate und entwickeln eine persönliche Roadmap, die dich Schritt für Schritt begleitet.</p><Link className="blueprint-button blueprint-button-light" href={requestHref}>Blueprint anfragen <span aria-hidden="true">→</span></Link></div>
+      <div className="shell blueprint-closing-copy"><p className="blueprint-kicker">DEIN NÄCHSTES KAPITEL</p><h2>Bereit für deinen Drei Monde Blueprint?</h2><p>Gemeinsam richten wir den Blick auf deine kommenden drei Monate und entwickeln eine persönliche Roadmap, die dich Schritt für Schritt begleitet.</p><Link className="blueprint-button blueprint-button-light" href={requestHref}>Blueprint anfragen</Link></div>
     </section>
   </div>;
 }
