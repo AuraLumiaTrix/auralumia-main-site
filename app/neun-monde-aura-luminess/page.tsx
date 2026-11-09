@@ -12,13 +12,28 @@ export const metadata: Metadata = {
   description: "Die neunmonatige Live-Ausbildung in der Somatic-Karma-Methode von AuraLumia.",
 };
 
-const learningAreas = [
-  { title: "Grundbedürfnisse", image: "/hero-somatic.jpg", text: "Du lernst die vier menschlichen Grundbedürfnisse als Ausgangspunkt der Methode kennen." },
-  { title: "Karmische Narben", image: "/karma-code.webp", text: "Du vertiefst die vier karmischen Narben und ihre Bedeutung als spirituelle Reflexionsfelder." },
-  { title: "Tarot & archetypische Deutung", image: "/tarot-cards/major-2.webp", text: "Du erschließt dir die Bildsprache des Tarot innerhalb der Somatic-Karma-Methode." },
-  { title: "Planetengruppen", image: "/somatic-karma/triad-mutternarbe-gold.jpg", text: "Du lernst die vier Zentren und ihre jeweiligen planetarischen Triaden kennen." },
-  { title: "Elementelehre", image: "/somatic-karma/element-water-gold-transparent.png", text: "Du differenzierst die Qualitäten von Feuer, Erde, Luft und Wasser in der Deutung." },
-  { title: "Deutungsintegration", image: "/hero-somatic-taupe-mobile.png", text: "Du verbindest die einzelnen Ebenen zu einer klaren, zusammenhängenden Betrachtung." },
+const learningAreas: Array<{
+  title: string;
+  text: string;
+  image?: string;
+  images?: string[];
+  contain?: boolean;
+}> = [
+  { title: "Grundbedürfnisse", image: "/offers/symbol-navigator.png", contain: true, text: "Du lernst die vier menschlichen Grundbedürfnisse als Ausgangspunkt der Methode kennen." },
+  { title: "Karmische Narben", image: "/products/meditationspaket-schuldnarbe.jpg", text: "Du vertiefst die vier karmischen Narben und ihre Bedeutung als spirituelle Reflexionsfelder." },
+  { title: "Tarot & archetypische Deutung", image: "/products/product-tarot-app-mockup.png", contain: true, text: "Du erschließt dir die Bildsprache des Tarot innerhalb der Somatic-Karma-Methode." },
+  { title: "Planetengruppen", image: "/somatic-karma/triad-mutternarbe-popup-transparent.png", contain: true, text: "Du lernst die vier Zentren und ihre jeweiligen planetarischen Triaden kennen." },
+  {
+    title: "Elementelehre",
+    images: [
+      "/somatic-karma/element-fire-gold-transparent.png",
+      "/somatic-karma/element-earth-gold-transparent.png",
+      "/somatic-karma/element-air-gold-transparent.png",
+      "/somatic-karma/element-water-gold-transparent.png",
+    ],
+    text: "Du differenzierst die Qualitäten von Feuer, Erde, Luft und Wasser in der Deutung.",
+  },
+  { title: "Deutungsintegration", image: "/hero-somatic.jpg", text: "Du verbindest die einzelnen Ebenen zu einer klaren, zusammenhängenden Betrachtung." },
 ];
 
 const planetGroups = [
@@ -190,23 +205,57 @@ export default function NeunMondeAuraLuminessPage() {
           <h1>Neun Monde<br />Aura Luminess</h1>
           <p className="luminess-subtitle">Live-Ausbildung in der Somatic-Karma-Methode</p>
           <p className="luminess-lede">In neun gemeinsam getragenen Monden lernst du Somatic Karma als verbundene Methode kennen – mit ihren psychologischen Ausgangspunkten, astrologischen Planetengruppen, der archetypischen Sprache des Tarot und der Elementelehre.</p>
-          <div className="luminess-hero-offer"><a className="luminess-button luminess-button-primary" href={applicationHref}>Zur Bewerbung <span aria-hidden="true">→</span></a><strong>3.333 €</strong></div>
+          <div className="luminess-hero-offer"><a className="luminess-button luminess-button-primary" href={applicationHref}>Zur Bewerbung</a><strong>3.333 €</strong></div>
         </div>
         <div className="luminess-hero-image">
           <Image src="/products/product-aura-luminess.jpg" alt="Neun Monde Aura Luminess Ausbildung mit Kompendium, Tarotdeck, Supervision und Ausbildungsunterlagen" fill priority sizes="(max-width: 760px) 100vw, 50vw" />
         </div>
       </div>
-      <div className="shell luminess-hero-values" aria-label="Ausrichtung der Ausbildung">
-        <span><i aria-hidden="true">◌</i>Live &amp; persönlich</span>
-        <span><i aria-hidden="true">✦</i>Verbundenes Wissen</span>
+      <div className="shell luminess-hero-values" aria-label="Ausrichtung und enthaltene Werkzeuge der Ausbildung">
+        <span><i aria-hidden="true">◌</i>Live &amp; persönlich im digitalen Raum</span>
+        <span><i aria-hidden="true">✦</i>Physisches Tarotdeck mit persönlichem Energiegrid</span>
+        <span><i aria-hidden="true">◇</i>AuraLumia Astrologie-Software inklusive</span>
         <span><i aria-hidden="true">☾</i>Zwei Circles im Jahr</span>
       </div>
+    </section>
+
+    <section className="luminess-timeline" aria-labelledby="luminess-timeline-title">
+      <div className="shell">
+        <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">DEIN WEG DURCH DIE AUSBILDUNG</p><h2 id="luminess-timeline-title">So ist die Ausbildung aufgebaut</h2><p>Neun Monde geben der Ausbildung ihren zeitlichen Rahmen. Jeder Mond trägt ein eigenes Thema und führt dich Schritt für Schritt tiefer in die Methode.</p></header>
+        <Accordion className="luminess-module-accordion" type="single" collapsible>
+          {moonModules.map((module) => <AccordionItem value={`moon-${module.number}`} key={module.number}>
+            <AccordionTrigger>
+              <span className="luminess-module-trigger">
+                <span className="luminess-module-number">{module.number}</span>
+                <span><small>Mond {Number(module.number)}</small><strong>{module.title}</strong><em>{module.subtitle}</em></span>
+              </span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <ul className="luminess-module-topics">{module.topics.map((topic) => <li key={topic}>{topic}</li>)}</ul>
+            </AccordionContent>
+          </AccordionItem>)}
+        </Accordion>
+      </div>
+    </section>
+
+    <section className="luminess-tools shell" aria-labelledby="luminess-tools-title">
+      <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">BEGLEITER DEINER AUSBILDUNG</p><h2 id="luminess-tools-title">Deine Werkzeuge</h2><p>Zwei eigens für die Methode entwickelte Werkzeuge unterstützen die anschauliche Arbeit mit den Deutungsebenen.</p></header>
+      <div className="luminess-tools-grid">{tools.map((tool) => <article key={tool.title}>
+        <div className={`luminess-tool-image${tool.contain ? " luminess-tool-image-contain" : ""}`}><Image src={tool.image} alt={tool.title} fill sizes="(max-width: 760px) 100vw, 48vw" /></div>
+        <div><p className="luminess-kicker">AURALUMIA ORIGINAL</p><h3>{tool.title}</h3><p>{tool.text}</p></div>
+      </article>)}</div>
     </section>
 
     <section className="luminess-learning shell" aria-labelledby="luminess-learning-title">
       <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">DEIN METHODISCHES FUNDAMENT</p><h2 id="luminess-learning-title">Was du lernst</h2><p>Du lernst die Ebenen von Somatic Karma kennen und übst, sie zu einer nachvollziehbaren Deutung zusammenzuführen.</p></header>
       <div className="luminess-learning-grid">{learningAreas.map((item) => <article key={item.title}>
-        <div className="luminess-learning-image"><Image src={item.image} alt="" fill sizes="(max-width: 760px) 100vw, 30vw" /></div>
+        {item.images ? (
+          <div className="luminess-learning-image luminess-learning-image-multiple">
+            {item.images.map((image, index) => <span key={image}><Image src={image} alt={["Feuer", "Erde", "Luft", "Wasser"][index]} fill sizes="(max-width: 760px) 20vw, 7vw" /></span>)}
+          </div>
+        ) : (
+          <div className={`luminess-learning-image${item.contain ? " luminess-learning-image-contain" : ""}`}><Image src={item.image!} alt={item.title} fill sizes="(max-width: 760px) 100vw, 30vw" /></div>
+        )}
         <div><h3>{item.title}</h3><p>{item.text}</p></div>
       </article>)}</div>
     </section>
@@ -219,42 +268,6 @@ export default function NeunMondeAuraLuminessPage() {
           <h3>Die Triade deiner {group.title}</h3><p>{group.description}</p>
         </article>)}</div>
       </div>
-    </section>
-
-    <section className="luminess-tools shell" aria-labelledby="luminess-tools-title">
-      <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">BEGLEITER DEINER AUSBILDUNG</p><h2 id="luminess-tools-title">Deine Werkzeuge</h2><p>Zwei eigens für die Methode entwickelte Werkzeuge unterstützen die anschauliche Arbeit mit den Deutungsebenen.</p></header>
-      <div className="luminess-tools-grid">{tools.map((tool) => <article key={tool.title}>
-        <div className={`luminess-tool-image${tool.contain ? " luminess-tool-image-contain" : ""}`}><Image src={tool.image} alt={tool.title} fill sizes="(max-width: 760px) 100vw, 48vw" /></div>
-        <div><p className="luminess-kicker">AURALUMIA ORIGINAL</p><h3>{tool.title}</h3><p>{tool.text}</p></div>
-      </article>)}</div>
-    </section>
-
-    <section className="luminess-timeline" aria-labelledby="luminess-timeline-title">
-      <div className="shell">
-        <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">NEUN GEMEINSAME MONDE</p><h2 id="luminess-timeline-title">So ist die Ausbildung aufgebaut</h2><p>Neun Monde geben der Ausbildung ihren zeitlichen Rahmen. Jeder Mond trägt ein eigenes Thema und führt dich Schritt für Schritt tiefer in die Methode.</p></header>
-        <ol className="luminess-moons" aria-label="Zeitlicher Rahmen über neun Monde">{Array.from({ length: 9 }, (_, index) => <li key={index}><span aria-hidden="true"></span><strong>Mond {String(index + 1).padStart(2, "0")}</strong></li>)}</ol>
-      </div>
-    </section>
-
-    <section className="luminess-modules shell" aria-labelledby="luminess-modules-title">
-      <header className="luminess-heading luminess-heading-centered">
-        <p className="luminess-kicker">DEIN WEG DURCH DIE AUSBILDUNG</p>
-        <h2 id="luminess-modules-title">Die neun Monde im Detail</h2>
-        <p>Öffne jeden Mond, um seine Schwerpunkte und Inhalte in Ruhe kennenzulernen.</p>
-      </header>
-      <Accordion className="luminess-module-accordion" type="single" collapsible>
-        {moonModules.map((module) => <AccordionItem value={`moon-${module.number}`} key={module.number}>
-          <AccordionTrigger>
-            <span className="luminess-module-trigger">
-              <span className="luminess-module-number">{module.number}</span>
-              <span><small>Mond {Number(module.number)}</small><strong>{module.title}</strong><em>{module.subtitle}</em></span>
-            </span>
-          </AccordionTrigger>
-          <AccordionContent>
-            <ul className="luminess-module-topics">{module.topics.map((topic) => <li key={topic}>{topic}</li>)}</ul>
-          </AccordionContent>
-        </AccordionItem>)}
-      </Accordion>
     </section>
 
     <section className="luminess-deep-dives shell" aria-labelledby="luminess-deep-dives-title">
@@ -287,7 +300,7 @@ export default function NeunMondeAuraLuminessPage() {
     <section className="luminess-closing">
       <Image src="/hero-somatic-dark-mobile.png" alt="Atmosphärische Landschaft unter Mond und Sternen" fill sizes="100vw" />
       <div className="luminess-closing-shade" aria-hidden="true" />
-      <div className="shell luminess-closing-copy"><p className="luminess-kicker">DEIN NÄCHSTER KREIS</p><h2>Bereit für deine neun Monde?</h2><p>Spüre in Ruhe, ob dieser Weg dich ruft, und entdecke im Bewerbungsabschnitt den nächsten möglichen Einstieg.</p><a className="luminess-button luminess-button-light" href={applicationHref}>Zur Bewerbung <span aria-hidden="true">→</span></a></div>
+      <div className="shell luminess-closing-copy"><p className="luminess-kicker">DEIN NÄCHSTER KREIS</p><h2>Bereit für deine neun Monde?</h2><p>Spüre in Ruhe, ob dieser Weg dich ruft, und entdecke im Bewerbungsabschnitt den nächsten möglichen Einstieg.</p><a className="luminess-button luminess-button-light" href={applicationHref}>Zur Bewerbung</a></div>
     </section>
   </div>;
 }

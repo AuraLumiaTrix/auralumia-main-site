@@ -12,7 +12,6 @@ const primaryOffers = [
     id: "blueprint",
     eyebrow: "PERSÖNLICHE BEGLEITUNG · DREI MONDE",
     title: "Drei Monde Blueprint",
-    price: "890 €",
     image: "/products/product-drei-monde-blueprint.jpg",
     description: "Ein persönlicher, klar strukturierter Raum, in dem dein aktuelles Thema aus verschiedenen Blickwinkeln betrachtet und in einen individuellen Weg für die kommenden drei Monate übersetzt wird.",
     features: ["Persönlicher Call", "Karma-Code-Analyse", "Individueller Drei-Monats-Plan", "Meditationen und Journaling", "Astrologische Zeitqualität anhand des Jahreshoroskops"],
@@ -23,7 +22,6 @@ const primaryOffers = [
     id: "circle-programm",
     eyebrow: "FUNDIERTE AUSBILDUNG · NEUN MONDE",
     title: "Neun Monde Aura Luminess",
-    price: "3.333 €",
     image: "/products/product-aura-luminess.jpg",
     description: "Eine live geführte Ausbildung, in der du Somatic Karma als zusammenhängende Methode kennenlernst und ihre symbolischen, astrologischen und körperorientierten Ebenen vertiefst.",
     features: ["Live-Ausbildung in Somatic Karma", "Die vier karmischen Narben", "Tarot Arcana und archetypische Deutung", "Planetengruppen im Geburtshoroskop", "Eigene Astrologie-Software", "Eigenes physisches Tarotdeck mit Energiegrid"],
@@ -75,7 +73,7 @@ export default function MentoringPage() {
           <h2>{offer.title}</h2>
           <p className="mentoring-v2-offer-description">{offer.description}</p>
           <FeatureList items={offer.features} />
-          <div className="mentoring-v2-offer-footer"><strong>{offer.price}</strong><a className="mentoring-v2-button mentoring-v2-button-primary" href={offer.href}>{offer.action}</a></div>
+          <div className="mentoring-v2-offer-footer mentoring-v2-offer-footer-action-only"><a className="mentoring-v2-button mentoring-v2-button-primary" href={offer.href}>{offer.action}</a></div>
         </div>
       </article>)}
     </section>
@@ -87,7 +85,7 @@ export default function MentoringPage() {
           <div className="mentoring-v2-heading-row mentoring-v2-heading-row-premium"><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-nine-moons" src="/symbols/gold-nine-moons.png" alt="" width={1080} height={1350} sizes="96px" /><p className="mentoring-v2-kicker">ALL-INCLUSIVE · PERSÖNLICH BEGLEITET</p></div><h2 id="high-touch-title">Neun Monde<br />High Touch 1:1</h2>
           <p>Ein umfassender Raum für Frauen, die persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem Gesamtprogramm verbinden möchten.</p>
           <FeatureList items={["Drei Monde Blueprint", "Vollständige Neun-Monde-Ausbildung Aura Luminess", "Alle drei vertiefenden Monde", "Zugriff auf die gesamte AuraLumia-Kurswelt", "Intensive persönliche 1:1-Begleitung"]} />
-          <div className="mentoring-v2-premium-actions"><strong className="mentoring-v2-premium-price">9.999 €</strong><HighTouchInfoDialog /></div>
+          <div className="mentoring-v2-premium-actions"><HighTouchInfoDialog /></div>
         </div>
       </div>
     </section>
@@ -100,7 +98,7 @@ export default function MentoringPage() {
     <section className="mentoring-v2-deep-dives" aria-labelledby="deep-dives-title">
       <div className="shell">
         <header className="mentoring-v2-section-heading"><div><div className="mentoring-v2-heading-row"><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-deepening" src="/symbols/gold-deepening-moons.png" alt="" width={1080} height={1350} sizes="92px" /><p className="mentoring-v2-kicker">OPTIONAL NACH DER HAUPTAUSBILDUNG</p></div><h2 id="deep-dives-title">Drei vertiefende Monde</h2></div><p>Jede Spezialisierung ist eine eigenständige, optionale Vertiefung. Sie ist kein verpflichtender Bestandteil der Aura-Luminess-Ausbildung.</p></header>
-        <div className="mentoring-v2-deep-grid">{deepDives.map((item) => <article key={item.number}><span>{item.number}</span><div className="mentoring-v2-deep-heading"><h3>{item.title}</h3></div><p>{item.description}</p><strong>890 €</strong></article>)}</div>
+        <div className="mentoring-v2-deep-grid">{deepDives.map((item) => <article key={item.number}><span>{item.number}</span><div className="mentoring-v2-deep-heading"><h3>{item.title}</h3></div><p>{item.description}</p></article>)}</div>
       </div>
     </section>
 
@@ -111,7 +109,7 @@ export default function MentoringPage() {
 
     <section className="mentoring-v2-info" aria-label="Verfügbarkeit und Bewerbung">
       <div className="shell mentoring-v2-info-grid">
-        <article id="blueprint-verfuegbarkeit"><div className="mentoring-v2-info-heading"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-blueprint.png" alt="" width={1124} height={1399} sizes="82px" /><p className="mentoring-v2-kicker">BLUEPRINT · PERSÖNLICHE VERFÜGBARKEIT</p></div><h2>Ein bewusst gewählter Start.</h2><p>Jeder Drei Monde Blueprint wird persönlich vorbereitet. Deshalb werden nur wenige Begleitungen gleichzeitig vergeben und jeder mögliche Beginn individuell geprüft.</p><div className="mentoring-v2-info-meta"><span>Auf Anfrage</span><strong>890 € · bewusst limitierte Plätze</strong></div></article>
+        <article id="blueprint-verfuegbarkeit"><div className="mentoring-v2-info-heading"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-blueprint.png" alt="" width={1124} height={1399} sizes="82px" /><p className="mentoring-v2-kicker">BLUEPRINT · PERSÖNLICHE VERFÜGBARKEIT</p></div><h2>Ein bewusst gewählter Start.</h2><p>Jeder Drei Monde Blueprint wird persönlich vorbereitet. Deshalb werden nur wenige Begleitungen gleichzeitig vergeben und jeder mögliche Beginn individuell geprüft.</p><div className="mentoring-v2-info-meta"><span>Auf Anfrage</span><strong>Bewusst limitierte Plätze</strong></div></article>
         <article id="bewerbung"><div className="mentoring-v2-info-heading"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-nine-moons.png" alt="" width={1080} height={1350} sizes="82px" /><p className="mentoring-v2-kicker">AURA LUMINESS · ZWEI CIRCLES IM JAHR</p></div><h2>Samhain &amp; Walpurgis</h2><p>Die Ausbildung beginnt zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase beginnt im Januar 2027.</p><div className="mentoring-v2-info-meta"><span>Nächste Bewerbungsphase ab Januar 2027</span><strong>Wenige, bewusst vergebene Plätze</strong></div></article>
       </div>
     </section>
