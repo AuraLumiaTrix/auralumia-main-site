@@ -16,42 +16,42 @@ export const metadata: Metadata = {
 const included = [
   {
     number: "01",
-    symbol: "☾",
+    image: "/symbols/blueprint-personal-call-gold.png",
     title: "Persönlicher Call",
     text: "Wir betrachten deine aktuelle Situation, das Thema, das dich bewegt, und die nächsten Schritte, die sich für dich stimmig anfühlen.",
     tone: "rose",
   },
   {
     number: "02",
-    symbol: "✦",
+    image: "/symbols/blueprint-karma-code-key-gold.png",
     title: "Karma Code Analyse",
     text: "Deine wiederkehrenden Muster werden im Zusammenspiel von Somatic Karma und astrologischen Zusammenhängen verständlich eingeordnet.",
     tone: "lilac",
   },
   {
     number: "03",
-    symbol: "◌",
+    image: "/symbols/blueprint-three-month-plan-gold.png",
     title: "3-Monats-Plan",
     text: "Du erhältst eine persönliche Roadmap mit klaren Impulsen und einer ruhigen Struktur für die kommenden drei Monate.",
     tone: "cream",
   },
   {
     number: "04",
-    symbol: "◇",
+    image: "/symbols/blueprint-meditations-gold.png",
     title: "Meditationen",
     text: "Ausgewählte Meditationen begleiten dich dabei, deine Erkenntnisse in deinem eigenen Tempo nachwirken zu lassen.",
     tone: "lilac",
   },
   {
     number: "05",
-    symbol: "✎",
+    image: "/symbols/blueprint-journaling-gold.png",
     title: "Journaling",
     text: "Sanfte Journaling-Impulse unterstützen dich dabei, Beobachtungen festzuhalten und deinen persönlichen Prozess bewusst zu reflektieren.",
     tone: "cream",
   },
   {
     number: "06",
-    symbol: "✺",
+    image: "/symbols/blueprint-right-timing-gold.png",
     title: "Passender Zeitpunkt",
     text: "Die Zeitqualität deines Jahreshoroskops wird spirituell-astrologisch betrachtet, um einen stimmigen Zeitraum für deinen nächsten Schritt zu erkennen.",
     tone: "rose",
@@ -145,7 +145,10 @@ export default function DreiMondeBlueprintPage() {
       </header>
       <div className="blueprint-included-grid">
         {included.map((item) => <article className={`blueprint-included-card blueprint-tone-${item.tone}`} key={item.title}>
-          <div className="blueprint-card-visual"><span>{item.symbol}</span><small>{item.number}</small></div>
+          <div className="blueprint-card-visual">
+            <Image className="blueprint-card-symbol" src={item.image} alt="" width={112} height={112} sizes="112px" />
+            <small>{item.number}</small>
+          </div>
           <div className="blueprint-card-copy"><h3>{item.title}</h3><p>{item.text}</p></div>
         </article>)}
       </div>
