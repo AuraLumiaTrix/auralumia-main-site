@@ -347,7 +347,15 @@ p { margin:0; }
 .luminess-application-grid > div:last-child { display:flex; flex-direction:column; padding:29px 32px; border:1px solid rgba(255,255,255,.22); border-radius:18px; background:rgba(255,255,255,.1); }
 .luminess-application-grid span { color:#f5e0e5; font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
 .luminess-application-grid strong { margin-top:12px; font-family:var(--serif); font-size:1.8rem; font-weight:500; }
-.luminess-application-grid > div:last-child p { margin-top:17px; font-family:var(--serif); font-size:2.6rem; }
+.luminess-application-grid .luminess-application-price { font-size:2.9rem; }
+.luminess-application-grid > div:last-child p { margin-top:13px; color:#f5e9ec; font-size:.77rem; line-height:1.65; }
+.luminess-application-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:48px; }
+.luminess-application-steps article { min-width:0; padding:27px 28px 29px; border:1px solid rgba(255,255,255,.2); border-radius:18px; background:rgba(255,255,255,.08); }
+.luminess-application-steps span { color:#efdbe2; font-family:var(--serif); font-size:1.15rem; }
+.luminess-application-steps h3 { margin-top:24px; color:#fff; font-size:2rem; line-height:1.05; }
+.luminess-application-steps p { margin-top:13px; color:#f5e9ec; font-size:.76rem; line-height:1.68; }
+.luminess-application-action { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-top:25px; padding:24px 28px; border-radius:18px; background:rgba(255,255,255,.1); }
+.luminess-application-action p { color:#fff; font-family:var(--serif); font-size:1.65rem; }
 
 .luminess-closing { position:relative; display:grid; min-height:560px; place-items:center; overflow:hidden; background:#604b5c; }
 .luminess-closing > img { object-fit:cover; object-position:center 45%; }
@@ -415,6 +423,9 @@ p { margin:0; }
   .luminess-accordion [data-slot="accordion-trigger"] svg { width:1.125rem; height:1.125rem; margin-top:.18rem; }
   .luminess-application { padding-block:74px; }
   .luminess-application-grid { grid-template-columns:1fr; gap:34px; text-align:center; }
+  .luminess-application-steps { grid-template-columns:1fr; gap:12px; margin-top:34px; text-align:center; }
+  .luminess-application-steps h3 { margin-top:14px; }
+  .luminess-application-action { flex-direction:column; text-align:center; }
   .luminess-closing { min-height:610px; }
   .luminess-closing h2 { font-size:clamp(3.7rem,16vw,5rem); }
 }
