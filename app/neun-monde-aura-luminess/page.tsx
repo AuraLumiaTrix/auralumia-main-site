@@ -63,11 +63,47 @@ const deepDives = [
   { title: "Energieanwendung im Rahmen von Somatic Karma", image: "/hero-somatic-taupe-mobile.png", text: "Eine optionale Vertiefung für die energetische Ebene innerhalb der Somatic-Karma-Methode." },
 ];
 
+const architecturePillars = [
+  {
+    number: "01",
+    title: "Verstehen",
+    text: "Grundbedürfnisse, Ahnenlinien und die Architektur der karmischen Narben bilden dein methodisches Fundament.",
+  },
+  {
+    number: "02",
+    title: "Verkörpern",
+    text: "Somatische Selbstwahrnehmung, Zentrierung und eigene Integration verankern das Wissen in deiner Praxis.",
+  },
+  {
+    number: "03",
+    title: "Deuten",
+    text: "Tarot, Astrologie und Elementelehre werden zu miteinander verbundenen symbolischen Zugängen.",
+  },
+  {
+    number: "04",
+    title: "Wirken",
+    text: "Raumhalten, ethische Klarheit und methodische Synthese führen das Gelernte in eine verantwortungsvolle Anwendung.",
+  },
+];
+
+const formatDetails = [
+  { title: "Neun gemeinsame Monde", text: "Ein klar gegliederter Ausbildungsweg mit einem eigenen Schwerpunkt in jedem Mond." },
+  { title: "Live im digitalen Raum", text: "Persönlich geführtes Lernen und gemeinsames Vertiefen – ortsunabhängig und verbunden." },
+  { title: "Zwei Circles im Jahr", text: "Der Einstieg folgt dem bewussten Rhythmus von Samhain und Walpurgis." },
+  { title: "Eigene AuraLumia-Werkzeuge", text: "Astrologie-Software und physisches Tarotdeck begleiten deine methodische Arbeit." },
+];
+
 const audience = [
-  { symbol: "☾", title: "Vertiefung", text: "Du möchtest Somatic Karma in seiner ganzen methodischen Tiefe kennenlernen." },
-  { symbol: "✦", title: "Verknüpfung", text: "Du interessierst dich für das Zusammenspiel von Bedürfnissen, Astrologie, Tarot und Elementen." },
-  { symbol: "◇", title: "Anwendung", text: "Du möchtest das Gelernte sorgfältig üben und in deine persönliche Praxis integrieren." },
-  { symbol: "◌", title: "Beruflicher Kontext", text: "Du möchtest Somatic Karma gegebenenfalls ergänzend in deine bestehende Tätigkeit einfließen lassen." },
+  "Du möchtest Somatic Karma nicht nur kennenlernen, sondern zunächst selbst erfahren und verkörpern.",
+  "Du arbeitest bereits begleitend oder möchtest eine reflektierte spirituelle Praxis aufbauen.",
+  "Du hast Raum für Live-Termine, Eigenreflexion und eine kontinuierliche Integration über neun Monate.",
+  "Du möchtest Tarot, Astrologie, Körperwahrnehmung und Grundbedürfnisse methodisch miteinander verbinden.",
+];
+
+const notForAudience = [
+  "Du suchst vor allem ein schnelles Zertifikat ohne eigene Auseinandersetzung mit den Inhalten.",
+  "Du möchtest die Ausbildung ausschließlich passiv konsumieren, ohne Zeit für Übung und Integration einzuplanen.",
+  "Du suchst einen Ersatz für medizinische oder psychotherapeutische Begleitung.",
 ];
 
 const moonModules = [
@@ -190,7 +226,15 @@ const faqs = [
   },
   {
     question: "Wann kann ich mich bewerben?",
-    answer: "Aura Luminess beginnt zweimal im Jahr als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase ist für Oktober 2026 zum Samhain Circle angekündigt; die Plätze werden bewusst begrenzt vergeben.",
+    answer: "Aura Luminess beginnt zweimal im Jahr als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase beginnt im Januar 2027; die Plätze werden bewusst begrenzt vergeben.",
+  },
+  {
+    question: "Wie viel Zeit darf ich für die Ausbildung einplanen?",
+    answer: "Der Ausbildungsweg erstreckt sich über neun Monate und verbindet Live-Phasen, eigenes Vertiefen und Integration. Die verbindlichen Termine und der konkrete zeitliche Rahmen werden dir vor deiner Zusage transparent mitgeteilt, damit du in Ruhe entscheiden kannst.",
+  },
+  {
+    question: "Was ist, wenn ich einen Live-Termin nicht wahrnehmen kann?",
+    answer: "Welche Aufzeichnungen oder alternativen Möglichkeiten für einen konkreten Circle zur Verfügung stehen, wird vor Ausbildungsbeginn verbindlich kommuniziert. So weißt du vor deiner Entscheidung genau, welche Form der Begleitung dich erwartet.",
   },
 ];
 
@@ -201,25 +245,49 @@ export default function NeunMondeAuraLuminessPage() {
     <section className="luminess-hero">
       <div className="shell luminess-hero-grid">
         <div className="luminess-hero-copy">
-          <p className="luminess-kicker">AURALUMIA AUSBILDUNG · SOMATIC KARMA</p>
+          <p className="luminess-kicker">NEUNMONATIGE LIVE-AUSBILDUNG · SOMATIC KARMA</p>
           <h1>Neun Monde<br />Aura Luminess</h1>
-          <p className="luminess-subtitle">Live-Ausbildung in der Somatic-Karma-Methode</p>
-          <p className="luminess-lede">In neun gemeinsam getragenen Monden lernst du Somatic Karma als verbundene Methode kennen – mit ihren psychologischen Ausgangspunkten, astrologischen Planetengruppen, der archetypischen Sprache des Tarot und der Elementelehre.</p>
-          <div className="luminess-hero-offer"><a className="luminess-button luminess-button-primary" href={applicationHref}>Zur Bewerbung</a><strong>3.333 €</strong></div>
+          <p className="luminess-subtitle">Von verbundenem Wissen zu einer verantwortungsvoll gelebten spirituellen Praxis.</p>
+          <p className="luminess-lede">In neun gemeinsam getragenen Monden lernst du Somatic Karma als zusammenhängende Methode kennen. Du verbindest Grundbedürfnisse und Körperwahrnehmung mit Astrologie, Tarot und Elementelehre – klar geführt, persönlich begleitet und im eigenen Erleben verankert.</p>
+          <div className="luminess-hero-offer">
+            <a className="luminess-button luminess-button-primary" href="#ausbildungsweg">Ausbildungsweg ansehen</a>
+            <a className="luminess-button luminess-button-secondary" href={applicationHref}>Bewerbung &amp; Investition</a>
+          </div>
+          <strong className="luminess-investment-note">Investition: 3.333 €</strong>
         </div>
         <div className="luminess-hero-image">
           <Image src="/products/product-aura-luminess.jpg" alt="Neun Monde Aura Luminess Ausbildung mit Kompendium, Tarotdeck, Supervision und Ausbildungsunterlagen" fill priority sizes="(max-width: 760px) 100vw, 50vw" />
         </div>
       </div>
       <div className="shell luminess-hero-values" aria-label="Ausrichtung und enthaltene Werkzeuge der Ausbildung">
-        <span><i aria-hidden="true">◌</i>Live &amp; persönlich im digitalen Raum</span>
+        <span><i aria-hidden="true">◌</i>Neun Monate live im digitalen Raum</span>
         <span><i aria-hidden="true">✦</i>Physisches Tarotdeck mit persönlichem Energiegrid</span>
         <span><i aria-hidden="true">◇</i>AuraLumia Astrologie-Software inklusive</span>
         <span><i aria-hidden="true">☾</i>Zwei Circles im Jahr</span>
       </div>
     </section>
 
-    <section className="luminess-timeline" aria-labelledby="luminess-timeline-title">
+    <section className="luminess-paradigm shell" aria-labelledby="luminess-paradigm-title">
+      <div className="luminess-paradigm-copy">
+        <p className="luminess-kicker">WENN EINZELWISSEN ZU EINER LANDKARTE WIRD</p>
+        <h2 id="luminess-paradigm-title">Du musst dich nicht zwischen Tiefe und Klarheit entscheiden.</h2>
+      </div>
+      <div className="luminess-paradigm-text">
+        <p>Vielleicht kennst du viele wertvolle einzelne Zugänge – doch erst in ihrer bewussten Verbindung entsteht eine Praxis, die du nachvollziehen, verkörpern und verantwortungsvoll halten kannst.</p>
+        <p>Aura Luminess ordnet diese Ebenen zu einer ruhigen methodischen Architektur. Nicht, um deine Intuition zu ersetzen, sondern damit sie ein klares Fundament bekommt.</p>
+      </div>
+    </section>
+
+    <section className="luminess-architecture" aria-labelledby="luminess-architecture-title">
+      <div className="shell">
+        <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">DIE ARCHITEKTUR DER METHODE</p><h2 id="luminess-architecture-title">Vier Ebenen, die sich gegenseitig tragen</h2><p>Die Ausbildung verbindet Wissen, Selbsterfahrung, symbolische Werkzeuge und verantwortungsvolle Praxis zu einem gemeinsamen Weg.</p></header>
+        <div className="luminess-architecture-grid">{architecturePillars.map((pillar) => <article key={pillar.number}>
+          <span>{pillar.number}</span><h3>{pillar.title}</h3><p>{pillar.text}</p>
+        </article>)}</div>
+      </div>
+    </section>
+
+    <section className="luminess-timeline" id="ausbildungsweg" aria-labelledby="luminess-timeline-title">
       <div className="shell">
         <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">DEIN WEG DURCH DIE AUSBILDUNG</p><h2 id="luminess-timeline-title">So ist die Ausbildung aufgebaut</h2><p>Neun Monde geben der Ausbildung ihren zeitlichen Rahmen. Jeder Mond trägt ein eigenes Thema und führt dich Schritt für Schritt tiefer in die Methode.</p></header>
         <Accordion className="luminess-module-accordion" type="single" collapsible>
@@ -236,6 +304,11 @@ export default function NeunMondeAuraLuminessPage() {
           </AccordionItem>)}
         </Accordion>
       </div>
+    </section>
+
+    <section className="luminess-format shell" aria-labelledby="luminess-format-title">
+      <header className="luminess-heading luminess-heading-split"><div><p className="luminess-kicker">FORMAT &amp; RAHMEN</p><h2 id="luminess-format-title">Was dich durch die neun Monde trägt</h2></div><p>Du weißt vor deiner Entscheidung, in welchem Rahmen du lernst. Die konkreten Termine und Live-Zeiten werden für jeden Circle vor der verbindlichen Zusage transparent kommuniziert.</p></header>
+      <div className="luminess-format-grid">{formatDetails.map((detail) => <article key={detail.title}><span aria-hidden="true">✦</span><div><h3>{detail.title}</h3><p>{detail.text}</p></div></article>)}</div>
     </section>
 
     <section className="luminess-tools shell" aria-labelledby="luminess-tools-title">
@@ -279,12 +352,16 @@ export default function NeunMondeAuraLuminessPage() {
     </section>
 
     <section className="luminess-audience" aria-labelledby="luminess-audience-title"><div className="shell">
-      <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">DEIN WEG IN DIE TIEFE</p><h2 id="luminess-audience-title">Für wen ist die Ausbildung?</h2><p>Aura Luminess richtet sich an spirituell interessierte Menschen, die die Methode fundiert kennenlernen und verantwortungsvoll in ihren eigenen Kontext übersetzen möchten.</p></header>
-      <div className="luminess-audience-grid">{audience.map((item) => <article key={item.title}><span aria-hidden="true">{item.symbol}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+      <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">KLARE ENTSCHEIDUNG AUF AUGENHÖHE</p><h2 id="luminess-audience-title">Ist Aura Luminess dein nächster Weg?</h2><p>Eine gute Entscheidung entsteht nicht aus Druck, sondern aus Klarheit. Prüfe in Ruhe, ob der Rahmen zu dir und deiner aktuellen Lebensphase passt.</p></header>
+      <div className="luminess-fit-grid">
+        <article><p className="luminess-kicker">DIE AUSBILDUNG PASST ZU DIR, WENN</p><ul>{audience.map((item) => <li key={item}>{item}</li>)}</ul></article>
+        <article><p className="luminess-kicker">DIE AUSBILDUNG PASST NICHT ZU DIR, WENN</p><ul>{notForAudience.map((item) => <li key={item}>{item}</li>)}</ul></article>
+      </div>
     </div></section>
 
-    <section className="luminess-voices shell" aria-labelledby="luminess-voices-title">
-      <div className="luminess-voices-inner"><span aria-hidden="true">✦</span><div><p className="luminess-kicker">STIMMEN DER TEILNEHMERINNEN</p><h2 id="luminess-voices-title">Erfahrungen, die aus der Ausbildung sprechen</h2><p>Dieser Bereich ist für echte, freigegebene Erfahrungsberichte aus der Aura-Luminess-Ausbildung vorbereitet und wird später ergänzt.</p></div></div>
+    <section className="luminess-leadership shell" aria-labelledby="luminess-leadership-title">
+      <div className="luminess-leadership-image"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Entwicklerin von Somatic Karma und Gründerin von AuraLumia" fill sizes="(max-width: 760px) 100vw, 42vw" /></div>
+      <div className="luminess-leadership-copy"><p className="luminess-kicker">AUSBILDUNGSLEITUNG &amp; HALTUNG</p><h2 id="luminess-leadership-title">Persönlich geführt von Jennifer Olivia</h2><p>Als Entwicklerin von Somatic Karma und Gründerin von AuraLumia vermittelt Jennifer Olivia Kindereit die Methode als zusammenhängende, reflektierte Praxis. Intuition, Körperwissen und symbolische Deutung erhalten dabei einen klaren und verantwortungsvollen Rahmen.</p><p>Aura Luminess ist eine spirituelle Ausbildung. Sie ersetzt keine medizinische oder psychotherapeutische Behandlung und arbeitet bewusst innerhalb dieser Grenze.</p></div>
     </section>
 
     <section className="luminess-faq shell" aria-labelledby="luminess-faq-title">
@@ -293,8 +370,8 @@ export default function NeunMondeAuraLuminessPage() {
     </section>
 
     <section className="luminess-application" id="bewerbung" aria-labelledby="luminess-application-title"><div className="shell luminess-application-grid">
-      <div><p className="luminess-kicker">AURA LUMINESS · ZWEI CIRCLES IM JAHR</p><h2 id="luminess-application-title">Samhain &amp; Walpurgis</h2><p>Die Ausbildung beginnt zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase öffnet im Oktober 2026 für den Samhain Circle.</p></div>
-      <div><span>Bewerbung ab Oktober 2026</span><strong>Wenige, bewusst vergebene Plätze</strong><p>3.333 €</p></div>
+      <div><p className="luminess-kicker">AURA LUMINESS · ZWEI CIRCLES IM JAHR</p><h2 id="luminess-application-title">Samhain &amp; Walpurgis</h2><p>Die Ausbildung beginnt zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase beginnt im Januar 2027. Vor deiner Zusage erhältst du den verbindlichen Zeitplan und alle Informationen zum konkreten Circle.</p></div>
+      <div><span>Nächste Bewerbungsphase ab Januar 2027</span><strong>Wenige, bewusst vergebene Plätze</strong><p>3.333 €</p></div>
     </div></section>
 
     <section className="luminess-closing">
