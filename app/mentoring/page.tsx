@@ -31,9 +31,9 @@ const primaryOffers = [
 ];
 
 const deepDives = [
-  { number: "01", title: "Intuitives Tarot", description: "Vertiefe deine intuitive Arbeit mit den Karten und ihre Anwendung innerhalb von Somatic Karma." },
-  { number: "02", title: "Astrologie und Transite", description: "Erweitere deinen Blick auf Zeitqualität, aktuelle Transite und ihre Einordnung in der Methode." },
-  { number: "03", title: "Energieanwendung im Rahmen von Somatic Karma", description: "Spezialisiere dich auf die energetische Ebene der Somatic-Karma-Arbeit." },
+  { number: "01", title: "Intuition", description: "Intuitives Tarot- und Orakelkarten deuten, Karten designen und Energie-Grids kreieren." },
+  { number: "02", title: "Schicksal", description: "Traditionelle Energiefäden weben und Schicksalsfäden weben." },
+  { number: "03", title: "Sterne", description: "Transite und Aspekte und der richtige Zeitpunkt." },
 ];
 
 const paths = [
@@ -55,7 +55,7 @@ export default function MentoringPage() {
       <div className="shell mentoring-v2-hero-copy">
         <p className="mentoring-v2-kicker">BEGLEITUNG · AUSBILDUNG · VERTIEFUNG</p>
         <h1>Dein Weg<br />in die Tiefe</h1>
-        <p>Persönliche Begleitung, spirituelle Selbsterkenntnis und Ausbildung – in deinem eigenen Tempo.</p>
+        <p>Persönliche Begleitung, spirituelle Selbsterkenntnis und Ausbildung – auf deine Bedürfnisse abgestimmt.</p>
         <div className="mentoring-v2-hero-links"><a href="#blueprint">Persönliche Begleitung</a><a href="#circle-programm">Ausbildung entdecken</a></div>
       </div>
     </section>

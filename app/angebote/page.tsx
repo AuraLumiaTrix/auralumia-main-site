@@ -47,7 +47,7 @@ const navigatorOffers: Offer[] = [
 const meditationOffers: Offer[] = [
   {
     title: "Schuldnarbe · Erfüllungspaket",
-    description: "Geführte Audios rund um Empfangen, Genuss und einen bewussten Umgang mit inneren Schuldgefühlen.",
+    description: "Geführte Audios und Journaling-Impulse rund um Empfangen, Genuss und einen bewussten Umgang mit inneren Schuldgefühlen.",
     price: "49 €",
     image: "/products/meditationspaket-schuldnarbe.jpg",
     href: "https://navigator.auralumia.de/audio-bundle/schuldnarbe/",
@@ -55,7 +55,7 @@ const meditationOffers: Offer[] = [
   },
   {
     title: "Geschwisternarbe · Erfüllungspaket",
-    description: "Geführte Audios für Selbstwert, Gleichrangigkeit und den Mut, deinen eigenen Platz einzunehmen.",
+    description: "Geführte Audios und Journaling-Impulse für Selbstwert, Gleichrangigkeit und den Mut, deinen eigenen Platz einzunehmen.",
     price: "49 €",
     image: "/products/meditationspaket-geschwisternarbe.jpg",
     href: "https://navigator.auralumia.de/audio-bundle/geschwisternarbe/",
@@ -63,7 +63,7 @@ const meditationOffers: Offer[] = [
   },
   {
     title: "Mutternarbe · Erfüllungspaket",
-    description: "Geführte Audios für Bindung, emotionale Sicherheit und die Rückkehr in deinen eigenen inneren Rhythmus.",
+    description: "Geführte Audios und Journaling-Impulse für Bindung, emotionale Sicherheit und die Rückkehr in deinen eigenen inneren Rhythmus.",
     price: "49 €",
     image: "/products/meditationspaket-mutternarbe.jpg",
     href: "https://navigator.auralumia.de/audio-bundle/mutternarbe/",
@@ -71,7 +71,7 @@ const meditationOffers: Offer[] = [
   },
   {
     title: "Vaternarbe · Erfüllungspaket",
-    description: "Geführte Audios für Orientierung, Selbstbestimmung und eine klarere Verbindung zu deiner inneren Führung.",
+    description: "Geführte Audios und Journaling-Impulse für Orientierung, Selbstbestimmung und eine klarere Verbindung zu deiner inneren Führung.",
     price: "49 €",
     image: "/products/meditationspaket-vaternarbe.jpg",
     href: "https://navigator.auralumia.de/audio-bundle/vaternarbe/",
@@ -178,7 +178,7 @@ export default function AngebotePage() {
           <header className="offers-v2-heading">
             <OfferSymbol src={offerSymbols.meditations} context="heading" />
             <div><p className="offers-v2-kicker">VIER NARBEN · VIER WEGE</p><h2 id="offers-meditations-title">Erfüllungspakete</h2></div>
-            <p>Wähle das Paket, das zu deinem aktuellen Thema passt. Jede Meditation begleitet dich in einer ruhigen Praxis, die du selbstständig nutzen kannst.</p>
+            <p>Wähle das Paket, das zu deinem aktuellen Bedürfnis-Typ passt. Jede Meditation, Affirmation oder jeder Journaling-Impuls begleitet dich in einer ruhigen Praxis, die du selbstständig, jederzeit und so oft du möchtest nutzen kannst.</p>
           </header>
           <div className="offers-v2-card-grid offers-v2-card-grid-four">{meditationOffers.map((offer) => <CompactOfferCard offer={offer} key={offer.title} />)}</div>
         </div>
@@ -189,7 +189,7 @@ export default function AngebotePage() {
           <header className="offers-v2-heading">
             <OfferSymbol src={offerSymbols.tarot} context="heading" />
             <div><p className="offers-v2-kicker">SYMBOLISCHE SELBSTREFLEXION</p><h2 id="offers-tarot-title">Tarot</h2></div>
-            <p>Nutze die App als täglichen Begleiter oder lerne die Somatic-Karma-Tarotkarten im Onlinekurs fundiert kennen.</p>
+            <p>Nutze die App als täglichen Begleiter für sensitive Impulse oder eine routinierte „Selbstliebe“- und „Me-Time“-Praxis oder lerne die Somatic-Karma-Tarotkarten und eine intuitivere Praxis im Onlinekurs fundiert kennen.</p>
           </header>
           <div className="offers-v2-card-grid offers-v2-card-grid-two">{tarotOffers.map((offer) => <CompactOfferCard offer={offer} key={offer.title} />)}</div>
         </div>
@@ -200,7 +200,7 @@ export default function AngebotePage() {
           <header className="offers-v2-heading">
             <OfferSymbol src={offerSymbols.depth} context="heading" />
             <div><p className="offers-v2-kicker">BEWUSST VERTIEFEN</p><h2 id="offers-depth-title">Vertiefung</h2></div>
-            <p>Für alle, die Selbstliebe oder Sinnlichkeit in ihrem eigenen Tempo mit neuen Impulsen und Ritualen erkunden möchten.</p>
+            <p>Für alle wundervollen Frauen, die sich wieder selbst lieben möchten, mehr Sinnlichkeit oder einen sensitiven, unbeschwerten Umgang mit ihrer eigenen Ur-Weiblichkeit kennenlernen möchten. Im eigenen geschützten Raum mit liebevollen Impulsen und Ritualen zum Erkunden der eigenen Bedürfnisse.</p>
           </header>
           <div className="offers-v2-card-grid offers-v2-card-grid-two">{depthOffers.map((offer) => <CompactOfferCard offer={offer} key={offer.title} />)}</div>
         </div>
@@ -209,7 +209,7 @@ export default function AngebotePage() {
       <section className="offers-v2-mentoring-note" aria-labelledby="offers-mentoring-title">
         <div className="shell">
           <div><p className="offers-v2-kicker">DU WÜNSCHST DIR PERSÖNLICHE BEGLEITUNG?</p><h2 id="offers-mentoring-title">Begleitung &amp; Ausbildung findest du in einem eigenen Raum.</h2></div>
-          <div><p>Entdecke den Drei Monde Blueprint, High Touch 1:1, Neun Monde Aura Luminess und die vertiefenden Monde auf der bestehenden Seite für Begleitung und Ausbildung.</p><Link className="offers-v2-button offers-v2-button-primary" href="/mentoring">Zu Begleitung &amp; Ausbildung</Link></div>
+          <div><p>Entdecke einen gemeinsamen Weg mit Jennifer Olivia an deiner Hand. Nah, persönlich und auf deine Bedürfnisse abgestimmt im Begleitungs- und Ausbildungsbereich.</p><Link className="offers-v2-button offers-v2-button-primary" href="/mentoring">Zu Begleitung &amp; Ausbildung</Link></div>
         </div>
       </section>
 

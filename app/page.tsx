@@ -4,16 +4,16 @@ import { WoundExplorer } from "@/components/wound-explorer";
 import { links } from "@/lib/site-content";
 
 const journey = [
-  { no: "01", title: "Kostenloser Navigator", text: "Erkenne, welche der vier karmischen Narben gerade am stärksten wirkt.", href: links.navigator, external: true, image: "/products/somatic-karma-navigator-premium-flatlay.png", action: "Navigator starten" },
-  { no: "02", title: "Erfüllungspakete", text: "Wähle Audios, App oder Vertiefungen passend zu deinem eigenen Rhythmus.", href: "/angebote", image: "/products/product-lilith-sinnlichkeit.jpg", action: "Angebote ansehen" },
-  { no: "03", title: "Dein Weg in die Tiefe", text: "Erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/product-drei-monde-blueprint.jpg", action: "Blueprint entdecken" },
+  { no: "01", title: "Kostenloser Navigator", text: "Erkenne, welche Glaubenssätze deinen Raum belegen und welcher Bedürfnis-Typ du bist.", href: links.navigator, external: true, image: "/products/somatic-karma-navigator-premium-flatlay.png", action: "Navigator starten" },
+  { no: "02", title: "Erfüllungspakete", text: "Wähle aus sensitiven Meditationen, Affirmationen und Ritualanleitungen, transformierendem Journaling, begleitenden Apps und empowernden Onlinekursen zur Selbstermächtigung.", href: "/angebote", image: "/products/product-lilith-sinnlichkeit.jpg", action: "Angebote ansehen" },
+  { no: "03", title: "Dein Weg in die Tiefe", text: "Lerne mich persönlich im Gespräch kennen und erhalte einen persönlichen 12-Wochen-Weg mit Analyse und Integrationsplan.", href: "/mentoring#blueprint", image: "/products/product-drei-monde-blueprint.jpg", action: "Blueprint entdecken" },
   { no: "04", title: "Ausbildung & Mentoring", text: "Vertiefe deine Arbeit im Circle Programm oder in persönlicher Begleitung.", href: "/mentoring#circle-programm", image: "/products/product-aura-luminess.jpg", action: "Wege vergleichen" },
 ];
 
 const testimonials = [
   { quote: "Ich bin so begeistert von der App. Sie ist intuitiv, wunderschön gestaltet und lässt sich ganz einfach in meinen Tagesablauf integrieren.", name: "Marie-Lena B.", context: "Somatic Karma Tarot App", image: "/testimonial-marie-lena-b.png" },
   { quote: "Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum. Genau das habe ich bei Jennifer Olivia gefunden.", name: "Elena M.", context: "Persönliche Begleitung", image: "/testimonial-elena-m-avatar.jpg" },
-  { quote: "Diese persönliche Meditation ist für mich eines der schönsten Geschenke, die ich je bekommen habe. Sie gibt mir Kraft und innere Ruhe.", name: "Elena M.", context: "Individuelle Ankermeditation", image: "/testimonial-elena-m-avatar.jpg" },
+  { quote: "Diese persönliche Meditation ist für mich eines der schönsten Geschenke, die ich je bekommen habe. Sie gibt mir Kraft und innere Ruhe.", name: "Anonym", context: "Individuelle Meditation", image: "/aura-lumia-logo.png" },
 ];
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="landing-section-heading landing-section-heading-centered">
             <p className="landing-kicker">MEINE ANGEBOTE</p>
             <h2 id="journey-title">Folge mir in die Welt von AuraLumia</h2>
-            <p>Du musst keinem festen Ablauf folgen. Wähle den Raum, der zu deinem heutigen Bedürfnis und deiner gewünschten Tiefe passt.</p>
+            <p>Bei AuraLumia betrachten wir deine karmisch übernommenen, dich im Leben blockierenden Glaubenssätze und entschlüsseln deine Grundbedürfnisse, um deine ganz eigenen Ressourcen nutzbar zu machen und dein wundervolles ICH zu leben.</p>
           </div>
           <div className="journey-grid">
             {journey.map((item) => {
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="landing-section-heading landing-section-heading-centered">
             <p className="landing-kicker">MEINE METHODE</p>
             <h2 id="somatic-karma-title">Was ist Somatic Karma?</h2>
-            <p>Vier karmische Narben prägen unbewusst, wie wir Sicherheit, Zugehörigkeit, Empfangen und Selbstbestimmung erleben. Wenn du sie erkennst, kannst du deinen Bedürfnissen mit neuer Klarheit begegnen.</p>
+            <p>Vier karmische Narben prägen unbewusst, wie du Sicherheit, Zugehörigkeit, Empfangen und Selbstbestimmung erlebst. Wenn du sie erkennst, kannst du deinen Bedürfnissen mit neuer Klarheit begegnen und anfangen, sie zu leben.</p>
           </div>
           <WoundExplorer variant="home" />
           <Link className="landing-button landing-button-primary wounds-method-button" href="/somatic-karma">Die Methode kennenlernen</Link>
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="podcast-home-copy">
             <p className="landing-kicker">PODCAST</p>
             <h2 id="podcast-home-title">Karma mit Zimt und Zucker</h2>
-            <p>Persönliche Gespräche über Spiritualität, Selbstliebe und die süßen wie herausfordernden Seiten des Lebens.</p>
+            <p>Persönliche Gespräche über Spiritualität, Selbstliebe, Cycle Breaking und die ungeahnte Macht in unseren Ahnenlinien.</p>
             <div className="landing-actions"><Link className="landing-button landing-button-primary" href="/podcast">Jetzt lauschen</Link></div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function Home() {
 
       <section className="home-final-cta">
         <div className="home-final-cta-bg" aria-hidden="true"><Image src="/hero-somatic-dark-mobile.png" alt="" fill sizes="100vw" /></div>
-        <div className="shell home-final-cta-copy"><p className="landing-kicker">DEIN NÄCHSTER SCHRITT</p><h2>Bereit für deinen nächsten Schritt?</h2><p>Deine Seele kennt den Weg. Starte jetzt deinen kostenlosen Navigator und entdecke, welches Thema dich gerade ruft.</p><a className="landing-button landing-button-light" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a></div>
+        <div className="shell home-final-cta-copy"><p className="landing-kicker">DEIN NÄCHSTER SCHRITT</p><h2>Bereit für deinen nächsten Schritt?</h2><p>Deine Seele kennt den Weg. Starte jetzt deinen kostenlosen Navigator und entdecke, welches Bedürfnis dich gerade ruft.</p><a className="landing-button landing-button-light" href={links.navigator} target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a></div>
       </section>
     </div>
   );
