@@ -13,7 +13,7 @@ const journey = [
 const testimonials = [
   { quote: "Ich bin so begeistert von der App. Sie ist intuitiv, wunderschön gestaltet und lässt sich ganz einfach in meinen Tagesablauf integrieren.", name: "Marie-Lena B.", context: "Somatic Karma Tarot App", image: "/testimonial-marie-lena-b.png" },
   { quote: "Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum. Genau das habe ich bei Jennifer Olivia gefunden.", name: "Elena M.", context: "Persönliche Begleitung", image: "/testimonial-elena-m-avatar.jpg" },
-  { quote: "Diese persönliche Meditation ist für mich eines der schönsten Geschenke, die ich je bekommen habe. Sie gibt mir Kraft und innere Ruhe.", name: "Anonym", context: "Individuelle Meditation", image: "/aura-lumia-logo.png" },
+  { quote: "Diese persönliche Meditation ist für mich eines der schönsten Geschenke, die ich je bekommen habe. Sie gibt mir Kraft und innere Ruhe.", name: "A.N.", context: "Anonym · Individuelle Meditation", initials: "A.N." },
 ];
 
 export default function Home() {
@@ -79,7 +79,7 @@ export default function Home() {
         <div className="shell">
           <div className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">STIMMEN AUS DER COMMUNITY</p><h2 id="voices-home-title">Das sagen unsere Kundinnen</h2></div>
           <div className="voices-grid">
-            {testimonials.map((testimonial, index) => <article key={`${testimonial.name}-${testimonial.context}`}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{testimonial.quote}</blockquote><div className="voice-person"><Image src={testimonial.image} alt={testimonial.name} width={56} height={56} /><p><strong>{testimonial.name}</strong><span>{testimonial.context}</span></p></div><div className="voice-stars" aria-label="5 von 5 Sternen">★★★★★</div><span className="voice-index">0{index + 1}</span></article>)}
+            {testimonials.map((testimonial, index) => <article key={`${testimonial.name}-${testimonial.context}`}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{testimonial.quote}</blockquote><div className="voice-person">{testimonial.image ? <Image src={testimonial.image} alt={testimonial.name} width={56} height={56} /> : <span className="voice-initials" aria-label="Anonymisierte Kundinnenstimme">{testimonial.initials}</span>}<p><strong>{testimonial.name}</strong><span>{testimonial.context}</span></p></div><div className="voice-stars" aria-label="5 von 5 Sternen">★★★★★</div><span className="voice-index">0{index + 1}</span></article>)}
           </div>
         </div>
       </section>
