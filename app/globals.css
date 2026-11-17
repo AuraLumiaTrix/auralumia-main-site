@@ -1832,11 +1832,12 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .mentoring-v2-premium-actions { display:flex; align-items:center; flex-wrap:wrap; gap:24px; }
 .mentoring-v2-premium-info-button { border-color:rgba(255,255,255,.28); cursor:pointer; }
 
-.mentoring-v2-dialog-backdrop { position:fixed; z-index:1000; inset:0; display:grid; overflow-y:auto; place-items:center; padding:24px; background:rgba(48,34,43,.72); -webkit-backdrop-filter:blur(9px); backdrop-filter:blur(9px); }
-.mentoring-v2-dialog { position:relative; width:min(100%,720px); max-height:calc(100vh - 48px); padding:50px; overflow-y:auto; border:1px solid rgba(111,89,90,.16); border-radius:26px; background:linear-gradient(145deg,#fffdfa,#f7eef2); box-shadow:0 30px 90px rgba(43,29,37,.3); color:var(--mentoring-ink); }
+.mentoring-v2-dialog-backdrop { position:fixed; z-index:1000; inset:0; display:grid; overflow:hidden; place-items:center; padding:24px; background:rgba(48,34,43,.72); -webkit-backdrop-filter:blur(9px); backdrop-filter:blur(9px); }
+.mentoring-v2-dialog { position:relative; width:min(100%,720px); max-height:calc(100vh - 48px); max-height:calc(100dvh - 48px); overflow:hidden; border:1px solid rgba(111,89,90,.16); border-radius:26px; background:linear-gradient(145deg,#fffdfa,#f7eef2); box-shadow:0 30px 90px rgba(43,29,37,.3); color:var(--mentoring-ink); }
+.mentoring-v2-dialog-scroll { max-height:inherit; padding:50px; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; touch-action:pan-y; }
 .mentoring-v2-dialog .mentoring-v2-kicker { color:#9b7773; }
 .mentoring-v2-premium .mentoring-v2-dialog h2 { max-width:560px; color:var(--mentoring-ink); font-size:clamp(3rem,5.6vw,5rem); line-height:.92; }
-.mentoring-v2-dialog-close { position:absolute; top:20px; right:20px; display:grid; width:42px; height:42px; place-items:center; border:1px solid rgba(111,89,90,.18); border-radius:50%; background:rgba(255,255,255,.75); color:var(--mentoring-plum); cursor:pointer; font:400 1.8rem/1 var(--sans); }
+.mentoring-v2-dialog-close { position:absolute; z-index:2; top:20px; right:20px; display:grid; width:42px; height:42px; place-items:center; border:1px solid rgba(111,89,90,.18); border-radius:50%; background:rgba(255,255,255,.92); color:var(--mentoring-plum); cursor:pointer; font:400 1.8rem/1 var(--sans); }
 .mentoring-v2-dialog-close:hover,.mentoring-v2-dialog-close:focus-visible { background:#fff; box-shadow:0 8px 22px rgba(92,65,77,.12); }
 .mentoring-v2-dialog-copy { display:grid; gap:16px; margin-top:28px; }
 .mentoring-v2-dialog-copy p { color:#765f61; font-size:.91rem; line-height:1.75; }
@@ -1942,7 +1943,9 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .mentoring-v2-premium-actions { align-items:flex-start; flex-direction:column; }
   .mentoring-v2-premium-info-button { width:100%; }
   .mentoring-v2-dialog-backdrop { align-items:end; padding:12px; }
-  .mentoring-v2-dialog { max-height:calc(100vh - 24px); padding:44px 24px 28px; border-radius:24px; }
+  .mentoring-v2-dialog { max-height:calc(100vh - 24px); max-height:calc(100dvh - 24px); border-radius:24px; }
+  .mentoring-v2-dialog-scroll { max-height:inherit; padding:44px 24px 28px; }
+  .mentoring-v2-dialog-close { top:14px; right:14px; }
   .mentoring-v2-premium .mentoring-v2-dialog h2 { padding-right:28px; font-size:clamp(3rem,14vw,4.1rem); }
   .mentoring-v2-dialog-email { align-items:stretch; flex-direction:column; padding:17px; }
   .mentoring-v2-dialog-email button { width:100%; }
