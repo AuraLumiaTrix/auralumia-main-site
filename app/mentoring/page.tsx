@@ -33,7 +33,7 @@ const primaryOffers = [
 const deepDives = [
   { number: "01", title: "Intuition", symbol: "/symbols/gold-additional-moon-intuition.png", description: "Intuitives Tarot- und Orakelkarten deuten, Karten designen und Energie-Grids kreieren." },
   { number: "02", title: "Schicksal", symbol: "/symbols/gold-additional-moon-fate.png", description: "Traditionelle Energiefäden weben und Schicksalsfäden weben." },
-  { number: "03", title: "Sterne", symbol: "/symbols/gold-additional-moon-stars.png", description: "Planeten-Returns als Karma-Returns in den Triaden der karmischen Narben erforschen, ihre Return-Aspekte und -Transite deuten und daraus persönliche karmische Zukunfts- und Zeitpunktkarten für wichtige Lebensphasen entwickeln." },
+  { number: "03", title: "Sterne", symbol: "/symbols/gold-additional-moon-stars.png", description: "Persönliche Triaden-Returns bestimmen und Zeitpunktkarten wichtiger Lebensphasen erstellen." },
 ];
 
 const paths = [
