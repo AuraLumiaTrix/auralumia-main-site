@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@font-face { font-family:"Cormorant Garamond"; src:url("/fonts/cormorant-garamond-latin.woff2") format("woff2"); font-style:normal; font-weight:400 600; font-display:swap; }
+@font-face { font-family:"Cormorant Garamond"; src:url("/fonts/cormorant-garamond-italic-latin.woff2") format("woff2"); font-style:italic; font-weight:400 600; font-display:swap; }
+@font-face { font-family:"Manrope"; src:url("/fonts/manrope-latin.woff2") format("woff2"); font-style:normal; font-weight:400 700; font-display:swap; }
+
 :root { --ink:#73605a; --soft:#73605a; --paper:#ffffff; --stone:#f2f0ea; --line:#dcd8cf; --gold:#a29490; --deep:#a29490; --button-cream:#fffcd2; --button-lilac:#f3e5f8; --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",Arial,sans-serif; }
 * { box-sizing:border-box; }
 html { background:var(--paper); }
