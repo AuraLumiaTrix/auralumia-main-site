@@ -98,7 +98,7 @@ export default function MentoringPage() {
     <section className="mentoring-v2-deep-dives" aria-labelledby="deep-dives-title">
       <div className="shell">
         <header className="mentoring-v2-section-heading"><div><div className="mentoring-v2-heading-row"><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-deepening" src="/symbols/gold-deepening-moons.png" alt="" width={1080} height={1350} sizes="92px" /><p className="mentoring-v2-kicker">OPTIONAL NACH DER HAUPTAUSBILDUNG</p></div><h2 id="deep-dives-title">Drei vertiefende Monde</h2></div><p>Jede Spezialisierung ist eine eigenständige, optionale Vertiefung. Sie ist kein verpflichtender Bestandteil der Aura-Luminess-Ausbildung.</p></header>
-        <div className="mentoring-v2-deep-grid">{deepDives.map((item) => <article key={item.number}><span>{item.number}</span><div className="mentoring-v2-deep-heading"><Image className="mentoring-v2-deep-symbol" src={item.symbol} alt="" width={1400} height={1400} sizes="82px" /><h3><span>Zusatzmond</span><em>„{item.title}“</em></h3></div><p>{item.description}</p></article>)}</div>
+        <div className="mentoring-v2-deep-grid">{deepDives.map((item) => <article key={item.number}><span>{item.number}</span><Image className="mentoring-v2-deep-symbol" src={item.symbol} alt="" width={1400} height={1400} sizes="140px" /><p className="mentoring-v2-deep-label">Zusatzmond</p><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
       </div>
     </section>
 
