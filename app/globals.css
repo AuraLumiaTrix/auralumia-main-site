@@ -1252,6 +1252,37 @@ p { margin:0; }
 .about-home-copy li { padding:12px 0; border-bottom:1px solid rgba(103,81,79,.14); color:var(--landing-muted); font-size:.72rem; }
 .about-home-copy li::before { margin-right:9px; color:#b49483; content:"✦"; }
 
+@media (min-width:761px) {
+  .about-home-inner {
+    display:grid;
+    grid-template-columns:minmax(0,.92fr) minmax(360px,1.08fr);
+    align-items:center;
+    gap:clamp(38px,5vw,78px);
+    padding-block:72px 104px;
+  }
+  .about-home-portrait { width:100%; max-width:620px; justify-self:start; }
+  .about-home-copy { width:100%; max-width:none; margin-top:0; }
+  .about-home-journey-button { margin:0 0 22px; }
+  .about-home-text-card { max-width:none; text-align:left; }
+
+  .podcast-hero {
+    display:grid;
+    grid-template-areas:
+      "image eyebrow"
+      "image title"
+      "image copy";
+    grid-template-columns:minmax(0,.94fr) minmax(360px,1.06fr);
+    grid-template-rows:auto auto auto;
+    align-items:start;
+    column-gap:clamp(48px,7vw,100px);
+    padding-block:92px 96px;
+  }
+  .podcast-hero > .eyebrow { grid-area:eyebrow; align-self:end; margin-bottom:8px; }
+  .podcast-hero h1 { grid-area:title; max-width:680px; margin-top:0; font-size:clamp(4rem,5.8vw,6.4rem); }
+  .podcast-hero-image { grid-area:image; align-self:center; margin-top:0; }
+  .podcast-hero-copy { grid-area:copy; max-width:620px; margin-top:30px; }
+}
+
 .voices-home { padding-block:105px 120px; background:linear-gradient(180deg,#f8eeee,#f3e9f2); }
 .voices-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:48px; }
 .voices-grid article { position:relative; display:flex; min-height:310px; flex-direction:column; padding:31px; border:1px solid rgba(119,91,88,.13); border-radius:20px; background:rgba(255,255,255,.72); box-shadow:0 12px 38px rgba(93,70,70,.06); }
