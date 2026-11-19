@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
 import { PodcastAudioPlayer } from "@/components/podcast-audio-player";
+import { links } from "@/lib/site-content";
 
 export const metadata: Metadata = {
   title: "Naru Hikari · Musik",
@@ -16,9 +17,6 @@ const tracks = [
   { label: "Goddess", src: "/audio/naru-hikari/goddess.mp3", duration: "3:33" },
   { label: "Come What May", src: "/audio/naru-hikari/come-what-may.mp3", duration: "4:08" },
 ];
-
-const spotifyUrl = "https://open.spotify.com/search/Naru%20Hikari%20Rising%20of%20the%20Womb";
-const youtubeChannelUrl = "https://www.youtube.com/channel/UCajW31610owH4bouU_JM8bQ?sub_confirmation=1";
 
 export default function MusikPage() {
   return <div className="music-page">
@@ -35,8 +33,8 @@ export default function MusikPage() {
         {tracks.map((track, index) => <article className="music-track-card" key={track.src}><div><span>{String(index + 1).padStart(2, "0")}</span><span>NARU HIKARI</span></div><h3>{track.label}</h3><PodcastAudioPlayer src={track.src} title={`${track.label} von Naru Hikari`} durationLabel={track.duration} /></article>)}
       </div>
       <div className="music-platform-links" aria-label="Naru Hikari auf Musikplattformen">
-        <a href={spotifyUrl} target="_blank" rel="noopener noreferrer"><Image src="/podcast/spotify-logo-gold.png" alt="" width={1254} height={1254} sizes="56px" /><span>Auf Spotify hören</span></a>
-        <a href={youtubeChannelUrl} target="_blank" rel="noopener noreferrer"><Image src="/podcast/youtube-logo-gold.png" alt="" width={1254} height={1254} sizes="56px" /><span>Auf YouTube hören</span></a>
+        <a href={links.musicSpotify} target="_blank" rel="noopener noreferrer"><Image src="/podcast/spotify-logo-gold.png" alt="" width={1254} height={1254} sizes="56px" /><span>Auf Spotify hören</span></a>
+        <a href={links.music} target="_blank" rel="noopener noreferrer"><Image src="/podcast/youtube-logo-gold.png" alt="" width={1254} height={1254} sizes="56px" /><span>Auf YouTube Music hören</span></a>
       </div>
     </section>
 

@@ -169,10 +169,10 @@ const moonModules = [
     title: "Mond des Wirkens",
     subtitle: "Verkörperung, Sichtbarkeit und Wirksamkeit",
     topics: [
-      "Formaler Einstieg in die Selbstständigkeit: Gewerbeanmeldung, steuerliche Erfassung (ELSTER), Kleinunternehmerregelung vs. Regelbesteuerung",
-      "Preisfindung, Kalkulation und Strukturierung von lukrativen Beratungspaketen",
-      "Rechtssichere Außendarstellung: Impressumspflicht, Pflichtangaben auf Rechnungen und Vorgaben des Heilmittelwerbegesetzes (HWG)",
-      "Markennutzungsrechte: Richtlinien zur Führung der offiziellen Titel und Bezeichnungen für das eigene Marketing",
+      "Orientierung für deinen Business-Start: Überblick über die wichtigsten organisatorischen Schritte in die Selbstständigkeit (u. a. Gewerbeanmeldung, steuerliche Grundlagen und sinnvolle Anlaufstellen für deine Gründungsphase) – geteilt aus der Praxis für die Praxis.",
+      "Klare Kommunikation & ethische Abgrenzung: Bewusste Sprache im Marketing, saubere Abgrenzung der Coaching-Arbeit zur Heilkunde sowie Grundlagen zu Pflichtangaben im Außenauftritt und bei der Rechnungsstellung.",
+      "Preisfindung & Angebotsstruktur: Kalkulation, Wertschätzung der eigenen Arbeit und Aufbau von stimmigen 1:1-Begleitungen und Beratungspaketen.",
+      "Marken- & Titelnutzung: Klare Richtlinien zur offiziellen Führung deiner Abschlussbezeichnung und zur Nutzung der geschützten Begriffe in deinem eigenen Marketing.",
     ],
   },
   {

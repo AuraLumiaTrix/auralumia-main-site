@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { BlueprintRequestDialog } from "@/components/blueprint-request-dialog";
 import {
   Accordion,
   AccordionContent,
@@ -113,8 +114,6 @@ const faqs = [
   },
 ];
 
-const requestHref = "/mentoring#blueprint-verfuegbarkeit";
-
 export default function DreiMondeBlueprintPage() {
   return <div className="blueprint-page">
     <section className="blueprint-hero">
@@ -124,7 +123,7 @@ export default function DreiMondeBlueprintPage() {
           <h1>Drei Monde<br />Blueprint</h1>
           <strong className="blueprint-price">890 €</strong>
           <p className="blueprint-lede">Deine persönliche Roadmap für die nächsten drei Monate – mit persönlichem Call, Karma Code Analyse, 3-Monats-Plan, Meditationen, Journaling und der astrologischen Betrachtung eines passenden Zeitpunkts.</p>
-          <Link className="blueprint-button blueprint-button-primary" href={requestHref}>Blueprint anfragen</Link>
+          <BlueprintRequestDialog className="blueprint-button blueprint-button-primary" />
         </div>
         <div className="blueprint-hero-art">
           <Image src="/products/product-drei-monde-blueprint.jpg" alt="Drei Monde Blueprint mit persönlicher Roadmap, Audio-Transmission und Monatsimpulsen" fill priority sizes="(max-width: 760px) 100vw, 48vw" />
@@ -207,7 +206,12 @@ export default function DreiMondeBlueprintPage() {
     <section className="blueprint-closing">
       <Image src="/hero-somatic-dark-mobile.png" alt="Atmosphärische Illustration unter Sternen und Mond" fill sizes="100vw" />
       <div className="blueprint-closing-shade" aria-hidden="true" />
-      <div className="shell blueprint-closing-copy"><p className="blueprint-kicker">DEIN NÄCHSTES KAPITEL</p><h2>Bereit für deinen Drei Monde Blueprint?</h2><p>Gemeinsam richten wir den Blick auf deine kommenden drei Monate und entwickeln eine persönliche Roadmap, die dich Schritt für Schritt begleitet.</p><Link className="blueprint-button blueprint-button-light" href={requestHref}>Blueprint anfragen</Link></div>
+      <div className="shell blueprint-closing-copy">
+        <p className="blueprint-kicker">DEIN NÄCHSTES KAPITEL</p>
+        <h2>Bereit für deinen Drei Monde Blueprint?</h2>
+        <p>Gemeinsam richten wir den Blick auf deine kommenden drei Monate und entwickeln eine persönliche Roadmap, die dich Schritt für Schritt begleitet.</p>
+        <BlueprintRequestDialog className="blueprint-button blueprint-button-light" />
+      </div>
     </section>
   </div>;
 }

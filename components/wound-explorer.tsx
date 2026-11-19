@@ -261,7 +261,7 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
               </div>
             </div>
 
-            <div ref={copyRef} className="wound-dialog-copy" aria-live="polite">
+            <div ref={copyRef} className="wound-dialog-copy" tabIndex={0} role="region" aria-labelledby="wound-dialog-title" aria-live="polite">
               <p className="wound-dialog-kicker">GRUNDBEDÜRFNIS · {activeWound.need}</p>
               <h2 id="wound-dialog-title">Die {activeWound.title}</h2>
               <p className="wound-dialog-subtitle">{activeWound.subtitle}</p>
