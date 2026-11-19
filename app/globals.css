@@ -2281,8 +2281,12 @@ body:has(.blueprint-request-dialog[open]) { overflow:hidden; }
 .about-v2-values-grid { position:relative; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; margin-top:52px; }
 .about-v2-values-grid article { min-height:285px; padding:33px 24px 30px; border:1px solid rgba(255,255,255,.78); border-radius:20px; background:rgba(255,255,255,.7); text-align:center; box-shadow:0 12px 36px rgba(103,81,79,.055); }
 .about-v2-value-symbol { width:96px; height:96px; margin:0 auto 20px; object-fit:contain; }
-.about-v2-values-grid h3 { font-size:1.95rem; line-height:1.02; }
+.about-v2-values-grid h3 { font-size:1.95rem; line-height:1.02; overflow-wrap:anywhere; }
 .about-v2-values-grid p { margin-top:15px; color:var(--about-muted); font-size:.73rem; line-height:1.67; }
+
+@media (width > 1100px) {
+  .about-v2-values-grid h3 { font-size:clamp(1.65rem,2.36vw,1.95rem); }
+}
 
 .about-v2-podcast { scroll-margin-top:95px; padding-block:0 118px; background:#fffdfb; }
 .about-v2-podcast-intro { display:grid; grid-template-columns:1fr; align-items:stretch; width:100%; max-width:none; padding:74px clamp(32px,7vw,108px) 58px; background:radial-gradient(circle at 15% 10%,rgba(255,255,255,.76),transparent 32%),radial-gradient(circle at 86% 20%,rgba(220,199,226,.62),transparent 38%),linear-gradient(145deg,#f8eeee,#eee4f1); }
