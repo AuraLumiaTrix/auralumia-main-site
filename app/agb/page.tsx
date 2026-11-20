@@ -11,7 +11,7 @@ export default function AgbPage() {
       <header className="legal-header">
         <p className="eyebrow">AURA LUMIA · RECHTLICHES</p>
         <h1>Allgemeine Geschäftsbedingungen</h1>
-        <p className="legal-version">Stand: September 2026</p>
+        <p className="legal-version">Stand: November 2026</p>
       </header>
 
       <div className="terms-content">
@@ -20,11 +20,9 @@ export default function AgbPage() {
           <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen Aura Lumia, Inhaberin Jennifer Olivia Kindereit, Im Morgartenfeld 7, 29690 Schwarmstedt, Deutschland, und ihren Kundinnen und Kunden über die auf dieser Website, auf verlinkten Angebotsseiten oder im persönlichen Austausch angebotenen Leistungen.</p>
           <p>Dazu gehören insbesondere:</p>
           <ul>
-            <li>digitale Produkte und Zugänge, insbesondere Apps, Tarot-, Orakel- und Archetypen-Angebote, Audios, Meditationen, Videos, Workbooks und Selbstlernkurse,</li>
-            <li>individuell erstellte astrologische Analysen, Audioanalysen, Tarot-Impulse, Meditationen sowie energetische Rituale und Blessings,</li>
-            <li>Online-Transformationskurse mit digitalen Inhalten und/oder Live-Gruppencalls,</li>
-            <li>Aura Luminess als Gruppenbegleitung sowie die Aura Luminess V.I.P. Masterclass als exklusive Einzelbegleitung und</li>
-            <li>synchrone Online-Ausbildungen und Zertifikatsprogramme mit Live-Modulen.</li>
+            <li>digitale Selbstlernangebote, insbesondere Audio- und Videokurse, Meditationen und App-Zugänge,</li>
+            <li>persönliche Begleitangebote wie den Drei Monde Blueprint und Neun Monde High Touch 1:1 sowie</li>
+            <li>die Online-Ausbildung Neun Monde Aura Luminess mit Live-Modulen und gegebenenfalls angebotenen Vertiefungen.</li>
           </ul>
           <p>Für den konkreten Leistungsumfang sind die jeweilige Angebotsbeschreibung und die im Buchungsprozess angezeigten Angaben maßgeblich. Abweichende Individualvereinbarungen haben Vorrang.</p>
         </section>
@@ -40,15 +38,14 @@ export default function AgbPage() {
           <h3>3.1 Digitale Produkte, Apps und Selbstlernangebote</h3>
           <p>Digitale Produkte werden in der jeweils beschriebenen Form bereitgestellt. Art, Umfang, technische Voraussetzungen und Dauer eines Zugangs ergeben sich aus der jeweiligen Angebotsbeschreibung. Zugangsdaten sind persönlich und dürfen nicht an Dritte weitergegeben werden.</p>
 
-          <h3>3.2 Individuelle Analysen, Audios und Rituale</h3>
-          <p>Individuelle Leistungen werden auf Grundlage der bei der Buchung übermittelten Angaben erstellt. Bei astrologischen Angeboten bist du dafür verantwortlich, richtige und vollständige Geburtsdaten zur Verfügung zu stellen. Die voraussichtliche Bearbeitungs- oder Lieferzeit ergibt sich aus der Angebotsbeschreibung oder der persönlichen Vereinbarung.</p>
-          <p>Bei der als „Basic“ bezeichneten Berufungs- oder Kinderwunsch-Sternenanalyse wird der Inhalt von Jennifer Olivia kuratiert und kann mit einer KI-Stimme als Audio aufbereitet werden. Bei der jeweiligen „Lumia“- oder Podcast-Edition wird die Analyse von Jennifer Olivia persönlich eingesprochen.</p>
+          <h3>3.2 Individuelle astrologische Auswertungen</h3>
+          <p>Wenn eine astrologische Auswertung zum gebuchten Angebot gehört, wird sie anhand der dafür mitgeteilten Geburtsangaben erstellt. Bitte gib Geburtsdatum, Geburtszeit und Geburtsort so genau an, wie sie dir bekannt sind. Form und Zeitpunkt der Bereitstellung ergeben sich aus der Angebotsbeschreibung oder der persönlichen Vereinbarung. Eine vereinbarte persönliche Audio-Auswertung spricht Jennifer Olivia ein.</p>
 
-          <h3>3.3 Online-Transformationskurse</h3>
-          <p>Transformationskurse können digitale Inhalte wie Videos, Audios, Texte, Journaling-Impulse und Workbooks sowie ausdrücklich angekündigte Live-Gruppencalls enthalten. Der genaue Umfang ergibt sich aus der jeweiligen Angebotsbeschreibung.</p>
+          <h3>3.3 Audio- und Videokurse sowie Meditationen</h3>
+          <p>Audio- und Videokurse sowie vorbereitete Meditationen stehen zur selbstständigen Nutzung bereit. Welche Inhalte, Begleitmaterialien und Zugangszeiten enthalten sind, ergibt sich aus dem gebuchten Angebot.</p>
 
-          <h3>3.4 Aura Luminess</h3>
-          <p>Aura Luminess Premium ist eine intensive Gruppenbegleitung. Die Aura Luminess V.I.P. Masterclass ist eine exklusive Einzelbegleitung. Umfang, Zeitraum, enthaltene Live-Termine und Kommunikationswege ergeben sich aus der jeweiligen Angebotsbeschreibung oder Individualvereinbarung.</p>
+          <h3>3.4 Persönliche Begleitung</h3>
+          <p>Der Drei Monde Blueprint und Neun Monde High Touch 1:1 sind Angebote mit persönlicher Begleitung. Umfang, Zeitraum, enthaltene Live-Termine und Kommunikationswege ergeben sich aus der jeweiligen Angebotsbeschreibung oder Individualvereinbarung.</p>
 
           <h3>3.5 Online-Ausbildungen und Zertifikatsprogramme</h3>
           <p>Online-Ausbildungen werden in synchronen Live-Modulen durchgeführt. Eine Aufzeichnung der Live-Module wird nicht geschuldet und grundsätzlich nicht bereitgestellt. Voraussetzungen, Umfang und Bezeichnung eines Teilnahme- oder Abschlusszertifikats ergeben sich aus der jeweiligen Ausbildungsbeschreibung.</p>
