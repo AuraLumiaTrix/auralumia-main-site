@@ -195,7 +195,7 @@ const faqs = [
   },
   {
     question: "Wie läuft die Ausbildung ab?",
-    answer: "Aura Luminess ist als live geführte Ausbildung über neun Monde angelegt. Die Themen der einzelnen Monde findest du in der Modulübersicht auf dieser Seite; die genauen Termine werden vor dem jeweiligen Ausbildungsbeginn verbindlich mitgeteilt.",
+    answer: "Alle neun Module finden live online statt. Während der Termine kannst du direkt Fragen stellen und dich mit Jennifer Olivia und der Gruppe austauschen. Die Themen findest du in der Modulübersicht. Die verbindlichen Termine erfährst du vor deiner Zusage.",
   },
   {
     question: "Welche Werkzeuge gehören zur Ausbildung?",
@@ -211,7 +211,7 @@ const faqs = [
   },
   {
     question: "Was ist, wenn ich einen Live-Termin nicht wahrnehmen kann?",
-    answer: "Welche Aufzeichnungen oder alternativen Möglichkeiten für einen konkreten Circle zur Verfügung stehen, wird vor Ausbildungsbeginn verbindlich kommuniziert. So weißt du vor deiner Entscheidung genau, welche Form der Begleitung dich erwartet.",
+    answer: "Die Live-Termine werden weder aufgezeichnet noch transkribiert. Welche Möglichkeiten du bei Fehlzeiten hast, erfährst du vor deiner verbindlichen Zusage für den jeweiligen Circle.",
   },
   {
     question: "Welchen Abschluss und welche Nutzungsrechte erhalte ich?",
@@ -308,7 +308,7 @@ export default function NeunMondeAuraLuminessPage() {
     </section>
 
     <section className="luminess-format shell" aria-labelledby="luminess-format-title">
-      <header className="luminess-heading luminess-heading-split"><div><p className="luminess-kicker">FORMAT &amp; RAHMEN</p><h2 id="luminess-format-title">Was dich durch die neun Monde trägt</h2></div><p>Du weißt vor deiner Entscheidung, in welchem Rahmen du lernst. Die konkreten Termine, Live-Zeiten und Möglichkeiten bei Fehlzeiten werden für jeden Circle vor der verbindlichen Zusage transparent kommuniziert.</p></header>
+      <header className="luminess-heading luminess-heading-split"><div><p className="luminess-kicker">FORMAT &amp; RAHMEN</p><h2 id="luminess-format-title">Was dich durch die neun Monde trägt</h2></div><p>Alle neun Module finden live im digitalen Raum statt. Du kannst während der Termine direkt Fragen stellen und dich mit Jennifer Olivia und der Gruppe austauschen. Die Termine werden weder aufgezeichnet noch transkribiert.</p></header>
       <div className="luminess-format-grid">{formatDetails.map((detail) => <article key={detail.title}><span aria-hidden="true">✦</span><div><h3>{detail.title}</h3><p>{detail.text}</p></div></article>)}</div>
     </section>
 
