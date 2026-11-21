@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 type Offer = {
   title: string;
+  intro?: string;
   description: string;
   price: string;
   image: string;
@@ -47,6 +48,7 @@ const navigatorOffers: Offer[] = [
 const meditationOffers: Offer[] = [
   {
     title: "Schuldnarbe · Erfüllungspaket",
+    intro: "Wenn du dich schuldig fühlst, sobald du empfängst oder es dir leicht machst.",
     description: "Geführte Audios und Journaling-Impulse rund um Empfangen, Genuss und einen bewussten Umgang mit inneren Schuldgefühlen.",
     price: "49 €",
     image: "/products/meditationspaket-schuldnarbe.jpg",
@@ -55,6 +57,7 @@ const meditationOffers: Offer[] = [
   },
   {
     title: "Geschwisternarbe · Erfüllungspaket",
+    intro: "Wenn Vergleich und Konkurrenz dich davon abhalten, deinen Platz einzunehmen.",
     description: "Geführte Audios und Journaling-Impulse für Selbstwert, Gleichrangigkeit und den Mut, deinen eigenen Platz einzunehmen.",
     price: "49 €",
     image: "/products/meditationspaket-geschwisternarbe.jpg",
@@ -63,6 +66,7 @@ const meditationOffers: Offer[] = [
   },
   {
     title: "Mutternarbe · Erfüllungspaket",
+    intro: "Wenn du emotional viel trägst und deine eigenen Bedürfnisse aus dem Blick geraten.",
     description: "Geführte Audios und Journaling-Impulse für Bindung, emotionale Sicherheit und die Rückkehr in deinen eigenen inneren Rhythmus.",
     price: "49 €",
     image: "/products/meditationspaket-mutternarbe.jpg",
@@ -71,6 +75,7 @@ const meditationOffers: Offer[] = [
   },
   {
     title: "Vaternarbe · Erfüllungspaket",
+    intro: "Wenn Anerkennung im Außen wichtiger wird als deine eigene innere Führung.",
     description: "Geführte Audios und Journaling-Impulse für Orientierung, Selbstbestimmung und eine klarere Verbindung zu deiner inneren Führung.",
     price: "49 €",
     image: "/products/meditationspaket-vaternarbe.jpg",
@@ -134,6 +139,7 @@ function CompactOfferCard({ offer }: { offer: Offer }) {
       <div className="offers-v2-card-copy">
         <span className="offers-v2-card-price">{offer.price}</span>
         <h3>{offer.title}</h3>
+        {offer.intro && <p>{offer.intro}</p>}
         <p>{offer.description}</p>
         <div className="offers-v2-card-footer"><OfferAction offer={offer} /></div>
       </div>
