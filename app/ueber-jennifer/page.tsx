@@ -152,9 +152,7 @@ export default function JenniferPage() {
           <div className="about-v2-audio-grid">
             {podcastAudioEpisodes.map((episode) => (
               <article className="about-v2-audio-card" key={episode.src}>
-                <div><span>{episode.meta}</span><span>{episode.duration}</span></div>
-                <h3>{episode.title}</h3>
-                <PodcastAudioPlayer src={episode.src} title={`${episode.title}, ${episode.meta}`} durationLabel={episode.duration.replace(" Min.", "")} waveform />
+                <PodcastAudioPlayer src={episode.src} title={episode.title} episode={episode.meta} durationLabel={episode.duration.replace(" Min.", "")} />
               </article>
             ))}
           </div>

@@ -2,7 +2,8 @@
 
 import type { CSSProperties } from "react";
 import { useRef, useState } from "react";
-import { Pause, Play } from "lucide-react";
+import Image from "next/image";
+import { Mic, Pause, Play } from "lucide-react";
 
 const waveformHeights = [
   42, 66, 76, 52, 36, 57, 83, 61, 44, 68, 96, 78,
@@ -19,11 +20,11 @@ function formatTime(value: number) {
   return `${minutes}:${seconds}`;
 }
 
-export function PodcastAudioPlayer({ src, title, durationLabel, waveform = false }: {
+export function PodcastAudioPlayer({ src, title, durationLabel, episode }: {
   src: string;
   title: string;
   durationLabel: string;
-  waveform?: boolean;
+  episode?: string;
 }) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -34,6 +35,7 @@ export function PodcastAudioPlayer({ src, title, durationLabel, waveform = false
   const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
   const elapsed = formatTime(currentTime);
   const total = duration > 0 ? formatTime(duration) : durationLabel;
+  const trackLabel = episode ? `${title}, ${episode}` : title;
 
   async function togglePlayback() {
     const audio = audioRef.current;
@@ -80,16 +82,23 @@ export function PodcastAudioPlayer({ src, title, durationLabel, waveform = false
       value={currentTime}
       disabled={duration <= 0}
       onChange={(event) => seek(event.target.value)}
-      aria-label={`Wiedergabeposition für ${title}`}
+      aria-label={`Wiedergabeposition für ${trackLabel}`}
       aria-valuetext={`${elapsed} von ${total}`}
       style={{ "--podcast-progress": `${progress}%` } as CSSProperties}
     />
   );
 
+  const playButton = (
+    <button type="button" onClick={togglePlayback} aria-label={isPlaying ? `${trackLabel} pausieren` : `${trackLabel} abspielen`}>
+      {isPlaying ? <Pause aria-hidden="true" /> : <Play aria-hidden="true" />}
+    </button>
+  );
+
   return (
-    <div className={waveform ? "podcast-player-control podcast-player-control--waveform" : "podcast-player-control"}>
+    <div className={episode ? "podcast-player-message" : "podcast-player-control"}>
       <audio
         ref={audioRef}
+        hidden
         preload="metadata"
         onDurationChange={(event) => {
           const audioDuration = event.currentTarget.duration;
@@ -106,40 +115,50 @@ export function PodcastAudioPlayer({ src, title, durationLabel, waveform = false
         <source src={src} type="audio/mpeg" />
         Dein Browser unterstützt die Audiowiedergabe leider nicht.
       </audio>
-      <button type="button" onClick={togglePlayback} aria-label={isPlaying ? `${title} pausieren` : `${title} abspielen`}>
-        {isPlaying ? <Pause aria-hidden="true" /> : <Play aria-hidden="true" />}
-      </button>
-      {waveform ? (
-        <div className="podcast-player-timeline">
-          <div className="podcast-player-seek">
-            <div className="podcast-player-waveform" aria-hidden="true">
-              {waveformHeights.map((height, index) => (
-                <span
-                  key={index}
-                  data-played={progress >= ((index + 1) / waveformHeights.length) * 100}
-                  style={{ height: `${height}%` }}
-                />
-              ))}
+      {episode ? (
+        <>
+          <div className="podcast-player-avatar" aria-hidden="true">
+            <Image src="/podcast/karma-mit-zimt-und-zucker-cover.jpg" alt="" width={180} height={180} />
+            <span><Mic /></span>
+          </div>
+          <div className="podcast-player-control podcast-player-bubble">
+            <div className="podcast-player-heading">
+              <h3>{title}</h3>
+              <span>{episode}</span>
             </div>
-            {seekControl}
+            {playButton}
+            <div className="podcast-player-timeline">
+              <div className="podcast-player-seek">
+                <div className="podcast-player-waveform" aria-hidden="true">
+                  {waveformHeights.map((height, index) => (
+                    <span
+                      key={index}
+                      data-played={progress >= ((index + 1) / waveformHeights.length) * 100}
+                      style={{ height: `${height}%` }}
+                    />
+                  ))}
+                </div>
+                {seekControl}
+              </div>
+              <div className="podcast-player-times">
+                <span>{elapsed}</span>
+                <button
+                  className="podcast-player-speed"
+                  type="button"
+                  onClick={changePlaybackRate}
+                  aria-label={`Wiedergabegeschwindigkeit für ${trackLabel} ändern, aktuell ${playbackRate.toLocaleString("de-DE")}-fach`}
+                >
+                  {playbackRate.toLocaleString("de-DE")}×
+                </button>
+                <span>{total}</span>
+              </div>
+            </div>
+            {playbackError && <p className="podcast-player-error" role="status">Die Folge konnte gerade nicht abgespielt werden. Versuche es erneut.</p>}
           </div>
-          <div className="podcast-player-times">
-            <span>{elapsed}</span>
-            <button
-              className="podcast-player-speed"
-              type="button"
-              onClick={changePlaybackRate}
-              aria-label={`Wiedergabegeschwindigkeit für ${title} ändern, aktuell ${playbackRate.toLocaleString("de-DE")}-fach`}
-            >
-              {playbackRate.toLocaleString("de-DE")}×
-            </button>
-            <span>{total}</span>
-          </div>
-        </div>
+        </>
       ) : (
-        <>{seekControl}<span>{elapsed} / {total}</span></>
+        <>{playButton}{seekControl}<span>{elapsed} / {total}</span></>
       )}
-      {waveform && playbackError && <p className="podcast-player-error" role="status">Die Folge konnte gerade nicht abgespielt werden. Versuche es erneut.</p>}
     </div>
   );
 }
