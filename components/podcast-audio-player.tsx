@@ -1,7 +1,7 @@
 "use client";
 
 import type { CSSProperties } from "react";
-import { useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import Image from "next/image";
 import { Mic, Pause, Play } from "lucide-react";
 
@@ -20,6 +20,10 @@ function formatTime(value: number) {
   return `${minutes}:${seconds}`;
 }
 
+function getDuration(audio: HTMLAudioElement) {
+  return Number.isFinite(audio.duration) ? audio.duration : 0;
+}
+
 export function PodcastAudioPlayer({ src, title, durationLabel, episode }: {
   src: string;
   title: string;
@@ -36,6 +40,11 @@ export function PodcastAudioPlayer({ src, title, durationLabel, episode }: {
   const elapsed = formatTime(currentTime);
   const total = duration > 0 ? formatTime(duration) : durationLabel;
   const trackLabel = episode ? `${title}, ${episode}` : title;
+
+  const connectAudio = useCallback((audio: HTMLAudioElement | null) => {
+    audioRef.current = audio;
+    if (audio) setDuration(getDuration(audio));
+  }, []);
 
   async function togglePlayback() {
     const audio = audioRef.current;
@@ -97,15 +106,16 @@ export function PodcastAudioPlayer({ src, title, durationLabel, episode }: {
   return (
     <div className={episode ? "podcast-player-message" : "podcast-player-control"}>
       <audio
-        ref={audioRef}
+        ref={connectAudio}
         hidden
         preload="metadata"
-        onDurationChange={(event) => {
-          const audioDuration = event.currentTarget.duration;
-          setDuration(Number.isFinite(audioDuration) ? audioDuration : 0);
-        }}
+        onLoadedMetadata={(event) => setDuration(getDuration(event.currentTarget))}
+        onDurationChange={(event) => setDuration(getDuration(event.currentTarget))}
         onTimeUpdate={(event) => setCurrentTime(event.currentTarget.currentTime)}
-        onPlay={() => setIsPlaying(true)}
+        onPlay={(event) => {
+          setDuration(getDuration(event.currentTarget));
+          setIsPlaying(true);
+        }}
         onPause={() => setIsPlaying(false)}
         onEnded={() => {
           setIsPlaying(false);
