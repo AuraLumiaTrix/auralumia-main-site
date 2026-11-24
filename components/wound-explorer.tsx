@@ -316,7 +316,7 @@ export function WoundExplorer({ variant }: WoundExplorerProps) {
               <aside className="wound-dialog-navigator">
                 <div>
                   <span>DEINE EIGENE RESONANZ</span>
-                  <p>Möchtest du behutsam entdecken, welche Narbe dich gerade besonders berührt? Der kostenfreie Somatic Karma Navigator schenkt dir eine erste persönliche Orientierung.</p>
+                  <p>Möchtest du behutsam entdecken, welche Narbe dich gerade besonders berührt? Der kostenfreie Somatic Karma® Navigator schenkt dir eine erste persönliche Orientierung.</p>
                 </div>
                 <a href={links.navigator} target="_blank" rel="noopener noreferrer">Meine Narbenresonanz entdecken</a>
               </aside>

@@ -5,7 +5,7 @@ import { links } from "@/lib/site-content";
 
 export const metadata: Metadata = {
   title: "Audiokurse, App & Selbstlernangebote",
-  description: "Entdecke die AuraLumia Selbstlernangebote – vom kostenlosen Somatic Karma Navigator über Erfüllungspakete bis zur Tarot App und vertiefenden Kursen.",
+  description: "Entdecke die AuraLumia® Selbstlernangebote – vom kostenlosen Somatic Karma® Navigator über Erfüllungspakete bis zur Tarot App und vertiefenden Kursen.",
 };
 
 type Offer = {
@@ -195,7 +195,7 @@ export default function AngebotePage() {
           <header className="offers-v2-heading">
             <OfferSymbol src={offerSymbols.tarot} context="heading" />
             <div><p className="offers-v2-kicker">SYMBOLISCHE SELBSTREFLEXION</p><h2 id="offers-tarot-title">Tarot</h2></div>
-            <p>Nutze die App als täglichen Begleiter für sensitive Impulse oder eine routinierte „Selbstliebe“- und „Me-Time“-Praxis oder lerne die Somatic-Karma-Tarotkarten und eine intuitivere Praxis im Onlinekurs fundiert kennen.</p>
+            <p>Nutze die App als täglichen Begleiter für sensitive Impulse oder eine routinierte „Selbstliebe“- und „Me-Time“-Praxis oder lerne die Somatic-Karma®-Tarotkarten und eine intuitivere Praxis im Onlinekurs fundiert kennen.</p>
           </header>
           <div className="offers-v2-card-grid offers-v2-card-grid-two">{tarotOffers.map((offer) => <CompactOfferCard offer={offer} key={offer.title} />)}</div>
         </div>

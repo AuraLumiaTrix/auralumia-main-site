@@ -5,7 +5,7 @@ import { HighTouchInfoDialog } from "@/components/high-touch-info-dialog";
 
 export const metadata: Metadata = {
   title: "Begleitung & Ausbildung",
-  description: "Persönliche Begleitung, Somatic-Karma-Ausbildung und optionale Vertiefungen bei AuraLumia.",
+  description: "Persönliche Begleitung, Somatic-Karma®-Ausbildung und optionale Vertiefungen bei AuraLumia®.",
 };
 
 const primaryOffers = [
@@ -24,8 +24,8 @@ const primaryOffers = [
     eyebrow: "FUNDIERTE AUSBILDUNG · NEUN MONDE",
     title: "Neun Monde Aura Luminess",
     image: "/products/product-aura-luminess.jpg",
-    description: "Eine live geführte Ausbildung, in der du Somatic Karma als zusammenhängende Methode kennenlernst und ihre symbolischen, astrologischen und körperorientierten Ebenen vertiefst.",
-    features: ["Live-Ausbildung in Somatic Karma", "Die vier karmischen Narben", "Tarot Arcana und archetypische Deutung", "Planetengruppen im Geburtshoroskop", "Eigene Astrologie-Software", "Eigenes physisches Tarotdeck mit Energiegrid"],
+    description: "Eine live geführte Ausbildung, in der du Somatic Karma® als zusammenhängende Methode kennenlernst und ihre symbolischen, astrologischen und körperorientierten Ebenen vertiefst.",
+    features: ["Live-Ausbildung in Somatic Karma®", "Die vier karmischen Narben", "Tarot Arcana und archetypische Deutung", "Planetengruppen im Geburtshoroskop", "Eigene Astrologie-Software", "Eigenes physisches Tarotdeck mit Energiegrid"],
     href: "/neun-monde-aura-luminess",
     action: "Ausbildung entdecken",
   },
@@ -63,7 +63,7 @@ export default function MentoringPage() {
 
     <section className="mentoring-v2-intro shell" aria-labelledby="mentoring-intro-title">
       <div><div className="mentoring-v2-heading-row"><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-blueprint" src="/symbols/gold-blueprint.png" alt="" width={1124} height={1399} sizes="92px" /><p className="mentoring-v2-kicker">ZWEI EINSTIEGE · EIN FUNDAMENT</p></div><h2 id="mentoring-intro-title">Wähle, was dich jetzt wirklich unterstützt.</h2></div>
-      <p>Du kannst dich persönlich begleiten lassen oder Somatic Karma als fundierte Methode erlernen. Beide Wege stehen für sich – und dürfen genau dort beginnen, wo du gerade bist.</p>
+      <p>Du kannst dich persönlich begleiten lassen oder Somatic Karma® als fundierte Methode erlernen. Beide Wege stehen für sich – und dürfen genau dort beginnen, wo du gerade bist.</p>
     </section>
 
     <section className="mentoring-v2-primary shell" aria-label="Persönliche Begleitung und Ausbildung">
@@ -84,8 +84,8 @@ export default function MentoringPage() {
         <div className="mentoring-v2-premium-image"><Image src="/products/product-high-touch-1-1.jpg" alt="Neun Monde High Touch 1:1" fill sizes="(max-width: 760px) 100vw, 46vw" /></div>
         <div className="mentoring-v2-premium-copy">
           <div className="mentoring-v2-heading-row mentoring-v2-heading-row-premium"><Image className="mentoring-v2-heading-symbol mentoring-v2-heading-symbol-nine-moons" src="/symbols/gold-nine-moons.png" alt="" width={1080} height={1350} sizes="96px" /><p className="mentoring-v2-kicker">ALL-INCLUSIVE · PERSÖNLICH BEGLEITET</p></div><h2 id="high-touch-title">Neun Monde<br />High Touch 1:1</h2>
-          <p>Ein umfassender Raum für Frauen, die persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem Gesamtprogramm verbinden möchten.</p>
-          <FeatureList items={["Drei Monde Blueprint", "Vollständige Neun-Monde-Ausbildung Aura Luminess", "Alle drei vertiefenden Monde", "Zugriff auf die gesamte AuraLumia-Kurswelt", "Intensive persönliche 1:1-Begleitung"]} />
+          <p>Ein umfassender Raum für Frauen, die persönliche Begleitung und die vollständige AuraLumia®-Ausbildungswelt in einem Gesamtprogramm verbinden möchten.</p>
+          <FeatureList items={["Drei Monde Blueprint", "Vollständige Neun-Monde-Ausbildung Aura Luminess", "Alle drei vertiefenden Monde", "Zugriff auf die gesamte AuraLumia®-Kurswelt", "Intensive persönliche 1:1-Begleitung"]} />
           <div className="mentoring-v2-premium-actions"><HighTouchInfoDialog /></div>
         </div>
       </div>
@@ -129,7 +129,7 @@ export default function MentoringPage() {
     <section className="mentoring-v2-closing">
       <Image src="/hero-somatic-dark-mobile.png" alt="Atmosphärische Landschaft unter dem Mond" fill sizes="100vw" />
       <div className="mentoring-v2-closing-shade" aria-hidden="true" />
-      <div className="shell mentoring-v2-closing-copy"><p className="mentoring-v2-kicker">DEIN ERSTER IMPULS</p><h2>Du möchtest zunächst herausfinden, was dich gerade ruft?</h2><p>Der kostenlose Somatic Karma Navigator schenkt dir Orientierung und hilft dir, dein aktuelles Thema bewusster einzuordnen.</p><a className="mentoring-v2-button mentoring-v2-button-light" href="https://somatic-karma-navigator.vercel.app/" target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a></div>
+      <div className="shell mentoring-v2-closing-copy"><p className="mentoring-v2-kicker">DEIN ERSTER IMPULS</p><h2>Du möchtest zunächst herausfinden, was dich gerade ruft?</h2><p>Der kostenlose Somatic Karma® Navigator schenkt dir Orientierung und hilft dir, dein aktuelles Thema bewusster einzuordnen.</p><a className="mentoring-v2-button mentoring-v2-button-light" href="https://somatic-karma-navigator.vercel.app/" target="_blank" rel="noopener noreferrer">Kostenlosen Navigator starten</a></div>
     </section>
   </div>;
 }

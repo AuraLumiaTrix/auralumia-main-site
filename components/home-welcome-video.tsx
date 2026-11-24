@@ -19,7 +19,7 @@ export function HomeWelcomeVideo({ src }: { src: string }) {
       muted
       playsInline
       preload="auto"
-      aria-label="AuraLumia Willkommensvideo"
+      aria-label="AuraLumia® Willkommensvideo"
       onLoadedMetadata={(event) => startAtSecondTwo(event.currentTarget)}
     >
       <source src={src} type="video/mp4" />

@@ -51,7 +51,7 @@ export function PortraitVideo({ src }: { src: string }) {
             }}
           />
         </div>
-        <p className="portrait-label">Jennifer Olivia · AuraLumia</p>
+        <p className="portrait-label">Jennifer Olivia · AuraLumia®</p>
       </div>
     </div>
   );

@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Impressum und Anbieterkennzeichnung von Aura Lumia – Jennifer Olivia Kindereit.",
+  description: "Impressum und Anbieterkennzeichnung von Aura Lumia® – Jennifer Olivia Kindereit.",
 };
 
 export default function ImpressumPage() {
   return (
     <main className="legal-page shell">
       <header className="legal-header">
-        <p className="eyebrow">AURA LUMIA · RECHTLICHES</p>
+        <p className="eyebrow">AURA LUMIA® · RECHTLICHES</p>
         <h1>Impressum</h1>
       </header>
 
@@ -17,7 +17,7 @@ export default function ImpressumPage() {
         <section>
           <h2>Anbieterin</h2>
           <address>
-            Aura Lumia<br />
+            Aura Lumia®<br />
             Inhaberin: Jennifer Olivia Kindereit<br />
             Im Morgartenfeld 7<br />
             29690 Schwarmstedt<br />

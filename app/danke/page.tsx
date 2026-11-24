@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Danke für dein Vertrauen",
-  description: "Deine Bestellung im AuraLumia-Universum ist abgeschlossen. Hier erfährst du, wie es weitergeht.",
+  description: "Deine Bestellung im AuraLumia®-Universum ist abgeschlossen. Hier erfährst du, wie es weitergeht.",
   robots: { index: false, follow: false },
 };
 
@@ -49,7 +49,7 @@ export default function ThankYouPage() {
       <div className="thank-intro">
         <p className="eyebrow">WIE ES NUN WEITERGEHT</p>
         <h2 id="thank-next-heading">Du liebe Schwester, deine Bestellung ist bei mir angekommen.</h2>
-        <p>Vielen Dank für deine Bestellung im AuraLumia-Universum. Je nachdem, welches Produkt du gewählt hast, geht es nun auf einem dieser Wege weiter:</p>
+        <p>Vielen Dank für deine Bestellung im AuraLumia®-Universum. Je nachdem, welches Produkt du gewählt hast, geht es nun auf einem dieser Wege weiter:</p>
       </div>
       <div className="thank-steps">
         {nextSteps.map((step) => <article key={step.number}>
@@ -66,7 +66,7 @@ export default function ThankYouPage() {
         <p className="eyebrow">DEIN PERSÖNLICHES MANTRA</p>
         <blockquote>„Ich bin frei, meine eigene Geschichte zu beginnen, ohne um Erlaubnis zu fragen.“</blockquote>
         <p>Von Herzen,<br /><strong>Jennifer Olivia</strong></p>
-        <Link className="button button-outline" href="/">Zurück zu AuraLumia</Link>
+        <Link className="button button-outline" href="/">Zurück zu AuraLumia®</Link>
       </div>
     </section>
   </>;

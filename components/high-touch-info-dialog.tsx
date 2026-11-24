@@ -86,7 +86,7 @@ export function HighTouchInfoDialog() {
               <p className="mentoring-v2-kicker">NEUN MONDE HIGH TOUCH 1:1</p>
               <h2 id="high-touch-dialog-title">Mehr Informationen</h2>
               <div id="high-touch-dialog-description" className="mentoring-v2-dialog-copy">
-                <p>Wenn du mehr über die High-Touch-Ausbildung erfahren möchtest, kannst du dich mit einer persönlichen Bewerbung direkt bei AuraLumia melden.</p>
+                <p>Wenn du mehr über die High-Touch-Ausbildung erfahren möchtest, kannst du dich mit einer persönlichen Bewerbung direkt bei AuraLumia® melden.</p>
                 <p>Erzähl darin gern ein wenig über dich: Was berührt dich an diesem Weg? Warum möchtest du diese intensive Begleitung und Ausbildung jetzt beginnen? Welche bisherigen Erfahrungen bringst du mit – und weshalb fühlt sich High Touch für dich stimmig an?</p>
                 <p>Auf dieser Grundlage erhältst du weitere Informationen zur Ausbildung, zu den Preisen und zu einem möglichen gemeinsamen Weg.</p>
               </div>

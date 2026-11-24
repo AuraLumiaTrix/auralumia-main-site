@@ -9,7 +9,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Neun Monde Aura Luminess",
-  description: "Die neunmonatige Live-Ausbildung in der Somatic-Karma-Methode von AuraLumia.",
+  description: "Die neunmonatige Live-Ausbildung in der Somatic-Karma®-Methode von AuraLumia®.",
 };
 
 const tools = [
@@ -22,7 +22,7 @@ const tools = [
     title: "Physisches Tarotkartendeck mit Energiegrid",
     image: "/products/product-tarot-app-mockup.png",
     contain: true,
-    text: "Das physische Somatic-Karma-Tarotdeck wird mit einem persönlich auf dich abgestimmten Energiegrid zu einer hochwertigen Praxisausstattung, mit der du direkt arbeiten kannst.",
+    text: "Das physische Somatic-Karma®-Tarotdeck wird mit einem persönlich auf dich abgestimmten Energiegrid zu einer hochwertigen Praxisausstattung, mit der du direkt arbeiten kannst.",
   },
 ];
 
@@ -53,11 +53,11 @@ const formatDetails = [
   { title: "Neun gemeinsame Monde", text: "Ein klar gegliederter Ausbildungsweg mit einem eigenen Schwerpunkt in jedem Mond." },
   { title: "Live im digitalen Raum", text: "Persönlich geführtes Lernen und gemeinsames Vertiefen – ortsunabhängig und verbunden." },
   { title: "Zwei Circles im Jahr", text: "Der Einstieg folgt dem bewussten Rhythmus von Samhain und Walpurgis." },
-  { title: "Eigene AuraLumia-Werkzeuge", text: "Astrologie-Software und physisches Tarotdeck begleiten deine methodische Arbeit." },
+  { title: "Eigene AuraLumia®-Werkzeuge", text: "Astrologie-Software und physisches Tarotdeck begleiten deine methodische Arbeit." },
 ];
 
 const audience = [
-  "Du möchtest Somatic Karma nicht nur kennenlernen, sondern zunächst selbst erfahren und verkörpern.",
+  "Du möchtest Somatic Karma® nicht nur kennenlernen, sondern zunächst selbst erfahren und verkörpern.",
   "Du arbeitest bereits begleitend oder möchtest eine reflektierte spirituelle Praxis aufbauen.",
   "Du hast Raum für Live-Termine, Eigenreflexion und eine kontinuierliche Integration über neun Monate.",
   "Du möchtest Tarot, Astrologie, Körperwahrnehmung und Grundbedürfnisse methodisch miteinander verbinden.",
@@ -139,7 +139,7 @@ const moonModules = [
     topics: [
       "Astrologie leicht erklärt: Himmelskarte, Planeten, Zeichen, Häuser und Aspekte als symbolische Sprache",
       "Mutternarbe, Vaternarbe, Geschwisternarbe und Schuldnarbe: Welche planetaren Funktionen sichtbar werden und warum genau diese Zuordnung gewählt ist",
-      "Das Aura-Lumia-Triadensystem: ein Zentrumsplanet und drei Satellitenplaneten bilden für jede Narbe ein Vier-Elemente-Lösungssystem",
+      "Das Aura-Lumia®-Triadensystem: ein Zentrumsplanet und drei Satellitenplaneten bilden für jede Narbe ein Vier-Elemente-Lösungssystem",
       "Urelement und tatsächliches Geburtselement unterscheiden, Abweichungen deuten sowie Mondknoten, D9-/D12-Chart und Synthese einbeziehen",
     ],
   },
@@ -199,7 +199,7 @@ const faqs = [
   },
   {
     question: "Welche Werkzeuge gehören zur Ausbildung?",
-    answer: "Zur Ausbildung gehören die AuraLumia-Software zur Visualisierung der vier Planetengruppen und ein physisches Tarotkartendeck mit symbolischer Gestaltung und Energiegrid. Weitere Funktionen oder Nutzungsrechte werden hier nicht zugesagt.",
+    answer: "Zur Ausbildung gehören die AuraLumia®-Software zur Visualisierung der vier Planetengruppen und ein physisches Tarotkartendeck mit symbolischer Gestaltung und Energiegrid. Weitere Funktionen oder Nutzungsrechte werden hier nicht zugesagt.",
   },
   {
     question: "Wann kann ich mich bewerben?",
@@ -231,10 +231,10 @@ export default function NeunMondeAuraLuminessPage() {
     <section className="luminess-hero">
       <div className="shell luminess-hero-grid">
         <div className="luminess-hero-copy">
-          <p className="luminess-kicker">NEUNMONATIGE LIVE-AUSBILDUNG · SOMATIC KARMA</p>
+          <p className="luminess-kicker">NEUNMONATIGE LIVE-AUSBILDUNG · SOMATIC KARMA®</p>
           <h1>Neun Monde<br />Aura Luminess</h1>
           <p className="luminess-subtitle">Von verbundenem Wissen zu einer verantwortungsvoll gelebten spirituellen Praxis.</p>
-          <p className="luminess-lede">In neun gemeinsam getragenen Monden lernst du Somatic Karma als zusammenhängende Methode kennen. Du verbindest Grundbedürfnisse und Körperwahrnehmung mit Astrologie, Tarot und Elementelehre – klar geführt, persönlich begleitet und im eigenen Erleben verankert.</p>
+          <p className="luminess-lede">In neun gemeinsam getragenen Monden lernst du Somatic Karma® als zusammenhängende Methode kennen. Du verbindest Grundbedürfnisse und Körperwahrnehmung mit Astrologie, Tarot und Elementelehre – klar geführt, persönlich begleitet und im eigenen Erleben verankert.</p>
           <div className="luminess-hero-offer">
             <a className="luminess-button luminess-button-primary" href="#ausbildungsweg">Ausbildungsweg ansehen</a>
             <a className="luminess-button luminess-button-secondary" href={applicationHref}>Bewerbung &amp; Investition</a>
@@ -247,7 +247,7 @@ export default function NeunMondeAuraLuminessPage() {
       <div className="shell luminess-hero-values" aria-label="Ausrichtung und enthaltene Werkzeuge der Ausbildung">
         <span><i aria-hidden="true">◌</i>Neun Monate live im digitalen Raum</span>
         <span><i aria-hidden="true">✦</i>Physisches Tarotdeck mit persönlichem Energiegrid</span>
-        <span><i aria-hidden="true">◇</i>AuraLumia Astrologie-Software inklusive</span>
+        <span><i aria-hidden="true">◇</i>AuraLumia® Astrologie-Software inklusive</span>
         <span><i aria-hidden="true">☾</i>Zwei Circles im Jahr</span>
       </div>
     </section>
@@ -300,10 +300,10 @@ export default function NeunMondeAuraLuminessPage() {
     </section>
 
     <section className="luminess-tools shell" aria-labelledby="luminess-tools-title">
-      <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">DEINE PROFESSIONELLE PRAXISAUSSTATTUNG</p><h2 id="luminess-tools-title">Werkzeuge, mit denen du direkt arbeiten kannst</h2><p>Die hauseigene Software und das physische Tarotdeck sind keine bloßen Materialien. Sie machen die Somatic-Karma-Methode anschaulich, anwendbar und begleiten dich über die Ausbildung hinaus.</p></header>
+      <header className="luminess-heading luminess-heading-centered"><p className="luminess-kicker">DEINE PROFESSIONELLE PRAXISAUSSTATTUNG</p><h2 id="luminess-tools-title">Werkzeuge, mit denen du direkt arbeiten kannst</h2><p>Die hauseigene Software und das physische Tarotdeck sind keine bloßen Materialien. Sie machen die Somatic-Karma®-Methode anschaulich, anwendbar und begleiten dich über die Ausbildung hinaus.</p></header>
       <div className="luminess-tools-grid">{tools.map((tool) => <article key={tool.title}>
         <div className={`luminess-tool-image${tool.contain ? " luminess-tool-image-contain" : ""}`}><Image src={tool.image} alt={tool.title} fill sizes="(max-width: 760px) 100vw, 48vw" /></div>
-        <div><p className="luminess-kicker">AURALUMIA ORIGINAL</p><h3>{tool.title}</h3><p>{tool.text}</p></div>
+        <div><p className="luminess-kicker">AURALUMIA® ORIGINAL</p><h3>{tool.title}</h3><p>{tool.text}</p></div>
       </article>)}</div>
     </section>
 
@@ -313,8 +313,8 @@ export default function NeunMondeAuraLuminessPage() {
     </section>
 
     <section className="luminess-leadership shell" aria-labelledby="luminess-leadership-title">
-      <div className="luminess-leadership-image"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Entwicklerin von Somatic Karma und Gründerin von AuraLumia" fill sizes="(max-width: 760px) 100vw, 42vw" /></div>
-      <div className="luminess-leadership-copy"><p className="luminess-kicker">AUSBILDUNGSLEITUNG &amp; HALTUNG</p><h2 id="luminess-leadership-title">Persönlich geführt von Jennifer Olivia</h2><p>Als Entwicklerin von Somatic Karma und Gründerin von AuraLumia vermittelt Jennifer Olivia Kindereit die Methode als zusammenhängende, reflektierte Praxis. Ihr naturwissenschaftlich-analytischer Hintergrund aus dem Studium von Biologie und Chemie verbindet sich dabei mit langjähriger Meditationspraxis, Körper- und Stimmarbeit sowie symbolischer Deutung.</p><p>So entsteht eine klare methodische Brücke: Intuition darf tief sein, ohne schwammig zu werden, und Wissen darf strukturiert sein, ohne den Körper und die Seele zu übergehen.</p><p>Aura Luminess ist eine spirituelle Ausbildung. Sie ersetzt keine medizinische oder psychotherapeutische Behandlung und arbeitet bewusst innerhalb dieser Grenze.</p></div>
+      <div className="luminess-leadership-image"><Image src="/about/jennifer-olivia-portrait-ivory.jpg" alt="Jennifer Olivia Kindereit, Entwicklerin von Somatic Karma® und Gründerin von AuraLumia®" fill sizes="(max-width: 760px) 100vw, 42vw" /></div>
+      <div className="luminess-leadership-copy"><p className="luminess-kicker">AUSBILDUNGSLEITUNG &amp; HALTUNG</p><h2 id="luminess-leadership-title">Persönlich geführt von Jennifer Olivia</h2><p>Als Entwicklerin von Somatic Karma® und Gründerin von AuraLumia® vermittelt Jennifer Olivia Kindereit die Methode als zusammenhängende, reflektierte Praxis. Ihr naturwissenschaftlich-analytischer Hintergrund aus dem Studium von Biologie und Chemie verbindet sich dabei mit langjähriger Meditationspraxis, Körper- und Stimmarbeit sowie symbolischer Deutung.</p><p>So entsteht eine klare methodische Brücke: Intuition darf tief sein, ohne schwammig zu werden, und Wissen darf strukturiert sein, ohne den Körper und die Seele zu übergehen.</p><p>Aura Luminess ist eine spirituelle Ausbildung. Sie ersetzt keine medizinische oder psychotherapeutische Behandlung und arbeitet bewusst innerhalb dieser Grenze.</p></div>
     </section>
 
     <section className="luminess-application" id="bewerbung" aria-labelledby="luminess-application-title"><div className="shell">

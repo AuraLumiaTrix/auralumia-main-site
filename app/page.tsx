@@ -11,7 +11,7 @@ const journey = [
 ];
 
 const testimonials = [
-  { quote: "Ich bin so begeistert von der App. Sie ist intuitiv, wunderschön gestaltet und lässt sich ganz einfach in meinen Tagesablauf integrieren.", name: "Marie-Lena B.", context: "Somatic Karma Tarot App", image: "/testimonial-marie-lena-b.png" },
+  { quote: "Ich bin so begeistert von der App. Sie ist intuitiv, wunderschön gestaltet und lässt sich ganz einfach in meinen Tagesablauf integrieren.", name: "Marie-Lena B.", context: "Somatic Karma® Tarot App", image: "/testimonial-marie-lena-b.png" },
   { quote: "Ich war auf der Suche nach Unterstützung, Halt und einem sicheren Raum. Genau das habe ich bei Jennifer Olivia gefunden.", name: "Elena M.", context: "Persönliche Begleitung", image: "/testimonial-elena-m-avatar.jpg" },
   { quote: "Diese persönliche Meditation ist für mich eines der schönsten Geschenke, die ich je bekommen habe. Sie gibt mir Kraft und innere Ruhe.", name: "A.N.", context: "Anonym · Individuelle Meditation", initials: "A.N." },
 ];
@@ -22,14 +22,14 @@ export default function Home() {
       <section className="about-home about-home-hero" aria-labelledby="about-home-title">
         <div className="about-home-inner shell">
           <h1 id="about-home-title" className="about-home-accessible-title">Willkommen in einer weiblich sensitiven Ära von Spiritualität</h1>
-          <div className="about-home-portrait"><Image src="/about/home-hero-auralumia.png" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia" fill priority sizes="(max-width: 760px) 100vw, 760px" /></div>
+          <div className="about-home-portrait"><Image src="/about/home-hero-auralumia.png" alt="Jennifer Olivia Kindereit, Gründerin von AuraLumia®" fill priority sizes="(max-width: 760px) 100vw, 760px" /></div>
           <div className="about-home-copy">
             <Link className="landing-button landing-button-primary about-home-journey-button" href="/angebote">Jetzt Reise beginnen</Link>
             <div className="about-home-text-card">
               <h2 className="about-home-introduction">Hallo, ich bin <span className="about-home-name">Jennifer Olivia.</span></h2>
               <p className="about-home-belief">Ich glaube zutiefst daran, dass jeder Mensch heil und ganz wird, wenn er sich selbst findet.</p>
               <p className="about-home-mantra">„ICH BIN GANZ. ICH BIN HEIL. ICH BIN ENDLICH BEI MIR SELBST ANGEKOMMEN.“</p>
-              <p className="about-home-hand">Mit AuraLumia möchte ich dir liebevoll meine Hand reichen, damit du deinen Weg nicht allein gehen musst.</p>
+              <p className="about-home-hand">Mit AuraLumia® möchte ich dir liebevoll meine Hand reichen, damit du deinen Weg nicht allein gehen musst.</p>
             </div>
           </div>
         </div>
@@ -39,8 +39,8 @@ export default function Home() {
         <div className="shell">
           <div className="landing-section-heading landing-section-heading-centered">
             <p className="landing-kicker">MEINE ANGEBOTE</p>
-            <h2 id="journey-title">Folge mir in die Welt von AuraLumia</h2>
-            <p>Bei AuraLumia betrachten wir deine karmisch übernommenen, dich im Leben blockierenden Glaubenssätze und entschlüsseln deine Grundbedürfnisse, um deine ganz eigenen Ressourcen nutzbar zu machen und dein wundervolles ICH zu leben.</p>
+            <h2 id="journey-title">Folge mir in die Welt von AuraLumia®</h2>
+            <p>Bei AuraLumia® betrachten wir deine karmisch übernommenen, dich im Leben blockierenden Glaubenssätze und entschlüsseln deine Grundbedürfnisse, um deine ganz eigenen Ressourcen nutzbar zu machen und dein wundervolles ICH zu leben.</p>
           </div>
           <div className="journey-grid">
             {journey.map((item) => {
@@ -55,7 +55,7 @@ export default function Home() {
         <div className="shell">
           <div className="landing-section-heading landing-section-heading-centered">
             <p className="landing-kicker">MEINE METHODE</p>
-            <h2 id="somatic-karma-title">Was ist Somatic Karma?</h2>
+            <h2 id="somatic-karma-title">Was ist Somatic Karma®?</h2>
             <p>Vier karmische Narben prägen unbewusst, wie du Sicherheit, Zugehörigkeit, Empfangen und Selbstbestimmung erlebst. Wenn du sie erkennst, kannst du deinen Bedürfnissen mit neuer Klarheit begegnen und anfangen, sie zu leben.</p>
           </div>
           <WoundExplorer variant="home" />

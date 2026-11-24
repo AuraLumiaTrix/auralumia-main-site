@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Allgemeine Geschäftsbedingungen",
-  description: "Allgemeine Geschäftsbedingungen von Aura Lumia – Jennifer Olivia Kindereit.",
+  description: "Allgemeine Geschäftsbedingungen von Aura Lumia® – Jennifer Olivia Kindereit.",
 };
 
 export default function AgbPage() {
   return (
     <main className="legal-page shell">
       <header className="legal-header">
-        <p className="eyebrow">AURA LUMIA · RECHTLICHES</p>
+        <p className="eyebrow">AURA LUMIA® · RECHTLICHES</p>
         <h1>Allgemeine Geschäftsbedingungen</h1>
         <p className="legal-version">Stand: November 2026</p>
       </header>
@@ -17,7 +17,7 @@ export default function AgbPage() {
       <div className="terms-content">
         <section>
           <h2>1. Geltungsbereich</h2>
-          <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen Aura Lumia, Inhaberin Jennifer Olivia Kindereit, Im Morgartenfeld 7, 29690 Schwarmstedt, Deutschland, und ihren Kundinnen und Kunden über die auf dieser Website, auf verlinkten Angebotsseiten oder im persönlichen Austausch angebotenen Leistungen.</p>
+          <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen Aura Lumia®, Inhaberin Jennifer Olivia Kindereit, Im Morgartenfeld 7, 29690 Schwarmstedt, Deutschland, und ihren Kundinnen und Kunden über die auf dieser Website, auf verlinkten Angebotsseiten oder im persönlichen Austausch angebotenen Leistungen.</p>
           <p>Dazu gehören insbesondere:</p>
           <ul>
             <li>digitale Selbstlernangebote, insbesondere Audio- und Videokurse, Meditationen und App-Zugänge,</li>
@@ -30,11 +30,11 @@ export default function AgbPage() {
         <section>
           <h2>2. Vertragsschluss</h2>
           <p>Ein Vertrag kommt zustande, wenn du ein Angebot über eine verlinkte Verkaufs- oder Zahlungsseite verbindlich buchst und eine Buchungsbestätigung erhältst oder wenn eine Buchung im persönlichen Austausch ausdrücklich bestätigt wird.</p>
-          <p>Soweit die Zahlungsabwicklung über CopeCart oder einen anderen in der Angebotsbeschreibung genannten Zahlungsanbieter erfolgt, gelten ergänzend dessen Vertrags- und Zahlungsbedingungen. Vertragspartnerin für die von Aura Lumia beschriebenen Inhalte und Leistungen bleibt die in der jeweiligen Bestellübersicht ausgewiesene Anbieterin.</p>
+          <p>Soweit die Zahlungsabwicklung über CopeCart oder einen anderen in der Angebotsbeschreibung genannten Zahlungsanbieter erfolgt, gelten ergänzend dessen Vertrags- und Zahlungsbedingungen. Vertragspartnerin für die von Aura Lumia® beschriebenen Inhalte und Leistungen bleibt die in der jeweiligen Bestellübersicht ausgewiesene Anbieterin.</p>
         </section>
 
         <section>
-          <h2>3. Leistungen von Aura Lumia</h2>
+          <h2>3. Leistungen von Aura Lumia®</h2>
           <h3>3.1 Digitale Produkte, Apps und Selbstlernangebote</h3>
           <p>Digitale Produkte werden in der jeweils beschriebenen Form bereitgestellt. Art, Umfang, technische Voraussetzungen und Dauer eines Zugangs ergeben sich aus der jeweiligen Angebotsbeschreibung. Zugangsdaten sind persönlich und dürfen nicht an Dritte weitergegeben werden.</p>
 
@@ -49,7 +49,7 @@ export default function AgbPage() {
 
           <h3>3.5 Online-Ausbildungen und Zertifikatsprogramme</h3>
           <p>Online-Ausbildungen werden in synchronen Live-Modulen durchgeführt. Eine Aufzeichnung der Live-Module wird nicht geschuldet und grundsätzlich nicht bereitgestellt. Voraussetzungen, Umfang und Bezeichnung eines Teilnahme- oder Abschlusszertifikats ergeben sich aus der jeweiligen Ausbildungsbeschreibung.</p>
-          <p>Ist die Teilnahme an bestimmten Live-Modulen Voraussetzung für ein Zertifikat und wird ein solches Modul versäumt, besteht kein Anspruch auf eine Aufzeichnung. Aura Lumia bietet stattdessen die Möglichkeit, das betreffende Modul im nächsten Durchgang nachzuholen, sofern und sobald dieser stattfindet. Das Zertifikat wird erst erteilt, wenn die hierfür benannten Voraussetzungen erfüllt sind.</p>
+          <p>Ist die Teilnahme an bestimmten Live-Modulen Voraussetzung für ein Zertifikat und wird ein solches Modul versäumt, besteht kein Anspruch auf eine Aufzeichnung. Aura Lumia® bietet stattdessen die Möglichkeit, das betreffende Modul im nächsten Durchgang nachzuholen, sofern und sobald dieser stattfindet. Das Zertifikat wird erst erteilt, wenn die hierfür benannten Voraussetzungen erfüllt sind.</p>
           <p>Soweit für ein Angebot zwingende Vorschriften, insbesondere des Fernunterrichtsschutzgesetzes, anwendbar sind, bleiben diese unberührt.</p>
         </section>
 
@@ -71,7 +71,7 @@ export default function AgbPage() {
           <h2>6. Termine, Live-Calls und versäumte Module</h2>
           <h3>6.1 Individuell vereinbarte Termine</h3>
           <p>Individuell vereinbarte Termine sind verbindlich. Eine kostenfreie Verschiebung ist möglich, wenn die Absage mindestens 48 Stunden vor dem Termin eingeht. Bei späterer Absage oder Nichterscheinen gilt der Termin als wahrgenommen und kann vollständig berechnet beziehungsweise vom vereinbarten Kontingent abgezogen werden.</p>
-          <p>Beruht eine kurzfristige Absage auf einem von dir nicht zu vertretenden Umstand, insbesondere einer plötzlich eintretenden Erkrankung, kann Aura Lumia nach angemessenem Nachweis einen Ersatztermin anbieten.</p>
+          <p>Beruht eine kurzfristige Absage auf einem von dir nicht zu vertretenden Umstand, insbesondere einer plötzlich eintretenden Erkrankung, kann Aura Lumia® nach angemessenem Nachweis einen Ersatztermin anbieten.</p>
 
           <h3>6.2 Gruppen- und Live-Calls</h3>
           <p>Versäumte Gruppen- oder Live-Calls werden nicht erstattet. Eine Aufzeichnung wird nur bereitgestellt, wenn dies in der konkreten Angebotsbeschreibung ausdrücklich zugesagt wurde.</p>
@@ -79,14 +79,14 @@ export default function AgbPage() {
           <h3>6.3 Zertifikatsrelevante Ausbildungsmodule</h3>
           <p>Für versäumte zertifikatsrelevante Live-Module gilt die in Ziffer 3.5 beschriebene Nachholmöglichkeit im nächsten stattfindenden Durchgang. Ein Anspruch auf einen bestimmten Termin oder darauf, dass ein weiterer Durchgang angeboten wird, besteht nicht.</p>
 
-          <h3>6.4 Absage durch Aura Lumia</h3>
+          <h3>6.4 Absage durch Aura Lumia®</h3>
           <p>Muss ein Termin oder Live-Modul aus wichtigem Grund abgesagt werden, wird ein Ersatztermin angeboten. Ist eine Nachholung dauerhaft nicht möglich, werden bereits gezahlte Entgelte für den entfallenen Leistungsteil erstattet. Weitergehende gesetzliche Ansprüche bleiben unberührt.</p>
         </section>
 
         <section>
           <h2>7. Urheberrechte und Nutzungslizenz</h2>
           <h3>7.1 Schutzrechte</h3>
-          <p>Alle von Aura Lumia bereitgestellten Inhalte, insbesondere Videos, Audios, Workbooks, PDFs, Texte, Illustrationen, Grafiken, Tarot- und Orakelinhalte, sind urheberrechtlich oder durch sonstige Schutzrechte geschützt. Die Rechte liegen bei Jennifer Olivia Kindereit oder den jeweils ausgewiesenen Rechteinhabern.</p>
+          <p>Alle von Aura Lumia® bereitgestellten Inhalte, insbesondere Videos, Audios, Workbooks, PDFs, Texte, Illustrationen, Grafiken, Tarot- und Orakelinhalte, sind urheberrechtlich oder durch sonstige Schutzrechte geschützt. Die Rechte liegen bei Jennifer Olivia Kindereit oder den jeweils ausgewiesenen Rechteinhabern.</p>
 
           <h3>7.2 Persönliche Nutzung</h3>
           <p>Sofern nicht ausdrücklich anders vereinbart, erhältst du ein einfaches, nicht übertragbares Nutzungsrecht für deinen persönlichen Gebrauch. Inhalte oder Zugangsdaten dürfen nicht an Dritte weitergegeben, vervielfältigt, öffentlich zugänglich gemacht oder kommerziell verwertet werden.</p>
@@ -109,12 +109,12 @@ export default function AgbPage() {
         <section>
           <h2>9. Technische Voraussetzungen und Verfügbarkeit</h2>
           <p>Für die Nutzung digitaler Inhalte und Online-Termine benötigst du ein geeignetes Endgerät, eine ausreichend stabile Internetverbindung und gegebenenfalls aktuelle Browser- oder Konferenzsoftware. Diese Voraussetzungen liegen in deinem Verantwortungsbereich.</p>
-          <p>Kurzzeitige Unterbrechungen aufgrund notwendiger Wartung, Sicherheitsmaßnahmen oder technischer Störungen können nicht vollständig ausgeschlossen werden. Aura Lumia bemüht sich um eine zeitnahe Behebung. Gesetzliche Rechte bei Mängeln digitaler Produkte bleiben unberührt.</p>
+          <p>Kurzzeitige Unterbrechungen aufgrund notwendiger Wartung, Sicherheitsmaßnahmen oder technischer Störungen können nicht vollständig ausgeschlossen werden. Aura Lumia® bemüht sich um eine zeitnahe Behebung. Gesetzliche Rechte bei Mängeln digitaler Produkte bleiben unberührt.</p>
         </section>
 
         <section>
           <h2>10. Haftung</h2>
-          <p>Aura Lumia haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei Schäden aus der Verletzung von Leben, Körper oder Gesundheit, nach dem Produkthaftungsgesetz sowie in allen weiteren Fällen zwingender gesetzlicher Haftung.</p>
+          <p>Aura Lumia® haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei Schäden aus der Verletzung von Leben, Körper oder Gesundheit, nach dem Produkthaftungsgesetz sowie in allen weiteren Fällen zwingender gesetzlicher Haftung.</p>
           <p>Bei leicht fahrlässiger Verletzung einer wesentlichen Vertragspflicht ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt. Wesentliche Vertragspflichten sind solche, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags erst ermöglicht und auf deren Einhaltung regelmäßig vertraut werden darf. Im Übrigen ist die Haftung für leichte Fahrlässigkeit ausgeschlossen.</p>
         </section>
 
@@ -126,7 +126,7 @@ export default function AgbPage() {
 
         <section>
           <h2>12. Verbraucherstreit-<wbr />beilegung</h2>
-          <p>Aura Lumia ist nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+          <p>Aura Lumia® ist nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
         </section>
 
         <section>

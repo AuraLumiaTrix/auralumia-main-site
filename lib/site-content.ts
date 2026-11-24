@@ -39,7 +39,7 @@ export const offerGroups: OfferGroup[] = [
     title: "Erkenne zuerst, wo dein System nach Entlastung ruft.",
     intro: "Der Navigator gibt dir eine klare erste Landkarte. So wählst du nicht irgendein Angebot, sondern den Weg, der zu deinem gegenwärtigen Muster passt.",
     offers: [
-      { name: "Somatic Karma Navigator-Test", price: "Kostenfrei", image: "/products/produktbild-karma-navigator.png", description: "Das interaktive Online-Tool macht sichtbar, welche der vier Somatic-Karma-Narben gegenwärtig am stärksten wirkt. Du erhältst eine erste Einordnung und einen passenden Themenpfad für deinen nächsten Schritt.", href: links.navigator },
+      { name: "Somatic Karma® Navigator-Test", price: "Kostenfrei", image: "/products/produktbild-karma-navigator.png", description: "Das interaktive Online-Tool macht sichtbar, welche der vier Somatic-Karma®-Narben gegenwärtig am stärksten wirkt. Du erhältst eine erste Einordnung und einen passenden Themenpfad für deinen nächsten Schritt.", href: links.navigator },
     ],
   },
   {
@@ -57,7 +57,7 @@ export const offerGroups: OfferGroup[] = [
   },
   {
     id: "frequenzraeume",
-    kicker: "03 · AURALUMIA DEEP DIVES",
+    kicker: "03 · AURALUMIA® DEEP DIVES",
     title: "Betritt eine weibliche Frequenzwelt, wenn dein Thema tiefer ruft.",
     intro: "Zwei kuratierte Erlebnisräume aus Audios, Workbook und Ritualen. Nicht als schnelle Lösung, sondern als bewusste Vertiefung in deinem eigenen Tempo.",
     offers: [
@@ -70,11 +70,11 @@ export const offerGroups: OfferGroup[] = [
     id: "tarot-werkzeuge",
     kicker: "04 · DEIN DIGITALER SPIEGEL",
     title: "Nutze Tarot als klaren, achtsamen Reflexionsraum.",
-    intro: "Die Somatic Karma Tarot-Werkzeuge übersetzen Symbolik in Körperwahrnehmung, Ahnenarchitektur und selbstbestimmte nächste Schritte.",
+    intro: "Die Somatic Karma® Tarot-Werkzeuge übersetzen Symbolik in Körperwahrnehmung, Ahnenarchitektur und selbstbestimmte nächste Schritte.",
     offers: [
-      { name: "Somatic Karma Tarot App", price: "9 € / Monat · 99 € / Jahr", image: "/products/product-tarot-app.jpg", description: "Dein digitaler Kartenraum für die tägliche Selbstpraxis. Ziehe intuitiv Karten und begegne dir mit Klarheit, Mitgefühl und Bewusstsein.", href: links.tarot },
-      { name: "Somatic Karma Tarot Onlinekurs", price: "149 €", image: "/products/product-tarot-onlinekurs.jpg", description: "Lerne das Deck, seine Ahnenarchitektur und die eigenständige Deutung Schritt für Schritt als fundiertes Spiegelsystem kennen.", status: "Release Dezember 2026" },
-      { name: "Somatic Karma Card Deck Blessing", price: "101,11 €", image: "/products/card-deck-blessing.png", description: "Eine persönliche energetische Aktivierung für dein Karten- oder Orakeldeck, verbunden mit deinem Archetypen und deiner intuitiven Praxis.", href: links.cardDeckBlessing },
+      { name: "Somatic Karma® Tarot App", price: "9 € / Monat · 99 € / Jahr", image: "/products/product-tarot-app.jpg", description: "Dein digitaler Kartenraum für die tägliche Selbstpraxis. Ziehe intuitiv Karten und begegne dir mit Klarheit, Mitgefühl und Bewusstsein.", href: links.tarot },
+      { name: "Somatic Karma® Tarot Onlinekurs", price: "149 €", image: "/products/product-tarot-onlinekurs.jpg", description: "Lerne das Deck, seine Ahnenarchitektur und die eigenständige Deutung Schritt für Schritt als fundiertes Spiegelsystem kennen.", status: "Release Dezember 2026" },
+      { name: "Somatic Karma® Card Deck Blessing", price: "101,11 €", image: "/products/card-deck-blessing.png", description: "Eine persönliche energetische Aktivierung für dein Karten- oder Orakeldeck, verbunden mit deinem Archetypen und deiner intuitiven Praxis.", href: links.cardDeckBlessing },
     ],
   },
 ];

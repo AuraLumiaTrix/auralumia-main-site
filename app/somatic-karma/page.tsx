@@ -5,8 +5,8 @@ import { WoundExplorer } from "@/components/wound-explorer";
 import { links } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Somatic Karma",
-  description: "Somatic Karma verbindet Körperwissen, psychologische Grundbedürfnisse und spirituelle Deutung zu einer klaren Landkarte für Selbsterkenntnis.",
+  title: "Somatic Karma®",
+  description: "Somatic Karma® verbindet Körperwissen, psychologische Grundbedürfnisse und spirituelle Deutung zu einer klaren Landkarte für Selbsterkenntnis.",
 };
 
 const planetGroups = [
@@ -106,7 +106,7 @@ export default function SomaticKarmaPage() {
         <div className="shell">
           <div className="sk-heading sk-heading-centered">
             <p className="sk-kicker">DIE VIER NARBEN</p>
-            <h2 id="sk-wounds-title">Was ist Somatic Karma?</h2>
+            <h2 id="sk-wounds-title">Was ist Somatic Karma®?</h2>
             <p>Die vier psychologischen Grundbedürfnisse bilden den Ausgangspunkt. Die karmischen Narben sind spirituelle Reflexionsfelder, keine medizinischen oder psychologischen Diagnosen. Sie laden dazu ein, wiederkehrende Erfahrungen bewusster wahrzunehmen und einzuordnen.</p>
           </div>
           <WoundExplorer variant="method" />
@@ -116,7 +116,7 @@ export default function SomaticKarmaPage() {
       <section className="sk-planets" id="planetengruppen" aria-labelledby="sk-planets-title">
         <div className="shell">
           <div className="sk-heading sk-heading-centered">
-            <p className="sk-kicker">DIE SOMATIC-KARMA-MATRIX</p>
+            <p className="sk-kicker">DIE SOMATIC-KARMA®-MATRIX</p>
             <h2 id="sk-planets-title">Die vier Narben im Überblick</h2>
             <p>Jede Narbe wird in der astrologischen Deutung durch einen Zentralkörper und eine Triade ergänzender Planetenkraftfelder gespiegelt.</p>
           </div>
@@ -129,7 +129,7 @@ export default function SomaticKarmaPage() {
           <div className="sk-heading sk-heading-centered">
             <p className="sk-kicker">DIE METHODISCHE LANDKARTE</p>
             <h2 id="sk-process-title">Von der Erfahrung zur Transformation</h2>
-            <p>Somatic Karma ordnet Erfahrung in nachvollziehbare Ebenen. Nach dem Karmabedürfnistyp öffnen sich zwei gleichwertige Deutungswege.</p>
+            <p>Somatic Karma® ordnet Erfahrung in nachvollziehbare Ebenen. Nach dem Karmabedürfnistyp öffnen sich zwei gleichwertige Deutungswege.</p>
           </div>
           <div className="sk-process-flow">
             <article className="sk-process-step"><span>01</span><i aria-hidden="true">◌</i><h3>Grundbedürfnis</h3><p>Ein menschliches Bedürfnis bildet den Ausgangspunkt.</p></article>
@@ -166,7 +166,7 @@ export default function SomaticKarmaPage() {
         <div className="shell">
           <div className="sk-heading sk-heading-centered">
             <p className="sk-kicker">DIE ELEMENTEBENE</p>
-            <h2 id="sk-elements-title">Die Elementelehre im Somatic Karma</h2>
+            <h2 id="sk-elements-title">Die Elementelehre im Somatic Karma®</h2>
             <p>Die Elemente beschreiben unterschiedliche Qualitäten des Erlebens. Innerhalb der Methode helfen sie, Wahrnehmungen sprachlich zu differenzieren, ohne eine starre Zuordnung zu erzwingen.</p>
           </div>
           <div className="sk-element-grid">

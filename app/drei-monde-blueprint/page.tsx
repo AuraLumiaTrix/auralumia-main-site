@@ -11,7 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Drei Monde Blueprint",
-  description: "Deine persönliche Roadmap für drei Monate – mit Somatic Karma, Astrologie, Meditationen und Journaling.",
+  description: "Deine persönliche Roadmap für drei Monate – mit Somatic Karma®, Astrologie, Meditationen und Journaling.",
 };
 
 const included = [
@@ -26,7 +26,7 @@ const included = [
     number: "02",
     image: "/symbols/blueprint-karma-code-key-gold.png",
     title: "Karma Code Analyse",
-    text: "Deine wiederkehrenden Muster werden im Zusammenspiel von Somatic Karma und astrologischen Zusammenhängen verständlich eingeordnet.",
+    text: "Deine wiederkehrenden Muster werden im Zusammenspiel von Somatic Karma® und astrologischen Zusammenhängen verständlich eingeordnet.",
     tone: "lilac",
   },
   {
@@ -94,7 +94,7 @@ const faqs = [
   },
   {
     question: "Was ist die Karma Code Analyse?",
-    answer: "Die Karma Code Analyse verbindet Somatic Karma mit astrologischen Zusammenhängen. Sie dient der spirituellen Selbsterkenntnis und hilft dir, wiederkehrende Themen und persönliche Bedürfnisse bewusster einzuordnen.",
+    answer: "Die Karma Code Analyse verbindet Somatic Karma® mit astrologischen Zusammenhängen. Sie dient der spirituellen Selbsterkenntnis und hilft dir, wiederkehrende Themen und persönliche Bedürfnisse bewusster einzuordnen.",
   },
   {
     question: "Wie wird der passende Zeitpunkt berechnet?",
@@ -102,7 +102,7 @@ const faqs = [
   },
   {
     question: "Ist der Blueprint auch für Einsteigerinnen geeignet?",
-    answer: "Du benötigst keine Vorkenntnisse in Somatic Karma oder Astrologie. Die Inhalte werden so aufbereitet, dass du deine persönliche Roadmap gut nachvollziehen und in deinem eigenen Tempo nutzen kannst.",
+    answer: "Du benötigst keine Vorkenntnisse in Somatic Karma® oder Astrologie. Die Inhalte werden so aufbereitet, dass du deine persönliche Roadmap gut nachvollziehen und in deinem eigenen Tempo nutzen kannst.",
   },
   {
     question: "Wie erhalte ich die Meditationen und Journaling-Impulse?",
@@ -119,7 +119,7 @@ export default function DreiMondeBlueprintPage() {
     <section className="blueprint-hero">
       <div className="shell blueprint-hero-grid">
         <div className="blueprint-hero-copy">
-          <p className="blueprint-kicker">SOMATIC KARMA · ASTROLOGIE · PERSÖNLICHE BEGLEITUNG</p>
+          <p className="blueprint-kicker">SOMATIC KARMA® · ASTROLOGIE · PERSÖNLICHE BEGLEITUNG</p>
           <h1>Drei Monde<br />Blueprint</h1>
           <strong className="blueprint-price">890 €</strong>
           <p className="blueprint-lede">Deine persönliche Roadmap für die nächsten drei Monate – mit persönlichem Call, Karma Code Analyse, 3-Monats-Plan, Meditationen, Journaling und der astrologischen Betrachtung eines passenden Zeitpunkts.</p>
@@ -131,7 +131,7 @@ export default function DreiMondeBlueprintPage() {
       </div>
       <div className="shell blueprint-values" aria-label="Die Ausrichtung des Drei Monde Blueprints">
         <div><span aria-hidden="true">☾</span><p>Individuell auf dich abgestimmt</p></div>
-        <div><span aria-hidden="true">✦</span><p>Astrologie &amp; Somatic Karma</p></div>
+        <div><span aria-hidden="true">✦</span><p>Astrologie &amp; Somatic Karma®</p></div>
         <div><span aria-hidden="true">◇</span><p>Klarheit für deinen nächsten Schritt</p></div>
       </div>
     </section>
@@ -181,11 +181,11 @@ export default function DreiMondeBlueprintPage() {
         <header className="blueprint-heading blueprint-heading-centered">
           <p className="blueprint-kicker">DEIN MÖGLICHER WEG DANACH</p>
           <h2 id="blueprint-next-title">Deine Reise geht weiter</h2>
-          <p>Wenn du nach deinem Blueprint tiefer in Somatic Karma eintauchen möchtest, stehen dir zwei weiterführende Möglichkeiten offen.</p>
+          <p>Wenn du nach deinem Blueprint tiefer in Somatic Karma® eintauchen möchtest, stehen dir zwei weiterführende Möglichkeiten offen.</p>
         </header>
         <div className="blueprint-next-grid">
-          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-aura-luminess.jpg" alt="Aura Luminess" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">AUSBILDUNG · NEUN MONDE</p><h3>Aura Luminess</h3><p>Die fundierte Ausbildung, wenn du Somatic Karma als zusammenhängende Methode kennenlernen und vertiefen möchtest.</p><Link href="/mentoring#circle-programm">Mehr erfahren</Link></div></article>
-          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-high-touch-1-1.jpg" alt="High Touch 1:1" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">ALL-INCLUSIVE · NEUN MONDE</p><h3>High Touch 1:1</h3><p>Persönliche Begleitung und die vollständige AuraLumia-Ausbildungswelt in einem umfassenden Gesamtprogramm.</p><Link href="/mentoring#high-touch">Mehr erfahren</Link></div></article>
+          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-aura-luminess.jpg" alt="Aura Luminess" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">AUSBILDUNG · NEUN MONDE</p><h3>Aura Luminess</h3><p>Die fundierte Ausbildung, wenn du Somatic Karma® als zusammenhängende Methode kennenlernen und vertiefen möchtest.</p><Link href="/mentoring#circle-programm">Mehr erfahren</Link></div></article>
+          <article><div className="blueprint-next-image blueprint-next-image-contain"><Image src="/products/product-high-touch-1-1.jpg" alt="High Touch 1:1" fill sizes="(max-width: 700px) 100vw, 44vw" /></div><div><p className="blueprint-kicker">ALL-INCLUSIVE · NEUN MONDE</p><h3>High Touch 1:1</h3><p>Persönliche Begleitung und die vollständige AuraLumia®-Ausbildungswelt in einem umfassenden Gesamtprogramm.</p><Link href="/mentoring#high-touch">Mehr erfahren</Link></div></article>
         </div>
       </div>
     </section>

@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
-  description: "Datenschutzerklärung von Aura Lumia – Jennifer Olivia Kindereit.",
+  description: "Datenschutzerklärung von Aura Lumia® – Jennifer Olivia Kindereit.",
 };
 
 export default function DatenschutzPage() {
   return (
     <main className="legal-page shell">
       <header className="legal-header">
-        <p className="eyebrow">AURA LUMIA · RECHTLICHES</p>
+        <p className="eyebrow">AURA LUMIA® · RECHTLICHES</p>
         <h1>Datenschutz&shy;erklärung</h1>
         <p className="legal-version">Stand: November 2026</p>
       </header>
@@ -18,7 +18,7 @@ export default function DatenschutzPage() {
         <section>
           <h2>1. Verantwortliche</h2>
           <p>Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website und im Rahmen der angebotenen Leistungen ist:</p>
-          <p>Aura Lumia<br />Inhaberin: Jennifer Olivia Kindereit<br />Im Morgartenfeld 7<br />29690 Schwarmstedt<br />Deutschland</p>
+          <p>Aura Lumia®<br />Inhaberin: Jennifer Olivia Kindereit<br />Im Morgartenfeld 7<br />29690 Schwarmstedt<br />Deutschland</p>
           <p><strong>E-Mail:</strong> <a href="mailto:jenniferkindereit@googlemail.com">jenniferkindereit@googlemail.com</a><br /><strong>Telefon:</strong> <a href="tel:+4917670339953">0176 70339953</a></p>
         </section>
 
@@ -73,13 +73,13 @@ export default function DatenschutzPage() {
         <section>
           <h2>7. Durchführung gebuchter Leistungen</h2>
           <p>Für den Kauf und die Bereitstellung fertiger Audio- und Videokurse sowie Meditationen verarbeiten wir die dafür erforderlichen Kontakt-, Buchungs- und gegebenenfalls Zugangsdaten. Für diese Angebote ist kein persönlicher Fragebogen erforderlich.</p>
-          <p>Wenn im Rahmen einer Ausbildung oder persönlichen Begleitung dein Horoskop erstellt wird, verwenden wir deinen vollständigen Namen sowie Geburtsdatum, Geburtszeit und Geburtsort. Wir berechnen das Horoskop mit dem eigenen Astrologie-Tool von AuraLumia. Eingaben und Ergebnisse werden im Tool selbst nicht dauerhaft gespeichert. Das Ergebnis kann für die weitere Auswertung aus dem Tool übernommen und als PDF gespeichert werden.</p>
+          <p>Wenn im Rahmen einer Ausbildung oder persönlichen Begleitung dein Horoskop erstellt wird, verwenden wir deinen vollständigen Namen sowie Geburtsdatum, Geburtszeit und Geburtsort. Wir berechnen das Horoskop mit dem eigenen Astrologie-Tool von AuraLumia®. Eingaben und Ergebnisse werden im Tool selbst nicht dauerhaft gespeichert. Das Ergebnis kann für die weitere Auswertung aus dem Tool übernommen und als PDF gespeichert werden.</p>
           <p>Persönliche Gespräche finden über Zoom oder Google Meet statt. Dabei können Gesprächsnotizen entstehen. Gehört eine persönliche Audio-Auswertung zum Angebot, spricht Jennifer Olivia sie separat ein und stellt sie dir zur Verfügung. Die Auswertung kann deinen Namen, deine Geburtsangaben und die für die astrologische Reflexion ausgewählten Gesprächsinhalte enthalten. Angaben zu den Gesprächsdiensten und zur Ablage findest du in den Abschnitten 9 und 10.</p>
           <p>Die für die gebuchte Leistung erforderliche Verarbeitung erfolgt nach Art. 6 Abs. 1 lit. b DSGVO. Für Angaben nach Art. 9 DSGVO gilt zusätzlich Abschnitt 8. Zur Speicherdauer siehe Abschnitt 14.</p>
         </section>
 
         <section id="navigator">
-          <h2>7a. Somatic Karma Navigator</h2>
+          <h2>7a. Somatic Karma® Navigator</h2>
           <p>Im Navigator schätzt du dich anhand vorgegebener Aussagen ein, etwa zu Verantwortung, Selbstwert, Konkurrenz und Zugehörigkeit. Aus den Antworten wird ein Ergebnis zur persönlichen Reflexion berechnet. Die Antworten und der Fortschritt werden im lokalen Speicher deines Browsers abgelegt, damit du die Selbsteinschätzung fortsetzen kannst. Du kannst den gespeicherten Stand über die Browser-Einstellungen für die Website löschen.</p>
           <p>Wenn du den persönlichen PDF-Bericht per E-Mail anforderst, werden deine Antworten, deine E-Mail-Adresse und deine Auswahl zur Newsletter-Anmeldung an den Navigator-Server übermittelt. Die Antworten dienen der Berechnung des Berichts. Nach Bestätigung deiner E-Mail-Adresse erhältst du den Download-Link. Für den Versand kann Brevo eingesetzt werden. Die für den angeforderten Bericht notwendige Verarbeitung stützt sich auf Art. 6 Abs. 1 lit. b DSGVO. Die zusätzliche Newsletter-Anmeldung ist freiwillig und richtet sich nach <a href="#brevo">Abschnitt 5a</a>.</p>
         </section>
@@ -113,7 +113,7 @@ export default function DatenschutzPage() {
 
         <section>
           <h2>12. Externe Links</h2>
-          <p>Diese Website enthält Links zu Angeboten Dritter, unter anderem zu CopeCart, YouTube, Instagram und Let&apos;s Cast. Eine Verbindung zum jeweiligen Anbieter wird grundsätzlich erst hergestellt, wenn du den Link öffnest. Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen des jeweiligen Zielangebots. Die Verarbeitung in unserem eigenen Somatic Karma Navigator ist in <a href="#navigator">Abschnitt 7a</a> beschrieben.</p>
+          <p>Diese Website enthält Links zu Angeboten Dritter, unter anderem zu CopeCart, YouTube, Instagram und Let&apos;s Cast. Eine Verbindung zum jeweiligen Anbieter wird grundsätzlich erst hergestellt, wenn du den Link öffnest. Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen des jeweiligen Zielangebots. Die Verarbeitung in unserem eigenen Somatic Karma® Navigator ist in <a href="#navigator">Abschnitt 7a</a> beschrieben.</p>
         </section>
 
         <section>

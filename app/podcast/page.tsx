@@ -4,7 +4,7 @@ import Link from "next/link";
 import { PodcastAudioPlayer } from "@/components/podcast-audio-player";
 import { PodcastPlatformLinks } from "@/components/podcast-platform-links";
 
-export const metadata: Metadata = { title: "Karma mit Zimt & Zucker", description: "Der neue AuraLumia Podcast mit Jennifer Olivia Kindereit." };
+export const metadata: Metadata = { title: "Karma mit Zimt & Zucker", description: "Der neue AuraLumia® Podcast mit Jennifer Olivia Kindereit." };
 
 const podcastEpisodes = [
   { src: "/audio/podcast-mutternarbe.mp3", title: "Die Mutternarbe", meta: "Folge 11", duration: "25:45 Min." },
@@ -40,7 +40,7 @@ export default function PodcastPage() {
       </div>
       <PodcastPlatformLinks />
     </section>
-    <section className="episode-preview shell"><p className="eyebrow">THEMENWELTEN</p><div className="episode-row"><span>01</span><div><h3>Die vier Ahnen-Typen</h3><p>Schuldnarbe, Schwesternarbe, Mutternarbe und Vaternarbe als spirituelle Landkarten für vertraute Muster.</p></div><b>SOMATIC KARMA</b></div><div className="episode-row"><span>02</span><div><h3>Cycle Breaking</h3><p>Wie aus der kleinen Pause zwischen Aktivierung und Reaktion ein neuer Kreislauf entstehen kann.</p></div><b>INNERE FREIHEIT</b></div><div className="episode-row"><span>03</span><div><h3>Schoßraum & weibliche Linie</h3><p>Ausdruck, Kreativität, Körperwahrnehmung und Kinderwunsch in einem behutsamen spirituellen Raum.</p></div><b>VERKÖRPERUNG</b></div></section>
-    <section className="closing-cta shell"><p className="eyebrow">WEITER ENTDECKEN</p><h2>Beginne bei deiner eigenen inneren Landkarte.</h2><Link className="button button-outline" href="/somatic-karma">Somatic Karma entdecken</Link></section>
+    <section className="episode-preview shell"><p className="eyebrow">THEMENWELTEN</p><div className="episode-row"><span>01</span><div><h3>Die vier Ahnen-Typen</h3><p>Schuldnarbe, Schwesternarbe, Mutternarbe und Vaternarbe als spirituelle Landkarten für vertraute Muster.</p></div><b>SOMATIC KARMA®</b></div><div className="episode-row"><span>02</span><div><h3>Cycle Breaking</h3><p>Wie aus der kleinen Pause zwischen Aktivierung und Reaktion ein neuer Kreislauf entstehen kann.</p></div><b>INNERE FREIHEIT</b></div><div className="episode-row"><span>03</span><div><h3>Schoßraum & weibliche Linie</h3><p>Ausdruck, Kreativität, Körperwahrnehmung und Kinderwunsch in einem behutsamen spirituellen Raum.</p></div><b>VERKÖRPERUNG</b></div></section>
+    <section className="closing-cta shell"><p className="eyebrow">WEITER ENTDECKEN</p><h2>Beginne bei deiner eigenen inneren Landkarte.</h2><Link className="button button-outline" href="/somatic-karma">Somatic Karma® entdecken</Link></section>
   </main>;
 }
