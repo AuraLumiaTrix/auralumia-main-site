@@ -59,7 +59,7 @@ export default function Home() {
             <p>Vier karmische Narben prägen unbewusst, wie du Sicherheit, Zugehörigkeit, Empfangen und Selbstbestimmung erlebst. Wenn du sie erkennst, kannst du deinen Bedürfnissen mit neuer Klarheit begegnen und anfangen, sie zu leben.</p>
           </div>
           <WoundExplorer variant="home" />
-          <Link className="landing-button landing-button-primary wounds-method-button" href="/somatic-karma">Die Methode kennenlernen</Link>
+          <Link className="landing-button landing-button-primary wounds-method-button" href="/somatic-karma">Wie ich arbeite</Link>
         </div>
       </section>
 

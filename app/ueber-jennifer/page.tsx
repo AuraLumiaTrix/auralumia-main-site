@@ -41,7 +41,7 @@ export default function JenniferPage() {
             <p>Ich verbinde intuitive Wahrnehmung mit klaren, erlernten Werkzeugen. So entstehen Räume, in denen du deine Muster besser verstehen, dich selbst wieder deutlicher hören und deinen eigenen Weg bewusster wählen kannst.</p>
             <div className="landing-actions">
               <Link className="landing-button landing-button-primary" href="#meine-geschichte">Meine Geschichte entdecken</Link>
-              <Link className="landing-button landing-button-secondary" href="#podcast"><Headphones size={17} aria-hidden="true" /> Podcast anhören</Link>
+              <Link className="landing-button landing-button-secondary" href="#podcast"><Headphones size={17} aria-hidden="true" /> Podcast lauschen</Link>
             </div>
             <ul className="about-v2-hero-facts" aria-label="Jennifers Arbeit">
               <li><Sparkles aria-hidden="true" /><span>Entwicklerin von<br />Somatic Karma</span></li>
@@ -154,7 +154,7 @@ export default function JenniferPage() {
               <article className="about-v2-audio-card" key={episode.src}>
                 <div><span>{episode.meta}</span><span>{episode.duration}</span></div>
                 <h3>{episode.title}</h3>
-                <PodcastAudioPlayer src={episode.src} title={`${episode.title}, ${episode.meta}`} durationLabel={episode.duration.replace(" Min.", "")} />
+                <PodcastAudioPlayer src={episode.src} title={`${episode.title}, ${episode.meta}`} durationLabel={episode.duration.replace(" Min.", "")} waveform />
               </article>
             ))}
           </div>

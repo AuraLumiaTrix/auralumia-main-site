@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { BlueprintRequestDialog } from "@/components/blueprint-request-dialog";
 import { HighTouchInfoDialog } from "@/components/high-touch-info-dialog";
 
 export const metadata: Metadata = {
@@ -109,7 +110,18 @@ export default function MentoringPage() {
 
     <section className="mentoring-v2-info" aria-label="Verfügbarkeit und Bewerbung">
       <div className="shell mentoring-v2-info-grid">
-        <article id="blueprint-verfuegbarkeit"><div className="mentoring-v2-info-heading"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-blueprint.png" alt="" width={1124} height={1399} sizes="82px" /><p className="mentoring-v2-kicker">BLUEPRINT · PERSÖNLICHE VERFÜGBARKEIT</p></div><h2>Ein bewusst gewählter Start.</h2><p>Jeder Drei Monde Blueprint wird persönlich vorbereitet. Deshalb werden nur wenige Begleitungen gleichzeitig vergeben und jeder mögliche Beginn individuell geprüft.</p><div className="mentoring-v2-info-meta"><span>Auf Anfrage</span><strong>Bewusst limitierte Plätze</strong></div></article>
+        <article id="blueprint-verfuegbarkeit">
+          <div className="mentoring-v2-info-heading"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-blueprint.png" alt="" width={1124} height={1399} sizes="82px" /><p className="mentoring-v2-kicker">BLUEPRINT · PERSÖNLICHE VERFÜGBARKEIT</p></div>
+          <h2>Ein bewusst gewählter Start.</h2>
+          <p>Jeder Drei Monde Blueprint wird persönlich vorbereitet. Deshalb werden nur wenige Begleitungen gleichzeitig vergeben und jeder mögliche Beginn individuell geprüft.</p>
+          <div className="mentoring-v2-info-meta">
+            <div className="mentoring-v2-info-request">
+              <span>Auf Anfrage</span>
+              <BlueprintRequestDialog className="mentoring-v2-button mentoring-v2-button-primary" label="Schreib mir gerne" />
+            </div>
+            <strong>Bewusst limitierte Plätze</strong>
+          </div>
+        </article>
         <article id="bewerbung"><div className="mentoring-v2-info-heading"><Image className="mentoring-v2-info-symbol" src="/symbols/gold-nine-moons.png" alt="" width={1080} height={1350} sizes="82px" /><p className="mentoring-v2-kicker">AURA LUMINESS · ZWEI CIRCLES IM JAHR</p></div><h2>Samhain &amp; Walpurgis</h2><p>Die Ausbildung beginnt zweimal im Jahr: als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase beginnt im Januar 2027.</p><div className="mentoring-v2-info-meta"><span>Nächste Bewerbungsphase ab Januar 2027</span><strong>Wenige, bewusst vergebene Plätze</strong></div></article>
       </div>
     </section>

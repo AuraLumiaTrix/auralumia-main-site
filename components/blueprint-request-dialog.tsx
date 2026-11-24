@@ -4,7 +4,7 @@ import { useId, useRef, useState } from "react";
 
 const blueprintEmail = "blueprint@auralumia.de";
 
-export function BlueprintRequestDialog({ className }: { className: string }) {
+export function BlueprintRequestDialog({ className, label = "Blueprint anfragen" }: { className: string; label?: string }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const titleId = useId();
   const descriptionId = useId();
@@ -27,7 +27,7 @@ export function BlueprintRequestDialog({ className }: { className: string }) {
   return (
     <>
       <button type="button" className={className} onClick={openDialog} aria-haspopup="dialog">
-        Blueprint anfragen
+        {label}
       </button>
       <dialog
         ref={dialogRef}
