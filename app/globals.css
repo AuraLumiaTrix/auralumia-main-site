@@ -1624,6 +1624,11 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .sk-process-branches h3 { font-size:1.45rem; }
 .sk-process-branches b { margin-top:18px; color:#765f70; font-size:var(--reading-size); }
 
+@media (width > 760px) {
+  .sk-process-branches > a { justify-content:flex-start; }
+  .sk-process-branches b { margin-top:auto; padding-top:18px; }
+}
+
 @media (min-width:761px) {
   .sk-page .wound-dialog { grid-template-rows:minmax(0,1fr); }
   .sk-page .wound-dialog-visual { min-height:0; }
@@ -1950,6 +1955,10 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .mentoring-v2-feature-list li::before { position:absolute; top:10px; left:1px; color:#aa8580; content:"✦"; }
 .mentoring-v2-offer-footer { display:flex; align-items:center; justify-content:space-between; gap:22px; margin-top:auto; }
 .mentoring-v2-offer-footer-action-only { justify-content:flex-end; }
+
+@media (width > 760px) {
+  .mentoring-v2-primary > .mentoring-v2-offer-card { display:grid; grid-template-rows:auto 1fr; }
+}
 .mentoring-v2-offer-footer > strong { color:var(--mentoring-plum); font-family:var(--serif); font-size:2.3rem; font-weight:500; white-space:nowrap; }
 
 .mentoring-v2-premium { padding-block:112px; background:linear-gradient(125deg,#6f5968 0%,#857080 52%,#a58e91 100%); color:#fff; }
@@ -2208,6 +2217,11 @@ body:has(.blueprint-request-dialog[open]) { overflow:hidden; }
 .blueprint-next-grid h3 { font-size:3rem; }
 .blueprint-next-grid article > div:last-child > p:not(.blueprint-kicker) { margin-top:18px; color:#7e686a; font-size:var(--reading-size); line-height:1.68; }
 .blueprint-next-grid a { display:inline-flex; align-items:center; gap:10px; width:max-content; margin-top:27px; padding-bottom:4px; border-bottom:1px solid rgba(108,82,104,.4); font-size:var(--reading-size); font-weight:700; }
+
+@media (width > 760px) {
+  .blueprint-next-grid article > div:last-child > p:not(.blueprint-kicker) { margin-bottom:27px; }
+  .blueprint-next-grid a { margin-top:auto; }
+}
 
 .blueprint-faq { padding-block:112px 122px; }
 .blueprint-accordion { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:14px 20px; margin-top:58px; }
