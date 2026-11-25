@@ -191,7 +191,7 @@ const moonModules = [
 const faqs = [
   {
     question: "Welche Voraussetzungen brauche ich?",
-    answer: "Auf der Website sind derzeit keine formalen Vorkenntnisse als Voraussetzung festgelegt. Im Bewerbungsprozess wird gemeinsam geklärt, ob die Ausbildung und ihre Ausrichtung zu deinem aktuellen Weg passen.",
+    answer: "Für die Teilnahme sind bislang keine formalen Voraussetzungen festgelegt. Im Bewerbungsprozess wird gemeinsam geklärt, ob die Ausbildung und ihre Ausrichtung zu deinem aktuellen Weg passen.",
   },
   {
     question: "Wie läuft die Ausbildung ab?",
@@ -203,15 +203,15 @@ const faqs = [
   },
   {
     question: "Wann kann ich mich bewerben?",
-    answer: "Aura Luminess beginnt zweimal im Jahr als Samhain Circle und als Walpurgis Circle. Die nächste Bewerbungsphase beginnt im Januar 2027; die Plätze werden bewusst begrenzt vergeben.",
+    answer: "Aura Luminess beginnt zweimal im Jahr als Samhain Circle und als Walpurgis Circle. Für den Walpurgis-Zirkel kannst du dich ab Januar bewerben, für den Samhain-Zirkel ab Juni, jeweils im Jahr des Zirkels. Die Plätze werden bewusst begrenzt vergeben.",
   },
   {
     question: "Wie viel Zeit darf ich für die Ausbildung einplanen?",
-    answer: "Der Ausbildungsweg erstreckt sich über neun Monate und verbindet Live-Phasen, eigenes Vertiefen und Integration. Die verbindlichen Termine und der konkrete zeitliche Rahmen werden dir vor deiner Zusage transparent mitgeteilt, damit du in Ruhe entscheiden kannst.",
+    answer: "Der Ausbildungsweg erstreckt sich über neun Monate mit monatlichen mehrstündigen Live-Blockseminaren an den Wochenenden. Die verbindlichen Termine und der konkrete zeitliche Rahmen werden dir vor deiner Zusage transparent mitgeteilt, damit du in Ruhe entscheiden kannst.",
   },
   {
     question: "Was ist, wenn ich einen Live-Termin nicht wahrnehmen kann?",
-    answer: "Die Live-Termine werden weder aufgezeichnet noch transkribiert. Welche Möglichkeiten du bei Fehlzeiten hast, erfährst du vor deiner verbindlichen Zusage für den jeweiligen Circle.",
+    answer: "Da mir der sichere Raum für alle Teilnehmer sehr am Herzen liegt, werden die Live-Termine weder aufgezeichnet noch transkribiert. Welche Möglichkeiten du bei Fehlzeiten hast, erfährst du vor deiner verbindlichen Zusage für den jeweiligen Circle.",
   },
   {
     question: "Welchen Abschluss und welche Nutzungsrechte erhalte ich?",
@@ -219,7 +219,7 @@ const faqs = [
   },
   {
     question: "Welche Zahlungsweisen sind möglich?",
-    answer: "Die Investition beträgt 3.333 €. Welche Zahlungswege für den jeweiligen Circle angeboten werden, erfährst du vor deiner verbindlichen Zusage transparent im persönlichen Bewerbungsprozess.",
+    answer: "Die Investition beträgt 3.333 €. Die Zahlung wird über den sicheren CopeCart-Checkout abgewickelt. Mir liegen Fairness und Gleichberechtigung sehr am Herzen. Wenn du die Investition nicht auf einmal leisten kannst, findet sich gewiss ein individueller Weg.",
   },
 ];
 

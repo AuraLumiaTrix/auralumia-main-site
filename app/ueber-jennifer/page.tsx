@@ -56,7 +56,7 @@ export default function JenniferPage() {
 
       <section className="about-v2-story" id="meine-geschichte">
         <div className="shell">
-          <header className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">MEIN WEG</p><h2>Meine Geschichte</h2><p>Mein Weg verbindet Herkunft, intuitive Wahrnehmung und fundierte Werkzeuge – genau daraus sind AuraLumia® und Somatic Karma® gewachsen.</p></header>
+          <header className="landing-section-heading landing-section-heading-centered"><p className="landing-kicker">MEIN WEG</p><h2>Meine Geschichte</h2></header>
           <div className="about-v2-story-grid">
             <article><div className="about-v2-story-media about-v2-story-media-depth"><Image src="/about/ruf-in-die-tiefe.png" alt="Mond über einer tiefen Berglandschaft" fill sizes="(max-width: 760px) 100vw, 30vw" /></div><div><span>01</span><h3>Der Ruf in die Tiefe</h3><p>Geboren im Harz und verwurzelt in einer Familie mit feiner Wahrnehmung, begleitet mich das Wissen um unsichtbare Zusammenhänge seit meiner Kindheit. In Mythen, alten Traditionen, Tiefen der Traumwelt und des Unterbewusstseins zu wandeln ist mir seit jeher gut bekannt.</p></div></article>
             <aside className="about-v2-story-detail about-v2-story-detail-foundation" aria-labelledby="about-foundation-title">

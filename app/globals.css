@@ -1606,17 +1606,20 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .sk-planet-mantra p { margin-top:18px; color:#6f595f; font-family:var(--serif); font-size:clamp(1.16rem,1.45vw,1.42rem); line-height:1.2; letter-spacing:.025em; text-transform:uppercase; text-wrap:balance; }
 
 .sk-process { padding-block:82px 92px; background:#fffdfa; }
-.sk-process-flow { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) minmax(310px,1.32fr); gap:20px; align-items:stretch; }
-.sk-process-step,.sk-process-branches > a { position:relative; display:flex; min-height:310px; flex-direction:column; align-items:center; justify-content:center; padding:30px 24px; border:1px solid var(--sk-line); border-radius:25px; background:linear-gradient(160deg,#fbf1ec,#f2ebf4); text-align:center; }
-.sk-process-step::after { position:absolute; z-index:2; top:50%; right:-17px; width:34px; color:#a28582; content:"→"; font-size:1.35rem; text-align:center; transform:translateY(-50%); }
+.sk-process-flow { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) minmax(280px,1.8fr) minmax(215px,1.45fr); gap:22px; align-items:stretch; }
+.sk-process-step,.sk-process-branches > a { position:relative; display:flex; min-width:0; min-height:310px; flex-direction:column; align-items:center; justify-content:center; padding:30px clamp(14px,1.3vw,22px); border:1px solid var(--sk-line); border-radius:25px; background:linear-gradient(160deg,#fbf1ec,#f2ebf4); text-align:center; }
+.sk-process-step:not(.sk-process-coaching)::after,.sk-process-coaching::before { position:absolute; z-index:2; top:50%; display:grid; width:22px; height:32px; place-items:center; color:#a28582; content:"→"; font-size:1.35rem; transform:translateY(-50%); }
+.sk-process-step:not(.sk-process-coaching)::after { right:-23px; }
+.sk-process-coaching::before { left:-23px; }
 .sk-process-step > span,.sk-process-branches span { position:absolute; top:18px; left:19px; color:#ad8f88; font-size:.58rem; font-weight:800; letter-spacing:.14em; }
 .sk-process-step i,.sk-process-branches i { color:#9a7f8b; font:normal 2.45rem/1 var(--serif); }
-.sk-process-step h3,.sk-process-branches h3 { margin-top:21px; font-size:1.82rem; line-height:1.02; }
-.sk-process-step p,.sk-process-branches p { margin-top:12px; font-size:var(--reading-size); line-height:1.6; }
-.sk-process-branches { position:relative; display:grid; grid-template-columns:1fr 1fr; gap:10px; padding-top:24px; }
-.sk-process-branches::before { position:absolute; z-index:3; top:50%; left:-20px; width:20px; border-top:1px solid rgba(120,92,92,.35); content:""; }
-.sk-branch-label { position:absolute; top:0; left:50%; margin:0; color:#a28382 !important; font-size:.53rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; transform:translateX(-50%); white-space:nowrap; }
-.sk-process-branches > a { min-height:310px; padding-inline:18px; background:linear-gradient(160deg,#f6e8eb,#ece8f4); }
+.sk-process-step h3,.sk-process-branches h3 { max-width:100%; margin-top:21px; font-size:1.82rem; line-height:1.02; overflow-wrap:anywhere; text-wrap:balance; }
+.sk-process-step p,.sk-process-branches > a p { max-width:100%; margin-top:12px; font-size:var(--reading-size); line-height:1.6; overflow-wrap:anywhere; }
+.sk-process-coaching { background:linear-gradient(160deg,#f6e8eb,#f9f0eb); }
+.sk-process-coaching p { max-width:54ch; }
+.sk-process-branches { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:auto minmax(0,1fr); gap:10px; }
+.sk-branch-label { grid-column:1/-1; color:#8a6e6d; font-size:.9rem; font-weight:800; letter-spacing:.1em; text-align:center; text-transform:uppercase; }
+.sk-process-branches > a { padding-inline:12px; background:linear-gradient(160deg,#f6e8eb,#ece8f4); }
 .sk-process-branches > a:hover { border-color:rgba(112,85,105,.35); box-shadow:0 15px 35px rgba(94,72,86,.09); }
 .sk-process-branches h3 { font-size:1.45rem; }
 .sk-process-branches b { margin-top:18px; color:#765f70; font-size:var(--reading-size); }
@@ -1624,15 +1627,6 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 @media (min-width:761px) {
   .sk-page .wound-dialog { grid-template-rows:minmax(0,1fr); }
   .sk-page .wound-dialog-visual { min-height:0; }
-  .sk-page .sk-process-branches { grid-template-rows:auto minmax(0,1fr); padding-top:0; }
-  .sk-page .sk-process-branches > .sk-branch-label {
-    position:static;
-    grid-column:1/-1;
-    margin:0;
-    text-align:center;
-    transform:none;
-    white-space:normal;
-  }
 }
 
 .sk-tarot { padding-block:82px 92px; scroll-margin-top:100px; background:linear-gradient(180deg,#f8efe8,#f7f0ed); }
@@ -1640,7 +1634,7 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 .sk-tarot-card { overflow:hidden; padding:12px 12px 27px; border:1px solid var(--sk-line); border-radius:26px; background:rgba(255,255,255,.78); box-shadow:0 14px 42px rgba(94,70,72,.06); }
 .sk-tarot-card > div { position:relative; height:275px; overflow:hidden; border-radius:18px; background:linear-gradient(135deg,#eadfe8,#fff8ef); }
 .sk-tarot-card img { object-fit:contain; padding:17px; filter:drop-shadow(0 14px 15px rgba(89,65,73,.18)); }
-.sk-tarot-card > span { display:block; margin:23px 16px 0; color:#ae8e87; font-size:var(--reading-size); font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+.sk-tarot-card > span { display:block; min-width:0; margin:23px 16px 0; color:#ae8e87; font-size:var(--reading-size); font-weight:800; letter-spacing:.16em; text-transform:uppercase; overflow-wrap:anywhere; }
 .sk-tarot-card h3 { margin:7px 16px 0; font-size:2.1rem; line-height:1; }
 .sk-tarot-card p { margin:15px 16px 0; font-size:var(--reading-size); line-height:1.66; }
 .sk-section-link { display:flex; width:max-content; margin:35px auto 0; color:#745e6f; font-size:var(--reading-size); font-weight:700; gap:8px; }
@@ -1681,10 +1675,12 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .sk-hero h1 { font-size:clamp(3.65rem,6vw,5rem); }
   .sk-hero-art { min-height:470px; }
   .sk-wound-grid,.sk-planet-grid,.sk-tarot-grid,.sk-element-grid { grid-template-columns:repeat(2,1fr); }
-  .sk-process-flow { grid-template-columns:repeat(3,1fr); }
-  .sk-process-branches { grid-column:1/-1; }
-  .sk-process-branches::before { display:none; }
-  .sk-process-branches > a { min-height:245px; }
+  .sk-process-flow { grid-template-columns:repeat(3,minmax(0,1fr)); row-gap:52px; }
+  .sk-process-branches,.sk-process-coaching { grid-column:1/-1; }
+  .sk-process-step:nth-child(3)::after,.sk-process-coaching::before { left:50%; right:auto; width:32px; transform:translateX(-50%) rotate(90deg); }
+  .sk-process-step:nth-child(3)::after { top:auto; bottom:-43px; }
+  .sk-process-coaching::before { top:-43px; }
+  .sk-process-branches > a,.sk-process-coaching { min-height:245px; }
   .sk-tarot-card > div { height:320px; }
 }
 
@@ -1743,17 +1739,13 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
   .sk-planet-mantra img { width:154px; height:192px; }
   .sk-planet-mantra p { max-width:420px; font-size:clamp(1.35rem,6.5vw,1.75rem); }
   .sk-process-step { min-height:260px; }
-  .sk-process-flow { row-gap:54px; }
-  .sk-process-step::after { top:auto; right:50%; bottom:-41px; display:grid; width:32px; height:32px; place-items:center; border-radius:50%; background:#fffdfa; transform:translateX(50%) rotate(90deg); }
-  .sk-process-branches { grid-template-columns:1fr; gap:18px; padding-top:48px; }
-  .sk-branch-label { top:9px; }
-  .sk-process-branches::after { position:absolute; top:29px; bottom:0; left:50%; border-left:1px solid rgba(120,92,92,.18); content:""; transform:translateX(-50%); }
+  .sk-process-step:not(.sk-process-coaching)::after { top:auto; right:auto; bottom:-43px; left:50%; width:32px; transform:translateX(-50%) rotate(90deg); }
+  .sk-process-branches { grid-template-columns:minmax(0,1fr); gap:18px; }
   .sk-process-branches > a { min-height:250px; }
-  .sk-process-branches > a { z-index:1; }
-  .sk-tarot-card { display:grid; grid-template-columns:132px 1fr; grid-template-rows:auto auto 1fr; column-gap:8px; padding:12px; }
+  .sk-tarot-card { display:grid; grid-template-columns:132px minmax(0,1fr); grid-template-rows:auto auto 1fr; column-gap:8px; padding:12px; }
   .sk-tarot-card > div { grid-row:1/4; height:220px; }
   .sk-tarot-card > span,.sk-tarot-card h3,.sk-tarot-card p { margin-right:12px; margin-left:12px; }
-  .sk-tarot-card > span { align-self:end; margin-top:22px; }
+  .sk-tarot-card > span { align-self:end; margin-top:22px; font-size:clamp(.85rem,3.3vw,1rem); letter-spacing:.08em; }
   .sk-tarot-card h3 { font-size:1.75rem; }
   .sk-tarot-card p { font-size:var(--reading-size); }
   .sk-element-grid article { min-height:235px; }
@@ -1770,7 +1762,7 @@ body:has(.wound-dialog-backdrop) { overflow:hidden; }
 }
 
 @media (max-width:400px) {
-  .sk-tarot-card { grid-template-columns:112px 1fr; }
+  .sk-tarot-card { grid-template-columns:clamp(92px,28vw,112px) minmax(0,1fr); }
   .sk-tarot-card > div { height:205px; }
 }
 

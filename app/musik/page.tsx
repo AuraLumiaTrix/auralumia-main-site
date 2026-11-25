@@ -25,7 +25,7 @@ export default function MusikPage() {
       <PageHero eyebrow="NARU HIKARI · ARTIST PROJECT" title="Musik für die weibliche Linie."><p>Unter ihrem Künstlernamen Naru Hikari lässt Jennifer Olivia Stimme, Sinnlichkeit und spirituelle Erinnerung zu einem eigenen Klangraum werden.</p><a className="button button-outline" href="#naru-player">Album hier hören</a></PageHero>
     </div>
 
-    <section className="music-stage"><div className="shell music-stage-grid"><div className="music-art"><img src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb Album-Mockup" /></div><div><p className="eyebrow">RISING OF THE WOMB</p><h2>Sounds of Healing, Sensuality, Femininity and Power.</h2><p>Fünf Songs bewegen sich zwischen Hingabe und Selbstbefreiung, Weichheit und Kraft. Musik nicht als Hintergrund – sondern als Erinnerung daran, dass der Körper seine eigene Sprache kennt.</p><a className="button button-light" href="#naru-player">Auf AuraLumia® hören</a></div></div></section>
+    <section className="music-stage"><div className="shell music-stage-grid"><div className="music-art"><img src="/naru-hikari-album.png" alt="Naru Hikari – Rising of the Womb Album-Mockup" /></div><div><p className="eyebrow">RISING OF THE WOMB</p><h2>Sounds of Healing, Sensuality, Femininity and Power.</h2><p>Fünf Songs bewegen sich zwischen Hingabe und Selbstbefreiung, Weichheit und Kraft. Musik nicht als Hintergrund – sondern als Erinnerung daran, dass der Körper seine eigene Sprache kennt.</p></div></div></section>
 
     <section className="music-player-section shell" id="naru-player">
       <div className="embedded-media-heading"><p className="eyebrow">RISING OF THE WOMB · PLAYER</p><h2>Wähle deinen Song.</h2></div>

@@ -129,17 +129,23 @@ export default function SomaticKarmaPage() {
           <div className="sk-heading sk-heading-centered">
             <p className="sk-kicker">DIE METHODISCHE LANDKARTE</p>
             <h2 id="sk-process-title">Von der Erfahrung zur Transformation</h2>
-            <p>Somatic Karma® ordnet Erfahrung in nachvollziehbare Ebenen. Nach dem Karmabedürfnistyp öffnen sich zwei gleichwertige Deutungswege.</p>
+            <p>Die methodische Landkarte führt vom Grundbedürfnis über die karmische Narbe zum Karmabedürfnistyp. Tarot und Astrologie eröffnen zwei mögliche Betrachtungen. An beide kann das persönliche Mentalcoaching anknüpfen.</p>
           </div>
           <div className="sk-process-flow">
-            <article className="sk-process-step"><span>01</span><i aria-hidden="true">◌</i><h3>Grundbedürfnis</h3><p>Ein menschliches Bedürfnis bildet den Ausgangspunkt.</p></article>
+            <article className="sk-process-step"><span>01</span><i aria-hidden="true">◌</i><h3>Grund&shy;bedürfnis</h3><p>Ein menschliches Bedürfnis bildet den Ausgangspunkt.</p></article>
             <article className="sk-process-step"><span>02</span><i aria-hidden="true">☾</i><h3>Karmische Narbe</h3><p>Wiederkehrende Erfahrungen werden als Reflexionsfeld sichtbar.</p></article>
-            <article className="sk-process-step"><span>03</span><i aria-hidden="true">◇</i><h3>Karmabedürfnistyp</h3><p>Die individuelle Ausprägung beschreibt den persönlichen Umgang damit.</p></article>
-            <div className="sk-process-branches" aria-label="Zwei gleichwertige Deutungswege">
-              <p className="sk-branch-label">Zwei gleichwertige Wege</p>
+            <article className="sk-process-step"><span>03</span><i aria-hidden="true">◇</i><h3>Karma&shy;bedürfnistyp</h3><p>Die individuelle Ausprägung beschreibt den persönlichen Umgang damit.</p></article>
+            <div className="sk-process-branches" role="group" aria-labelledby="sk-branch-label">
+              <p className="sk-branch-label" id="sk-branch-label">Zwei mögliche Betrachtungen</p>
               <Link href="#tarot-arcana"><span>4A</span><i aria-hidden="true">✦</i><h3>Tarot Arcana</h3><p>Symbolische Deutung über die vier Tarot-Farben.</p><b>Weg ansehen</b></Link>
-              <Link href="#planetengruppen"><span>4B</span><i aria-hidden="true">◎</i><h3>Geburtschart / Planetengruppen</h3><p>Astrologische Deutung über Zentrum und Triade.</p><b>Weg ansehen</b></Link>
+              <Link href="#planetengruppen"><span>4B</span><i aria-hidden="true">◎</i><h3>Geburtschart / Planeten&shy;gruppen</h3><p>Astrologische Deutung über Zentrum und Triade.</p><b>Weg ansehen</b></Link>
             </div>
+            <article className="sk-process-step sk-process-coaching">
+              <span>05</span>
+              <i aria-hidden="true">✧</i>
+              <h3>Persönliches Mental&shy;coaching</h3>
+              <p>Du entwickelst Schritte für deinen Alltag, abgestimmt auf deinen Bedürfnistyp. Gespräche, Affirmationen, Journaling, praktische Aufgaben oder Meditationen begleiten dich dabei.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -154,7 +160,7 @@ export default function SomaticKarmaPage() {
             {tarotArcana.map((arcana) => (
               <article className="sk-tarot-card" key={arcana.title}>
                 <div><Image src={arcana.image} alt={`Ass der ${arcana.title}`} fill sizes="(max-width: 760px) 38vw, 12vw" /></div>
-                <span>{arcana.wound}</span><h3>{arcana.title}</h3><p>{arcana.text}</p>
+                <span>{arcana.wound.replace(/narbe$/, "\u00adnarbe")}</span><h3>{arcana.title}</h3><p>{arcana.text}</p>
               </article>
             ))}
           </div>
